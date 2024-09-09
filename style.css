@@ -1,8 +1,8 @@
 /** @format */
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 @font-face {
@@ -16,18 +16,34 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+#Title {
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  position: relative;
+  top: -10%;
+  font-size: 7.2rem;
+}
 #playbtn {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  position: relative;
+  left: -30%;
+  top: 25%;
   height: 100px;
   border-radius: 100px;
   cursor: pointer;
+  animation: circle 3s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-85px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-85px) rotate(-360deg) rotateZ(360deg);
+  }
 }
 #frame {
   width: 500px;
