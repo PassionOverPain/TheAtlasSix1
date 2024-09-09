@@ -87,7 +87,7 @@ header {
   color: goldenrod;
 }
 section {
-  height: 50vh;
+  height: 100vh;
 }
 body {
   overflow-x: hidden;
@@ -115,4 +115,34 @@ body {
 }
 #About p {
   padding: 10px;
+}
+#titan {
+  background: url(Images/titan.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#healer {
+  background: url(Images/healerbg.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#timekeeper {
+  background: url(Images/timekeeperbg.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#eye {
+  background: url(Images/eyebg.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#phoenix {
+  background: url(Images/phoenixbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
