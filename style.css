@@ -12,6 +12,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #playbtn {
   position: absolute;
@@ -22,11 +26,21 @@ header {
   cursor: pointer;
 }
 #frame {
+  width: 500px;
+  height: 300px;
+  background-image: url(Images/frame1.png);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   position: relative;
-  left: 10%;
-  top: 10%;
-  height: 500px;
-  border-radius: 100px 100px 100px;
+}
+#frame p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
 }
 section {
   height: 150;
