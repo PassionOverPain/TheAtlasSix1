@@ -22,11 +22,24 @@ header {
   text-align: center;
 }
 #Title {
+  background: url(Images/titlebg.webp);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
   word-spacing: 5px;
   letter-spacing: 5px;
   position: relative;
   top: -10%;
   font-size: 7.2rem;
+  overflow: hidden;
+  animation: fade 2s linear 2s 1 forwards;
+  opacity: 0;
+  transition: 0.5s;
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
 }
 #playbtn {
   position: relative;
@@ -81,4 +94,5 @@ body {
   height: fit-content;
   scroll-behavior: smooth;
   font-family: myFont;
+  min-height: 100vh;
 }
