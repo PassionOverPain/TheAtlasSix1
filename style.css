@@ -35,16 +35,27 @@ header {
   background-image: url(Images/frame1.png);
   background-position: center;
   background-size: cover;
-  display: inline-block;
+  display: none;
   justify-content: center;
   text-align: center;
   align-items: center;
   position: relative;
 }
 #frame p {
-  position: absolute;
+  position: relative;
+  font-size: 40px;
   top: 50%;
-  left: 40%;
+  left: 0%;
+}
+.icon {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.2);
+  color: goldenrod;
 }
 section {
   height: 150;
