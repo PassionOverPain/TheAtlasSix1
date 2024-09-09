@@ -43,9 +43,9 @@ header {
 }
 #playbtn {
   position: relative;
-  left: -30%;
-  top: 25%;
-  height: 100px;
+  left: 0%;
+  top: 200%;
+  height: 50px;
   border-radius: 100px;
   cursor: pointer;
   animation: circle 3s linear infinite;
@@ -87,7 +87,7 @@ header {
   color: goldenrod;
 }
 section {
-  height: 150;
+  height: 50vh;
 }
 body {
   overflow-x: hidden;
@@ -95,4 +95,24 @@ body {
   scroll-behavior: smooth;
   font-family: myFont;
   min-height: 100vh;
+}
+#About {
+  height: 100vh;
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Images/dragon.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#quest {
+  background-color: transparent;
+  width: 60vw;
+  height: fit-content;
+}
+#About p {
+  padding: 10px;
 }
