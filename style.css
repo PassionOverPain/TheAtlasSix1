@@ -117,26 +117,26 @@ body {
   padding: 10px;
 }
 #titan {
-  background: url(Images/titan.webp);
+  background: url(Images/titanbg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #healer {
   background: url(Images/healerbg.webp);
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #timekeeper {
   background: url(Images/timekeeperbg.webp);
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #eye {
   background: url(Images/eyebg.webp);
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
