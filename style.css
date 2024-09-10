@@ -87,6 +87,7 @@ header {
   color: goldenrod;
 }
 section {
+  display: block;
   height: 100vh;
 }
 body {
@@ -145,4 +146,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero {
+  position: relative;
+  height: 150px;
+  width: 200px;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
 }
