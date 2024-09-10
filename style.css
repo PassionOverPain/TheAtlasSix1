@@ -89,6 +89,7 @@ header {
 section {
   position: relative;
   display: flex;
+  justify-content: space-around; /*This is the space between char and words*/
   align-items: center;
   height: 100vh;
 }
@@ -113,8 +114,11 @@ body {
 }
 #quest {
   background-color: transparent;
-  width: 60vw;
+  width: 70vw;
   height: fit-content;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
 }
 #About p {
   padding: 10px;
@@ -152,10 +156,35 @@ body {
 .hero {
   position: relative;
   left: 5%;
-  height: 50vh;
+  height: 60vh;
   width: 25vw;
+  cursor: pointer;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
 }
+
 .hero img {
   height: 100%;
   width: 100%;
+}
+.herodesc {
+  position: relative;
+  display: flex;
+  width: 50vw;
+  min-height: 60vh;
+  height: fit-content;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  overflow: hidden;
+}
+.herodesc p {
+  color: white;
+  background: url(Images/dragon.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
