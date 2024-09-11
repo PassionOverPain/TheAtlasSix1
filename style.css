@@ -183,6 +183,7 @@ body {
 }
 .herodesc p {
   color: white;
+  font-size: 2.4rem;
   background: url(Images/dragon.webp);
   background-position: center;
   background-repeat: no-repeat;
