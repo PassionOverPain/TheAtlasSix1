@@ -171,8 +171,8 @@ body {
 }
 .herodesc {
   position: relative;
-  display: flex;
-  width: 50vw;
+  display: grid;
+  width: fit-content;
   min-height: 60vh;
   height: fit-content;
   border: 40px solid;
