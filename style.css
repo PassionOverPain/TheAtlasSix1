@@ -189,3 +189,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#btns {
+  display: flex;
+  justify-content: space-between;
+  background: url(Images/dragon.webp);
+}
+button {
+  font-family: myFont;
+  cursor: pointer;
+  background-color: burlywood;
+  width: 25%;
+  margin: 0;
+}
+button:hover {
+  background-color: brown;
+}
