@@ -172,7 +172,7 @@ body {
 .herodesc {
   position: relative;
   display: grid;
-  width: fit-content;
+  max-width: 60vw;
   min-height: 60vh;
   height: fit-content;
   border: 40px solid;
@@ -188,19 +188,33 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 10px;
+}
+.Stats {
+  display: block;
+}
+.Info {
+  display: none;
 }
 #btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background: url(Images/dragon.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px;
 }
 button {
+  position: relative;
   font-family: myFont;
   cursor: pointer;
   background-color: burlywood;
-  width: 25%;
+  width: 70px;
   margin: 0;
+  transition: all 0.5s;
 }
 button:hover {
-  background-color: brown;
+  background-color: goldenrod;
+  transform: scale(1.2);
 }
