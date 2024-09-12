@@ -11,8 +11,16 @@ function openTab(tab) {
 }
 function displayInfo(choice) {
   if (choice == "open") {
-    document.getElementById("healerdesc").style.display = "grid";
+    document.getElementById("healerdesc").classList.remove("sleeps");
+    document.getElementById("healerdesc").classList.add("awakes");
   } else {
-    document.getElementById("healerdesc").style.display = "none";
+    document.getElementById("healerdesc").classList.remove("awakes");
+    document.getElementById("healerdesc").classList.add("sleeps");
+    work();
   }
+}
+function work() {
+  setTimeout(function () {
+    document.getElementById("healerdesc").style.display = "none";
+  }, 3000);
 }

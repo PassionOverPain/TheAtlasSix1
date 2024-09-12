@@ -164,7 +164,7 @@ body {
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
   border-image-repeat: round;
-  animation: awaken linear 3s infinite;
+  /* animation: awaken linear 3s infinite; */
 }
 
 .hero img {
@@ -183,7 +183,13 @@ body {
   border-image-repeat: round;
   overflow: hidden;
   transition: all 0.5s;
-  animation: awaken linear 3s infinite;
+}
+.awakes {
+  display: grid;
+  animation: awaken linear 3s 1 running;
+}
+.sleeps {
+  animation: slumber linear 6s 1 running;
 }
 @keyframes awaken {
   0% {
@@ -191,6 +197,14 @@ body {
   }
   100% {
     max-width: 60vw;
+  }
+}
+@keyframes slumber {
+  0% {
+    max-width: 60vw;
+  }
+  100% {
+    max-width: 1vw;
   }
 }
 .herodesc p {
