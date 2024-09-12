@@ -164,6 +164,7 @@ body {
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
   border-image-repeat: round;
+  animation: awaken linear 3s infinite;
 }
 
 .hero img {
@@ -182,6 +183,15 @@ body {
   border-image-repeat: round;
   overflow: hidden;
   transition: all 0.5s;
+  animation: awaken linear 3s infinite;
+}
+@keyframes awaken {
+  0% {
+    max-width: 1vw;
+  }
+  100% {
+    max-width: 60vw;
+  }
 }
 .herodesc p {
   font-size: 1.7rem;
