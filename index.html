@@ -51,22 +51,22 @@
           <img src="Images/healer.webp" alt="" />
         </div>
         <div class="herodesc">
-          <p class="Stats">
+          <p class="healer Stats active" id="Stats">
             Jasim Adenka<br />
             HP: 100 <br />
             ATK: 70 <br />STAMINA: 90 <br />
             MANA: 120 <br />INTELLIGENCE: 170 <br />STRENGTH: 50 <br />
             DEXTERITY: 120 <br />CLASS: WIZARD
           </p>
-          <p class="Info">
+          <p class="healer Info" id="Info">
             The great wizard. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Provident vitae deleniti quo qui voluptas neque, ad nesciunt!
             Voluptatibus quia unde blanditiis molestias, sapiente, cumque
             expedita natus soluta voluptates nulla commodi!
           </p>
           <div id="btns">
-            <button>Info</button>
-            <button>Stats</button>
+            <button onclick="openTab(`Info`)">Info</button>
+            <button onclick="openTab(`Stats`)">Stats</button>
             <button>Close</button>
           </div>
         </div>
@@ -98,5 +98,6 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>

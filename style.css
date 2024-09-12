@@ -180,6 +180,7 @@ body {
   border-image-slice: 70;
   border-image-repeat: round;
   overflow: hidden;
+  transition: all 0.5s;
 }
 .herodesc p {
   font-size: 1.7rem;
@@ -190,11 +191,11 @@ body {
   background-size: cover;
   padding-bottom: 10px;
 }
-.Stats {
-  display: block;
-}
-.Info {
+.healer {
   display: none;
+}
+.active {
+  display: block;
 }
 #btns {
   display: flex;
@@ -209,10 +210,18 @@ button {
   position: relative;
   font-family: myFont;
   cursor: pointer;
-  background-color: burlywood;
+  background: url(Images/dragon.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 70px;
+  height: 30px;
   margin: 0;
   transition: all 0.5s;
+  border-width: 5px;
+  border-image-source: url(Images/frame1.png);
+  border-image-repeat: round;
+  border-image-slice: 70;
 }
 button:hover {
   background-color: goldenrod;
