@@ -189,7 +189,7 @@ body {
   animation: awaken linear 3s 1 running;
 }
 .sleeps {
-  animation: slumber linear 6s 1 running;
+  animation: slumber linear 3s 1 running;
 }
 @keyframes awaken {
   0% {
@@ -205,6 +205,7 @@ body {
   }
   100% {
     max-width: 1vw;
+    opacity: 0;
   }
 }
 .herodesc p {
