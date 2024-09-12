@@ -201,6 +201,7 @@ body {
 #btns {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: url(Images/dragon.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -217,7 +218,7 @@ button {
   background-size: cover;
   width: 70px;
   height: 30px;
-  margin: 0;
+  margin: 10px;
   transition: all 0.5s;
   border-width: 5px;
   border-image-source: url(Images/frame1.png);

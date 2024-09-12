@@ -47,10 +47,10 @@
         </div>
       </section>
       <section id="healer">
-        <div class="hero">
+        <div class="hero" onclick="displayInfo(`open`)">
           <img src="Images/healer.webp" alt="" />
         </div>
-        <div class="herodesc">
+        <div class="herodesc" id="healerdesc">
           <p class="healer Stats active" id="Stats">
             Jasim Adenka<br />
             HP: 100 <br />
@@ -67,7 +67,7 @@
           <div id="btns">
             <button onclick="openTab(`Info`)">Info</button>
             <button onclick="openTab(`Stats`)">Stats</button>
-            <button>Close</button>
+            <button onclick="displayInfo(`close`)">Close</button>
           </div>
         </div>
       </section>

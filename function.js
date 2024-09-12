@@ -9,3 +9,10 @@ function openTab(tab) {
     document.getElementById("Info").classList.remove("active");
   }
 }
+function displayInfo(choice) {
+  if (choice == "open") {
+    document.getElementById("healerdesc").style.display = "grid";
+  } else {
+    document.getElementById("healerdesc").style.display = "none";
+  }
+}
