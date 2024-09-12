@@ -47,7 +47,7 @@ header {
   top: 200%;
   height: 50px;
   border-radius: 100px;
-  cursor: pointer;
+  cursor: url(Images/hand-s.png), auto;
   animation: circle 3s linear infinite;
 }
 @keyframes circle {
@@ -80,7 +80,7 @@ header {
   position: relative;
   display: inline-block;
   font-size: 50px;
-  cursor: pointer;
+  cursor: url(Images/hand-s.png), auto;
 }
 .icon:hover {
   transform: scale(1.2);
@@ -99,6 +99,7 @@ body {
   scroll-behavior: smooth;
   font-family: myFont;
   min-height: 100vh;
+  cursor: url(Images/swordcursor1.png), auto;
 }
 #About {
   height: 100vh;
@@ -158,7 +159,7 @@ body {
   left: 5%;
   height: 60vh;
   width: 25vw;
-  cursor: pointer;
+  cursor: url(Images/hand-s.png), auto;
   border: 40px solid;
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
@@ -209,7 +210,7 @@ body {
 button {
   position: relative;
   font-family: myFont;
-  cursor: pointer;
+  cursor: url(Images/hand-s.png), auto;
   background: url(Images/dragon.webp);
   background-position: center;
   background-repeat: no-repeat;
