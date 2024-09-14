@@ -205,7 +205,6 @@ body {
   }
   100% {
     max-width: 1vw;
-    opacity: 0;
   }
 }
 .herodesc p {
