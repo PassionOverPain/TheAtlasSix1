@@ -16,5 +16,8 @@ function displayInfo(choice) {
   } else {
     document.getElementById("healerdesc").classList.remove("awakes");
     document.getElementById("healerdesc").classList.add("sleeps");
+    setTimeout(function () {
+      document.getElementById("healerdesc").style.display = "none";
+    }, 3000);
   }
 }

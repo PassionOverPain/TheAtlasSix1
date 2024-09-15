@@ -185,7 +185,6 @@ body {
   transition: all 0.5s;
 }
 .awakes {
-  display: grid;
   animation: awaken linear 3s 1 running;
 }
 .sleeps {
