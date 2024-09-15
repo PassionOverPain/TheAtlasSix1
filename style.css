@@ -92,21 +92,23 @@ header {
   transform: scale(1.2);
 }
 #thisMap {
-  position: absolute;
+  position: fixed;
+  display: block;
   height: 90vh;
   width: 60vw;
+  z-index: 1000;
 }
 #Mapimg {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 .mapHero {
-  position: relative;
-  left: 5%;
-  height: 60vh;
-  width: 25vw;
+  position: absolute;
+  height: 10vh;
+  width: 4vw;
   cursor: url(Images/hand-s.png), auto;
-  border: 40px solid;
+  border: 5px solid;
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
   border-image-repeat: round;
@@ -114,6 +116,13 @@ header {
   transition-duration: 500ms;
   animation: awaken linear 3s 1;
   animation-delay: 3s;
+}
+.mapHero img {
+  height: 100%;
+  width: 100%;
+}
+.mapHero:hover {
+  transform: scale(1.3);
 }
 #frame p {
   position: relative;

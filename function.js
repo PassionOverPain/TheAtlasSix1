@@ -22,3 +22,13 @@ function displayInfo(choice, hero) {
     }, 3000);
   }
 }
+let openMap = true;
+function displayMap() {
+  if (openMap == false) {
+    openMap = true;
+    document.getElementById("thisMap").style.display = "block";
+  } else {
+    openMap = false;
+    document.getElementById("thisMap").style.display = "none";
+  }
+}
