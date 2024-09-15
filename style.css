@@ -135,6 +135,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: spin;
+}
+@keyframes spin {
+  100%{
+    transform;
+  }
+  
 }
 #timekeeper {
   background: url(Images/timekeeperbg.webp);
@@ -164,7 +171,9 @@ body {
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
   border-image-repeat: round;
-  /* animation: awaken linear 3s infinite; */
+  transition: all 0.5s;
+   animation: awaken linear 3s 1;
+   animation-delay: 3s;
 }
 
 .hero img {
@@ -173,7 +182,7 @@ body {
 }
 .herodesc {
   position: relative;
-  display: grid;
+  display: none;
   max-width: 60vw;
   min-height: 60vh;
   height: fit-content;

@@ -11,6 +11,7 @@ function openTab(tab) {
 }
 function displayInfo(choice) {
   if (choice == "open") {
+    document.getElementById("healerdesc").style.display = "grid";
     document.getElementById("healerdesc").classList.remove("sleeps");
     document.getElementById("healerdesc").classList.add("awakes");
   } else {
