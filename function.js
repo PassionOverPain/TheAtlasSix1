@@ -2,11 +2,11 @@
 
 function openTab(tab, hero) {
   if (tab == "Info") {
-    document.getElementById(`${hero}Info`).classList.add("active");
     document.getElementById(`${hero}Stats`).classList.remove("active");
+    document.getElementById(`${hero}Info`).classList.add("active");
   } else {
-    document.getElementById(`${hero}Stats`).classList.add("active");
     document.getElementById(`${hero}Info`).classList.remove("active");
+    document.getElementById(`${hero}Stats`).classList.add("active");
   }
 }
 function displayInfo(choice, hero) {

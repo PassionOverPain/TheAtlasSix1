@@ -47,7 +47,7 @@
         </div>
       </section>
       <section id="healer">
-        <div class="hero" onclick="displayInfo(`open`)">
+        <div class="hero" onclick="displayInfo(`open`,`healer`)">
           <img src="Images/healer.webp" alt="" />
         </div>
         <div class="herodesc" id="healerDesc">
@@ -58,7 +58,7 @@
             MANA: 120 <br />INTELLIGENCE: 170 <br />STRENGTH: 50 <br />
             DEXTERITY: 120 <br />CLASS: WIZARD
           </p>
-          <p class="healer Info" id="healerInfo">
+          <p class="inactive Info" id="healerInfo">
             The great wizard. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Provident vitae deleniti quo qui voluptas neque, ad nesciunt!
             Voluptatibus quia unde blanditiis molestias, sapiente, cumque
@@ -72,7 +72,7 @@
         </div>
       </section>
       <section id="titan">
-        <div class="hero">
+        <div class="hero" onclick="displayInfo(`open`,`titan`)">
           <img src="Images/titan.webp" alt="This is the hero titan." />
         </div>
         <div class="herodesc" id="titanDesc">
@@ -83,16 +83,16 @@
             MANA: 50 <br />INTELLIGENCE: 90 <br />STRENGTH: 190 <br />
             DEXTERITY: 90 <br />CLASS: SOLDIER
           </p>
-          <p class="titan Info" id="titaninfo">
+          <p class="inactive Info" id="titanInfo">
             The unbroken tank. Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Provident vitae deleniti quo qui voluptas neque,
             ad nesciunt! Voluptatibus quia unde blanditiis molestias, sapiente,
             cumque expedita natus soluta voluptates nulla commodi!
           </p>
           <div id="btns">
-            <button onclick="openTab(`Info`)">Info</button>
-            <button onclick="openTab(`Stats`)">Stats</button>
-            <button onclick="displayInfo(`close`)">Close</button>
+            <button onclick="openTab(`Info`,`titan`)">Info</button>
+            <button onclick="openTab(`Stats`,`titan`)">Stats</button>
+            <button onclick="displayInfo(`close`,`titan`)">Close</button>
           </div>
         </div>
       </section>

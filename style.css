@@ -193,7 +193,6 @@ body {
   border-image-slice: 70;
   border-image-repeat: round;
   overflow: hidden;
-  transition: all 0.5s;
 }
 .awakes {
   animation: awaken linear 3s 1 running;
@@ -226,7 +225,7 @@ body {
   background-size: cover;
   padding-bottom: 10px;
 }
-.healer {
+.inactive {
   display: none;
 }
 .active {
