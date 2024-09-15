@@ -184,7 +184,7 @@ body {
 }
 .herodesc {
   position: relative;
-  display: grid;
+  display: none;
   max-width: 60vw;
   min-height: 60vh;
   height: fit-content;
