@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: myFont;
@@ -95,7 +96,7 @@ header {
   position: fixed;
   display: block;
   height: 90vh;
-  width: 60vw;
+  width: 30vw;
   z-index: 1000;
   transition: all 0.5s;
   transition-duration: 500ms;
