@@ -125,6 +125,26 @@
         <div class="hero" class="hero" onclick="displayInfo(`open`,`phoenix`)">
           <img src="Images/phoenix.webp" alt="" />
         </div>
+        <div class="herodesc" id="phoenixDesc">
+          <p class="inactive" id="phoenixStats">
+            Zanele Something<br />
+            HP: 110 <br />
+            ATK: 160 <br />STAMINA: 90 <br />
+            MANA: 120 <br />INTELLIGENCE: 150 <br />STRENGTH: 70 <br />
+            DEXTERITY: 100 <br />CLASS: PYROMANCER
+          </p>
+          <p class="inactive Info" id="phoenixInfo">
+            The flame within. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Provident vitae deleniti quo qui voluptas neque, ad nesciunt!
+            Voluptatibus quia unde blanditiis molestias, sapiente, cumque
+            expedita natus soluta voluptates nulla commodi!
+          </p>
+          <div id="btns">
+            <button onclick="openTab(`Info`,`phoenix`)">Info</button>
+            <button onclick="openTab(`Stats`,`phoenix`)">Stats</button>
+            <button onclick="displayInfo(`close`,`phoenix`)">Close</button>
+          </div>
+        </div>
       </section>
       <section
         id="timekeeper"
@@ -132,6 +152,26 @@
         onclick="displayInfo(`open`,`timekeeper`)">
         <div class="hero">
           <img src="Images/timekeeper.webp" alt="" />
+        </div>
+        <div class="herodesc" id="timekeeperDesc">
+          <p class="inactive" id="timekeeperStats">
+            Tino Something<br />
+            HP: 130 <br />
+            ATK: 100 <br />STAMINA: 120 <br />
+            MANA: 70 <br />INTELLIGENCE: 90 <br />STRENGTH: 60 <br />
+            DEXTERITY: 180 <br />CLASS: KNIGHT
+          </p>
+          <p class="inactive Info" id="timekeeperInfo">
+            Time is the gift that robs you of the present. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Provident vitae deleniti quo qui
+            voluptas neque, ad nesciunt! Voluptatibus quia unde blanditiis
+            molestias, sapiente, cumque.
+          </p>
+          <div id="btns">
+            <button onclick="openTab(`Info`,`timekeeper`)">Info</button>
+            <button onclick="openTab(`Stats`,`timekeeper`)">Stats</button>
+            <button onclick="displayInfo(`close`,`timekeeper`)">Close</button>
+          </div>
         </div>
       </section>
     </main>
