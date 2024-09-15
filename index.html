@@ -97,16 +97,39 @@
         </div>
       </section>
       <section id="eye">
-        <div class="hero">
-          <img src="Images/eye.webp" alt="" />
+        <div class="hero" class="hero" onclick="displayInfo(`open`,`eye`)">
+          <img src="Images/eye.webp" alt="The hero named Eye" />
+        </div>
+        <div class="herodesc" id="eyeDesc">
+          <p class="inactive" id="eyeStats">
+            Mthi Something<br />
+            HP: 110 <br />
+            ATK: 60 <br />STAMINA: 100 <br />
+            MANA: 140 <br />INTELLIGENCE: 190 <br />STRENGTH: 60 <br />
+            DEXTERITY: 100 <br />CLASS: SORCER
+          </p>
+          <p class="inactive Info" id="eyeInfo">
+            Lies deceive you, not her. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Provident vitae deleniti quo qui voluptas neque,
+            ad nesciunt! Voluptatibus quia unde blanditiis molestias, sapiente,
+            cumque expedita natus soluta voluptates nulla commodi!
+          </p>
+          <div id="btns">
+            <button onclick="openTab(`Info`,`eye`)">Info</button>
+            <button onclick="openTab(`Stats`,`eye`)">Stats</button>
+            <button onclick="displayInfo(`close`,`eye`)">Close</button>
+          </div>
         </div>
       </section>
       <section id="phoenix">
-        <div class="hero">
+        <div class="hero" class="hero" onclick="displayInfo(`open`,`phoenix`)">
           <img src="Images/phoenix.webp" alt="" />
         </div>
       </section>
-      <section id="timekeeper">
+      <section
+        id="timekeeper"
+        class="hero"
+        onclick="displayInfo(`open`,`timekeeper`)">
         <div class="hero">
           <img src="Images/timekeeper.webp" alt="" />
         </div>
