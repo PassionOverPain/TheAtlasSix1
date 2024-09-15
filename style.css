@@ -68,7 +68,11 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
+  position: absolute;
+}
+#optbtns {
   position: relative;
+  top: 65%;
 }
 #frame p {
   position: relative;
