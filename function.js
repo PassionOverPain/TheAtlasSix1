@@ -9,16 +9,16 @@ function openTab(tab, hero) {
     document.getElementById(`${hero}Info`).classList.remove("active");
   }
 }
-function displayInfo(choice) {
+function displayInfo(choice, hero) {
   if (choice == "open") {
-    document.getElementById("healerdesc").style.display = "grid";
-    document.getElementById("healerdesc").classList.remove("sleeps");
-    document.getElementById("healerdesc").classList.add("awakes");
+    document.getElementById(`${hero}Desc`).style.display = "grid";
+    document.getElementById(`${hero}Desc`).classList.remove("sleeps");
+    document.getElementById(`${hero}Desc`).classList.add("awakes");
   } else {
-    document.getElementById("healerdesc").classList.remove("awakes");
-    document.getElementById("healerdesc").classList.add("sleeps");
+    document.getElementById(`${hero}Desc`).classList.remove("awakes");
+    document.getElementById(`${hero}Desc`).classList.add("sleeps");
     setTimeout(function () {
-      document.getElementById("healerdesc").style.display = "none";
+      document.getElementById(`${hero}Desc`).style.display = "none";
     }, 3000);
   }
 }
