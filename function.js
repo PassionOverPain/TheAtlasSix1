@@ -1,12 +1,12 @@
 /** @format */
 
-function openTab(tab) {
+function openTab(tab, hero) {
   if (tab == "Info") {
-    document.getElementById("Info").classList.add("active");
-    document.getElementById("Stats").classList.remove("active");
+    document.getElementById(`${hero}Info`).classList.add("active");
+    document.getElementById(`${hero}Stats`).classList.remove("active");
   } else {
-    document.getElementById("Stats").classList.add("active");
-    document.getElementById("Info").classList.remove("active");
+    document.getElementById(`${hero}Stats`).classList.add("active");
+    document.getElementById(`${hero}Info`).classList.remove("active");
   }
 }
 function displayInfo(choice) {
