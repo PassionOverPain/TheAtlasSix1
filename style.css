@@ -75,13 +75,14 @@ header {
   top: 65%;
 }
 #myMap {
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 85%;
   height: 10vh;
   width: 5vw;
   transition: all 0.5s;
   cursor: url(Images/hand-s.png), auto;
+  z-index: 1000;
 }
 #myMap img {
   height: 100%;
@@ -89,6 +90,30 @@ header {
 }
 #myMap:hover {
   transform: scale(1.2);
+}
+#thisMap {
+  position: absolute;
+  height: 90vh;
+  width: 60vw;
+}
+#Mapimg {
+  height: 100%;
+  width: 100%;
+}
+.mapHero {
+  position: relative;
+  left: 5%;
+  height: 60vh;
+  width: 25vw;
+  cursor: url(Images/hand-s.png), auto;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  transition: all 0.5s;
+  transition-duration: 500ms;
+  animation: awaken linear 3s 1;
+  animation-delay: 3s;
 }
 #frame p {
   position: relative;
