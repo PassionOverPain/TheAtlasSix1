@@ -74,6 +74,22 @@ header {
   position: relative;
   top: 65%;
 }
+#myMap {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  height: 10vh;
+  width: 5vw;
+  transition: all 0.5s;
+  cursor: url(Images/hand-s.png), auto;
+}
+#myMap img {
+  height: 100%;
+  width: 100%;
+}
+#myMap:hover {
+  transform: scale(1.2);
+}
 #frame p {
   position: relative;
   font-size: 40px;
