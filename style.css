@@ -136,7 +136,6 @@ body {
   align-items: center;
   background: url(Images/dragon.webp);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 #narrator {
@@ -152,6 +151,7 @@ body {
   border: 40px solid;
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
+  border-image-repeat: repeat;
 }
 #About p {
   padding: 10px;
@@ -252,7 +252,7 @@ body {
 .herodesc p {
   font-size: 1.7rem;
   text-align: center;
-  background: url(Images/dragon.webp);
+  background: url(Images/paperbg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
