@@ -79,7 +79,7 @@ header {
 }
 #thisMap {
   position: fixed;
-  display: block;
+  display: none;
   height: 90vh;
   width: 30vw;
   z-index: 1000;
