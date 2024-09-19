@@ -127,6 +127,7 @@ body {
   cursor: url(Images/swordcursor1.png), auto;
 }
 #About {
+  padding: 50px;
   height: 100vh;
   font-size: 1.7rem;
   font-weight: bold;
