@@ -32,3 +32,13 @@ function displayMap() {
     document.getElementById("thisMap").style.display = "none";
   }
 }
+var loader = document.getElementById('preloader');
+window.addEventListener('load', function (load) {
+  // Lazy Loading :) //
+  this.window.removeEventListener('load', load, false);
+  this.setTimeout(function () {
+    loader.style.display = 'none';
+    this.document.body.style.cursor =  "url(Images/swordcursor1.png), auto";
+    this.document.body.style.overflowY = 'scroll';
+  }, 4000);
+});

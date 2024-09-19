@@ -129,12 +129,13 @@ section {
   transition: all 0.5s;
 }
 body {
+  overflow-y: hidden;
   overflow-x: hidden;
   height: fit-content;
   scroll-behavior: smooth;
   font-family: myFont;
   min-height: 100vh;
-  cursor: url(Images/swordcursor1.png), auto;
+  cursor:none;
 }
 #About {
   padding: 50px;
