@@ -11,14 +11,13 @@
   src: url(Wigtone.otf);
 }
 #preloader{
-  position: absolute;
-  width: 100vw;
+  position: fixed;
+  width: 100%;
   height: 100vh;
   z-index: 10000;
 }
 #preloader video{
-  height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 header {
   height: 100vh;
