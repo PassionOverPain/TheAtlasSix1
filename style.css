@@ -102,12 +102,12 @@ header {
   border-image-repeat: round;
   animation: awaken linear 3s 1;
 }
-.mapHero img {
+.mapCard img {
   cursor: url(Images/hand-s.png), auto;
   height: 100%;
   width: 100%;
 }
-.mapHero:hover {
+.mapCard:hover {
   transform: scale(1.3);
 }
 section {
