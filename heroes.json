@@ -18,46 +18,46 @@
   },
   {
     "Name": "Llewellyn Artemis",
-    "HP": 210,
-    "ATK": 140,
-    "STAMINA": 100,
-    "MANA": 50,
-    "INTELLIGENCE": 90,
-    "STRENGTH": 50,
-    "DEXTERITY": 90,
-    "CLASS": "SOLDIER"
+    "Hp": 210,
+    "Atk": 140,
+    "Stamina": 100,
+    "Mana": 50,
+    "Intelligence": 90,
+    "Strength": 50,
+    "Dexterity": 90,
+    "Class": "SOLDIER"
   },
   {
     "Name": " Mthi Armorenia",
-    "HP": 110,
-    "ATK": 60,
-    "STAMINA": 100,
-    "MANA": 140,
-    "INTELLIGENCE": 120,
-    "STRENGTH": 60,
-    "DEXTERITY": 100,
-    "CLASS": "SORCERER"
+    "Hp": 110,
+    "Atk": 60,
+    "Stamina": 100,
+    "Mana": 140,
+    "Intelligence": 120,
+    "Strength": 60,
+    "Dexterity": 100,
+    "Class": "SORCERER"
   },
   {
     "Name": "Zanele Miyazaki",
-    "HP": 110,
-    "ATK": 160,
-    "STAMINA": 90,
-    "MANA": 120,
-    "INTELLIGENCE": 110,
-    "STRENGTH": 70,
-    "DEXTERITY": 100,
-    "CLASS": "PYROMANCER"
+    "Hp": 110,
+    "Atk": 160,
+    "Stamina": 90,
+    "Mana": 120,
+    "Intelligence": 110,
+    "Strength": 70,
+    "Dexterity": 100,
+    "Class": "PYROMANCER"
   },
   {
     "Name": "Tino Hildaeld",
-    "HP": 130,
-    "ATK": 100,
-    "STAMINA": 120,
-    "MANA": 70,
-    "INTELLIGENCE": 120,
-    "STRENGTH": 60,
-    "DEXTERITY": 180,
-    "CLASS": "KNIGHT"
+    "Hp": 130,
+    "Atk": 100,
+    "Stamina": 120,
+    "Mana": 70,
+    "Intelligence": 120,
+    "Strength": 60,
+    "Dexterity": 180,
+    "Class": "KNIGHT"
   }
 ]

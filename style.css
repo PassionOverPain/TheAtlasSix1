@@ -287,6 +287,7 @@ body {
   padding-bottom: 10px;
 }
 button {
+  font-size: 1.5rem;
   position: relative;
   font-family: myFont;
   cursor: url(Images/hand-s.png), auto;
@@ -294,8 +295,9 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 70px;
-  height: 30px;
+  min-width: 70px;
+  width: fit-content;
+  height: fit-content;
   margin: 10px;
   transition: all 0.5s;
   border-width: 5px;
