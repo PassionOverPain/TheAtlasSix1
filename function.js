@@ -32,13 +32,29 @@ function displayMap() {
     document.getElementById("thisMap").style.display = "none";
   }
 }
-var loader = document.getElementById('preloader');
-window.addEventListener('load', function (load) {
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function (load) {
   // Lazy Loading :) //
-  this.window.removeEventListener('load', load, false);
+  this.window.removeEventListener("load", load, false);
   this.setTimeout(function () {
-    loader.style.display = 'none';
-    this.document.body.style.cursor =  "url(Images/swordcursor1.png), auto";
-    this.document.body.style.overflowY = 'scroll';
+    loader.style.display = "none";
+    this.document.body.style.cursor = "url(Images/swordcursor1.png), auto";
+    this.document.body.style.overflowY = "scroll";
   }, 4000);
 });
+//This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
+// on the user's screen, if not the item is hidden, if so then it loads in//
+var observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.style.display = "block";
+    }
+    //else {
+    //   entry.target.classList.add("awake");
+    // }
+  });
+});
+var hiddenElements = document.querySelectorAll(
+  "#healer, #titan, #eye, #phoenix, #timekeeper"
+);
+hiddenElements.forEach((el) => observer.observe(el));
