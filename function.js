@@ -100,17 +100,17 @@ function openScroll(num) {
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
-  document.getElementById("heDesc").textContent = `
-  Hp: ${myHeroes[num].Hp},
-  Atk: ${myHeroes[num].Atk},
-  Stamina: ${myHeroes[num].Stamina},
-  Mana: ${myHeroes[num].Mana},
-  Intelligence: ${myHeroes[num].Intelligence},
-  Strength:${myHeroes[num].Strength},
-  Dexterity: ${myHeroes[num].Dexterity},
-  Class: ${myHeroes[num].Class},
-  Attacks:${myHeroes[num].Attacks[0]},
-  ${myHeroes[num].Attacks[1]},
-  ${myHeroes[num].Attacks[2]},
-  ${myHeroes[num].Attacks[3]}`;
+  document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
+  document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
+  // Atk: ${myHeroes[num].Atk},
+  // Stamina: ${myHeroes[num].Stamina},
+  // Mana: ${myHeroes[num].Mana},
+  // Intelligence: ${myHeroes[num].Intelligence},
+  // Strength:${myHeroes[num].Strength},
+  // Dexterity: ${myHeroes[num].Dexterity},
+  // Class: ${myHeroes[num].Class},
+  // Attacks:${myHeroes[num].Attacks[0]},
+  // ${myHeroes[num].Attacks[1]},
+  // ${myHeroes[num].Attacks[2]},
+  // ${myHeroes[num].Attacks[3]}`;
 }
