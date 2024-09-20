@@ -68,7 +68,6 @@ function createButton(options) {
   template.innerHTML = `<button type="button">${options.label}</button>`;
 
   const button = template.content.firstElementChild;
-  alert("Should be done ?");
   return button;
 }
 function doIt() {
