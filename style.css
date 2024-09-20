@@ -312,4 +312,20 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  position: relative;
+  display: block;
+  justify-content: space-around; /*This is the space between char and words*/
+  align-items: normal;
+  transition: all 0.5s;
+}
+.pgCard {
+  display: inline-block;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  opacity: 1;
+  height: 15vh;
+  width: 5vw;
 }
