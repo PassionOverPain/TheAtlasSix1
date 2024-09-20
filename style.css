@@ -58,7 +58,6 @@ header {
   top: -100px;
   height: 50px;
   border-radius: 100px;
-  cursor: url(Images/hand-s.png), auto;
   animation: circle 6s linear infinite;
 }
 @keyframes circle {
@@ -155,7 +154,7 @@ body {
   height: 60vh;
   width: 20vw;
 }
-#quest {
+.quest {
   background-color: transparent;
   width: 70vw;
   height: fit-content;
@@ -238,6 +237,15 @@ body {
   border-image-repeat: round;
   overflow: hidden;
 }
+.heDesc {
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 .awakes {
   animation: awaken linear 3s 1 running;
 }
@@ -263,10 +271,6 @@ body {
 .herodesc p {
   font-size: 1.7rem;
   text-align: center;
-  background: url(Images/paperbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 10px;
 }
 .inactive {
@@ -275,14 +279,11 @@ body {
 .active {
   display: block;
 }
-#btns {
+.btns {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: url(Images/dragon.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
   padding-bottom: 10px;
 }
 button {
@@ -307,16 +308,16 @@ button:hover {
   transform: scale(1.2);
 }
 #playground {
+  display: grid;
+  grid-template-columns: auto auto auto;
   background: url(Images/background.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
   position: relative;
-  display: block;
-  justify-content: space-around; /*This is the space between char and words*/
-  align-items: normal;
+  justify-content: unset; /*This is the space between char and words*/
+  align-items: center;
   transition: all 0.5s;
 }
 .pgCard {
@@ -336,4 +337,28 @@ button:hover {
   height: 100vh;
   display: grid;
   row-gap: 15px;
+}
+.story {
+  height: fit-content;
+  margin-left: 15px;
+}
+#story {
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  font-size: 1.7rem;
+}
+#monster {
+  opacity: 1;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 20vh;
+  width: 5vw;
+}
+#monster img {
+  width: 100%;
+  height: 100%;
 }

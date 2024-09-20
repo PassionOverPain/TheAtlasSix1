@@ -56,3 +56,26 @@ var hiddenElements = document.querySelectorAll(
   ".nrC, .hrC, .tnC, .eeC, .pxC, .tkC"
 );
 hiddenElements.forEach((el) => observer.observe(el));
+const newBtn = createButt({
+  label: "Minez",
+  icon: "none",
+  onClick: (ev) => alert("You are created"),
+});
+
+function createButton(options) {
+  alert("Yes we are trying");
+  const template = document.createElement("template");
+
+  template.innerHTML = `<button type="button">${options.label}</button>`;
+
+  const button = template.content.firstElementChild;
+
+  return button;
+}
+function doIt() {
+  const myButton = createButton({
+    label: "WORKK",
+  });
+  console.log(myButton);
+  document.body.appendChild(myButton);
+}
