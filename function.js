@@ -95,31 +95,14 @@ function newMonster() {
 fetch("heroes.json").then((response) =>
   response.json().then((value) => console.log(value))
 );
-function openScroll(hero) {
-  fetch("heroes.json")
+function openScroll(num) {
+  fetch("./heroes.json")
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
-
-  let num;
-  switch (hero) {
-    case "healer": {
-      num = 0;
-    }
-    case "titan": {
-      num = 1;
-    }
-    case "eye": {
-      num = 2;
-    }
-    case "phoenix": {
-      num = 3;
-    }
-    case "timekeeper": {
-      num = 4;
-    }
-  }
-  document.getElementById("heDesc").textContent = ` Hp: ${myHeroes[num].Hp},
-  Atk: ${myHeroes[num].Hp},
+  document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
+  document.getElementById("heDesc").textContent = `
+  Hp: ${myHeroes[num].Hp},
+  Atk: ${myHeroes[num].Atk},
   Stamina: ${myHeroes[num].Stamina},
   Mana: ${myHeroes[num].Mana},
   Intelligence: ${myHeroes[num].Intelligence},

@@ -276,10 +276,10 @@
         </div>
         <div class="quest story">
           <div id="story">
-            <h1 style="text-align: center">
+            <h1 style="text-align: center" id="currentTitle">
               The Legend tells a tale of Six heroes
             </h1>
-            <p id="heDesc">
+            <span id="heDesc">
               In a world teetering on the brink of apocalypse, darkness
               shattered the light and unleashed unknown horrors upon humanity.
               Amidst the chaos, hope lay dormant in the form of six
@@ -289,9 +289,23 @@
               ruins of civilization, their paths converged, forging an uneasy
               alliance against both the monstrous creatures prowling the land
               and their own inner demons.
-            </p>
+            </span>
+            <span id="Hp">Hp:</span>
+            <span id="Atk">Atk:</span>
+            <span id="Stamina">Stamina:</span>
+            <span id="Mana">Mana:</span>
+            <span id="Intelligence">Intelligence:</span>
+            <span id="Strength">Hp:</span>
+            <span id="Dexterity">Dexterity:</span>
+            <span id="Class">Class:</span>
+            <span id="Attacks">Attacks:</span>
+
+            Stamina: ${myHeroes[num].Stamina}, Mana: ${myHeroes[num].Mana},
+            Intelligence: ${myHeroes[num].Intelligence},
+            Strength:${myHeroes[num].Strength}, Dexterity:
+            ${myHeroes[num].Dexterity}, Class: ${myHeroes[num].Class}, Attacks:
             <div id="pgBtns" class="btns">
-              <button onclick="openScroll(`healer`)">Fight</button>
+              <button onclick="openScroll(0)">Fight</button>
               <button>Hunt</button>
               <button>Close</button>
             </div>
