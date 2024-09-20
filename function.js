@@ -63,13 +63,12 @@ const newBtn = createButt({
 });
 
 function createButton(options) {
-  alert("Yes we are trying");
   const template = document.createElement("template");
 
   template.innerHTML = `<button type="button">${options.label}</button>`;
 
   const button = template.content.firstElementChild;
-
+  alert("Should be done ?");
   return button;
 }
 function doIt() {
@@ -77,5 +76,5 @@ function doIt() {
     label: "WORKK",
   });
   console.log(myButton);
-  document.body.appendChild(myButton);
+  document.getElementById("pgBtns").appendChild(myButton);
 }
