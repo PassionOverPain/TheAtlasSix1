@@ -328,4 +328,11 @@ button:hover {
   opacity: 1;
   height: 15vh;
   width: 5vw;
+  margin-top: 10px;
+}
+#pgCardCon {
+  width: fit-content;
+  height: 100vh;
+  display: grid;
+  row-gap: 15px;
 }
