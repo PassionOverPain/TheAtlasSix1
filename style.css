@@ -366,6 +366,12 @@ button:hover {
   font-size: 1.7rem;
   padding: 15px;
 }
+.Heal:hover {
+  color: darkblue;
+}
+.Attack:hover {
+  color: red;
+}
 #pgBtns {
   display: flex;
   text-align: center;
