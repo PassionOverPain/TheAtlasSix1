@@ -8,7 +8,13 @@
     "INTELLIGENCE": 150,
     "STRENGTH": 50,
     "DEXTERITY": 120,
-    "CLASS": "WIZARD"
+    "CLASS": "WIZARD",
+    "ATTACKS": {
+      "Blessing of Vitality-Healing": 50,
+      "Healing Light-Healing": 50,
+      "Holy Nova-Healing": 30,
+      "Sacred Claws-Attack": 70
+    }
   },
   {
     "Name": "Llewellyn Artemis",
@@ -24,34 +30,34 @@
   {
     "Name": " Mthi Armorenia",
     "HP": 110,
-    "ATK": 70,
-    "STAMINA": 90,
-    "MANA": 120,
-    "INTELLIGENCE": 150,
-    "STRENGTH": 50,
-    "DEXTERITY": 120,
-    "CLASS": "WIZARD"
+    "ATK": 60,
+    "STAMINA": 100,
+    "MANA": 140,
+    "INTELLIGENCE": 120,
+    "STRENGTH": 60,
+    "DEXTERITY": 100,
+    "CLASS": "SORCERER"
   },
   {
-    "Name": "Jasim Adenka",
-    "HP": 100,
-    "ATK": 70,
+    "Name": "Zanele Miyazaki",
+    "HP": 110,
+    "ATK": 160,
     "STAMINA": 90,
     "MANA": 120,
-    "INTELLIGENCE": 150,
-    "STRENGTH": 50,
-    "DEXTERITY": 120,
-    "CLASS": "WIZARD"
+    "INTELLIGENCE": 110,
+    "STRENGTH": 70,
+    "DEXTERITY": 100,
+    "CLASS": "PYROMANCER"
   },
   {
-    "Name": "Jasim Adenka",
-    "HP": 100,
-    "ATK": 70,
-    "STAMINA": 90,
-    "MANA": 120,
-    "INTELLIGENCE": 150,
-    "STRENGTH": 50,
-    "DEXTERITY": 120,
-    "CLASS": "WIZARD"
+    "Name": "Tino Hildaeld",
+    "HP": 130,
+    "ATK": 100,
+    "STAMINA": 120,
+    "MANA": 70,
+    "INTELLIGENCE": 120,
+    "STRENGTH": 60,
+    "DEXTERITY": 180,
+    "CLASS": "KNIGHT"
   }
 ]
