@@ -122,9 +122,12 @@ function openScroll(hero) {
   Atk: ${myHeroes[num].Hp},
   Stamina: ${myHeroes[num].Stamina},
   Mana: ${myHeroes[num].Mana},
-  Intelligence: ${myHeroes[num].Hp},
-  Strength:${myHeroes[num].Hp},
-  Dexterity: ${myHeroes[num].Hp},
-  Class: ${myHeroes[num].Hp},
-  Attacks: {`;
+  Intelligence: ${myHeroes[num].Intelligence},
+  Strength:${myHeroes[num].Strength},
+  Dexterity: ${myHeroes[num].Dexterity},
+  Class: ${myHeroes[num].Class},
+  Attacks:${myHeroes[num].Attacks[0]},
+  ${myHeroes[num].Attacks[1]},
+  ${myHeroes[num].Attacks[2]},
+  ${myHeroes[num].Attacks[3]}`;
 }
