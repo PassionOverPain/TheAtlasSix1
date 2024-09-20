@@ -156,7 +156,7 @@ body {
 }
 .quest {
   background-color: transparent;
-  width: 70vw;
+  width: fit-content;
   height: fit-content;
   border: 40px solid;
   border-image-source: url(Images/frame1.png);
@@ -350,7 +350,8 @@ button:hover {
   row-gap: 15px;
 }
 .story {
-  display: block;
+  display: flex;
+  justify-content: center;
   height: fit-content;
   margin-left: 15px;
 }
@@ -362,6 +363,11 @@ button:hover {
   height: 70vh;
   font-size: 1.7rem;
   padding: 15px;
+}
+#pgBtns {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 #monsters {
   opacity: 1;
