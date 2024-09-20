@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Prismara",
+    "Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
+    "Type": "Mythical",
+    "Attacks": {
+      "Claw Strike": 15,
+      "Flash-render": 35,
+      "Mind Fog": 10,
+      "Sonic Roar": 30,
+      "Tail lash": 20
+    }
+  }
+]
