@@ -309,7 +309,7 @@ button:hover {
 }
 #playground {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   background: url(Images/background.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ button:hover {
   row-gap: 15px;
 }
 .story {
-  display: none;
+  display: block;
   height: fit-content;
   margin-left: 15px;
 }
