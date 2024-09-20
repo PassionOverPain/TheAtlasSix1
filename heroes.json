@@ -10,10 +10,19 @@
     "Dexterity": 120,
     "Class": "WIZARD",
     "Attacks": {
-      "Blessing of Vitality-Healing": 50,
-      "Healing Light-Healing": 50,
-      "Holy Nova-Healing": 30,
-      "Sacred Claws-Attack": 70
+      "Name": [
+        "Blessing of Vitality",
+        "Healing Light",
+        "Holy Nova",
+        "Sacred Claws"
+      ],
+      "Desc": [
+        "Increases a target's maximum HP temporarily.",
+        "Restores a moderate amount of HP to a single ally.",
+        "Releases a burst of healing energy that restores HP to all allies within range.",
+        "Basic attack"
+      ],
+      "Power": [45, 50, 30, 70]
     }
   },
   {
