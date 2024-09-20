@@ -53,5 +53,7 @@ var observer = new IntersectionObserver((entries) => {
     // }
   });
 });
-var hiddenElements = document.querySelectorAll(".hrC, .tnC, .eeC, .pxC, .tkC");
+var hiddenElements = document.querySelectorAll(
+  ".nrC, .hrC, .tnC, .eeC, .pxC, .tkC"
+);
 hiddenElements.forEach((el) => observer.observe(el));
