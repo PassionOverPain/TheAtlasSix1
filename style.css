@@ -55,18 +55,18 @@ header {
 #playbtn {
   position: relative;
   left: 0%;
-  top: 200%;
+  top: -100px;
   height: 50px;
   border-radius: 100px;
   cursor: url(Images/hand-s.png), auto;
-  animation: circle 3s linear infinite;
+  animation: circle 6s linear infinite;
 }
 @keyframes circle {
   0% {
-    transform: rotate(0deg) translate(-85px) rotate(0deg);
+    transform: rotate(0deg) translate(-185px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translate(-85px) rotate(-360deg) rotateZ(360deg);
+    transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
   }
 }
 
@@ -331,6 +331,7 @@ button:hover {
   margin-top: 10px;
 }
 #pgCardCon {
+  margin-left: 10px;
   width: fit-content;
   height: 100vh;
   display: grid;
