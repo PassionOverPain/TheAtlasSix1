@@ -1,15 +1,15 @@
 [
   {
     "Name": "Jasim Adenka",
-    "HP": 100,
-    "ATK": 70,
-    "STAMINA": 90,
-    "MANA": 120,
-    "INTELLIGENCE": 150,
-    "STRENGTH": 50,
-    "DEXTERITY": 120,
-    "CLASS": "WIZARD",
-    "ATTACKS": {
+    "Hp": 100,
+    "Atk": 70,
+    "Stamina": 90,
+    "Mana": 120,
+    "Intelligence": 150,
+    "Strength": 50,
+    "Dexterity": 120,
+    "Class": "WIZARD",
+    "Attacks": {
       "Blessing of Vitality-Healing": 50,
       "Healing Light-Healing": 50,
       "Holy Nova-Healing": 30,
