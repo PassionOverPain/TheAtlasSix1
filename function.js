@@ -70,9 +70,25 @@ function createButton(options) {
   const button = template.content.firstElementChild;
   return button;
 }
-function doIt() {
+function createMonster(options) {
+  const template = document.createElement("template");
+
+  template.innerHTML = `<div id="monster" class="hero pgCard">
+         <img src="${options.picture}" alt="This is a monster player" />    
+          </div>`;
+
+  const monster = template.content.firstElementChild;
+  return monster;
+}
+function newButton() {
   const myButton = createButton({
     label: "Slayyy",
   });
   document.getElementById("pgBtns").appendChild(myButton);
+}
+function newMonster() {
+  const myMonster = createMonster({
+    picture: "Images/msdragon.webp",
+  });
+  document.getElementById("monsters").appendChild(myMonster);
 }

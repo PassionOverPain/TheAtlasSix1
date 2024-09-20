@@ -309,14 +309,14 @@ button:hover {
 }
 #playground {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   background: url(Images/background.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   position: relative;
-  justify-content: unset; /*This is the space between char and words*/
+  justify-content: space-between; /*This is the space between char and words*/
   align-items: center;
   transition: all 0.5s;
 }
@@ -330,17 +330,27 @@ button:hover {
   height: 15vh;
   width: 5vw;
   margin-top: 10px;
+  /* animation: centerCard 3s linear infinite; */
 }
+/* @keyframes centerCard {
+  50% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+} */
 .pgCardCon {
   display: inline-flex;
   align-items: center;
   margin-left: 10px;
+  margin-right: 10px;
   width: fit-content;
   height: 100vh;
   display: grid;
   row-gap: 15px;
 }
 .story {
+  display: none;
   height: fit-content;
   margin-left: 15px;
 }
@@ -351,16 +361,15 @@ button:hover {
   background-size: cover;
   height: 70vh;
   font-size: 1.7rem;
+  padding: 15px;
 }
-#monster {
+#monsters {
   opacity: 1;
   position: relative;
   top: 0%;
   left: 0%;
-  height: 20vh;
-  width: 5vw;
 }
-#monster img {
+#monsters img {
   width: 100%;
   height: 100%;
 }
