@@ -56,11 +56,11 @@ var hiddenElements = document.querySelectorAll(
   ".nrC, .hrC, .tnC, .eeC, .pxC, .tkC"
 );
 hiddenElements.forEach((el) => observer.observe(el));
-const newBtn = createButt({
-  label: "Minez",
-  icon: "none",
-  onClick: (ev) => alert("You are created"),
-});
+// const newBtn = createButt({
+//   label: "Minez",
+//   icon: "none",
+//   onClick: (ev) => alert("You are created"),
+// });
 
 function createButton(options) {
   const template = document.createElement("template");
@@ -72,8 +72,7 @@ function createButton(options) {
 }
 function doIt() {
   const myButton = createButton({
-    label: "WORKK",
+    label: "Slayyy",
   });
-  console.log(myButton);
   document.getElementById("pgBtns").appendChild(myButton);
 }

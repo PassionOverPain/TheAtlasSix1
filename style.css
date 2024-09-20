@@ -331,7 +331,9 @@ button:hover {
   width: 5vw;
   margin-top: 10px;
 }
-#pgCardCon {
+.pgCardCon {
+  display: inline-flex;
+  align-items: center;
   margin-left: 10px;
   width: fit-content;
   height: 100vh;
