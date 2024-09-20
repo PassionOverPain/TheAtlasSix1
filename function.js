@@ -92,3 +92,16 @@ function newMonster() {
   });
   document.getElementById("monsters").appendChild(myMonster);
 }
+fetch("heroes.json").then((response) =>
+  response.json().then((value) => console.log(value))
+);
+function openScroll() {
+  fetch("heroes.json").then((response) =>
+    response.json().then((value) => console.log(value))
+  );
+  // switch (hero) {
+  //   case "healer": {
+  //     document.getElementById("heDesc").textContent =
+  //   }
+  // }
+}
