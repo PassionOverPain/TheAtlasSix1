@@ -340,13 +340,13 @@ button:hover {
   }
 } */
 .pgCardCon {
-  display: inline-flex;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
   width: fit-content;
   height: 100vh;
   display: grid;
+  grid-template-columns: auto;
   row-gap: 15px;
 }
 .story {

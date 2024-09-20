@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "Jasim Adenka",
+    "HP": 100,
+    "ATK": 70,
+    "STAMINA": 90,
+    "MANA": 120,
+    "INTELLIGENCE": 150,
+    "STRENGTH": 50,
+    "DEXTERITY": 120,
+    "CLASS": "WIZARD"
+  },
+  {
+    "Name": "Llewellyn Artemis",
+    "HP": 210,
+    "ATK": 140,
+    "STAMINA": 100,
+    "MANA": 50,
+    "INTELLIGENCE": 90,
+    "STRENGTH": 50,
+    "DEXTERITY": 90,
+    "CLASS": "SOLDIER"
+  },
+  {
+    "Name": " Mthi Armorenia",
+    "HP": 110,
+    "ATK": 70,
+    "STAMINA": 90,
+    "MANA": 120,
+    "INTELLIGENCE": 150,
+    "STRENGTH": 50,
+    "DEXTERITY": 120,
+    "CLASS": "WIZARD"
+  },
+  {
+    "Name": "Jasim Adenka",
+    "HP": 100,
+    "ATK": 70,
+    "STAMINA": 90,
+    "MANA": 120,
+    "INTELLIGENCE": 150,
+    "STRENGTH": 50,
+    "DEXTERITY": 120,
+    "CLASS": "WIZARD"
+  },
+  {
+    "Name": "Jasim Adenka",
+    "HP": 100,
+    "ATK": 70,
+    "STAMINA": 90,
+    "MANA": 120,
+    "INTELLIGENCE": 150,
+    "STRENGTH": 50,
+    "DEXTERITY": 120,
+    "CLASS": "WIZARD"
+  }
+]
