@@ -214,6 +214,9 @@ body {
   animation-delay: 3s;
   opacity: 0;
 }
+.hero:hover {
+  transform: scale(1.2);
+}
 .show {
   opacity: 1;
   width: 25vw;
