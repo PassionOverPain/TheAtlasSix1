@@ -42,19 +42,16 @@ window.addEventListener("load", function (load) {
     this.document.body.style.overflowY = "scroll";
   }, 4000);
 });
-//This is an Intersection Observer ... Duh🤣, in plain english, a method (function) of checking if each section is currently visisble
-// on the user's screen, if not the item is hidden, if so then it loads in//
+
 var observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.style.display = "block";
+      entry.target.classList.add("show");
     }
     //else {
     //   entry.target.classList.add("awake");
     // }
   });
 });
-var hiddenElements = document.querySelectorAll(
-  "#healer, #titan, #eye, #phoenix, #timekeeper"
-);
+var hiddenElements = document.querySelectorAll(".hrC, .tnC, .eeC, .pxC, .tkC");
 hiddenElements.forEach((el) => observer.observe(el));

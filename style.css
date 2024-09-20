@@ -199,11 +199,10 @@ body {
   background-size: cover;
 }
 .hero {
-  display: none;
   position: relative;
   left: 5%;
   height: 60vh;
-  width: 25vw;
+  width: 0vw;
   cursor: url(Images/hand-s.png), auto;
   border: 40px solid;
   border-image-source: url(Images/frame1.png);
@@ -213,15 +212,12 @@ body {
   transition-duration: 500ms;
   animation: awaken linear 3s 1;
   animation-delay: 3s;
-  /* animation: spin linear 6s infinite; */
+  opacity: 0;
 }
-/* @keyframes spin {
-  0% {
-  }
-  50% {
-    transform: rotateY(360deg);
-  }
-} */
+.show {
+  opacity: 1;
+  width: 25vw;
+}
 
 .hero img {
   height: 100%;

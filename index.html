@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="preloader" style="text-align: center; display: block; justify-content: center; font-size: 1.7rem; color: white;">
+    <div
+      id="preloader"
+      style="
+        text-align: center;
+        display: block;
+        justify-content: center;
+        font-size: 1.7rem;
+        color: white;
+      ">
       <video src="Images/stolen.mp4" autoplay muted loop></video>
-      <span style="position: absolute;">...Loading Life...</span>
+      <span style="position: absolute">...Loading Life...</span>
     </div>
     <header>
       <div>
@@ -28,47 +36,57 @@
         <img src="Images/map.webp" alt="" id="Mapimg" />
         <div class="hr mapCard" style="top: 40%; left: 50%">
           <a href="#healer">
-            <img src="Images/healer.webp" alt="The map image for the character: the healer" />
+            <img
+              src="Images/healer.webp"
+              alt="The map image for the character: the healer" />
           </a>
         </div>
         <div class="tn mapCard" style="top: 75%; left: 50%">
           <a href="#titan">
-            <img src="Images/titan.webp" alt="The map image for the character: the titan" />
+            <img
+              src="Images/titan.webp"
+              alt="The map image for the character: the titan" />
           </a>
         </div>
         <div class="ee mapCard" style="top: 60%; left: 5%">
           <a href="#eye">
-            <img src="Images/eye.webp" alt="The map image for the character: the eye" />
+            <img
+              src="Images/eye.webp"
+              alt="The map image for the character: the eye" />
           </a>
         </div>
         <div class="px mapCard" style="top: 20%; left: 70%">
           <a href="#phoenix">
-            <img src="Images/phoenix.webp" alt="The map image for the character: the phoenix" />
+            <img
+              src="Images/phoenix.webp"
+              alt="The map image for the character: the phoenix" />
           </a>
         </div>
         <div class="tk mapCard" style="top: 15%; left: 25%">
           <a href="#timekeeper" class="anc">
-            <img src="Images/timekeeper.webp" alt="The map image for the character: the timekeeper" />
+            <img
+              src="Images/timekeeper.webp"
+              alt="The map image for the character: the timekeeper" />
           </a>
         </div>
         <div class="mapCard" style="top: 85%; left: 65%">
-            <img src="Images/monsters.webp" alt="" />
+          <img src="Images/monsters.webp" alt="" />
         </div>
         <div class="mapCard" style="top: 85%; left: 5%">
           <img src="Images/msdragon.webp" alt="" />
-      </div>
-      <div class="mapCard" style="top: 5%; left: 70%">
-        <img src="Images/msflame.webp" alt="" />
-    </div>
-    <div class="mapCard" style="top: 45%; left: 70%">
-      <img src="Images/msice.webp" alt="" />
-  </div>
-  <div class="mapCard" style="top: 10%; left: 10%">
-    <img src="Images/mstime.webp" alt="" />
-</div>
-<div class="mapCard" style="top: 30%; left: 7%">
-  <img src="Images/hand.webp" alt="" />
-</div>
+        </div>
+        <div class="mapCard" style="top: 5%; left: 70%">
+          <img src="Images/msflame.webp" alt="" />
+        </div>
+        <div class="mapCard" style="top: 45%; left: 70%">
+          <img src="Images/msice.webp" alt="" />
+        </div>
+        <div class="mapCard" style="top: 10%; left: 10%">
+          <img src="Images/mstime.webp" alt="" />
+        </div>
+        <div class="mapCard" style="top: 30%; left: 7%">
+          <img src="Images/hand.webp" alt="" />
+        </div>
       </div>
     </header>
     <main>
@@ -77,7 +95,9 @@
           <img src="Images/narrator.webp" alt="This is the narrator." />
         </div>
         <div id="quest">
-          <h1 style="text-align: center;">The Legend tells a tale of Six heroes</h1>
+          <h1 style="text-align: center">
+            The Legend tells a tale of Six heroes
+          </h1>
           <p>
             In a world teetering on the brink of apocalypse, darkness shattered
             the light and unleashed unknown horrors upon humanity. Amidst the
@@ -96,7 +116,7 @@
         </div>
       </section>
       <section id="healer">
-        <div class="hero" onclick="displayInfo(`open`,`healer`)">
+        <div class="hero hrC" onclick="displayInfo(`open`,`healer`)">
           <img src="Images/healer.webp" alt="" />
         </div>
         <div class="herodesc" id="healerDesc">
@@ -121,7 +141,7 @@
         </div>
       </section>
       <section id="titan">
-        <div class="hero" onclick="displayInfo(`open`,`titan`)">
+        <div class="hero tnC" onclick="displayInfo(`open`,`titan`)">
           <img src="Images/titan.webp" alt="This is the hero titan." />
         </div>
         <div class="herodesc" id="titanDesc">
@@ -146,7 +166,7 @@
         </div>
       </section>
       <section id="eye">
-        <div class="hero" class="hero" onclick="displayInfo(`open`,`eye`)">
+        <div class="hero eeC" class="hero" onclick="displayInfo(`open`,`eye`)">
           <img src="Images/eye.webp" alt="The hero named Eye" />
         </div>
         <div class="herodesc" id="eyeDesc">
@@ -171,7 +191,7 @@
         </div>
       </section>
       <section id="phoenix">
-        <div class="hero" onclick="displayInfo(`open`,`phoenix`)">
+        <div class="hero pxC" onclick="displayInfo(`open`,`phoenix`)">
           <img src="Images/phoenix.webp" alt="" />
         </div>
         <div class="herodesc" id="phoenixDesc">
@@ -196,7 +216,7 @@
         </div>
       </section>
       <section id="timekeeper">
-        <div class="hero" onclick="displayInfo(`open`,`timekeeper`)">
+        <div class="hero tkC" onclick="displayInfo(`open`,`timekeeper`)">
           <img src="Images/timekeeper.webp" alt="" />
         </div>
         <div class="herodesc" id="timekeeperDesc">
