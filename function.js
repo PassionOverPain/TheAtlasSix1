@@ -158,28 +158,29 @@ function playFight() {
   let enemies = true;
   let Atlas = true;
   let turn = 1;
-  // while (enemies && Atlas) {
-  if (turn == 0) {
-  } else {
-    let ran = Math.floor(Math.random() * 5);
-    alert(
-      `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
-    );
-    turn = 0;
+  while (enemies && Atlas) {
+    if (turn == 0) {
+      alert("It is YOUR turn");
+    } else {
+      let ran = Math.floor(Math.random() * 5);
+      alert(
+        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
+      );
+      turn = 0;
+    }
+    if (myMonsters[0].health == 0) {
+      alert("You my friend have just won :)");
+    }
   }
-  if (myMonsters[0].health == 0) {
-    alert("You my friend have just won :)");
-  }
-  // }
   ///New User needed
-  let newUser = myHeroes[0];
-  newUser.Hp = 0;
+  let updateHero = myHeroes[0];
+  updateHero = 0;
   fetch("./heroes.json/0", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(newUser),
+    body: JSON.stringify(updateHero),
   })
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
