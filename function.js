@@ -119,6 +119,7 @@ function openScroll(num) {
   document.getElementById("heStats").style.display = `block `;
   if (myHeroes[num].Hp <= 0) {
     document.getElementById("Hp").textContent = `Hp: 0`;
+    document.getElementById("pg").src = "Images/dead.webp";
   } else {
     document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
   }

@@ -8,7 +8,7 @@
     "Intelligence": 150,
     "Strength": 50,
     "Dexterity": 120,
-    "Class": "WIZARD",
+    "Class": "Healer",
     "Attacks": {
       "Name": [
         "Blessing of Vitality",
@@ -34,7 +34,7 @@
     "Intelligence": 90,
     "Strength": 50,
     "Dexterity": 90,
-    "Class": "SOLDIER"
+    "Class": "Titan"
   },
   {
     "Name": " Mthi Armorenia",
@@ -45,7 +45,7 @@
     "Intelligence": 120,
     "Strength": 60,
     "Dexterity": 100,
-    "Class": "SORCERER"
+    "Class": "Eye"
   },
   {
     "Name": "Zanele Miyazaki",
@@ -56,7 +56,7 @@
     "Intelligence": 110,
     "Strength": 70,
     "Dexterity": 100,
-    "Class": "PYROMANCER"
+    "Class": "Phoenix"
   },
   {
     "Name": "Tino Hildaeld",
@@ -67,6 +67,6 @@
     "Intelligence": 120,
     "Strength": 60,
     "Dexterity": 180,
-    "Class": "KNIGHT"
+    "Class": "Timekeeper"
   }
 ]
