@@ -116,6 +116,7 @@ function openScroll(num) {
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
+  document.getElementById("msDescTab").style.display = `none`;
   document.getElementById("heStats").style.display = `block `;
   if (myHeroes[num].Hp <= 0) {
     document.getElementById("Hp").textContent = `Hp: 0`;
@@ -145,6 +146,7 @@ function openScroll(num) {
 function openAttacks(num) {
   document.getElementById("heStats").style.display = `none`;
   document.getElementById("heDesc").style.display = `none`;
+  document.getElementById("msDescTab").style.display = `none`;
   document.getElementById("heAttacks").style.display = `block `;
   document.getElementById(
     "Atk1"
@@ -171,6 +173,42 @@ function openAttacks(num) {
     "Desc4"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
 }
+
+function openMonster(num) {
+  if (!gotMonsters) {
+    getMonsters();
+  }
+  document.getElementById("heDesc").style.display = `none`;
+  document.getElementById("heAttacks").style.display = `none`;
+  document.getElementById("heStats").style.display = `none `;
+  document.getElementById("msDescTab").style.display = `block `;
+
+  document.getElementById(
+    "currentTitle"
+  ).textContent = `${myMonsters[num].Name}`;
+  document.getElementById(
+    "msDesc"
+  ).textContent = `Description: ${myMonsters[num].Desc}`;
+  document.getElementById("msHp").textContent = `hp: ${myMonsters[num].Hp}`;
+  document.getElementById(
+    "msType"
+  ).textContent = `Type: ${myMonsters[num].Type}`;
+  document.getElementById(
+    "msAtk1"
+  ).textContent = `Attack 1: ${myMonsters[num].Attacks.Name[0]}`;
+  document.getElementById(
+    "msAtk2"
+  ).textContent = `Attack 2: ${myMonsters[num].Attacks.Name[1]}`;
+  document.getElementById(
+    "msAtk3"
+  ).textContent = `Attack 3: ${myMonsters[num].Attacks.Name[2]}`;
+  document.getElementById(
+    "msAtk4"
+  ).textContent = `Attack 4: ${myMonsters[num].Attacks.Name[3]}`;
+  document.getElementById(
+    "msAtk5"
+  ).textContent = `Attack 5: ${myMonsters[num].Attacks.Name[4]}`;
+}
 function playFight() {
   getMonsters();
   let enemiesAlive = true;
@@ -192,11 +230,13 @@ function playFight() {
         atlasAlive = false;
       }
     } else {
-      let ran = Math.floor(Math.random() * 5);
+      let ranHero = Math.floor(Math.random() * 5);
+      let ranAtk = Math.floor(Math.random() * 5);
       alert(
-        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
+        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`
       );
-      updateHero.Hp = updateHero.Hp - myMonsters[0].Attacks.Power[ran];
+      myHeroes[ranHero].Hp =
+        myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
       turn = 0;
     }
   }
@@ -208,12 +248,12 @@ function playFight() {
     alert("Jas is dead :(.");
   }
   //}
-  fetch("./heroes.json/0", {
+  fetch("./heroes.json/", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(updateHero),
+    body: JSON.stringify(myHeroes),
   })
     .then((response) => response.json())
     .then((values) => (myHeroes = values));

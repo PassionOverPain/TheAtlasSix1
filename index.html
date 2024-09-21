@@ -286,7 +286,7 @@
               src="Images/timekeeper.webp"
               alt=""
               onclick="openScroll(4)"
-              id="pgTimekeepr" />
+              id="pgTimekeeper" />
             <!-- <div>
               <p>HP:130</p>
               <p>ATK:100</p>
@@ -324,7 +324,7 @@
             </div>
             <div
               id="heAttacks"
-              style="display: none; font-size: 1.5rem; text-align: center">
+              style="display: none; font-size: 1.3rem; text-align: center">
               <p id="Atk1" class="Heal">This is Atk 1</p>
               <p id="Desc1">This is Desc 1</p>
               <p id="Atk2" class="Heal">This is Atk 2</p>
@@ -334,20 +334,19 @@
               <p id="Atk4" class="Attack">This is Atk 4</p>
               <p id="Desc4">This is Desc 4</p>
             </div>
-            <span id="msDesc display:none">
-              <h1 id="msTitle">This is a monster</h1>
-              <div style="font-size: 1.5rem; text-align: center">
-                <p id="msName">The Monster Name</p>
-                <p id="msDesc">Monster Description</p>
-                <p id="msHp">My Monster Hp</p>
-                <p id="msType">Monster Type</p>
-                <p id="msAtk1">This is Atk 1</p>
-                <p id="msAtk2">This is Atk 2</p>
-                <p id="msAtk3">This is Atk 3</p>
-                <p id="msAtk4">This is Atk 4</p>
-                <p id="msAtk5">This is Atk 4</p>
-              </div>
-            </span>
+            <div
+              id="msDescTab"
+              style="font-size: 1.3rem; text-align: center; display: none">
+              <p id="msDesc">Monster Description</p>
+              <p id="msHp">My Monster Hp</p>
+              <p id="msType">Monster Type</p>
+              <h2>Attacks:</h2>
+              <p id="msAtk1">This is Atk 1</p>
+              <p id="msAtk2">This is Atk 2</p>
+              <p id="msAtk3">This is Atk 3</p>
+              <p id="msAtk4">This is Atk 4</p>
+              <p id="msAtk5">This is Atk 4</p>
+            </div>
             <div id="pgBtns" class="btns">
               <button onclick="openScroll(0)">Char Stats</button>
               <button onclick="openAttacks(0)">Attacks</button>
@@ -356,7 +355,7 @@
             </div>
           </div>
         </div>
-        <div id="monsters" class="pgCardCon">
+        <div id="monsters" class="pgCardCon" onclick="openMonster(0)">
           <div class="hero pgCard">
             <img src="Images/msdragon.webp" alt="" />
           </div>

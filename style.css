@@ -362,7 +362,8 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: fit-content;
+  max-height: 90vh;
   font-size: 1.7rem;
   padding: 15px;
 }
