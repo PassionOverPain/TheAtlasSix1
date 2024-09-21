@@ -119,7 +119,8 @@ function openScroll(num) {
   document.getElementById("heStats").style.display = `block `;
   if (myHeroes[num].Hp <= 0) {
     document.getElementById("Hp").textContent = `Hp: 0`;
-    document.getElementById("pg").src = "Images/dead.webp";
+    document.getElementById(`pg${myHeroes[num].Class}`).src =
+      "Images/dead.webp";
   } else {
     document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
   }
@@ -172,21 +173,35 @@ function openAttacks(num) {
 }
 function playFight() {
   getMonsters();
-  let enemies = true;
-  let Atlas = true;
+  let enemiesAlive = true;
+  let atlasAlive = true;
   let turn = 1;
   let updateHero = myHeroes[0];
-  // while (enemies && Atlas) {
-  if (turn == 0) {
-    alert("It is your turn");
-  } else {
-    let ran = Math.floor(Math.random() * 5);
-    alert(
-      `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
-    );
-    updateHero.Hp = updateHero.Hp - myMonsters[0].Attacks.Power[ran];
-    turn = 0;
+  while (enemiesAlive && atlasAlive) {
+    // The fight is going on HERE
+    if (turn == 0) {
+      while (!played) {
+        alert("It is your turn");
+      }
+      if (
+        myHeroes[0].Hp == 0 &&
+        myHeroes[1].Hp == 0 &&
+        myHeroes[2].Hp === 0 &&
+        (myHeroes[3].Hp == myHeroes[4].Hp) == 0
+      ) {
+        atlasAlive = false;
+      }
+    } else {
+      let ran = Math.floor(Math.random() * 5);
+      alert(
+        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
+      );
+      updateHero.Hp = updateHero.Hp - myMonsters[0].Attacks.Power[ran];
+      turn = 0;
+    }
   }
+  //The Fight is done
+
   if (myMonsters[0].Hp == 0) {
     alert("You my friend have just won :)");
   } else if (myHeroes[0].Hp <= 0) {
