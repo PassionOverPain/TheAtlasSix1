@@ -92,18 +92,36 @@ function newMonster() {
   });
   document.getElementById("monsters").appendChild(myMonster);
 }
-fetch("heroes.json").then((response) =>
-  response.json().then((value) => console.log(value))
-);
-function openScroll(num) {
+
+let gotHeroes = false;
+let gotMonsters = false;
+function getHeroes() {
   fetch("./heroes.json")
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
+  gotHeroes = true;
+}
+
+function getMonsters() {
+  fetch("./monsters.json")
+    .then((response) => response.json())
+    .then((values) => (myMonsters = values));
+  gotMonsters = true;
+}
+
+function openScroll(num) {
+  if (!gotHeroes) {
+    getHeroes();
+  }
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
   document.getElementById("heStats").style.display = `block `;
-  document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
+  if (myHeroes[num].Hp <= 0) {
+    document.getElementById("Hp").textContent = `Hp: 0`;
+  } else {
+    document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
+  }
   document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
   document.getElementById(
     "Stamina"
@@ -152,29 +170,28 @@ function openAttacks(num) {
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
 }
 function playFight() {
-  fetch("./monsters.json")
-    .then((response) => response.json())
-    .then((values) => (myMonsters = values));
+  getMonsters();
   let enemies = true;
   let Atlas = true;
   let turn = 1;
-  while (enemies && Atlas) {
-    if (turn == 0) {
-      alert("It is YOUR turn");
-    } else {
-      let ran = Math.floor(Math.random() * 5);
-      alert(
-        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
-      );
-      turn = 0;
-    }
-    if (myMonsters[0].health == 0) {
-      alert("You my friend have just won :)");
-    }
-  }
-  ///New User needed
   let updateHero = myHeroes[0];
-  updateHero = 0;
+  // while (enemies && Atlas) {
+  if (turn == 0) {
+    alert("It is your turn");
+  } else {
+    let ran = Math.floor(Math.random() * 5);
+    alert(
+      `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ran]}. This has dealt ${myMonsters[0].Attacks.Power[ran]}`
+    );
+    updateHero.Hp = updateHero.Hp - myMonsters[0].Attacks.Power[ran];
+    turn = 0;
+  }
+  if (myMonsters[0].Hp == 0) {
+    alert("You my friend have just won :)");
+  } else if (myHeroes[0].Hp <= 0) {
+    alert("Jas is dead :(.");
+  }
+  //}
   fetch("./heroes.json/0", {
     method: "PUT",
     headers: {
