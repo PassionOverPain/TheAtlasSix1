@@ -119,11 +119,13 @@ function openScroll(num) {
   document.getElementById("msDescTab").style.display = `none`;
   document.getElementById("heStats").style.display = `block `;
   if (myHeroes[num].Hp <= 0) {
-    document.getElementById("Hp").textContent = `Hp: 0`;
+    document.getElementById("Hp").textContent = `Hp: 0/${myHeroes[num].maxHp}`;
     document.getElementById(`pg${myHeroes[num].Class}`).src =
       "Images/dead.webp";
   } else {
-    document.getElementById("Hp").textContent = `Hp: ${myHeroes[num].Hp}`;
+    document.getElementById(
+      "Hp"
+    ).textContent = `Hp: ${myHeroes[num].Hp}/${myHeroes[num].maxHp}`;
   }
   document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
   document.getElementById(
@@ -222,66 +224,61 @@ function openMonster(num) {
   ).textContent = `Attack 5: ${myMonsters[num].Attacks.Name[4]}`;
 }
 
+const actBtns = document.querySelectorAll(`.action`);
+actBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("Attack")) {
+      myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
+      alert("You have just attacked");
+    } else if (button.classList.contains("Heal")) {
+      alert("You would like to heal");
+    }
+    playFight();
+  });
+});
 function playFight() {
-  getMonsters();
-  let enemiesAlive = true;
-  let atlasAlive = true;
-  let turn = 0;
-  while (enemiesAlive && atlasAlive) {
-    let aliveHeroes = []; // Recheck if Heroes are alive
-    for (let i = 0; i < 5; ++i) {
-      if (myHeroes[i].Hp > 0) {
-        aliveHeroes.push(i); // If so, make hero number a possible attack point
-      }
-    }
-    // The fight is going on HERE
-    if (turn == 0) {
-      const actBtns = document.querySelectorAll(`.action`);
-      actBtns.forEach((button) => {
-        button.addEventListener("click", () => {
-          if (button.classList.contains("Attack")) {
-            myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
-          } else if (button.classList.contains("Heal")) {
-            alert("You would like to heal");
-          }
-          turn = 1;
-        });
-      });
-      if (
-        myHeroes[0].Hp == 0 &&
-        myHeroes[1].Hp == 0 &&
-        myHeroes[2].Hp === 0 &&
-        (myHeroes[3].Hp == myHeroes[4].Hp) == 0
-      ) {
-        atlasAlive = false;
-        alert("Yall ARE DEAD");
-      }
-    } else {
-      let ranHero = Math.floor(Math.random() * aliveHeroes.length);
-      ranHero = aliveHeroes[ranHero];
-      let ranAtk = Math.floor(Math.random() * 5);
-      alert(
-        `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`
-      );
-      myHeroes[ranHero].Hp =
-        myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
-      turn = 0;
+  let aliveHeroes = []; // Recheck if Heroes are alive
+  for (let i = 0; i < 5; ++i) {
+    if (myHeroes[i].Hp > 0) {
+      aliveHeroes.push(i); // If so, make hero number a possible attack point
     }
   }
-  //The Fight is done
 
-  if (myMonsters[0].Hp == 0) {
-    alert("You my friend have just won :)");
-  } else if (!atlasAlive) {
+  // The fight is going on HERE
+  if (
+    myHeroes[0].Hp == 0 &&
+    myHeroes[1].Hp == 0 &&
+    myHeroes[2].Hp === 0 &&
+    (myHeroes[3].Hp == myHeroes[4].Hp) == 0
+  ) {
+    atlasAlive = false;
+    alert("Yall ARE DEAD");
   }
-  //}
-  fetch("./heroes.json/", {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(myHeroes),
-  })
-    .then((response) => response.json())
-    .then((values) => (myHeroes = values));
+
+  let ranHero = Math.floor(Math.random() * aliveHeroes.length);
+  ranHero = aliveHeroes[ranHero];
+  let ranAtk = Math.floor(Math.random() * 5);
+  alert(
+    `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`
+  );
+  myHeroes[ranHero].Hp =
+    myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
+  turn = 0;
 }
+//The Fight is done
+
+if (myMonsters[0].Hp == 0) {
+  resolve("You my friend have just won :)");
+} else if (!atlasAlive) {
+  resolve("Bo Ho You Lost");
+}
+
+fetch("./heroes.json/", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(myHeroes),
+})
+  .then((response) => response.json())
+  .then((values) => (myHeroes = values));

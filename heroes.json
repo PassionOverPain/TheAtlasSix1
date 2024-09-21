@@ -2,6 +2,7 @@
   {
     "Name": "Jasim Adenka",
     "Hp": 100,
+    "maxHp": 100,
     "Atk": 70,
     "Stamina": 90,
     "Mana": 120,
@@ -28,6 +29,7 @@
   {
     "Name": "Llewellyn Artemis",
     "Hp": 210,
+    "maxHp": 210,
     "Atk": 140,
     "Stamina": 100,
     "Mana": 50,
@@ -39,6 +41,7 @@
   {
     "Name": " Mthi Armorenia",
     "Hp": 110,
+    "maxHp": 110,
     "Atk": 60,
     "Stamina": 100,
     "Mana": 140,
@@ -50,6 +53,7 @@
   {
     "Name": "Zanele Miyazaki",
     "Hp": 110,
+    "maxHp": 110,
     "Atk": 160,
     "Stamina": 90,
     "Mana": 120,
@@ -61,6 +65,7 @@
   {
     "Name": "Tino Hildaeld",
     "Hp": 130,
+    "maxHp": 130,
     "Atk": 100,
     "Stamina": 120,
     "Mana": 70,
