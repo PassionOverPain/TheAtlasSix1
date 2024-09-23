@@ -369,8 +369,6 @@ button:hover {
 }
 #myHealer{
   position: relative;
-  left:1000%;
-  top:230%;
   transition: all 1s;
 }
 .Heal:hover {

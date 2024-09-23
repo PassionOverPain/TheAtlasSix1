@@ -224,6 +224,17 @@ function openMonster(num) {
   ).textContent = `Attack 5: ${myMonsters[num].Attacks.Name[4]}`;
 }
 
+// function action(){
+//   let hero = document.getElementById("myHealer");
+//   let center = document.getElementById("pgCenter");
+//   const xpos = hero.style.left;
+//   const ypos = hero.style.top;
+
+//   hero.style.position = `relative`;
+//   hero.style.left = `50%`;
+//   hero.style.top = `30%`;
+// }
+
 const actBtns = document.querySelectorAll(`.action`);
 actBtns.forEach((button) => {
   button.addEventListener("click", () => {
