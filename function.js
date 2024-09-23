@@ -233,7 +233,9 @@ actBtns.forEach((button) => {
     } else if (button.classList.contains("Heal")) {
       alert("You would like to heal");
     }
-    setTimeout(playFight(),3000);
+    this.setTimeout(() =>{
+      playFight();
+    },3000);
   
   });
 });
