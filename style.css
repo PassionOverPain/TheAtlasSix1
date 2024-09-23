@@ -352,7 +352,7 @@ button:hover {
   row-gap: 15px;
 }
 .story {
-  display: flex;
+  display: none;
   justify-content: center;
   height: fit-content;
   margin-left: 15px;
@@ -366,6 +366,12 @@ button:hover {
   max-height: 90vh;
   font-size: 1.7rem;
   padding: 15px;
+}
+#myHealer{
+  position: relative;
+  left:1000%;
+  top:230%;
+  transition: all 1s;
 }
 .Heal:hover {
   color: darkblue;
