@@ -230,9 +230,10 @@ function openMonster(num) {
 //   const xpos = hero.style.left;
 //   const ypos = hero.style.top;
 
-//   hero.style.position = `relative`;
-//   hero.style.left = `50%`;
-//   hero.style.top = `30%`;
+//   hero.style.position ="absolute";
+//   alert(`${center.style.left}`);
+//   hero.style.left = `${center.style.left}`;
+//   hero.style.top = `${center.style.top}`;
 // }
 
 const actBtns = document.querySelectorAll(`.action`);

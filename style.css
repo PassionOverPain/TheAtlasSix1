@@ -371,6 +371,7 @@ button:hover {
   position: relative;
   transition: all 1s;
 }
+
 .Heal:hover {
   color: darkblue;
 }
