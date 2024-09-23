@@ -367,6 +367,9 @@ button:hover {
   font-size: 1.7rem;
   padding: 15px;
 }
+#pgCenter{
+  font-size: 1.7rem;
+}
 #myHealer{
   position: relative;
   transition: all 1s;
