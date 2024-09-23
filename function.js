@@ -95,6 +95,7 @@ function newMonster() {
 
 let gotHeroes = false;
 let gotMonsters = false;
+let textBubble = document.getElementById("pgCenter");
 function getHeroes() {
   fetch("./heroes.json")
     .then((response) => response.json())
@@ -241,9 +242,9 @@ actBtns.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("Attack")) {
       myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
-      alert("You have just attacked");
+      textBubble.textContent = "You have just attacked";
     } else if (button.classList.contains("Heal")) {
-      alert("You would like to heal");
+      textBubble.textContent = "You have just healed";
     }
     this.setTimeout(() =>{
       playFight();
