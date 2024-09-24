@@ -1,338 +1,338 @@
 /** @format */
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 @font-face {
-  font-family: myFont;
-  src: url(Wigtone.otf);
+	font-family: myFont;
+	src: url(Wigtone.otf);
 }
 #preloader {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100vh;
-  z-index: 10000;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100vh;
+	z-index: 10000;
 }
 #preloader video {
-  width: 100vw;
+	width: 100vw;
 }
 header {
-  height: 100vh;
-  background: url(Images/background.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	height: 100vh;
+	background: url(Images/background.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 #Title {
-  background: url(Images/titlebg.webp);
-  background-size: cover;
-  background-clip: text;
-  color: transparent;
-  word-spacing: 5px;
-  letter-spacing: 5px;
-  position: relative;
-  top: -10%;
-  font-size: 7.2rem;
-  overflow: hidden;
-  animation: fade 2s linear 2s 1 forwards;
-  opacity: 0;
-  transition: 0.5s;
+	background: url(Images/titlebg.webp);
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+	word-spacing: 5px;
+	letter-spacing: 5px;
+	position: relative;
+	top: -10%;
+	font-size: 7.2rem;
+	overflow: hidden;
+	animation: fade 2s linear 2s 1 forwards;
+	opacity: 0;
+	transition: 0.5s;
 }
 @keyframes fade {
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 #playbtn {
-  position: relative;
-  left: 0%;
-  top: -100px;
-  height: 50px;
-  border-radius: 100px;
-  animation: circle 6s linear infinite;
+	position: relative;
+	left: 0%;
+	top: -100px;
+	height: 50px;
+	border-radius: 100px;
+	animation: circle 6s linear infinite;
 }
 @keyframes circle {
-  0% {
-    transform: rotate(0deg) translate(-185px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
-  }
+	0% {
+		transform: rotate(0deg) translate(-185px) rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
+	}
 }
 
 #myMap {
-  position: fixed;
-  top: 5%;
-  left: 85%;
-  height: 10vh;
-  width: 5vw;
-  transition: all 0.5s;
-  cursor: url(Images/hand-s.png), auto;
-  z-index: 1000;
+	position: fixed;
+	top: 5%;
+	left: 85%;
+	height: 10vh;
+	width: 5vw;
+	transition: all 0.5s;
+	cursor: url(Images/hand-s.png), auto;
+	z-index: 1000;
 }
 #myMap img {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 #myMap:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 #thisMap {
-  position: fixed;
-  display: none;
-  height: 90vh;
-  width: 30vw;
-  z-index: 1000;
-  transition: all 0.5s;
-  transition-duration: 500ms;
-  animation: awaken linear 3s 1;
+	position: fixed;
+	display: none;
+	height: 90vh;
+	width: 30vw;
+	z-index: 1000;
+	transition: all 0.5s;
+	transition-duration: 500ms;
+	animation: awaken linear 3s 1;
 }
 #Mapimg {
-  height: 100%;
-  width: 100%;
-  position: relative;
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 .mapCard {
-  position: absolute;
-  height: 10vh;
-  width: 4vw;
-  border: 5px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: round;
-  animation: awaken linear 3s 1;
+	position: absolute;
+	height: 10vh;
+	width: 4vw;
+	border: 5px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	animation: awaken linear 3s 1;
 }
 .mapCard img {
-  cursor: url(Images/hand-s.png), auto;
-  height: 100%;
-  width: 100%;
+	cursor: url(Images/hand-s.png), auto;
+	height: 100%;
+	width: 100%;
 }
 .mapCard:hover {
-  transform: scale(1.3);
+	transform: scale(1.3);
 }
 section {
-  position: relative;
-  display: flex;
-  justify-content: space-around; /*This is the space between char and words*/
-  align-items: center;
-  height: 100vh;
-  transition: all 0.5s;
+	position: relative;
+	display: flex;
+	justify-content: space-around; /*This is the space between char and words*/
+	align-items: center;
+	height: 100vh;
+	transition: all 0.5s;
 }
 body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  height: fit-content;
-  scroll-behavior: smooth;
-  font-family: myFont;
-  min-height: 100vh;
-  cursor: none;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: fit-content;
+	scroll-behavior: smooth;
+	font-family: myFont;
+	min-height: 100vh;
+	cursor: none;
 }
 #About {
-  padding: 50px;
-  height: 100vh;
-  font-size: 1.7rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(Images/dragon.webp);
-  background-position: center;
-  background-size: cover;
+	padding: 50px;
+	height: 100vh;
+	font-size: 1.7rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(Images/dragon.webp);
+	background-position: center;
+	background-size: cover;
 }
 #narrator {
-  position: relative;
-  left: -5%;
-  height: 60vh;
-  width: 20vw;
+	position: relative;
+	left: -5%;
+	height: 60vh;
+	width: 20vw;
 }
 .quest {
-  background-color: transparent;
-  width: fit-content;
-  height: fit-content;
-  border: 40px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: repeat;
+	background-color: transparent;
+	width: fit-content;
+	height: fit-content;
+	border: 40px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: repeat;
 }
 #About p {
-  padding: 10px;
+	padding: 10px;
 }
 #titan {
-  background: url(Images/titanbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url(Images/titanbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #healer {
-  background: url(Images/healerbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url(Images/healerbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #timekeeper {
-  background: url(Images/timekeeperbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url(Images/timekeeperbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #eye {
-  background: url(Images/eyebg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url(Images/eyebg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #phoenix {
-  background: url(Images/phoenixbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: url(Images/phoenixbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .hero {
-  position: relative;
-  left: 5%;
-  height: 60vh;
-  width: 0vw;
-  cursor: url(Images/hand-s.png), auto;
-  border: 40px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: round;
-  transition: all 1s;
-  transition-duration: 500ms;
-  animation: awaken linear 3s 1;
-  animation-delay: 3s;
-  opacity: 0;
+	position: relative;
+	left: 5%;
+	height: 60vh;
+	width: 0vw;
+	cursor: url(Images/hand-s.png), auto;
+	border: 40px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	transition: all 1s;
+	transition-duration: 500ms;
+	animation: awaken linear 3s 1;
+	animation-delay: 3s;
+	opacity: 0;
 }
 .hero:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 .show {
-  opacity: 1;
-  width: 25vw;
+	opacity: 1;
+	width: 25vw;
 }
 
 .hero img {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 .herodesc {
-  position: relative;
-  display: none;
-  max-width: 60vw;
-  min-height: 60vh;
-  height: fit-content;
-  border: 40px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: round;
-  overflow: hidden;
+	position: relative;
+	display: none;
+	max-width: 60vw;
+	min-height: 60vh;
+	height: fit-content;
+	border: 40px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	overflow: hidden;
 }
 .heDesc {
-  background: url(Images/paperbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+	background: url(Images/paperbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 .awakes {
-  animation: awaken linear 3s 1 running;
+	animation: awaken linear 3s 1 running;
 }
 .sleeps {
-  animation: slumber linear 3s 1 running;
+	animation: slumber linear 3s 1 running;
 }
 @keyframes awaken {
-  0% {
-    max-width: 1vw;
-  }
-  100% {
-    max-width: 60vw;
-  }
+	0% {
+		max-width: 1vw;
+	}
+	100% {
+		max-width: 60vw;
+	}
 }
 @keyframes slumber {
-  0% {
-    max-width: 60vw;
-  }
-  100% {
-    max-width: 1vw;
-  }
+	0% {
+		max-width: 60vw;
+	}
+	100% {
+		max-width: 1vw;
+	}
 }
 .herodesc p {
-  font-size: 1.7rem;
-  text-align: center;
-  padding-bottom: 10px;
+	font-size: 1.7rem;
+	text-align: center;
+	padding-bottom: 10px;
 }
 .inactive {
-  display: none;
+	display: none;
 }
 .active {
-  display: block;
+	display: block;
 }
 .btns {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: transparent;
-  padding-bottom: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: transparent;
+	padding-bottom: 10px;
 }
 button {
-  font-size: 1.5rem;
-  position: relative;
-  font-family: myFont;
-  cursor: url(Images/hand-s.png), auto;
-  background: url(Images/dragon.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 70px;
-  width: fit-content;
-  height: fit-content;
-  margin: 10px;
-  transition: all 0.5s;
-  border-width: 5px;
-  border-image-source: url(Images/frame1.png);
-  border-image-repeat: round;
-  border-image-slice: 70;
+	font-size: 1.5rem;
+	position: relative;
+	font-family: myFont;
+	cursor: url(Images/hand-s.png), auto;
+	background: url(Images/dragon.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 70px;
+	width: fit-content;
+	height: fit-content;
+	margin: 10px;
+	transition: all 0.5s;
+	border-width: 5px;
+	border-image-source: url(Images/frame1.png);
+	border-image-repeat: round;
+	border-image-slice: 70;
 }
 button:hover {
-  background-color: goldenrod;
-  transform: scale(1.2);
+	background-color: goldenrod;
+	transform: scale(1.2);
 }
 #playground {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background: url(Images/background.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  position: relative;
-  justify-content: space-between; /*This is the space between char and words*/
-  align-items: center;
-  transition: all 0.5s;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background: url(Images/background.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	position: relative;
+	justify-content: space-between; /*This is the space between char and words*/
+	align-items: center;
+	transition: all 0.5s;
 }
 .pgCard {
-  display: inline-block;
-  border: 5px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: round;
-  opacity: 1;
-  height: 15vh;
-  width: 5vw;
-  margin-top: 10px;
-  /* animation: centerCard 3s linear infinite; */
+	display: inline-block;
+	border: 5px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	opacity: 1;
+	height: 15vh;
+	width: 5vw;
+	margin-top: 10px;
+	/* animation: centerCard 3s linear infinite; */
 }
 /* @keyframes centerCard {
   50% {
@@ -342,57 +342,64 @@ button:hover {
   }
 } */
 .pgCardCon {
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: fit-content;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 15px;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: fit-content;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	row-gap: 15px;
 }
 .story {
-  display: none;
-  justify-content: center;
-  height: fit-content;
-  margin-left: 15px;
+	display: none;
+	justify-content: center;
+	height: fit-content;
+	margin-left: 15px;
 }
 #story {
-  background: url(Images/paperbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: fit-content;
-  max-height: 90vh;
-  font-size: 1.7rem;
-  padding: 15px;
+	background: url(Images/paperbg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: fit-content;
+	max-height: 90vh;
+	font-size: 1.7rem;
+	padding: 15px;
 }
-#pgCenter{
-  font-size: 1.7rem;
+#pgCenter {
+	font-size: 1.7rem;
 }
-#myHealer{
-  position: relative;
-  transition: all 1s;
+#myHealer {
+	position: relative;
+	transition: all 1s;
 }
 
 .Heal:hover {
-  color: darkblue;
+	color: darkblue;
 }
 .Attack:hover {
-  color: red;
+	color: red;
 }
 #pgBtns {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+#actions {
+	position: absolute;
+	top: 75%;
+	width: 60vw;
+	height: 20vh;
+	background-color: brown;
 }
 #monsters {
-  opacity: 1;
-  position: relative;
-  top: 0%;
-  left: 0%;
+	opacity: 1;
+	position: relative;
+	top: 0%;
+	left: 0%;
 }
 #monsters img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
