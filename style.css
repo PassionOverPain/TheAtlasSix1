@@ -382,6 +382,12 @@ button:hover {
   background-color: red;
 }
 .action {
+  cursor: url(Images/hand-s.png), auto;
+  display: inline-block;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
   height: 80%;
   width: 8%;
   background-color: blue;
