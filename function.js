@@ -283,12 +283,11 @@ actBtns.forEach((button) => {
     this.setTimeout(() => {
       playFight();
     }, 5000);
-    played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?.
+    played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
   });
 });
 
 const cardDead = new CustomEvent("deadCard", {
-  detail: { dead: "Images/dead.webp" },
   bubbles: true,
   cancelable: true,
   composed: false,
@@ -296,9 +295,13 @@ const cardDead = new CustomEvent("deadCard", {
 
 const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
 pgCards.forEach((Card) => {
-  Card.addEventListener("deadCard", () => {});
-  Card.dispatchEvent(cardDead);
+  Card.addEventListener("deadCard", () => {
+    Card.innerHTML = `<img src="Images/dead.webp" alt="The character is dead"/>`;
+  });
 });
+if (NumbermyMonsters[0].Hp == 0) {
+  document.getElementById("monsters").dispatchEvent(cardDead);
+}
 
 function playFight() {
   let aliveHeroes = []; // Recheck if Heroes are alive

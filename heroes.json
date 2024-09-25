@@ -23,7 +23,7 @@
         "Releases a burst of healing energy that restores HP to all allies within range.",
         "Basic attack"
       ],
-      "Power": [45, 50, 30, 70]
+      "Power": [45, 50, 30, 500]
     }
   },
   {
