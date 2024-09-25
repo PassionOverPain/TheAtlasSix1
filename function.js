@@ -283,7 +283,11 @@ actBtns.forEach((button) => {
   });
 });
 
-const myEvent = new Event("dead");
+const myEvent = new Event("dead", {
+  bubbles: true,
+  cancelable: true,
+  composed: false,
+});
 
 const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
 pgCards.forEach((Card) => {
