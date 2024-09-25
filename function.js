@@ -257,31 +257,35 @@ function openMonster(num) {
 //   hero.style.top = `${center.style.top}`;
 // }
 
+let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
-actBtns.forEach((button) => {
-  button.addEventListener("click", () => {
-    if (button.classList.contains("Attack")) {
-      myMonsters[0].Hp =
-        myMonsters[0].Hp -
-        myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
-      textBubble.textContent = `${myHeroes[num].Name} performed ${
-        myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
-      } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+if (!played) {
+  actBtns.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.classList.contains("Attack")) {
+        myMonsters[0].Hp =
+          myMonsters[0].Hp -
+          myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
+        textBubble.textContent = `${myHeroes[num].Name} performed ${
+          myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
+        } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 
-      // const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
-      // enemies.forEach((enemy) => {
-      //   enemy.addEventListener("click", () => {
-      //     alert("Please Select An Enemy to attack");
-      //   });
-      // });
-    } else if (button.classList.contains("Heal")) {
-      textBubble.textContent = "You have just healed";
-    }
-    this.setTimeout(() => {
-      playFight();
-    }, 5000);
+        // const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
+        // enemies.forEach((enemy) => {
+        //   enemy.addEventListener("click", () => {
+        //     alert("Please Select An Enemy to attack");
+        //   });
+        // });
+      } else if (button.classList.contains("Heal")) {
+        textBubble.textContent = "You have just healed";
+      }
+      this.setTimeout(() => {
+        playFight();
+      }, 5000);
+      played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)...
+    });
   });
-});
+}
 
 const cardDead = new CustomEvent("deadCard", {
   detail: { dead: "Images/dead.webp" },
@@ -321,7 +325,7 @@ function playFight() {
   textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
   myHeroes[ranHero].Hp =
     myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
-  turn = 0;
+  played = false;
 }
 //The Fight is done
 
