@@ -164,9 +164,7 @@ function openAttacks() {
   document.getElementById(
     "Atk1"
   ).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
-  document.getElementById(
-    "Action1"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[0]}`;
+
   document.getElementById(
     "Desc1"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
@@ -174,9 +172,7 @@ function openAttacks() {
   document.getElementById(
     "Atk2"
   ).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
-  document.getElementById(
-    "Action2"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[1]}`;
+
   document.getElementById(
     "Desc2"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
@@ -184,9 +180,7 @@ function openAttacks() {
   document.getElementById(
     "Atk3"
   ).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
-  document.getElementById(
-    "Action3"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[2]}`;
+
   document.getElementById(
     "Desc3"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
@@ -194,9 +188,7 @@ function openAttacks() {
   document.getElementById(
     "Atk4"
   ).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
-  document.getElementById(
-    "Action4"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[3]}`;
+
   document.getElementById(
     "Desc4"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
@@ -273,8 +265,12 @@ const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("Attack")) {
-      myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
-      textBubble.textContent = `You have just attacked. ${myMonsters[0].Name} has ${myMonsters[0].Hp} now`;
+      myMonsters[0].Hp =
+        myMonsters[0].Hp -
+        myHeroes[num].Attacks.Power[Number(button.dataset.atkNum)];
+      textBubble.textContent = `${myHeroes[num].Name} performed ${
+        myHeroes[num].Attacks.Name[Number(button.dataset.atkNum)]
+      } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
     } else if (button.classList.contains("Heal")) {
       textBubble.textContent = "You have just healed";
     }
