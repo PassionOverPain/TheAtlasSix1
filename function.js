@@ -36,6 +36,8 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
   // Lazy Loading :) //
   this.window.removeEventListener("load", load, false);
+  getHeroes();
+  getMonsters();
   this.setTimeout(function () {
     loader.style.display = "none";
     this.document.body.style.cursor = "url(Images/swordcursor1.png), auto";
@@ -109,15 +111,16 @@ function getMonsters() {
     .then((values) => (myMonsters = values));
   gotMonsters = true;
 }
-
-function openScroll(num) {
+let num = 0;
+function openScroll(charNum) {
+  num = charNum;
   if (!gotHeroes) {
     getHeroes();
   }
   if (!gotMonsters) {
     getMonsters();
   }
-  openAttacks(num);
+  openAttacks();
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
