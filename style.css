@@ -351,11 +351,12 @@ button:hover {
 	grid-template-columns: auto;
 	row-gap: 15px;
 }
-.story {
+#storyTeller {
 	display: none;
 	justify-content: center;
 	height: fit-content;
 	margin-left: 15px;
+	overflow: hidden;
 }
 #story {
 	background: url(Images/paperbg.webp);
@@ -368,7 +369,36 @@ button:hover {
 	padding: 15px;
 }
 #pgCenter {
-	font-size: 1.7rem;
+	font-size: 2.7rem;
+}
+#actions {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: absolute;
+	top: 75%;
+	left: 20%;
+	height: 15vh;
+	width: 60vw;
+	background-color: red;
+}
+.action {
+	cursor: url(Images/hand-s.png), auto;
+	display: inline-block;
+	border: 5px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	height: 80%;
+	width: 8%;
+	transition: all 0.5s;
+}
+.action img {
+	height: 100%;
+	width: 100%;
+}
+.action:hover {
+	transform: scale(1.2);
 }
 #myHealer {
 	position: relative;

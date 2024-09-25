@@ -36,6 +36,8 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
   // Lazy Loading :) //
   this.window.removeEventListener("load", load, false);
+  getHeroes();
+  getMonsters();
   this.setTimeout(function () {
     loader.style.display = "none";
     this.document.body.style.cursor = "url(Images/swordcursor1.png), auto";
@@ -109,11 +111,18 @@ function getMonsters() {
     .then((values) => (myMonsters = values));
   gotMonsters = true;
 }
-
-function openScroll(num) {
+let num = 0;
+function openScroll(charNum) {
+  num = charNum;
   if (!gotHeroes) {
     getHeroes();
   }
+  if (!gotMonsters) {
+    getMonsters();
+  }
+  openAttacks();
+  document.getElementById("storyTeller").style.display = "block";
+  document.getElementById("pgCenter").style.display = "none";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
@@ -128,6 +137,7 @@ function openScroll(num) {
       "Hp"
     ).textContent = `Hp: ${myHeroes[num].Hp}/${myHeroes[num].maxHp}`;
   }
+
   document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
   document.getElementById(
     "Stamina"
@@ -146,7 +156,7 @@ function openScroll(num) {
     "Class"
   ).textContent = `Class: ${myHeroes[num].Class}`;
 }
-function openAttacks(num) {
+function openAttacks() {
   document.getElementById("heStats").style.display = `none`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("msDescTab").style.display = `none`;
@@ -154,45 +164,55 @@ function openAttacks(num) {
   document.getElementById(
     "Atk1"
   ).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
-  document.getElementById(
-    "Atk1"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[0]}`;
+
   document.getElementById(
     "Desc1"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+
   document.getElementById(
     "Atk2"
   ).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
-  document.getElementById(
-    "Atk2"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[1]}`;
+
   document.getElementById(
     "Desc2"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
+
   document.getElementById(
     "Atk3"
   ).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
-  document.getElementById(
-    "Atk3"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[2]}`;
+
   document.getElementById(
     "Desc3"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
+
   document.getElementById(
     "Atk4"
   ).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
-  document.getElementById(
-    "Atk4"
-  ).dataset.power = `${myHeroes[num].Attacks.Power[3]}`;
+
   document.getElementById(
     "Desc4"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
 }
 
+function openScroll2() {
+  openScroll(num);
+}
+
+function closeScroll() {
+  document.getElementById(`storyTeller`).style.display = "none";
+  document.getElementById("pgCenter").style.display = "block";
+}
+
 function openMonster(num) {
+  if (!gotHeroes) {
+    getHeroes();
+  }
   if (!gotMonsters) {
     getMonsters();
   }
+
+  document.getElementById("storyTeller").style.display = "block";
+  document.getElementById("pgCenter").style.display = "none";
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
   document.getElementById("heStats").style.display = `none `;
@@ -237,21 +257,52 @@ function openMonster(num) {
 //   hero.style.top = `${center.style.top}`;
 // }
 
-const actBtns = document.querySelectorAll(`.action`);
+let played = false;
+const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
   button.addEventListener("click", () => {
-    if (button.classList.contains("Attack")) {
-      myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
-      textBubble.textContent = "You have just attacked";
-    } else if (button.classList.contains("Heal")) {
-      textBubble.textContent = "You have just healed";
+    if (!played) {
+      if (button.classList.contains("Attack")) {
+        myMonsters[0].Hp =
+          myMonsters[0].Hp -
+          myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
+        textBubble.textContent = `${myHeroes[num].Name} performed ${
+          myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
+        } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+
+        // const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
+        // enemies.forEach((enemy) => {
+        //   enemy.addEventListener("click", () => {
+        //     alert("Please Select An Enemy to attack");
+        //   });
+        // });
+      } else if (button.classList.contains("Heal")) {
+        textBubble.textContent = "You have just healed";
+      }
     }
-    this.setTimeout(() =>{
+    this.setTimeout(() => {
       playFight();
-    },3000);
-  
+    }, 5000);
+    played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
   });
 });
+
+const cardDead = new CustomEvent("deadCard", {
+  bubbles: true,
+  cancelable: true,
+  composed: false,
+});
+
+const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
+pgCards.forEach((Card) => {
+  Card.addEventListener("deadCard", () => {
+    Card.innerHTML = `<img src="Images/dead.webp" alt="The character is dead"/>`;
+  });
+});
+if (NumbermyMonsters[0].Hp == 0) {
+  document.getElementById("monsters").dispatchEvent(cardDead);
+}
+
 function playFight() {
   let aliveHeroes = []; // Recheck if Heroes are alive
   for (let i = 0; i < 5; ++i) {
@@ -274,12 +325,10 @@ function playFight() {
   let ranHero = Math.floor(Math.random() * aliveHeroes.length);
   ranHero = aliveHeroes[ranHero];
   let ranAtk = Math.floor(Math.random() * 5);
-  alert(
-    `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`
-  );
+  textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
   myHeroes[ranHero].Hp =
     myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
-  turn = 0;
+  played = false;
 }
 //The Fight is done
 

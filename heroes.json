@@ -23,7 +23,7 @@
         "Releases a burst of healing energy that restores HP to all allies within range.",
         "Basic attack"
       ],
-      "Power": [45, 50, 30, 70]
+      "Power": [45, 50, 30, 500]
     }
   },
   {
@@ -36,7 +36,17 @@
     "Intelligence": 90,
     "Strength": 50,
     "Dexterity": 90,
-    "Class": "Titan"
+    "Class": "Titan",
+    "Attacks": {
+      "Name": ["Rock Flesh", "Hardened Hand", "Stone Wake", "Crimson Terror"],
+      "Desc": [
+        "Increases a target's maximum HP temporarily.",
+        "Restores a moderate amount of HP to a single ally.",
+        "Releases a burst of healing energy that restores HP to all allies within range.",
+        "Basic attack"
+      ],
+      "Power": [45, 50, 30, 70]
+    }
   },
   {
     "Name": " Mthi Armorenia",
