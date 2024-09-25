@@ -199,12 +199,8 @@ function openScroll2() {
 }
 
 function closeScroll() {
-  document.getElementById(`storyTeller`).classList.remove("awakes");
-  document.getElementById(`storyTeller`).classList.add("sleeps");
-  setTimeout(function () {
-    document.getElementById(`storyTeller`).style.display = "none";
-    document.getElementById("pgCenter").style.display = "block";
-  }, 3000);
+  document.getElementById(`storyTeller`).style.display = "none";
+  document.getElementById("pgCenter").style.display = "block";
 }
 
 function openMonster(num) {
@@ -267,16 +263,23 @@ actBtns.forEach((button) => {
     if (button.classList.contains("Attack")) {
       myMonsters[0].Hp =
         myMonsters[0].Hp -
-        myHeroes[num].Attacks.Power[Number(button.dataset.atkNum)];
+        myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
       textBubble.textContent = `${myHeroes[num].Name} performed ${
-        myHeroes[num].Attacks.Name[Number(button.dataset.atkNum)]
+        myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
       } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+
+      const enemies = document.querySelectorAll(`.enemy`); //Enemy cards
+      enemies.forEach((enemy) => {
+        enemy.addEventListener("click", () => {
+          alert("Please Select An Enemy to attack");
+        });
+      });
     } else if (button.classList.contains("Heal")) {
       textBubble.textContent = "You have just healed";
     }
     this.setTimeout(() => {
       playFight();
-    }, 3000);
+    }, 5000);
   });
 });
 function playFight() {
