@@ -372,7 +372,7 @@ button:hover {
 }
 #actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: absolute;
   top: 75%;
@@ -383,8 +383,15 @@ button:hover {
 }
 .action {
   height: 80%;
-  width: 10%;
+  width: 8%;
   background-color: blue;
+}
+.action img {
+  height: 100%;
+  width: 100%;
+}
+.action:hover {
+  transform: scale(1.2);
 }
 #myHealer {
   position: relative;
