@@ -268,12 +268,12 @@ actBtns.forEach((button) => {
         myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
       } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 
-      const enemies = document.querySelectorAll(`.enemy`); //Enemy cards
-      enemies.forEach((enemy) => {
-        enemy.addEventListener("click", () => {
-          alert("Please Select An Enemy to attack");
-        });
-      });
+      // const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
+      // enemies.forEach((enemy) => {
+      //   enemy.addEventListener("click", () => {
+      //     alert("Please Select An Enemy to attack");
+      //   });
+      // });
     } else if (button.classList.contains("Heal")) {
       textBubble.textContent = "You have just healed";
     }
@@ -282,6 +282,14 @@ actBtns.forEach((button) => {
     }, 5000);
   });
 });
+
+const myEvent = new Event("dead");
+
+const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
+pgCards.forEach((Card) => {
+  Card.addEventListener("dead", () => {});
+});
+
 function playFight() {
   let aliveHeroes = []; // Recheck if Heroes are alive
   for (let i = 0; i < 5; ++i) {
@@ -304,7 +312,7 @@ function playFight() {
   let ranHero = Math.floor(Math.random() * aliveHeroes.length);
   ranHero = aliveHeroes[ranHero];
   let ranAtk = Math.floor(Math.random() * 5);
-  textBubble.textContent = `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`;
+  textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
   myHeroes[ranHero].Hp =
     myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
   turn = 0;
