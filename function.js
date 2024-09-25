@@ -168,12 +168,20 @@ function openAttacks() {
 	).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
 
 	document.getElementById(
+		"Action1Img"
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+
+	document.getElementById(
 		"Desc1"
 	).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
 
 	document.getElementById(
 		"Atk2"
 	).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
+
+	document.getElementById(
+		"Action2Img"
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
 
 	document.getElementById(
 		"Desc2"
@@ -184,12 +192,20 @@ function openAttacks() {
 	).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
 
 	document.getElementById(
+		"Action3Img"
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+
+	document.getElementById(
 		"Desc3"
 	).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
 
 	document.getElementById(
 		"Atk4"
 	).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
+
+	document.getElementById(
+		"Action4Img"
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
 
 	document.getElementById(
 		"Desc4"
