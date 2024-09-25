@@ -285,22 +285,22 @@ actBtns.forEach((button) => {
 		this.setTimeout(() => {
 			playFight();
 		}, 5000);
-		played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
+		/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 	});
 });
 
-const cardDead = new CustomEvent("deadCard", {
-	bubbles: true,
-	cancelable: true,
-	composed: false,
-});
+// const cardDead = new CustomEvent("deadCard", {
+// 	bubbles: true,
+// 	cancelable: true,
+// 	composed: false,
+// });
 
-const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
-pgCards.forEach((Card) => {
-	Card.addEventListener("deadCard", () => {
-		Card.innerHTML = `<img src="Images/dead.webp" alt="The character is dead"/>`;
-	});
-});
+// const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
+// pgCards.forEach((Card) => {
+// 	Card.addEventListener("deadCard", () => {
+// 		Card.innerHTML = `<img src="Images/dead.webp" alt="The character is dead"/>`;
+// 	});
+// });
 function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
 	for (let i = 0; i < 5; ++i) {
