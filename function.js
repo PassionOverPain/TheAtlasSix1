@@ -284,7 +284,7 @@ actBtns.forEach((button) => {
 		}
 		this.setTimeout(() => {
 			playFight();
-		}, 5000);
+		}, 4000);
 		/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 	});
 });
@@ -303,6 +303,14 @@ actBtns.forEach((button) => {
 // });
 function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
+	if (myMonsters[0].Hp <= 0) {
+		document.getElementById("monsters").innerHTML = `<div class="hero pgCard">
+						<img
+							src="Images/dead.webp"
+							alt="" />
+					</div>`;
+		textBubble.textContent = `Victory Achieved`;
+	}
 	for (let i = 0; i < 5; ++i) {
 		if (myHeroes[i].Hp > 0) {
 			aliveHeroes.push(i); // If so, make hero number a possible attack point
@@ -316,8 +324,7 @@ function playFight() {
 		myHeroes[2].Hp === 0 &&
 		(myHeroes[3].Hp == myHeroes[4].Hp) == 0
 	) {
-		atlasAlive = false;
-		alert("Yall ARE DEAD");
+		textBubble.textContent = `The Atlas Six Party has deid.`;
 	}
 
 	let ranHero = Math.floor(Math.random() * aliveHeroes.length);
@@ -329,12 +336,6 @@ function playFight() {
 	played = false;
 
 	//The Fight is done
-
-	if (myMonsters[0].Hp <= 0) {
-		alert("You my friend have just won :)");
-	} else if (!atlasAlive) {
-		alert("Bo Ho You Lost");
-	}
 
 	fetch("./heroes.json/", {
 		method: "PUT",

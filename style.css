@@ -352,6 +352,7 @@ button:hover {
 	row-gap: 15px;
 }
 #storyTeller {
+	z-index: 1;
 	display: none;
 	justify-content: center;
 	height: fit-content;
@@ -417,6 +418,7 @@ button:hover {
 	justify-content: center;
 }
 #actions {
+	z-index: 0;
 	position: absolute;
 	top: 75%;
 	width: 60vw;
