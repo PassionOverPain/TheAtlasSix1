@@ -372,7 +372,7 @@
 						<img
 							src="Images/healer.webp"
 							alt="The healer playground card"
-							onclick="action()"
+							onclick="openScroll(10)"
 							id="pgHealer" />
 					</div>
 					<div class="hero pgCard">
@@ -412,7 +412,9 @@
             </div> -->
 					</div>
 				</div>
-				<div class="quest story">
+				<div
+					class="quest story"
+					id="storyTeller">
 					<div id="story">
 						<h1
 							style="text-align: center"
@@ -447,28 +449,28 @@
 							style="display: none; font-size: 1.3rem; text-align: center">
 							<p
 								id="Atk1"
-								class="action Heal"
+								class="Heal"
 								data-power="">
 								This is Atk 1
 							</p>
 							<p id="Desc1">This is Desc 1</p>
 							<p
 								id="Atk2"
-								class="action Heal"
+								class="Heal"
 								data-power="">
 								This is Atk 2
 							</p>
 							<p id="Desc2">This is Desc 2</p>
 							<p
 								id="Atk3"
-								class="action Heal"
+								class="Heal"
 								data-power="">
 								This is Atk 3
 							</p>
 							<p id="Desc3">This is Desc 3</p>
 							<p
 								id="Atk4"
-								class="action Attack"
+								class="Attack"
 								data-power="">
 								This is Atk 4
 							</p>
@@ -500,7 +502,40 @@
 				<div id="pgCenter">
 					Tino the leader of the dragons just summoned a Kinlin at 5mp per
 					attack.
-					<div id="actions"></div>
+					<div id="actions">
+						<div
+							id="Action1"
+							class="action Heal"
+							data-atknum="0">
+							<img
+								src="Images/Assets/Blessing of Vitality.webp"
+								alt="Blessing of vitality skill" />
+						</div>
+						<div
+							id="Action2"
+							class="action Heal"
+							data-atknum="1">
+							<img
+								src="Images/Assets/Healing Light.webp"
+								alt="Healing Light skill" />
+						</div>
+						<div
+							id="Action3"
+							class="action Heal"
+							data-atknum="2">
+							<img
+								src="Images/Assets/Holy Nova.webp"
+								alt="Holy Nova skill" />
+						</div>
+						<div
+							id="Action4"
+							class="action Attack"
+							data-atknum="3">
+							<img
+								src="Images/Assets/Sacred Claws.webp"
+								alt="Sacred Claws skill" />
+						</div>
+					</div>
 				</div>
 				<!-- This my friend is a placeholder :) -->
 				<div
