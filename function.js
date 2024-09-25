@@ -310,40 +310,41 @@ function playFight() {
 							alt="" />
 					</div>`;
 		textBubble.textContent = `Victory Achieved`;
-	}
-	for (let i = 0; i < 5; ++i) {
-		if (myHeroes[i].Hp > 0) {
-			aliveHeroes.push(i); // If so, make hero number a possible attack point
+	} else {
+		for (let i = 0; i < 5; ++i) {
+			if (myHeroes[i].Hp > 0) {
+				aliveHeroes.push(i); // If so, make hero number a possible attack point
+			}
 		}
+
+		// The fight is going on HERE
+		if (
+			myHeroes[0].Hp == 0 &&
+			myHeroes[1].Hp == 0 &&
+			myHeroes[2].Hp === 0 &&
+			(myHeroes[3].Hp == myHeroes[4].Hp) == 0
+		) {
+			textBubble.textContent = `The Atlas Six Party has deid.`;
+		}
+
+		let ranHero = Math.floor(Math.random() * aliveHeroes.length);
+		ranHero = aliveHeroes[ranHero];
+		let ranAtk = Math.floor(Math.random() * 5);
+		textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
+		myHeroes[ranHero].Hp =
+			myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
+		played = false;
+
+		//The Fight is done
+
+		fetch("./heroes.json/", {
+			method: "PUT",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(myHeroes),
+		})
+			.then((response) => response.json())
+			.then((values) => (myHeroes = values));
 	}
-
-	// The fight is going on HERE
-	if (
-		myHeroes[0].Hp == 0 &&
-		myHeroes[1].Hp == 0 &&
-		myHeroes[2].Hp === 0 &&
-		(myHeroes[3].Hp == myHeroes[4].Hp) == 0
-	) {
-		textBubble.textContent = `The Atlas Six Party has deid.`;
-	}
-
-	let ranHero = Math.floor(Math.random() * aliveHeroes.length);
-	ranHero = aliveHeroes[ranHero];
-	let ranAtk = Math.floor(Math.random() * 5);
-	textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
-	myHeroes[ranHero].Hp =
-		myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
-	played = false;
-
-	//The Fight is done
-
-	fetch("./heroes.json/", {
-		method: "PUT",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify(myHeroes),
-	})
-		.then((response) => response.json())
-		.then((values) => (myHeroes = values));
 }

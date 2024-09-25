@@ -38,14 +38,14 @@
 		"Dexterity": 90,
 		"Class": "Titan",
 		"Attacks": {
-			"Name": ["Rock Flesh", "Hardened Hand", "Stone Wake", "Crimson Terror"],
+			"Name": ["Ground Slam", "Stone Stance", "Titan Terror", "Warrior Warcry"],
 			"Desc": [
-				"Increases a target's maximum HP temporarily.",
-				"Restores a moderate amount of HP to a single ally.",
-				"Releases a burst of healing energy that restores HP to all allies within range.",
-				"Basic attack"
+				"A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
+				"Send forth a rain of attacks on your foes, each attack doubling damage.",
+				"Reforces the body with stone, increasing damage and armor durability.",
+				"Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
 			],
-			"Power": [45, 50, 30, 70]
+			"Power": [55, 15, 0, 0]
 		}
 	},
 	{
