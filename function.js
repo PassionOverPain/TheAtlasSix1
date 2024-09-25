@@ -327,21 +327,22 @@ function playFight() {
 	myHeroes[ranHero].Hp =
 		myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
 	played = false;
-}
-//The Fight is done
 
-if (myMonsters[0].Hp == 0) {
-	resolve("You my friend have just won :)");
-} else if (!atlasAlive) {
-	resolve("Bo Ho You Lost");
-}
+	//The Fight is done
 
-fetch("./heroes.json/", {
-	method: "PUT",
-	headers: {
-		"Content-Type": "application/json",
-	},
-	body: JSON.stringify(myHeroes),
-})
-	.then((response) => response.json())
-	.then((values) => (myHeroes = values));
+	if (myMonsters[0].Hp <= 0) {
+		alert("You my friend have just won :)");
+	} else if (!atlasAlive) {
+		alert("Bo Ho You Lost");
+	}
+
+	fetch("./heroes.json/", {
+		method: "PUT",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(myHeroes),
+	})
+		.then((response) => response.json())
+		.then((values) => (myHeroes = values));
+}
