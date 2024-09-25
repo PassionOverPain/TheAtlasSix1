@@ -38,7 +38,7 @@
 		"Dexterity": 90,
 		"Class": "Titan",
 		"Attacks": {
-			"Name": ["Ground Slam", "Stone Stance", "Titan Terror", "Warrior Warcry"],
+			"Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
 			"Desc": [
 				"A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
 				"Send forth a rain of attacks on your foes, each attack doubling damage.",
