@@ -181,7 +181,7 @@ function openAttacks() {
 
 	document.getElementById(
 		"Action2Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[1]}.webp`;
 
 	document.getElementById(
 		"Desc2"
@@ -193,7 +193,7 @@ function openAttacks() {
 
 	document.getElementById(
 		"Action3Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[2]}.webp`;
 
 	document.getElementById(
 		"Desc3"
@@ -205,7 +205,7 @@ function openAttacks() {
 
 	document.getElementById(
 		"Action4Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+	).src = `Images/Assets/${myHeroes[num].Attacks.Name[3]}.webp`;
 
 	document.getElementById(
 		"Desc4"
