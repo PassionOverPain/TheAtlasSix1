@@ -390,7 +390,6 @@ button:hover {
   border-image-repeat: round;
   height: 80%;
   width: 8%;
-  background-color: blue;
   transition: all 0.5s;
 }
 .action img {

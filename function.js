@@ -114,6 +114,10 @@ function openScroll(num) {
   if (!gotHeroes) {
     getHeroes();
   }
+  if (!gotMonsters) {
+    getMonsters();
+  }
+  document.getElementsById("storyTeller").style.display = "block";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
@@ -246,10 +250,9 @@ actBtns.forEach((button) => {
     } else if (button.classList.contains("Heal")) {
       textBubble.textContent = "You have just healed";
     }
-    this.setTimeout(() =>{
+    this.setTimeout(() => {
       playFight();
-    },3000);
-  
+    }, 3000);
   });
 });
 function playFight() {
