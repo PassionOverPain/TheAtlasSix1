@@ -117,7 +117,8 @@ function openScroll(num) {
   if (!gotMonsters) {
     getMonsters();
   }
-  document.getElementsById("storyTeller").style.display = "block";
+  document.getElementById("storyTeller").style.display = "block";
+  document.getElementById("pgCenter").style.display = "none";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
@@ -191,6 +192,11 @@ function openAttacks(num) {
   document.getElementById(
     "Desc4"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
+}
+
+function closeScroll() {
+  document.getElementById("storyTeller").style.display = "none";
+  document.getElementById("pgCenter").style.display = "block";
 }
 
 function openMonster(num) {
