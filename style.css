@@ -351,11 +351,12 @@ button:hover {
   grid-template-columns: auto;
   row-gap: 15px;
 }
-.story {
+#storyTeller {
   display: none;
   justify-content: center;
   height: fit-content;
   margin-left: 15px;
+  overflow: hidden;
 }
 #story {
   background: url(Images/paperbg.webp);

@@ -156,7 +156,7 @@ function openScroll(charNum) {
     "Class"
   ).textContent = `Class: ${myHeroes[num].Class}`;
 }
-function openAttacks(num) {
+function openAttacks() {
   document.getElementById("heStats").style.display = `none`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("msDescTab").style.display = `none`;
@@ -202,9 +202,17 @@ function openAttacks(num) {
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
 }
 
+function openScroll2() {
+  openScroll(num);
+}
+
 function closeScroll() {
-  document.getElementById("storyTeller").style.display = "none";
-  document.getElementById("pgCenter").style.display = "block";
+  document.getElementById(`storyTeller`).classList.remove("awakes");
+  document.getElementById(`storyTeller`).classList.add("sleeps");
+  setTimeout(function () {
+    document.getElementById(`storyTeller`).style.display = "none";
+    document.getElementById("pgCenter").style.display = "block";
+  }, 3000);
 }
 
 function openMonster(num) {
