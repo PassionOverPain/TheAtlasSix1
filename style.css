@@ -372,13 +372,19 @@ button:hover {
 }
 #actions {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 75%;
   left: 20%;
   height: 15vh;
   width: 60vw;
   background-color: red;
+}
+.action {
+  height: 80%;
+  width: 10%;
+  background-color: blue;
 }
 #myHealer {
   position: relative;
