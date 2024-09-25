@@ -133,6 +133,7 @@ function openScroll(num) {
       "Hp"
     ).textContent = `Hp: ${myHeroes[num].Hp}/${myHeroes[num].maxHp}`;
   }
+
   document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
   document.getElementById(
     "Stamina"
@@ -160,34 +161,37 @@ function openAttacks(num) {
     "Atk1"
   ).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
   document.getElementById(
-    "Atk1"
+    "Action1"
   ).dataset.power = `${myHeroes[num].Attacks.Power[0]}`;
   document.getElementById(
     "Desc1"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+
   document.getElementById(
     "Atk2"
   ).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
   document.getElementById(
-    "Atk2"
+    "Action2"
   ).dataset.power = `${myHeroes[num].Attacks.Power[1]}`;
   document.getElementById(
     "Desc2"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
+
   document.getElementById(
     "Atk3"
   ).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
   document.getElementById(
-    "Atk3"
+    "Action3"
   ).dataset.power = `${myHeroes[num].Attacks.Power[2]}`;
   document.getElementById(
     "Desc3"
   ).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
+
   document.getElementById(
     "Atk4"
   ).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
   document.getElementById(
-    "Atk4"
+    "Action4"
   ).dataset.power = `${myHeroes[num].Attacks.Power[3]}`;
   document.getElementById(
     "Desc4"
