@@ -259,9 +259,9 @@ function openMonster(num) {
 
 let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
-if (!played) {
-  actBtns.forEach((button) => {
-    button.addEventListener("click", () => {
+actBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!played) {
       if (button.classList.contains("Attack")) {
         myMonsters[0].Hp =
           myMonsters[0].Hp -
@@ -279,13 +279,13 @@ if (!played) {
       } else if (button.classList.contains("Heal")) {
         textBubble.textContent = "You have just healed";
       }
-      this.setTimeout(() => {
-        playFight();
-      }, 5000);
-      played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)...
-    });
+    }
+    this.setTimeout(() => {
+      playFight();
+    }, 5000);
+    played = true; /// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?.
   });
-}
+});
 
 const cardDead = new CustomEvent("deadCard", {
   detail: { dead: "Images/dead.webp" },
