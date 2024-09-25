@@ -117,6 +117,7 @@ function openScroll(num) {
   if (!gotMonsters) {
     getMonsters();
   }
+  openAttacks(num);
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
@@ -204,9 +205,15 @@ function closeScroll() {
 }
 
 function openMonster(num) {
+  if (!gotHeroes) {
+    getHeroes();
+  }
   if (!gotMonsters) {
     getMonsters();
   }
+
+  document.getElementById("storyTeller").style.display = "block";
+  document.getElementById("pgCenter").style.display = "none";
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
   document.getElementById("heStats").style.display = `none `;
@@ -251,12 +258,12 @@ function openMonster(num) {
 //   hero.style.top = `${center.style.top}`;
 // }
 
-const actBtns = document.querySelectorAll(`.action`);
+const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("Attack")) {
       myMonsters[0].Hp = myMonsters[0].Hp - Number(button.dataset.power);
-      textBubble.textContent = "You have just attacked";
+      textBubble.textContent = `You have just attacked. ${myMonsters[0].Name} has ${myMonsters[0].Hp} now`;
     } else if (button.classList.contains("Heal")) {
       textBubble.textContent = "You have just healed";
     }
@@ -287,9 +294,7 @@ function playFight() {
   let ranHero = Math.floor(Math.random() * aliveHeroes.length);
   ranHero = aliveHeroes[ranHero];
   let ranAtk = Math.floor(Math.random() * 5);
-  alert(
-    `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`
-  );
+  textBubble.textContent = `${myMonsters[0].Name} has just performed a ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]}`;
   myHeroes[ranHero].Hp =
     myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
   turn = 0;
