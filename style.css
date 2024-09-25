@@ -367,10 +367,20 @@ button:hover {
   font-size: 1.7rem;
   padding: 15px;
 }
-#pgCenter{
+#pgCenter {
   font-size: 1.7rem;
 }
-#myHealer{
+#actions {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  height: 15vh;
+  width: 60vw;
+  background-color: red;
+}
+#myHealer {
   position: relative;
   transition: all 1s;
 }

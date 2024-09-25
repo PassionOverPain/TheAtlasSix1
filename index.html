@@ -17,7 +17,8 @@
         justify-content: center;
         font-size: 1.7rem;
         color: white;
-      ">
+      "
+    >
       <video src="Images/stolen.mp4" autoplay muted loop></video>
       <span style="position: absolute">...Loading Life...</span>
     </div>
@@ -27,7 +28,8 @@
         <img
           id="playbtn"
           src="Images/earthbutton.webp"
-          alt="A fictional globe." />
+          alt="A fictional globe."
+        />
       </div>
       <div id="myMap" onclick="displayMap()">
         <img src="Images/closedmap.png" alt="The Atlax Six Map" />
@@ -38,35 +40,40 @@
           <a href="#healer" onclick="displayMap()">
             <img
               src="Images/healer.webp"
-              alt="The map image for the character: the healer" />
+              alt="The map image for the character: the healer"
+            />
           </a>
         </div>
         <div class="tn mapCard" style="top: 75%; left: 50%">
           <a href="#titan" onclick="displayMap()">
             <img
               src="Images/titan.webp"
-              alt="The map image for the character: the titan" />
+              alt="The map image for the character: the titan"
+            />
           </a>
         </div>
         <div class="ee mapCard" style="top: 60%; left: 5%">
           <a href="#eye" onclick="displayMap()">
             <img
               src="Images/eye.webp"
-              alt="The map image for the character: the eye" />
+              alt="The map image for the character: the eye"
+            />
           </a>
         </div>
         <div class="px mapCard" style="top: 20%; left: 70%">
           <a href="#phoenix" onclick="displayMap()">
             <img
               src="Images/phoenix.webp"
-              alt="The map image for the character: the phoenix" />
+              alt="The map image for the character: the phoenix"
+            />
           </a>
         </div>
         <div class="tk mapCard" style="top: 15%; left: 25%">
           <a href="#timekeeper" onclick="displayMap()">
             <img
               src="Images/timekeeper.webp"
-              alt="The map image for the character: the timekeeper" />
+              alt="The map image for the character: the timekeeper"
+            />
           </a>
         </div>
         <div class="mapCard" style="top: 85%; left: 65%">
@@ -257,28 +264,32 @@
               src="Images/healer.webp"
               alt="The healer playground card"
               onclick="action()"
-              id="pgHealer" />
+              id="pgHealer"
+            />
           </div>
           <div class="hero pgCard">
             <img
               src="Images/titan.webp"
               alt=""
               onclick="openScroll(1)"
-              id="pgTitan" />
+              id="pgTitan"
+            />
           </div>
           <div class="hero pgCard">
             <img
               src="Images/eye.webp"
               alt=""
               onclick="openScroll(2)"
-              id="pgEye" />
+              id="pgEye"
+            />
           </div>
           <div class="hero pgCard">
             <img
               src="Images/phoenix.webp"
               alt=""
               onclick="openScroll(3)"
-              id="pgPhoenix" />
+              id="pgPhoenix"
+            />
           </div>
 
           <div class="hero pgCard" style="display: flex; color: white">
@@ -286,7 +297,8 @@
               src="Images/timekeeper.webp"
               alt=""
               onclick="openScroll(4)"
-              id="pgTimekeeper" />
+              id="pgTimekeeper"
+            />
             <!-- <div>
               <p>HP:130</p>
               <p>ATK:100</p>
@@ -312,7 +324,8 @@
             </span>
             <div
               id="heStats"
-              style="display: none; font-size: 1.5rem; text-align: center">
+              style="display: none; font-size: 1.5rem; text-align: center"
+            >
               <p id="Hp">Hp:</p>
               <p id="Atk">Atk:</p>
               <p id="Stamina">Stamina:</p>
@@ -324,7 +337,8 @@
             </div>
             <div
               id="heAttacks"
-              style="display: none; font-size: 1.3rem; text-align: center">
+              style="display: none; font-size: 1.3rem; text-align: center"
+            >
               <p id="Atk1" class="action Heal" data-power="">This is Atk 1</p>
               <p id="Desc1">This is Desc 1</p>
               <p id="Atk2" class="action Heal" data-power="">This is Atk 2</p>
@@ -336,7 +350,8 @@
             </div>
             <div
               id="msDescTab"
-              style="font-size: 1.3rem; text-align: center; display: none">
+              style="font-size: 1.3rem; text-align: center; display: none"
+            >
               <p id="msDesc">Monster Description</p>
               <p id="msHp">My Monster Hp</p>
               <p id="msType">Monster Type</p>
@@ -355,8 +370,12 @@
             </div>
           </div>
         </div>
-        <div id="pgCenter"> Tino the leader of the dragons just summoned a Kinlin at 5mp per attack.
-        </div> <!-- This my friend is a placeholder :) -->
+        <div id="pgCenter">
+          Tino the leader of the dragons just summoned a Kinlin at 5mp per
+          attack.
+        </div>
+        <div id="actions"></div>
+        <!-- This my friend is a placeholder :) -->
         <div id="monsters" class="pgCardCon" onclick="openMonster(0)">
           <div class="hero pgCard">
             <img src="Images/msdragon.webp" alt="" />
@@ -366,10 +385,12 @@
     </main>
     <script
       type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="function.js"></script>
   </body>
 </html>
