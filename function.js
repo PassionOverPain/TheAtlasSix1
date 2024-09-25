@@ -283,7 +283,8 @@ actBtns.forEach((button) => {
   });
 });
 
-const myEvent = new Event("dead", {
+const cardDead = new CustomEvent("deadCard", {
+  detail: { dead: "Images/dead.webp" },
   bubbles: true,
   cancelable: true,
   composed: false,
@@ -291,7 +292,8 @@ const myEvent = new Event("dead", {
 
 const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
 pgCards.forEach((Card) => {
-  Card.addEventListener("dead", () => {});
+  Card.addEventListener("deadCard", () => {});
+  Card.dispatchEvent(cardDead);
 });
 
 function playFight() {
