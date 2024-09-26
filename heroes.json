@@ -1,87 +1,97 @@
 [
-	{
-		"Name": "Jasim Adenka",
-		"Hp": 100,
-		"maxHp": 100,
-		"Atk": 70,
-		"Stamina": 90,
-		"Mana": 120,
-		"Intelligence": 150,
-		"Strength": 50,
-		"Dexterity": 120,
-		"Class": "Healer",
-		"Attacks": {
-			"Name": [
-				"Blessing of Vitality",
-				"Healing Light",
-				"Holy Nova",
-				"Sacred Claws"
-			],
-			"Desc": [
-				"Increases a target's maximum HP temporarily.",
-				"Restores a moderate amount of HP to a single ally.",
-				"Releases a burst of healing energy that restores HP to all allies within range.",
-				"Basic attack"
-			],
-			"Power": [45, 50, 30, 70]
-		}
-	},
-	{
-		"Name": "Llewellyn Artemis",
-		"Hp": 210,
-		"maxHp": 210,
-		"Atk": 140,
-		"Stamina": 100,
-		"Mana": 50,
-		"Intelligence": 90,
-		"Strength": 50,
-		"Dexterity": 90,
-		"Class": "Titan",
-		"Attacks": {
-			"Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
-			"Desc": [
-				"A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
-				"Send forth a rain of attacks on your foes, each attack doubling damage.",
-				"Reforces the body with stone, increasing damage and armor durability.",
-				"Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
-			],
-			"Power": [55, 15, 0, 0]
-		}
-	},
-	{
-		"Name": " Mthi Armorenia",
-		"Hp": 110,
-		"maxHp": 110,
-		"Atk": 60,
-		"Stamina": 100,
-		"Mana": 140,
-		"Intelligence": 120,
-		"Strength": 60,
-		"Dexterity": 100,
-		"Class": "Eye"
-	},
-	{
-		"Name": "Zanele Miyazaki",
-		"Hp": 110,
-		"maxHp": 110,
-		"Atk": 160,
-		"Stamina": 90,
-		"Mana": 120,
-		"Intelligence": 110,
-		"Strength": 70,
-		"Dexterity": 100,
-		"Class": "Phoenix"
-	},
-	{
-		"Name": "Tino Hildaeld",
-		"Hp": 130,
-		"maxHp": 130,
-		"Atk": 100,
-		"Stamina": 120,
-		"Mana": 70,
-		"Intelligence": 120,
-		"Strength": 60,
-		"Dexterity": 180,
-		"Class": "Timekeeper"
-	}
+  {
+    "Name": "Jasim Adenka",
+    "Hp": 100,
+    "maxHp": 100,
+    "Atk": 70,
+    "Stamina": 90,
+    "Mana": 120,
+    "Intelligence": 150,
+    "Strength": 50,
+    "Dexterity": 120,
+    "Class": "Healer",
+    "Attacks": {
+      "Name": [
+        "Blessing of Vitality",
+        "Healing Light",
+        "Holy Nova",
+        "Sacred Claws"
+      ],
+      "Desc": [
+        "Increases a target's maximum HP temporarily.",
+        "Restores a moderate amount of HP to a single ally.",
+        "Releases a burst of healing energy that restores HP to all allies within range.",
+        "Basic attack"
+      ],
+      "Power": [45, 50, 30, 70]
+    }
+  },
+  {
+    "Name": "Llewellyn Artemis",
+    "Hp": 210,
+    "maxHp": 210,
+    "Atk": 140,
+    "Stamina": 100,
+    "Mana": 50,
+    "Intelligence": 90,
+    "Strength": 50,
+    "Dexterity": 90,
+    "Class": "Titan",
+    "Attacks": {
+      "Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
+      "Desc": [
+        "A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
+        "Send forth a rain of attacks on your foes, each attack doubling damage.",
+        "Reforces the body with stone, increasing damage and armor durability.",
+        "Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
+      ],
+      "Power": [55, 15, 0, 0]
+    }
+  },
+  {
+    "Name": " Mthi Armorenia",
+    "Hp": 110,
+    "maxHp": 110,
+    "Atk": 60,
+    "Stamina": 100,
+    "Mana": 140,
+    "Intelligence": 120,
+    "Strength": 60,
+    "Dexterity": 100,
+    "Class": "Eye",
+    "Attacks": {
+      "Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
+      "Desc": [
+        "A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
+        "Send forth a rain of attacks on your foes, each attack doubling damage.",
+        "Reforces the body with stone, increasing damage and armor durability.",
+        "Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
+      ],
+      "Power": [55, 15, 0, 0]
+    }
+  },
+  {
+    "Name": "Zanele Miyazaki",
+    "Hp": 110,
+    "maxHp": 110,
+    "Atk": 160,
+    "Stamina": 90,
+    "Mana": 120,
+    "Intelligence": 110,
+    "Strength": 70,
+    "Dexterity": 100,
+    "Class": "Phoenix"
+  },
+  {
+    "Name": "Tino Hildaeld",
+    "Hp": 130,
+    "maxHp": 130,
+    "Atk": 100,
+    "Stamina": 120,
+    "Mana": 70,
+    "Intelligence": 120,
+    "Strength": 60,
+    "Dexterity": 180,
+    "Class": "Timekeeper"
+  }
 ]
