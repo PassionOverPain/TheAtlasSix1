@@ -381,6 +381,7 @@ button:hover {
   left: 20%;
   height: 15vh;
   width: 60vw;
+  background-color: red;
 }
 .action {
   cursor: url(Images/hand-s.png), auto;
