@@ -112,6 +112,21 @@
     "Intelligence": 120,
     "Strength": 60,
     "Dexterity": 180,
-    "Class": "Timekeeper"
+    "Class": "Timekeeper",
+    "Attacks": {
+      "Name": [
+        "Chrono Slash",
+        "Eternal Shield",
+        "Flash Forward",
+        "Seconds Minutes Hours"
+      ],
+      "Desc": [
+        "Basic attack",
+        "Create a barrier of time energy that absorbs damage for a brief period and reflects a portion back to attackers.",
+        "Dash through time to a preferred point where enemey is vulnerable delivering a surprise attack that deals double damage.",
+        "Execute a devastating strike that bends time, allowing you to hit multiple enemies in quick succession before returning to your original position."
+      ],
+      "Power": [60, 50, 60, 120]
+    }
   }
 ]
