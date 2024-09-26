@@ -12,18 +12,18 @@
     "Class": "Healer",
     "Attacks": {
       "Name": [
+        "Cat's Claw",
         "Blessing of Vitality",
         "Healing Light",
-        "Holy Nova",
-        "Sacred Claws"
+        "Holy Nova"
       ],
       "Desc": [
+        "Basic attack",
         "Increases a target's maximum HP temporarily.",
         "Restores a moderate amount of HP to a single ally.",
-        "Releases a burst of healing energy that restores HP to all allies within range.",
-        "Basic attack"
+        "Releases a burst of healing energy that restores HP to all allies within range."
       ],
-      "Power": [45, 50, 30, 70]
+      "Power": [70, 50, 30, 45]
     }
   },
   {
@@ -40,7 +40,7 @@
     "Attacks": {
       "Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
       "Desc": [
-        "A massive downward strike that creates a shockwave, knocking foes off their feet and causing stun.",
+        "Basic attack",
         "Send forth a rain of attacks on your foes, each attack doubling damage.",
         "Reforces the body with stone, increasing damage and armor durability.",
         "Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
@@ -67,7 +67,7 @@
         "Musical Note"
       ],
       "Desc": [
-        " Launch a barrage of arrows into the air, causing more damage over time.",
+        "Basic attack",
         "Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time, forcing them to fight alongside you.",
         "A rapid shot that creates illusions of multiple arrows, confusing the target and lowering their damage for a short duration.",
         "Striking a unique chord, the archer launches an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable to double damage on the next attack."
@@ -85,7 +85,22 @@
     "Intelligence": 110,
     "Strength": 70,
     "Dexterity": 100,
-    "Class": "Phoenix"
+    "Class": "Phoenix",
+    "Attacks": {
+      "Name": [
+        "Dragon's Touch",
+        "Blazing Wings",
+        "Rekindling Flame",
+        "Inferno"
+      ],
+      "Desc": [
+        "Basic attack",
+        "Engulf enemies in wings of flame, dealing moderate damage over a period of time",
+        "Awaken the cinders within, absorbing incoming damage to heal you.",
+        "Dancing in falling red leaves, exploading and dealing area damage whereever they land."
+      ],
+      "Power": [60, 0, 0, 0]
+    }
   },
   {
     "Name": "Tino Hildaeld",
