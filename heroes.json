@@ -61,18 +61,18 @@
     "Class": "Eye",
     "Attacks": {
       "Name": [
+        "Ducky's Descent",
         "Charming Quiver",
         "Flicker Shot",
-        "Titan Terror",
-        "Warrior Warcry"
+        "Musical Note"
       ],
       "Desc": [
+        " Launch a barrage of arrows into the air, causing more damage over time.",
         "Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time, forcing them to fight alongside you.",
-        "A rapid shot that creates illusions of multiple arrows, confusing the target and lowering their accuracy for a short duration.",
-        "Reforces the body with stone, increasing damage and armor durability.",
-        "Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
+        "A rapid shot that creates illusions of multiple arrows, confusing the target and lowering their damage for a short duration.",
+        "Striking a unique chord, the archer launches an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable to double damage on the next attack."
       ],
-      "Power": [55, 15, 0, 0]
+      "Power": [60, 0, 0, 0]
     }
   },
   {
