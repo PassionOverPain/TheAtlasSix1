@@ -282,12 +282,6 @@ actBtns.forEach((button) => {
 		if (button.classList.contains("Attack") && !played) {
 			clickEnemy();
 			played = true;
-			// myMonsters[0].Hp =
-			// 	myMonsters[0].Hp -
-			// 	myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
-			// textBubble.textContent = `${myHeroes[num].Name} performed ${
-			// 	myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
-			// } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 
 			// const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
 			// enemies.forEach((enemy) => {
@@ -310,9 +304,15 @@ function clickEnemy() {
 	document.addEventListener("click", function chooseEnemy(event) {
 		if (event.target.classList.contains("Enemy")) {
 			alert("This is an Enemy.");
+			myMonsters[0].Hp =
+				myMonsters[0].Hp -
+				myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
+			textBubble.textContent = `${myHeroes[num].Name} performed ${
+				myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
+			} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 			document.removeEventListener("click", chooseEnemy);
 		} else {
-			alert("This is NOT An Enemy");
+			alert("Please Select an Enemy to attack");
 		}
 	});
 }
