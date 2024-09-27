@@ -298,7 +298,6 @@ actBtns.forEach((button) => {
 		} else if (button.classList.contains("Heal")) {
 			textBubble.textContent = "You have just healed";
 		} else {
-			alert("You have played already");
 		}
 	});
 	// this.setTimeout(() => {
@@ -308,17 +307,14 @@ actBtns.forEach((button) => {
 });
 
 function clickEnemy() {
-	document.addEventListener(
-		"click",
-		function (event) {
-			if (event.target.classList.contains("Enemy")) {
-				alert("This is an Enemy.");
-			} else {
-				alert("This is NOT An Enemy");
-			}
-		},
-		{ once: true }
-	);
+	document.addEventListener("click", function chooseEnemy(event) {
+		if (event.target.classList.contains("Enemy")) {
+			alert("This is an Enemy.");
+			document.removeEventListener("click", chooseEnemy);
+		} else {
+			alert("This is NOT An Enemy");
+		}
+	});
 }
 
 // const cardDead = new CustomEvent("deadCard", {
