@@ -281,22 +281,19 @@ actBtns.forEach((button) => {
 	button.addEventListener("click", () => {
 		if (button.classList.contains("Attack") && !played) {
 			clickEnemy();
+			this.setTimeout(() => {
+				playFight();
+			}, 4000);
 			played = true;
-
-			// const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
-			// enemies.forEach((enemy) => {
-			//   enemy.addEventListener("click", () => {
-			//     alert("Please Select An Enemy to attack");
-			//   });
-			// });
 		} else if (button.classList.contains("Heal")) {
 			textBubble.textContent = "You have just healed";
+			this.setTimeout(() => {
+				playFight();
+			}, 4000);
 		} else {
 		}
 	});
-	// this.setTimeout(() => {
-	// 	playFight();
-	// }, 4000);
+
 	/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 });
 
