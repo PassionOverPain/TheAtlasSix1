@@ -277,34 +277,35 @@ function openMonster(num) {
 
 let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
-if (!played) {
-	actBtns.forEach((button) => {
-		button.addEventListener("click", () => {
-			if (button.classList.contains("Attack")) {
-				clickEnemy();
-				// myMonsters[0].Hp =
-				// 	myMonsters[0].Hp -
-				// 	myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
-				// textBubble.textContent = `${myHeroes[num].Name} performed ${
-				// 	myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
-				// } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+actBtns.forEach((button) => {
+	button.addEventListener("click", () => {
+		if (button.classList.contains("Attack") && !played) {
+			clickEnemy();
+			played = true;
+			// myMonsters[0].Hp =
+			// 	myMonsters[0].Hp -
+			// 	myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
+			// textBubble.textContent = `${myHeroes[num].Name} performed ${
+			// 	myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
+			// } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 
-				// const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
-				// enemies.forEach((enemy) => {
-				//   enemy.addEventListener("click", () => {
-				//     alert("Please Select An Enemy to attack");
-				//   });
-				// });
-			} else if (button.classList.contains("Heal")) {
-				textBubble.textContent = "You have just healed";
-			}
-		});
-		// this.setTimeout(() => {
-		// 	playFight();
-		// }, 4000);
-		/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
+			// const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
+			// enemies.forEach((enemy) => {
+			//   enemy.addEventListener("click", () => {
+			//     alert("Please Select An Enemy to attack");
+			//   });
+			// });
+		} else if (button.classList.contains("Heal")) {
+			textBubble.textContent = "You have just healed";
+		} else {
+			alert("You have played already");
+		}
 	});
-}
+	// this.setTimeout(() => {
+	// 	playFight();
+	// }, 4000);
+	/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
+});
 
 function clickEnemy() {
 	document.addEventListener(
