@@ -305,6 +305,14 @@ actBtns.forEach((button) => {
 	});
 });
 
+function clickEnemy() {
+	document.addEventListener("click", (e) => {
+		if (e.classList.contains("Enemy")) {
+			alert("This is an Enemy.");
+		}
+	});
+}
+
 // const cardDead = new CustomEvent("deadCard", {
 // 	bubbles: true,
 // 	cancelable: true,
