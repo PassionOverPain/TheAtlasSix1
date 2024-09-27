@@ -277,16 +277,17 @@ function openMonster(num) {
 
 let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
-actBtns.forEach((button) => {
-	button.addEventListener("click", () => {
-		if (!played) {
+if (!played) {
+	actBtns.forEach((button) => {
+		button.addEventListener("click", () => {
 			if (button.classList.contains("Attack")) {
-				myMonsters[0].Hp =
-					myMonsters[0].Hp -
-					myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
-				textBubble.textContent = `${myHeroes[num].Name} performed ${
-					myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
-				} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+				clickEnemy();
+				// myMonsters[0].Hp =
+				// 	myMonsters[0].Hp -
+				// 	myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
+				// textBubble.textContent = `${myHeroes[num].Name} performed ${
+				// 	myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
+				// } on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 
 				// const enemies = document.querySelectorAll(`.enemy`); // Multiple Enemy cards
 				// enemies.forEach((enemy) => {
@@ -297,20 +298,26 @@ actBtns.forEach((button) => {
 			} else if (button.classList.contains("Heal")) {
 				textBubble.textContent = "You have just healed";
 			}
-		}
-		this.setTimeout(() => {
-			playFight();
-		}, 4000);
+		});
+		// this.setTimeout(() => {
+		// 	playFight();
+		// }, 4000);
 		/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 	});
-});
+}
 
 function clickEnemy() {
-	document.addEventListener("click", (e) => {
-		if (e.classList.contains("Enemy")) {
-			alert("This is an Enemy.");
-		}
-	});
+	document.addEventListener(
+		"click",
+		function (event) {
+			if (event.target.classList.contains("Enemy")) {
+				alert("This is an Enemy.");
+			} else {
+				alert("This is NOT An Enemy");
+			}
+		},
+		{ once: true }
+	);
 }
 
 // const cardDead = new CustomEvent("deadCard", {
