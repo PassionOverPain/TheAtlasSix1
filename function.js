@@ -22,7 +22,7 @@ function displayInfo(choice, hero) {
 		}, 3000);
 	}
 }
-let myMonster;
+let myMonsters;
 let myHeroes;
 let openMap = false;
 function displayMap() {
@@ -280,16 +280,9 @@ const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
 	button.addEventListener("click", () => {
 		if (button.classList.contains("Attack") && !played) {
-			clickEnemy();
-			this.setTimeout(() => {
-				playFight();
-			}, 4000);
-			played = true;
+			clickEnemy(Number(button.dataset.atknum));
 		} else if (button.classList.contains("Heal")) {
 			textBubble.textContent = "You have just healed";
-			this.setTimeout(() => {
-				playFight();
-			}, 4000);
 		} else {
 		}
 	});
@@ -297,21 +290,22 @@ actBtns.forEach((button) => {
 	/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 });
 
-function clickEnemy() {
+function clickEnemy(atknums) {
 	document.addEventListener("click", function chooseEnemy(event) {
 		if (event.target.classList.contains("Enemy")) {
 			alert("This is an Enemy.");
 			myMonsters[0].Hp =
-				myMonsters[0].Hp -
-				myHeroes[num].Attacks.Power[Number(button.dataset.atknum)];
-			textBubble.textContent = `${myHeroes[num].Name} performed ${
-				myHeroes[num].Attacks.Name[Number(button.dataset.atknum)]
-			} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
-			document.removeEventListener("click", chooseEnemy);
+				myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
+			textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+			setTimeout(() => {
+				playFight();
+			}, 4000);
+			played = true;
 		} else {
 			alert("Please Select an Enemy to attack");
 		}
 	});
+	document.removeEventListener("click", chooseEnemy);
 }
 
 // const cardDead = new CustomEvent("deadCard", {
