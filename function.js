@@ -306,11 +306,12 @@ function clickEnemy(atknums) {
 					played = true;
 				} else {
 					textBubble.textContent = "Please Select an Enemy to attack";
-					textBubble.style.color = `red`;
+					textBubble.style.color = `red`; // FIX NEEDED
 				}
 			},
 			{ once: true }
 		);
+		document.removeEventListener("click", chooseEnemy);
 	}
 }
 
