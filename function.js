@@ -311,7 +311,6 @@ function clickEnemy(atknums) {
 			},
 			{ once: true }
 		);
-		document.removeEventListener("click", chooseEnemy);
 	}
 }
 
