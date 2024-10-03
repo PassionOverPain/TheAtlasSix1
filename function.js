@@ -318,7 +318,7 @@ function clickEnemy(atknums) {
 // 	bubbles: true,
 // 	cancelable: true,
 // 	composed: false,
-// });
+// }); //
 
 // const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
 // pgCards.forEach((Card) => {
