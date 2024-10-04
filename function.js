@@ -299,7 +299,7 @@ function clickEnemy(button, atknums) {
 				alert("This is an Enemy.");
 				myMonsters[0].Hp =
 					myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
-				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on Ally which has ${myMonsters[0].Hp} now.`;
+				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
 				setTimeout(() => {
 					playFight();
 				}, 4000);
@@ -317,9 +317,9 @@ function clickAlly(atknums) {
 	allies.forEach((Ally) => {
 		Ally.addEventListener(
 			"click",
-			function chooseEnemy() {
+			function chooseAlly() {
 				alert("This is an Ally.");
-				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on an Ally who has More now.`;
 				setTimeout(() => {
 					playFight();
 				}, 4000);
