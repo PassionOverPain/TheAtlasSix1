@@ -278,9 +278,9 @@ function openMonster(num) {
 let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
-	button.addEventListener("click", () => {
-		if (button.classList.contains("Attack") && !played) {
-			clickEnemy(Number(button.dataset.atknum));
+	button.addEventListener("click", function chooseAttack() {
+		if (button.classList.contains("Attack")) {
+			clickEnemy(Number(button, button.dataset.atknum));
 		} else if (button.classList.contains("Heal")) {
 			textBubble.textContent = "You have just healed";
 		} else {
@@ -289,28 +289,26 @@ actBtns.forEach((button) => {
 
 	/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
 });
-let addedEvent = false;
-function clickEnemy(atknums) {
+function clickEnemy(button, atknums) {
 	textBubble.textContent = "Please select an enemy";
-	if (!addedEvent) {
-		let enemies = document.querySelectorAll(".Enemy");
-		enemies.forEach((Enemy) => {
-			Enemy.addEventListener(
-				"click",
-				function chooseEnemy(event) {
-					alert("This is an Enemy.");
-					myMonsters[0].Hp =
-						myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
-					textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
-					setTimeout(() => {
-						playFight();
-					}, 4000);
-					played = true;
-				},
-				{ once: true }
-			);
-		});
-	}
+	let enemies = document.querySelectorAll(".Enemy");
+	enemies.forEach((Enemy) => {
+		Enemy.addEventListener(
+			"click",
+			function chooseEnemy() {
+				alert("This is an Enemy.");
+				myMonsters[0].Hp =
+					myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
+				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+				setTimeout(() => {
+					playFight();
+				}, 4000);
+				played = true;
+			},
+			{ once: true }
+		);
+	});
+	button.removeEventListener("click", chooseAttack);
 }
 
 // const cardDead = new CustomEvent("deadCard", {
