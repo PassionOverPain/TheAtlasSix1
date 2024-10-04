@@ -279,9 +279,10 @@ let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
 	button.addEventListener("click", function chooseAttack() {
-		if (button.classList.contains("Attack")) {
-			clickEnemy(Number(button, button.dataset.atknum));
-		} else if (button.classList.contains("Heal")) {
+		alert(`${myHeroes[num].Attacks.Type[Number(button.dataset.atknum)]}`);
+		if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
+			clickEnemy((button, Number(button.dataset.atknum)));
+		} else if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Heal") {
 			textBubble.textContent = "You have just healed";
 		} else {
 		}
@@ -290,7 +291,7 @@ actBtns.forEach((button) => {
 	/// ANOTHER ISSUE ... The Player can play INFINITY :).....
 });
 function clickEnemy(button, atknums) {
-	textBubble.textContent = "Please select an enemy";
+	textBubble.textContent = "Please select an Enemy.";
 	let enemies = document.querySelectorAll(".Enemy");
 	enemies.forEach((Enemy) => {
 		Enemy.addEventListener(
