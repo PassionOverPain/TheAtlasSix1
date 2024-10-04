@@ -306,7 +306,7 @@ function clickEnemy(atknums) {
 					played = true;
 				} else {
 					textBubble.textContent =
-						"Please Select an Enemy to attack. Preferbly the Dragon :)";
+						"Please Select an Enemy to attack. Preferbly the Dragon";
 					textBubble.style.color = `red`; // FIX NEEDED
 				}
 			},
