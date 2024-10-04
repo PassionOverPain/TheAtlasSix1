@@ -291,6 +291,7 @@ actBtns.forEach((button) => {
 });
 let addedEvent = false;
 function clickEnemy(atknums) {
+	textBubble.textContent = "Please select an enemy";
 	if (!addedEvent) {
 		let enemies = document.querySelectorAll(".Enemy");
 		enemies.forEach((Enemy) => {
