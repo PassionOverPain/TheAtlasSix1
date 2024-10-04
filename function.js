@@ -279,18 +279,17 @@ let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
 	button.addEventListener("click", function chooseAttack() {
-		alert(`${myHeroes[num].Attacks.Type[Number(button.dataset.atknum)]}`);
 		if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
-			clickEnemy((button, Number(button.dataset.atknum)));
+			clickEnemy(Number(button.dataset.atknum));
 		} else if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Heal") {
-			textBubble.textContent = "You have just healed";
+			clickAlly(Number(button.dataset.atknum));
 		} else {
 		}
 	});
 
 	/// ANOTHER ISSUE ... The Player can play INFINITY :).....
 });
-function clickEnemy(button, atknums) {
+function clickEnemy(atknums) {
 	textBubble.textContent = "Please select an Enemy.";
 	let enemies = document.querySelectorAll(".Enemy");
 	enemies.forEach((Enemy) => {
@@ -309,7 +308,6 @@ function clickEnemy(button, atknums) {
 			{ once: true }
 		);
 	});
-	button.removeEventListener("click", chooseAttack);
 }
 
 function clickAlly(atknums) {
@@ -329,7 +327,6 @@ function clickAlly(atknums) {
 			{ once: true }
 		);
 	});
-	button.removeEventListener("click", chooseAttack);
 }
 
 // const cardDead = new CustomEvent("deadCard", {
@@ -350,9 +347,22 @@ function playFight() {
 		document.getElementById("monsters").innerHTML = `<div class="hero pgCard">
 						<img
 							src="Images/dead.webp"
-							alt="" />
+							alt="This character is dead" />
 					</div>`;
 		textBubble.textContent = `Victory Achieved`;
+	} else if (
+		myHeroes[0].Hp <= 0 ||
+		myHeroes[1].Hp <= 0 ||
+		myHeroes[2].Hp <= 0 ||
+		myHeroes[3].Hp <= 0 ||
+		myHeroes[4].Hp <= 0
+	) {
+		for (let x = 0; x < 5; ++x) {
+			if (myHeroes[x].Hp == 0) {
+				document.getElementById(`pg${myHeroes[x].NickName}`).src =
+					"Images/dead.webp";
+			}
+		}
 	} else {
 		for (let i = 0; i < 5; ++i) {
 			if (myHeroes[i].Hp > 0) {
