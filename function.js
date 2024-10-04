@@ -294,8 +294,9 @@ function clickEnemy(atknums) {
 	if (!addedEvent) {
 		let enemies = document.querySelectorAll(".Enemy");
 		enemies.forEach((Enemy) => {
-			Enemy.addEventListener("click", function chooseEnemy(event) {
-				if (event.target.classList.contains("Enemy")) {
+			Enemy.addEventListener(
+				"click",
+				function chooseEnemy(event) {
 					alert("This is an Enemy.");
 					myMonsters[0].Hp =
 						myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
@@ -304,8 +305,9 @@ function clickEnemy(atknums) {
 						playFight();
 					}, 4000);
 					played = true;
-				}
-			});
+				},
+				{ once: true }
+			);
 		});
 	}
 }
