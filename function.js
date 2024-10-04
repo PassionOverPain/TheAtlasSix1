@@ -292,21 +292,20 @@ actBtns.forEach((button) => {
 let addedEvent = false;
 function clickEnemy(atknums) {
 	if (!addedEvent) {
-		document.addEventListener("dbclick", function chooseEnemy(event) {
-			if (event.target.classList.contains("Enemy")) {
-				alert("This is an Enemy.");
-				myMonsters[0].Hp =
-					myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
-				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
-				setTimeout(() => {
-					playFight();
-				}, 4000);
-				played = true;
-			} else {
-				textBubble.textContent =
-					"Please Select an Enemy to attack. Preferbly the Dragon";
-				textBubble.style.color = `red`; // FIX NEEDED
-			}
+		let enemies = document.querySelectorAll(".Enemy");
+		enemies.forEach((Enemy) => {
+			Enemy.addEventListener("click", function chooseEnemy(event) {
+				if (event.target.classList.contains("Enemy")) {
+					alert("This is an Enemy.");
+					myMonsters[0].Hp =
+						myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
+					textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+					setTimeout(() => {
+						playFight();
+					}, 4000);
+					played = true;
+				}
+			});
 		});
 	}
 }
