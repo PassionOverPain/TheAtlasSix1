@@ -132,8 +132,7 @@ function openScroll(charNum) {
 	document.getElementById("heStats").style.display = `block `;
 	if (myHeroes[num].Hp <= 0) {
 		document.getElementById("Hp").textContent = `Hp: 0/${myHeroes[num].maxHp}`;
-		document.getElementById(`pg${myHeroes[num].Class}`).src =
-			"Images/dead.webp";
+		// Might NOT NEED THIS ❌
 	} else {
 		document.getElementById(
 			"Hp"
@@ -329,18 +328,6 @@ function clickAlly(atknums) {
 	});
 }
 
-// const cardDead = new CustomEvent("deadCard", {
-// 	bubbles: true,
-// 	cancelable: true,
-// 	composed: false,
-// }); //
-
-// const pgCards = document.querySelectorAll(`.pgCard`); //Hero Action
-// pgCards.forEach((Card) => {
-// 	Card.addEventListener("deadCard", () => {
-// 		Card.innerHTML = `<img src="Images/dead.webp" alt="The character is dead"/>`;
-// 	});
-// });
 function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
 	if (myMonsters[0].Hp <= 0) {
@@ -357,9 +344,10 @@ function playFight() {
 		myHeroes[3].Hp <= 0 ||
 		myHeroes[4].Hp <= 0
 	) {
+		alert(`Someone is DEAD`);
 		for (let x = 0; x < 5; ++x) {
 			if (myHeroes[x].Hp == 0) {
-				document.getElementById(`pg${myHeroes[x].NickName}`).src =
+				document.getElementById(`pg${myHeroes[x].Class}`).src =
 					"Images/dead.webp";
 			}
 		}

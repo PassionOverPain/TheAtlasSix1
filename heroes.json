@@ -1,7 +1,6 @@
 [
 	{
 		"Name": "Jasim Adenka",
-		"NickName": "Healer",
 		"Hp": 100,
 		"maxHp": 100,
 		"Atk": 70,
@@ -30,7 +29,6 @@
 	},
 	{
 		"Name": "Llewellyn Artemis",
-		"NickName": "Titan",
 		"Hp": 210,
 		"maxHp": 210,
 		"Atk": 140,
@@ -54,7 +52,6 @@
 	},
 	{
 		"Name": " Mthi Armorenia",
-		"NickName": "Eye",
 		"Hp": 110,
 		"maxHp": 110,
 		"Atk": 60,
@@ -83,7 +80,6 @@
 	},
 	{
 		"Name": "Zanele Miyazaki",
-		"NickName": "Phoenix",
 		"Hp": 110,
 		"maxHp": 110,
 		"Atk": 160,
@@ -112,7 +108,6 @@
 	},
 	{
 		"Name": "Tino Hildaeld",
-		"NickName": "Timekeeper",
 		"Hp": 130,
 		"maxHp": 130,
 		"Atk": 100,

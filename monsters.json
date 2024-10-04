@@ -1,19 +1,19 @@
 [
-  {
-    "Name": "Prismara",
-    "Hp": 500,
-    "maxHp": 500,
-    "Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
-    "Type": "Mythical",
-    "Attacks": {
-      "Name": [
-        "Claw Strike",
-        "Flash-render",
-        "Mind Fog",
-        "Sonic Roar",
-        "Tail lash"
-      ],
-      "Power": [35, 40, 25, 30, 15]
-    }
-  }
+	{
+		"Name": "Prismara",
+		"Hp": 500,
+		"maxHp": 500,
+		"Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
+		"Type": "Mythical",
+		"Attacks": {
+			"Name": [
+				"Claw Strike",
+				"Flash-render",
+				"Mind Fog",
+				"Sonic Roar",
+				"Tail lash"
+			],
+			"Power": [350, 400, 25, 30, 15]
+		}
+	}
 ]
