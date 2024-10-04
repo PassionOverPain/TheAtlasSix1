@@ -287,7 +287,7 @@ actBtns.forEach((button) => {
 		}
 	});
 
-	/// ANOTHER ISSUE ... The Player can play INFINITY :)..Fixeed I think ?...
+	/// ANOTHER ISSUE ... The Player can play INFINITY :).....
 });
 function clickEnemy(button, atknums) {
 	textBubble.textContent = "Please select an enemy";
