@@ -292,7 +292,7 @@ actBtns.forEach((button) => {
 let addedEvent = false;
 function clickEnemy(atknums) {
 	if (!addedEvent) {
-		document.addEventListener("click", function chooseEnemy(event) {
+		document.addEventListener("dbclick", function chooseEnemy(event) {
 			if (event.target.classList.contains("Enemy")) {
 				alert("This is an Enemy.");
 				myMonsters[0].Hp =
