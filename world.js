@@ -12,12 +12,12 @@ function newMonster(Index) {
 	const myMonster = createMonster({
 		picture: `Images/${myMonsters[Index].Name}.webp`,
 	});
-	document.getElementById("monsters").appendChild(myMonster);
+	document.getElementById("monstersCon").appendChild(myMonster);
 }
 let arrEnemies = [];
 function creationMonster() {
 	Index = Math.floor(Math.random() * 2);
-	const myMonster = new Monster(Index);
+	let myMonster = new Monster(Index);
 	arrEnemies.push(myMonster);
 }
 class Monster {
@@ -25,5 +25,12 @@ class Monster {
 		this.Index = Index;
 		this.Hp = myMonsters[Index].Hp;
 		newMonster(Index);
+	}
+
+	damageHealth(damage) {
+		this.Hp = this.Hp - damage;
+	}
+	healHealth(points) {
+		Hp = Hp + points;
 	}
 }

@@ -290,19 +290,20 @@ actBtns.forEach((button) => {
 function clickEnemy(atknums) {
 	textBubble.textContent = "Please select an Enemy.";
 	let enemies = document.querySelectorAll(".Enemy");
-	Enemy = document.getElementById(`monstersCon`)
+	enemies.forEach((Enemy) => {
 		Enemy.addEventListener(
 			"click",
 			function chooseEnemy() {
 				const enemyPath =
 					myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
 				let enemyHealth = Number(arrEnemies[Number(Enemy.dataset.ennumber)].Hp);
-				enemyHealth = enemyHealth - myHeroes[num].Attacks.Power[atknums];
+				arrEnemies[Number(Enemy.dataset.ennumber)].damageHealth(
+					myHeroes[num].Attacks.Power[atknums]
+				);
 				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${enemyPath.Name} which has ${enemyHealth} now.`;
 				setTimeout(() => {
 					playFight();
 				}, 4000);
-				played = true;
 			},
 			{ once: true }
 		);
@@ -333,7 +334,9 @@ function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
 	let ranEnemy = Math.floor(Math.random() * arrEnemies.length);
 	if (myMonsters[ranEnemy].Hp <= 0) {
-		document.getElementById("monsters").innerHTML = `<div class="hero pgCard">
+		document.getElementById(
+			"monstersCon"
+		).innerHTML = `<div class="hero pgCard">
 						<img
 							src="Images/dead.webp"
 							alt="This character is dead" />
