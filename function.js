@@ -232,7 +232,9 @@ function openMonster(num) {
 	document.getElementById(
 		"msDesc"
 	).textContent = `Description: ${myMonsters[num].Desc}`;
-	document.getElementById("msHp").textContent = `hp: ${myMonsters[num].Hp}`;
+	document.getElementById(
+		"msHp"
+	).textContent = `hp: ${myMonsters[num].Hp}/${myMonsters[num].maxHp}`;
 	document.getElementById(
 		"msType"
 	).textContent = `Type: ${myMonsters[num].Type}`;
@@ -295,7 +297,11 @@ function clickEnemy(atknums) {
 				alert("This is an Enemy.");
 				myMonsters[0].Hp =
 					myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
-				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${myMonsters[0].Name} which has ${myMonsters[0].Hp} now.`;
+				textBubble.textContent = `${
+					myMonsters[arrEnemies[ranEnemy].Index].Name //Needs to Be FIXED <<<<< !!!
+				} performed ${myHeroes[num].Attacks.Name[atknums]} on ${
+					myMonsters[0].Name
+				} which has ${myMonsters[0].Hp} now.`;
 				setTimeout(() => {
 					playFight();
 				}, 4000);
@@ -328,7 +334,8 @@ function clickAlly(atknums) {
 
 function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
-	if (myMonsters[0].Hp <= 0) {
+	let ranEnemy = Math.floor(Math.random() * arrEnemies.length);
+	if (myMonsters[ranEnemy].Hp <= 0) {
 		document.getElementById("monsters").innerHTML = `<div class="hero pgCard">
 						<img
 							src="Images/dead.webp"
@@ -347,9 +354,16 @@ function playFight() {
 		let ranHero = Math.floor(Math.random() * aliveHeroes.length);
 		ranHero = aliveHeroes[ranHero];
 		let ranAtk = Math.floor(Math.random() * 5);
-		textBubble.textContent = `${myMonsters[0].Name} performed  ${myMonsters[0].Attacks.Name[ranAtk]} on ${myHeroes[ranHero].Name}. This has dealt ${myMonsters[0].Attacks.Power[ranAtk]} damage.`;
+		textBubble.textContent = `${
+			myMonsters[arrEnemies[ranEnemy].Index].Name
+		} performed  ${
+			myMonsters[arrEnemies[ranEnemy].Index].Attacks.Name[ranAtk]
+		} on ${myHeroes[ranHero].Name}. This has dealt ${
+			myMonsters[arrEnemies[ranEnemy].Index].Attacks.Power[ranAtk]
+		} damage.`;
 		myHeroes[ranHero].Hp =
-			myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
+			myHeroes[ranHero].Hp -
+			myMonsters[arrEnemies[ranEnemy].Index].Attacks.Power[ranAtk];
 		played = false;
 
 		//Player just died

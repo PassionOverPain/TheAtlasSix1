@@ -13,7 +13,24 @@
 				"Sonic Roar",
 				"Tail lash"
 			],
-			"Power": [350, 400, 250, 300, 250]
+			"Power": [35, 40, 25, 30, 15]
+		}
+	},
+	{
+		"Name": "FrostFang",
+		"Hp": 300,
+		"maxHp": 300,
+		"Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
+		"Type": "Ice",
+		"Attacks": {
+			"Name": [
+				"Avalanche Howl",
+				"Blizzard Breath",
+				"Frostbite",
+				"Subzero",
+				"Winter's wake"
+			],
+			"Power": [5, 15, 45, 30, 45]
 		}
 	}
 ]
