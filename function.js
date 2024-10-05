@@ -290,18 +290,15 @@ actBtns.forEach((button) => {
 function clickEnemy(atknums) {
 	textBubble.textContent = "Please select an Enemy.";
 	let enemies = document.querySelectorAll(".Enemy");
-	enemies.forEach((Enemy) => {
+	Enemy = document.getElementById(`monstersCon`)
 		Enemy.addEventListener(
 			"click",
 			function chooseEnemy() {
-				alert("This is an Enemy.");
-				myMonsters[0].Hp =
-					myMonsters[0].Hp - myHeroes[num].Attacks.Power[atknums];
-				textBubble.textContent = `${
-					myMonsters[arrEnemies[ranEnemy].Index].Name //Needs to Be FIXED <<<<< !!!
-				} performed ${myHeroes[num].Attacks.Name[atknums]} on ${
-					myMonsters[0].Name
-				} which has ${myMonsters[0].Hp} now.`;
+				const enemyPath =
+					myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
+				let enemyHealth = Number(arrEnemies[Number(Enemy.dataset.ennumber)].Hp);
+				enemyHealth = enemyHealth - myHeroes[num].Attacks.Power[atknums];
+				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on ${enemyPath.Name} which has ${enemyHealth} now.`;
 				setTimeout(() => {
 					playFight();
 				}, 4000);

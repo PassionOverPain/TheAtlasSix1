@@ -1,9 +1,8 @@
-let enemyCount = 1;
 function createMonster(options) {
 	const template = document.createElement("template");
 
-	template.innerHTML = `<div id="enemy${enemyCount}" class="hero pgCard">
-         <img src="${options.picture}" alt="This is a enemy player"  class="Enemy" />    
+	template.innerHTML = `<div id="enemy${arrEnemies.length}" class="hero pgCard">
+         <img src="${options.picture}" alt="This is a enemy player"  class="Enemy" data-ennumber="${arrEnemies.length}" />    
           </div>`;
 
 	const monster = template.content.firstElementChild;
