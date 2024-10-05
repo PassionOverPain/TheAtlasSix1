@@ -25,6 +25,8 @@ function displayInfo(choice, hero) {
 let myMonsters;
 let myHeroes;
 let openMap = false;
+
+//Either open the map or close the map
 function displayMap() {
 	if (openMap == false) {
 		openMap = true;
@@ -370,11 +372,10 @@ function playFight() {
 		if (myHeroes[ranHero].Hp <= 0) {
 			document.getElementById(`pg${myHeroes[ranHero].Class}`).src =
 				"Images/dead.webp";
-		}
-
-		//Party just died
-		if (aliveHeroes.length == 0) {
-			textBubble.textContent = `The Atlas Six Party has died.`;
+			//Party just died
+			if (aliveHeroes.length - 1 == 0) {
+				textBubble.textContent = `The Atlas Six Party has died.`;
+			}
 		}
 
 		//The Fight is done
