@@ -53,18 +53,13 @@ var observer = new IntersectionObserver((entries) => {
 			entry.target.classList.add("show");
 		} //else {
 		// entry.target.classList.remove("show");
-		// }
+		// } ...Optional
 	});
 });
 var hiddenElements = document.querySelectorAll(
 	".nrC, .hrC, .tnC, .eeC, .pxC, .tkC"
 );
 hiddenElements.forEach((el) => observer.observe(el));
-// const newBtn = createButt({
-//   label: "Minez",
-//   icon: "none",
-//   onClick: (ev) => alert("You are created"),
-// });
 
 function createButton(options) {
 	const template = document.createElement("template");
@@ -100,13 +95,15 @@ function newMonster() {
 let gotHeroes = false;
 let gotMonsters = false;
 let textBubble = document.getElementById("pgCenter");
+
+//Load Atlas Six Hero data
 function getHeroes() {
 	fetch("./heroes.json")
 		.then((response) => response.json())
 		.then((values) => (myHeroes = values));
 	gotHeroes = true;
 }
-
+//Load Monster Data
 function getMonsters() {
 	fetch("./monsters.json")
 		.then((response) => response.json())
@@ -157,6 +154,8 @@ function openScroll(charNum) {
 		"Class"
 	).textContent = `Class: ${myHeroes[num].Class}`;
 }
+
+//Load in Attacks
 function openAttacks() {
 	if (num == -1) {
 		textBubble.textContent = `Please Select an Atlas character first.`;
@@ -215,10 +214,12 @@ function openAttacks() {
 	}
 }
 
+//Open StoryTeller Tab
 function openScroll2() {
 	openScroll(num);
 }
 
+//Close StoryTeller Tab
 function closeScroll() {
 	document.getElementById(`storyTeller`).style.display = "none";
 	document.getElementById("pgCenter").style.display = "block";
@@ -296,6 +297,8 @@ actBtns.forEach((button) => {
 
 	/// ANOTHER ISSUE ... The Player can play INFINITY :).....
 });
+
+//Attack Action
 function clickEnemy(atknums) {
 	textBubble.textContent = "Please select an Enemy.";
 	let enemies = document.querySelectorAll(".Enemy");
@@ -317,6 +320,7 @@ function clickEnemy(atknums) {
 	});
 }
 
+//Healing Action
 function clickAlly(atknums) {
 	textBubble.textContent = "Please select an Ally.";
 	let allies = document.querySelectorAll(".Allly");
@@ -346,17 +350,14 @@ function playFight() {
 					</div>`;
 		textBubble.textContent = `Victory Achieved`;
 	} else {
+		// Alive heroes are the Only possible attack points
 		for (let i = 0; i < 5; ++i) {
 			if (myHeroes[i].Hp > 0) {
-				aliveHeroes.push(i); // If so, make hero number a possible attack point
+				aliveHeroes.push(i);
 			}
 		}
 
 		// The fight is going on HERE
-		if (aliveHeroes.length == 0) {
-			textBubble.textContent = `The Atlas Six Party has died.`;
-		}
-
 		let ranHero = Math.floor(Math.random() * aliveHeroes.length);
 		ranHero = aliveHeroes[ranHero];
 		let ranAtk = Math.floor(Math.random() * 5);
@@ -371,8 +372,12 @@ function playFight() {
 				"Images/dead.webp";
 		}
 
-		//The Fight is done
+		//Party just died
+		if (aliveHeroes.length == 0) {
+			textBubble.textContent = `The Atlas Six Party has died.`;
+		}
 
+		//The Fight is done
 		fetch("./heroes.json/", {
 			method: "PUT",
 			headers: {
