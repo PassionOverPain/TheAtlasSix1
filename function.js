@@ -113,7 +113,7 @@ function getMonsters() {
 		.then((values) => (myMonsters = values));
 	gotMonsters = true;
 }
-let num = 0;
+let num = -1;
 function openScroll(charNum) {
 	num = charNum;
 	if (!gotHeroes) {
@@ -132,7 +132,7 @@ function openScroll(charNum) {
 	document.getElementById("heStats").style.display = `block `;
 	if (myHeroes[num].Hp <= 0) {
 		document.getElementById("Hp").textContent = `Hp: 0/${myHeroes[num].maxHp}`;
-		// Might NOT NEED THIS ❌
+		// Might NOT NEED THIS -- Dead Player ❌
 	} else {
 		document.getElementById(
 			"Hp"
@@ -158,57 +158,61 @@ function openScroll(charNum) {
 	).textContent = `Class: ${myHeroes[num].Class}`;
 }
 function openAttacks() {
-	document.getElementById("heStats").style.display = `none`;
-	document.getElementById("heDesc").style.display = `none`;
-	document.getElementById("msDescTab").style.display = `none`;
-	document.getElementById("heAttacks").style.display = `block `;
-	document.getElementById(
-		"Atk1"
-	).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
+	if (num == -1) {
+		textBubble.textContent = `Please Select an Atlas character first.`;
+	} else {
+		document.getElementById("heStats").style.display = `none`;
+		document.getElementById("heDesc").style.display = `none`;
+		document.getElementById("msDescTab").style.display = `none`;
+		document.getElementById("heAttacks").style.display = `block `;
+		document.getElementById(
+			"Atk1"
+		).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
 
-	document.getElementById(
-		"Action1Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+		document.getElementById(
+			"Action1Img"
+		).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
 
-	document.getElementById(
-		"Desc1"
-	).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+		document.getElementById(
+			"Desc1"
+		).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
 
-	document.getElementById(
-		"Atk2"
-	).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
+		document.getElementById(
+			"Atk2"
+		).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
 
-	document.getElementById(
-		"Action2Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[1]}.webp`;
+		document.getElementById(
+			"Action2Img"
+		).src = `Images/Assets/${myHeroes[num].Attacks.Name[1]}.webp`;
 
-	document.getElementById(
-		"Desc2"
-	).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
+		document.getElementById(
+			"Desc2"
+		).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
 
-	document.getElementById(
-		"Atk3"
-	).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
+		document.getElementById(
+			"Atk3"
+		).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
 
-	document.getElementById(
-		"Action3Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[2]}.webp`;
+		document.getElementById(
+			"Action3Img"
+		).src = `Images/Assets/${myHeroes[num].Attacks.Name[2]}.webp`;
 
-	document.getElementById(
-		"Desc3"
-	).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
+		document.getElementById(
+			"Desc3"
+		).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
 
-	document.getElementById(
-		"Atk4"
-	).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
+		document.getElementById(
+			"Atk4"
+		).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
 
-	document.getElementById(
-		"Action4Img"
-	).src = `Images/Assets/${myHeroes[num].Attacks.Name[3]}.webp`;
+		document.getElementById(
+			"Action4Img"
+		).src = `Images/Assets/${myHeroes[num].Attacks.Name[3]}.webp`;
 
-	document.getElementById(
-		"Desc4"
-	).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
+		document.getElementById(
+			"Desc4"
+		).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
+	}
 }
 
 function openScroll2() {
@@ -278,11 +282,15 @@ let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
 	button.addEventListener("click", function chooseAttack() {
-		if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
-			clickEnemy(Number(button.dataset.atknum));
-		} else if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Heal") {
-			clickAlly(Number(button.dataset.atknum));
+		if (num == -1) {
+			textBubble.textContent = `Please Select an Atlas character first.`;
 		} else {
+			if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
+				clickEnemy(Number(button.dataset.atknum));
+			} else if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Heal") {
+				clickAlly(Number(button.dataset.atknum));
+			} else {
+			}
 		}
 	});
 
@@ -337,20 +345,6 @@ function playFight() {
 							alt="This character is dead" />
 					</div>`;
 		textBubble.textContent = `Victory Achieved`;
-	} else if (
-		myHeroes[0].Hp <= 0 ||
-		myHeroes[1].Hp <= 0 ||
-		myHeroes[2].Hp <= 0 ||
-		myHeroes[3].Hp <= 0 ||
-		myHeroes[4].Hp <= 0
-	) {
-		alert(`Someone is DEAD`);
-		for (let x = 0; x < 5; ++x) {
-			if (myHeroes[x].Hp == 0) {
-				document.getElementById(`pg${myHeroes[x].Class}`).src =
-					"Images/dead.webp";
-			}
-		}
 	} else {
 		for (let i = 0; i < 5; ++i) {
 			if (myHeroes[i].Hp > 0) {
@@ -359,13 +353,8 @@ function playFight() {
 		}
 
 		// The fight is going on HERE
-		if (
-			myHeroes[0].Hp == 0 &&
-			myHeroes[1].Hp == 0 &&
-			myHeroes[2].Hp === 0 &&
-			(myHeroes[3].Hp == myHeroes[4].Hp) == 0
-		) {
-			textBubble.textContent = `The Atlas Six Party has deid.`;
+		if (aliveHeroes.length == 0) {
+			textBubble.textContent = `The Atlas Six Party has died.`;
 		}
 
 		let ranHero = Math.floor(Math.random() * aliveHeroes.length);
@@ -375,6 +364,12 @@ function playFight() {
 		myHeroes[ranHero].Hp =
 			myHeroes[ranHero].Hp - myMonsters[0].Attacks.Power[ranAtk];
 		played = false;
+
+		//Player just died
+		if (myHeroes[ranHero].Hp <= 0) {
+			document.getElementById(`pg${myHeroes[ranHero].Class}`).src =
+				"Images/dead.webp";
+		}
 
 		//The Fight is done
 
