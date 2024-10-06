@@ -293,7 +293,8 @@ function clickEnemy(atknums) {
 	monsterCon.addEventListener(
 		"click",
 		function chooseEnemy(e) {
-			if (e.target.classList.contains(`Enemy`)) {
+			let Enemy = e.target;
+			if (Enemy.classList.contains(`Enemy`)) {
 				const enemyPath =
 					myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
 				let enemyHealth = Number(arrEnemies[Number(Enemy.dataset.ennumber)].Hp);
@@ -333,15 +334,20 @@ function clickAlly(atknums) {
 function playFight() {
 	let aliveHeroes = []; // Recheck if Heroes are alive
 	let ranEnemy = Math.floor(Math.random() * arrEnemies.length);
-	if (myMonsters[ranEnemy].Hp <= 0) {
+	if (arrEnemies[ranEnemy].Hp <= 0) {
 		document.getElementById(
-			"monstersCon"
-		).innerHTML = `<div class="hero pgCard">
-						<img
-							src="Images/dead.webp"
-							alt="This character is dead" />
-					</div>`;
-		textBubble.textContent = `Victory Achieved`;
+			`enemy${ranEnemy}`
+		).innerHTML = `<img src="Images/dead.webp" alt="This is a enemy player is dead"  class="Enemy dead" data-ennumber="${ranEnemy}" />    `;
+		arrEnemies.forEach(Enemy);
+		{
+			let enemiesDead = true;
+			if (Enemy.Hp < 0) {
+				enemiesDead = false;
+			}
+		}
+		if (enemiesDead) {
+			textBubble.textContent = `Victory Achieved`;
+		}
 	} else {
 		// Alive heroes are the Only possible attack points
 		for (let i = 0; i < 5; ++i) {
