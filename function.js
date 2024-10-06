@@ -289,12 +289,11 @@ actBtns.forEach((button) => {
 //Attack Action
 function clickEnemy(atknums) {
 	textBubble.textContent = "Please select an Enemy.";
-	let enemies = document.querySelectorAll(".Enemy");
-	const monsterCon = document.getElementById("monsterCon");
-	enemies.forEach((Enemy) => {
-		Enemy.addEventListener(
-			"click",
-			function chooseEnemy() {
+	const monsterCon = document.getElementById("monstersCon");
+	monsterCon.addEventListener(
+		"click",
+		function chooseEnemy(e) {
+			if (e.target.classList.contains(`Enemy`)) {
 				const enemyPath =
 					myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
 				let enemyHealth = Number(arrEnemies[Number(Enemy.dataset.ennumber)].Hp);
@@ -305,10 +304,10 @@ function clickEnemy(atknums) {
 				setTimeout(() => {
 					playFight();
 				}, 4000);
-			},
-			{ once: true }
-		);
-	});
+			}
+		},
+		{ once: true }
+	);
 }
 
 //Healing Action
