@@ -294,6 +294,7 @@ function clickEnemy(atknums) {
     "click",
     function chooseEnemy(e) {
       let Enemy = e.target;
+      let arrAliveEnemies = [];
       if (Enemy.classList.contains(`Enemy`)) {
         const enemyPath =
           myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
@@ -307,11 +308,13 @@ function clickEnemy(atknums) {
           ).innerHTML = `<img src="Images/dead.webp" alt="This is a enemy player is dead"  class="Enemy dead" data-ennumber="${[
             Number(Enemy.dataset.ennumber),
           ]}" />    `;
-          arrEnemies.forEach(Enemy);
+          arrEnemies.forEach(EnemyPlayer);
           {
             let enemiesDead = true;
-            if (Enemy.Hp < 0) {
+            if (EnemyPlayer.Hp < 0) {
               enemiesDead = false;
+            } else {
+              arrAliveEnemies.push(Number(Enemy.dataset.ennumber));
             }
           }
           if (enemiesDead) {
@@ -353,19 +356,19 @@ function clickAlly(atknums) {
   });
 }
 
-function playFight() {
-  let aliveHeroes = []; // Recheck if Heroes are alive
-  let ranEnemy = Math.floor(Math.random() * arrEnemies.length);
+function playFight(arrAliveEnemies) {
+  let arrAliveHeroes = []; // Recheck if Heroes are alive
+  let ranEnemy = Math.floor(Math.random() * a);
   // Alive heroes are the Only possible attack points
   for (let i = 0; i < 5; ++i) {
     if (myHeroes[i].Hp > 0) {
-      aliveHeroes.push(i);
+      arrAliveHeroes.push(i);
     }
   }
 
   // The fight is going on HERE
   let ranHero = Math.floor(Math.random() * aliveHeroes.length);
-  ranHero = aliveHeroes[ranHero];
+  ranHero = arrAliveHeroes[ranHero];
   let ranAtk = Math.floor(Math.random() * 5);
   textBubble.textContent = `${
     myMonsters[arrEnemies[ranEnemy].Index].Name
@@ -384,7 +387,7 @@ function playFight() {
     document.getElementById(`pg${myHeroes[ranHero].Class}`).src =
       "Images/dead.webp";
     //Party just died
-    if (aliveHeroes.length - 1 == 0) {
+    if (arrAliveHeroes.length - 1 == 0) {
       textBubble.textContent = `The Atlas Six Party has died.`;
     }
   }
