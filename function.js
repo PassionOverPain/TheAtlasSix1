@@ -356,7 +356,7 @@ function playFight() {
     }
   }
   if (arrAliveEnemies.length == 0) {
-    textBubble.textContent = `Victory Achieved! :)`;
+    textBubble.textContent = `Victory Achieved!`;
   }
   let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
   ranEnemy = arrAliveEnemies[ranEnemy];
@@ -389,7 +389,7 @@ function playFight() {
       "Images/dead.webp";
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
-      textBubble.textContent = `The Atlas Six Party has died. :(`;
+      textBubble.textContent = `Battle Lost!`;
     }
   }
 

@@ -1,36 +1,36 @@
 [
-	{
-		"Name": "Prismara",
-		"Hp": 500,
-		"maxHp": 500,
-		"Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
-		"Type": "Mythical",
-		"Attacks": {
-			"Name": [
-				"Claw Strike",
-				"Flash-render",
-				"Mind Fog",
-				"Sonic Roar",
-				"Tail lash"
-			],
-			"Power": [35, 40, 25, 30, 15]
-		}
-	},
-	{
-		"Name": "FrostFang",
-		"Hp": 300,
-		"maxHp": 300,
-		"Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
-		"Type": "Ice",
-		"Attacks": {
-			"Name": [
-				"Avalanche Howl",
-				"Blizzard Breath",
-				"Frostbite",
-				"Subzero",
-				"Winter's wake"
-			],
-			"Power": [5, 15, 45, 30, 45]
-		}
-	}
+  {
+    "Name": "Prismara",
+    "Hp": 200,
+    "maxHp": 200,
+    "Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
+    "Type": "Mythical",
+    "Attacks": {
+      "Name": [
+        "Claw Strike",
+        "Flash-render",
+        "Mind Fog",
+        "Sonic Roar",
+        "Tail lash"
+      ],
+      "Power": [35, 40, 25, 30, 15]
+    }
+  },
+  {
+    "Name": "FrostFang",
+    "Hp": 100,
+    "maxHp": 100,
+    "Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
+    "Type": "Ice",
+    "Attacks": {
+      "Name": [
+        "Avalanche Howl",
+        "Blizzard Breath",
+        "Frostbite",
+        "Subzero",
+        "Winter's wake"
+      ],
+      "Power": [5, 15, 45, 30, 45]
+    }
+  }
 ]
