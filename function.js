@@ -294,7 +294,6 @@ function clickEnemy(atknums) {
     "click",
     function chooseEnemy(e) {
       let Enemy = e.target;
-      let arrAliveEnemies = [];
       if (Enemy.classList.contains(`Enemy`)) {
         const enemyPath =
           myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
@@ -302,24 +301,13 @@ function clickEnemy(atknums) {
           arrEnemies[Number(Enemy.dataset.ennumber)].Hp -
           myHeroes[num].Attacks.Power[atknums];
         if (arrEnemies[Number(Enemy.dataset.ennumber)].Hp <= 0) {
+          //Check if the enemy is dead
           arrEnemies[Number(Enemy.dataset.ennumber)].Hp = 0; // Set Hp  to 0 as this is the Minimum
           document.getElementById(
             `enemy${[Number(Enemy.dataset.ennumber)]}`
           ).innerHTML = `<img src="Images/dead.webp" alt="This is a enemy player is dead"  class="Enemy dead" data-ennumber="${[
             Number(Enemy.dataset.ennumber),
           ]}" />    `;
-          arrEnemies.forEach(EnemyPlayer);
-          {
-            let enemiesDead = true;
-            if (EnemyPlayer.Hp < 0) {
-              enemiesDead = false;
-            } else {
-              arrAliveEnemies.push(Number(Enemy.dataset.ennumber));
-            }
-          }
-          if (enemiesDead) {
-            textBubble.textContent = `Victory Achieved`;
-          }
         }
         textBubble.textContent = `${myHeroes[num].Name} performed ${
           myHeroes[num].Attacks.Name[atknums]
@@ -356,9 +344,22 @@ function clickAlly(atknums) {
   });
 }
 
-function playFight(arrAliveEnemies) {
+function playFight() {
   let arrAliveHeroes = []; // Recheck if Heroes are alive
-  let ranEnemy = Math.floor(Math.random() * a);
+  let arrAliveEnemies = []; //Recheck if Enemies are alive
+  let enemiesDead = true;
+  for (let i = 0; i < arrEnemies.length; ++i) {
+    if (arrEnemies[i].Hp <= 0) {
+      enemiesDead = false;
+    } else {
+      arrAliveEnemies.push(i);
+    }
+  }
+  if (arrAliveEnemies.length == 0) {
+    textBubble.textContent = `Victory Achieved! :)`;
+  }
+  let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
+  ranEnemy = arrAliveEnemies[ranEnemy];
   // Alive heroes are the Only possible attack points
   for (let i = 0; i < 5; ++i) {
     if (myHeroes[i].Hp > 0) {
@@ -367,7 +368,7 @@ function playFight(arrAliveEnemies) {
   }
 
   // The fight is going on HERE
-  let ranHero = Math.floor(Math.random() * aliveHeroes.length);
+  let ranHero = Math.floor(Math.random() * arrAliveHeroes.length);
   ranHero = arrAliveHeroes[ranHero];
   let ranAtk = Math.floor(Math.random() * 5);
   textBubble.textContent = `${
@@ -388,7 +389,7 @@ function playFight(arrAliveEnemies) {
       "Images/dead.webp";
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
-      textBubble.textContent = `The Atlas Six Party has died.`;
+      textBubble.textContent = `The Atlas Six Party has died. :(`;
     }
   }
 
