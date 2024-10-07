@@ -18,7 +18,12 @@
 	z-index: 10000;
 }
 #preloader video {
-	width: 100vw;
+	width: 100%;
+}
+#preloader span{
+	position: absolute;
+	top: 70%;
+	left: 50%;
 }
 header {
 	height: 100vh;
