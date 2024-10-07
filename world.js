@@ -23,9 +23,11 @@ function newMonster(Index) {
 }
 let arrEnemies = [];
 function creationMonster() {
-  Index = Math.floor(Math.random() * 2);
-  let myMonster = new Monster(Index);
-  arrEnemies.push(myMonster);
+  if (arrEnemies < 10) {
+    Index = Math.floor(Math.random() * 2);
+    let myMonster = new Monster(Index);
+    arrEnemies.push(myMonster);
+  }
 }
 class Monster {
   constructor(Index) {

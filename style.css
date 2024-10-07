@@ -392,10 +392,12 @@ button:hover {
   left: 20%;
   height: 15vh;
   width: 60vw;
-  background: url(Images/paperbg.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(145, 105, 7, 0.199);
+  /* Healer:rgba(3, 93, 145, 0.199) */
+  /* Titan:rgba(56, 34, 4, 0.199) */
+  /* Eye: rgba(27, 1, 75, 0.199); */
+  /* Phoenix:rgba(255, 0, 0, 0.199) */
+  /* Timekeeper: rgba(145, 105, 7, 0.199) */
 }
 .action {
   cursor: url(Images/hand-s.png), auto;
