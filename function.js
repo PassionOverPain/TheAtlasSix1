@@ -273,6 +273,8 @@ actBtns.forEach((button) => {
   button.addEventListener("click", function chooseAttack() {
     if (num == -1) {
       textBubble.textContent = `Please Select an Atlas character first.`;
+    } else if (myHeroes[num].Hp <= 0) {
+      textBubble.textContent = `Unable to perform an action because this character is currently Dead.`;
     } else {
       if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
         clickEnemy(Number(button.dataset.atknum));
