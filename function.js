@@ -297,29 +297,33 @@ function clickEnemy(atknums) {
     function chooseEnemy(e) {
       let Enemy = e.target;
       if (Enemy.classList.contains(`Enemy`)) {
-        const enemyPath =
-          myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
-        arrEnemies[Number(Enemy.dataset.ennumber)].Hp =
-          arrEnemies[Number(Enemy.dataset.ennumber)].Hp -
-          myHeroes[num].Attacks.Power[atknums];
         if (arrEnemies[Number(Enemy.dataset.ennumber)].Hp <= 0) {
-          //Check if the enemy is dead
-          arrEnemies[Number(Enemy.dataset.ennumber)].Hp = 0; // Set Hp  to 0 as this is the Minimum
-          document.getElementById(
-            `enemy${[Number(Enemy.dataset.ennumber)]}`
-          ).innerHTML = `<img src="Images/dead.webp" alt="This is a enemy player is dead"  class="Enemy dead" data-ennumber="${[
-            Number(Enemy.dataset.ennumber),
-          ]}" />    `;
-        }
-        textBubble.textContent = `${myHeroes[num].Name} performed ${
-          myHeroes[num].Attacks.Name[atknums]
-        } on ${enemyPath.Name} which has ${
-          arrEnemies[Number(Enemy.dataset.ennumber)].Hp
-        } now.`;
+          textBubble.textContent = `This enemy character is dead. Please select a different character.`;
+        } else {
+          const enemyPath =
+            myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
+          arrEnemies[Number(Enemy.dataset.ennumber)].Hp =
+            arrEnemies[Number(Enemy.dataset.ennumber)].Hp -
+            myHeroes[num].Attacks.Power[atknums];
+          if (arrEnemies[Number(Enemy.dataset.ennumber)].Hp <= 0) {
+            //Check if the enemy is dead
+            arrEnemies[Number(Enemy.dataset.ennumber)].Hp = 0; // Set Hp  to 0 as this is the Minimum
+            document.getElementById(
+              `enemy${[Number(Enemy.dataset.ennumber)]}`
+            ).innerHTML = `<img src="Images/dead.webp" alt="This is a enemy player is dead"  class="Enemy dead" data-ennumber="${[
+              Number(Enemy.dataset.ennumber),
+            ]}" />    `;
+          }
+          textBubble.textContent = `${myHeroes[num].Name} performed ${
+            myHeroes[num].Attacks.Name[atknums]
+          } on ${enemyPath.Name} which has ${
+            arrEnemies[Number(Enemy.dataset.ennumber)].Hp
+          } now.`;
 
-        setTimeout(() => {
-          playFight();
-        }, 4000);
+          setTimeout(() => {
+            playFight();
+          }, 4000);
+        }
       }
     },
     { once: true }
