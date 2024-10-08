@@ -106,25 +106,27 @@ function openScroll(charNum) {
     getMonsters();
   }
   openAttacks();
-  const actionsCon = document.getElementById(actions);
-  switch (charNum) {
+  let actionsCon = document.getElementById("actions");
+  switch (num) {
     case 0: {
       actionsCon.style.backgroundColor = `rgba(3, 93, 145, 0.199)`;
+      break;
     }
     case 1: {
       actionsCon.style.backgroundColor = `rgba(56, 34, 4, 0.199)`;
+      break;
     }
     case 2: {
       actionsCon.style.backgroundColor = `rgba(27, 1, 75, 0.199)`;
+      break;
     }
     case 3: {
       actionsCon.style.backgroundColor = `rgba(255, 0, 0, 0.199)`;
+      break;
     }
     case 4: {
       actionsCon.style.backgroundColor = `rgba(145, 105, 7, 0.199)`;
-    }
-    default: {
-      actionsCon.style.backgroundColor = `rgba(145, 105, 7, 0.199)`;
+      break;
     }
   }
 
