@@ -106,6 +106,28 @@ function openScroll(charNum) {
     getMonsters();
   }
   openAttacks();
+  const actionsCon = document.getElementById(actions);
+  switch (charNum) {
+    case 0: {
+      actionsCon.style.backgroundColor = `rgba(3, 93, 145, 0.199)`;
+    }
+    case 1: {
+      actionsCon.style.backgroundColor = `rgba(56, 34, 4, 0.199)`;
+    }
+    case 2: {
+      actionsCon.style.backgroundColor = `rgba(27, 1, 75, 0.199)`;
+    }
+    case 3: {
+      actionsCon.style.backgroundColor = `rgba(255, 0, 0, 0.199)`;
+    }
+    case 4: {
+      actionsCon.style.backgroundColor = `rgba(145, 105, 7, 0.199)`;
+    }
+    default: {
+      actionsCon.style.backgroundColor = `rgba(145, 105, 7, 0.199)`;
+    }
+  }
+
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
   document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
