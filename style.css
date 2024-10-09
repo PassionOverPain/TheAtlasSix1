@@ -375,6 +375,7 @@ button:hover {
 }
 .pgCard {
 	transition: all 0.5s;
+	transition-duration: 5s;
 	cursor: url(Images/hand-s.png), auto;
 	position: relative;
 	display: inline-block;
@@ -389,7 +390,6 @@ button:hover {
 	/* animation: centerCard 3s linear infinite; */
 }
 .actionAnime {
-	position: relative;
 	top: 290%;
 	left: 1000%;
 }
@@ -398,13 +398,6 @@ button:hover {
 	width: 100%;
 	object-fit: cover;
 }
-/* @keyframes centerCard {
-  50% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-} */
 .pgCardCon {
 	align-items: center;
 	margin-left: 10px;
@@ -439,10 +432,7 @@ button:hover {
 	font-size: 2rem;
 }
 #actions {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	position: absolute;
+	position: relative;
 	top: 75%;
 	left: 20%;
 	height: 15vh;
@@ -462,6 +452,7 @@ button:hover {
 	height: fit-content; /* I am HERE */
 }
 .action {
+	position: absolute;
 	cursor: url(Images/hand-s.png), auto;
 	display: flex;
 	border: 5px solid;
@@ -492,6 +483,9 @@ button:hover {
 	justify-content: center;
 }
 #actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	z-index: 0;
 	position: absolute;
 	top: 75%;
