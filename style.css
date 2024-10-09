@@ -400,6 +400,8 @@ button:hover {
 }
 .cardInfo {
   position: absolute;
+  width: 100%;
+  height: fit-content; /* I am HERE */
 }
 .action {
   cursor: url(Images/hand-s.png), auto;
