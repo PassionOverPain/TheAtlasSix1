@@ -398,9 +398,12 @@ button:hover {
   /* Phoenix:rgba(255, 0, 0, 0.199) */
   /* Timekeeper: rgba(145, 105, 7, 0.199) */
 }
+.cardInfo {
+  position: absolute;
+}
 .action {
   cursor: url(Images/hand-s.png), auto;
-  display: inline-block;
+  display: flex;
   border: 5px solid;
   border-image-source: url(Images/frame1.png);
   border-image-slice: 70;
