@@ -400,7 +400,10 @@ button:hover {
 }
 .cardInfo {
   position: absolute;
-  width: 100%;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: fit-content; /* I am HERE */
 }
 .action {
