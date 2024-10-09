@@ -338,9 +338,9 @@ function clickEnemy(atknums) {
 							Number(Enemy.dataset.ennumber),
 						]}" />    `;
 					}
-					document
-						.getElementById(`pg${myHeroes[num].Class}`)
-						.classList.add("actionAnime");
+					// document
+					// 	.getElementById(`pg${myHeroes[num].Class}`)
+					// 	.classList.add("actionAnime");
 					textBubble.textContent = `${myHeroes[num].Name} performed ${
 						myHeroes[num].Attacks.Name[atknums]
 					} on ${enemyPath.Name} which has ${
