@@ -380,12 +380,15 @@ function moveToCenter(character) {
 	// character.style.left = `${centerX}px`;
 	// character.style.top = `${centerY}px`;
 	character.style.zIndex = 1; // Bring to front
+	setTimeout(() => {
+		character.style.transform = `translate(${rect.left - centerX}px, ${
+			rect.top - centerY
+		}px)`;
+	}, 3000);
 }
 
 // Function to reset character position
-function resetPosition(character) {
-	character.style.transform = `translate(${originalPosition.x}px, ${originalPosition.y}px)`;
-}
+function resetPosition(character) {}
 
 //Healing Action
 function clickAlly(atknums) {
