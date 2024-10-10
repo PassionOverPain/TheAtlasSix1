@@ -338,9 +338,10 @@ function clickEnemy(atknums) {
 							Number(Enemy.dataset.ennumber),
 						]}" />    `;
 					}
-					// document
-					// 	.getElementById(`pg${myHeroes[num].Class}`)
-					// 	.classList.add("actionAnime");
+					let characterCard = document.getElementById(
+						`pg${myHeroes[num].Class}`
+					);
+					characterCard.classList.add("actionAnime");
 					textBubble.textContent = `${myHeroes[num].Name} performed ${
 						myHeroes[num].Attacks.Name[atknums]
 					} on ${enemyPath.Name} which has ${
@@ -348,6 +349,7 @@ function clickEnemy(atknums) {
 					} now.`;
 
 					setTimeout(() => {
+						characterCard.classList.remove("actionAnime");
 						playFight();
 					}, 4000);
 				}

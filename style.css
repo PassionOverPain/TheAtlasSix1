@@ -374,7 +374,7 @@ button:hover {
 	transition: all 0.5s;
 }
 .pgCard {
-	transition: all 0.5s;
+	transition: all 0.5s ease;
 	cursor: url(Images/hand-s.png), auto;
 	position: relative;
 	display: inline-block;
@@ -389,8 +389,11 @@ button:hover {
 	/* animation: centerCard 3s linear infinite; */
 }
 .actionAnime {
-	top: 290%;
-	left: 1000%;
+	transform: translate(
+		calc(50vw - 50%),
+		calc(50vh + 10%)
+	); /* Center the character */
+	z-index: 1; /* Bring to the front */
 }
 .pgCard img {
 	height: 100%;
