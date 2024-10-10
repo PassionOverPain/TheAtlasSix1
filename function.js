@@ -338,10 +338,13 @@ function clickEnemy(atknums) {
 							Number(Enemy.dataset.ennumber),
 						]}" />    `;
 					}
-					let characterCard = document.getElementById(
-						`pg${myHeroes[num].Class}`
-					);
-					characterCard.classList.add("actionAnime");
+
+					let character = document.getElementById(`pg${myHeroes[num].Class}`);
+					moveToCenter(character);
+					// let characterCard = document.getElementById(
+					// 	`pg${myHeroes[num].Class}`
+					// );
+					// characterCard.classList.add("actionAnime");
 					textBubble.textContent = `${myHeroes[num].Name} performed ${
 						myHeroes[num].Attacks.Name[atknums]
 					} on ${enemyPath.Name} which has ${
@@ -349,7 +352,8 @@ function clickEnemy(atknums) {
 					} now.`;
 
 					setTimeout(() => {
-						characterCard.classList.remove("actionAnime");
+						// characterCard.classList.remove("actionAnime");
+						resetPosition(character);
 						playFight();
 					}, 4000);
 				}
@@ -357,6 +361,27 @@ function clickEnemy(atknums) {
 		},
 		{ once: true }
 	);
+}
+
+const attackCard = document.getElementById("attackCard");
+
+// Function to center a character
+function moveToCenter(character) {
+	const rect = character.getBoundingClientRect();
+	const centerX = window.innerWidth / 2 - rect.width / 2;
+	const centerY = window.innerHeight / 2 - rect.height / 2;
+
+	character.style.position = "fixed"; // Position for viewport centering
+	character.style.left = `${centerX}px`;
+	character.style.top = `${centerY}px`;
+	character.style.zIndex = 1; // Bring to front
+}
+
+// Function to reset character position
+function resetPosition(character) {
+	character.style.position = "relative"; // Revert to original positioning
+	character.style.left = ""; // Optional: reset left
+	character.style.top = ""; // Optional: reset top
 }
 
 //Healing Action
