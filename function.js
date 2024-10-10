@@ -367,8 +367,6 @@ let originalPosition = { x: 0, y: 0 };
 // Function to center a character
 function moveToCenter(character) {
 	const rect = character.getBoundingClientRect();
-	// originalPosition.x = document.getElementById(`pgHealer`).style.left;
-	// originalPosition.y = document.getElementById(`pgHealer`).style.top;
 	const centerX = window.innerWidth / 2 - rect.width / 2;
 	const centerY = window.innerHeight / 2 - rect.height / 2;
 
@@ -382,9 +380,6 @@ function moveToCenter(character) {
 		character.style.transform = originalTransform;
 	}, 3000);
 }
-
-// Function to reset character position
-function resetPosition(character) {}
 
 //Healing Action
 function clickAlly(atknums) {

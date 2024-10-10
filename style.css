@@ -387,13 +387,6 @@ button:hover {
 	width: 5vw;
 	margin-top: 10px;
 }
-.actionAnime {
-	/* transform: translate(
-		calc(50vw - 50%),
-		calc(50vh + 10%)
-	);  Center the character 
-	z-index: 1; Bring to the front */
-}
 .pgCard img {
 	height: 100%;
 	width: 100%;
