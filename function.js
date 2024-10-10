@@ -367,23 +367,19 @@ let originalPosition = { x: 0, y: 0 };
 // Function to center a character
 function moveToCenter(character) {
 	const rect = character.getBoundingClientRect();
-	originalPosition.x = rect.left;
-	originalPosition.y = rect.top;
+	// originalPosition.x = document.getElementById(`pgHealer`).style.left;
+	// originalPosition.y = document.getElementById(`pgHealer`).style.top;
 	const centerX = window.innerWidth / 2 - rect.width / 2;
 	const centerY = window.innerHeight / 2 - rect.height / 2;
 
-	// character.style.position = "fixed"; // Position for viewport centering
-
+	originalTransform = character.style.transform || "translate(0, 0)";
 	character.style.transform = `translate(${centerX - rect.left}px, ${
 		centerY - rect.top
 	}px)`;
-	// character.style.left = `${centerX}px`;
-	// character.style.top = `${centerY}px`;
-	character.style.zIndex = 1; // Bring to front
+
+	character.style.zIndex = 1;
 	setTimeout(() => {
-		character.style.transform = `translate(${rect.left - centerX}px, ${
-			rect.top - centerY
-		}px)`;
+		character.style.transform = originalTransform;
 	}, 3000);
 }
 
