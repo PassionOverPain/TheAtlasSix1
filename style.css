@@ -386,14 +386,13 @@ button:hover {
 	height: 15vh;
 	width: 5vw;
 	margin-top: 10px;
-	/* animation: centerCard 3s linear infinite; */
 }
 .actionAnime {
-	transform: translate(
+	/* transform: translate(
 		calc(50vw - 50%),
 		calc(50vh + 10%)
-	); /* Center the character */
-	z-index: 1; /* Bring to the front */
+	);  Center the character 
+	z-index: 1; Bring to the front */
 }
 .pgCard img {
 	height: 100%;

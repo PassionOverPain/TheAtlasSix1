@@ -363,25 +363,28 @@ function clickEnemy(atknums) {
 	);
 }
 
-const attackCard = document.getElementById("attackCard");
-
+let originalPosition = { x: 0, y: 0 };
 // Function to center a character
 function moveToCenter(character) {
 	const rect = character.getBoundingClientRect();
+	originalPosition.x = rect.left;
+	originalPosition.y = rect.top;
 	const centerX = window.innerWidth / 2 - rect.width / 2;
 	const centerY = window.innerHeight / 2 - rect.height / 2;
 
-	character.style.position = "fixed"; // Position for viewport centering
-	character.style.left = `${centerX}px`;
-	character.style.top = `${centerY}px`;
+	// character.style.position = "fixed"; // Position for viewport centering
+
+	character.style.transform = `translate(${centerX - rect.left}px, ${
+		centerY - rect.top
+	}px)`;
+	// character.style.left = `${centerX}px`;
+	// character.style.top = `${centerY}px`;
 	character.style.zIndex = 1; // Bring to front
 }
 
 // Function to reset character position
 function resetPosition(character) {
-	character.style.position = "relative"; // Revert to original positioning
-	character.style.left = ""; // Optional: reset left
-	character.style.top = ""; // Optional: reset top
+	character.style.transform = `translate(${originalPosition.x}px, ${originalPosition.y}px)`;
 }
 
 //Healing Action
