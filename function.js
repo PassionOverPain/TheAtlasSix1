@@ -279,18 +279,6 @@ function openMonster(num) {
   ).textContent = `Attack 5: ${myMonsters[num].Attacks.Name[4]}`;
 }
 
-// function action(){
-//   let hero = document.getElementById("myHealer");
-//   let center = document.getElementById("pgCenter");
-//   const xpos = hero.style.left;
-//   const ypos = hero.style.top;
-
-//   hero.style.position ="absolute";
-//   alert(`${center.style.left}`);
-//   hero.style.left = `${center.style.left}`;
-//   hero.style.top = `${center.style.top}`;
-// }
-
 let played = false;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
