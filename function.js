@@ -168,7 +168,7 @@ function openScroll(charNum) {
 //Load in Attacks
 function openAttacks() {
 	if (num == -1) {
-		textBubble.textContent = `Please Select an Atlas character first.`;
+		textBubble.textContent = `Select an Atlas Six character first.`;
 	} else {
 		document.getElementById("heStats").style.display = `none`;
 		document.getElementById("heDesc").style.display = `none`;
@@ -280,11 +280,12 @@ function openMonster(num) {
 }
 
 let played = false;
+let atkNumber = -1;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
 	button.addEventListener("click", function chooseAttack() {
 		if (num == -1) {
-			textBubble.textContent = `Please Select an Atlas character first.`;
+			textBubble.textContent = `Select an Atlas Six character first.`;
 		} else if (myHeroes[num].Hp <= 0) {
 			textBubble.textContent = `Unable to perform an action because this character is currently Dead.`;
 		} else {
@@ -294,20 +295,26 @@ actBtns.forEach((button) => {
 				} else if (
 					myHeroes[num].Attacks.Type[button.dataset.atknum] == "Heal"
 				) {
-					clickAlly(Number(button.dataset.atknum));
+					textBubble.textContent = "Select an Ally.";
+					atkNumber = Number(button.dataset.atknum);
 				}
 			} else {
 				textBubble.textContent = `Not Your Turn.`;
 			}
 		}
 	});
+});
 
-	/// ANOTHER ISSUE ... The Player can play INFINITY :).....
+const heroCards = document.querySelectorAll(`.Ally`);
+heroCards.forEach((Hero) => {
+	Hero.addEventListener("click", function clickHero() {
+		clickAlly(Number(Hero.dataset.heronum), Hero);
+	});
 });
 
 //Attack Action
 function clickEnemy(atknums) {
-	textBubble.textContent = "Please select an Enemy.";
+	textBubble.textContent = "Select an Enemy.";
 	const monsterCon = document.getElementById("monstersCon");
 	monsterCon.addEventListener(
 		"click",
@@ -315,7 +322,7 @@ function clickEnemy(atknums) {
 			let Enemy = e.target;
 			if (Enemy.classList.contains(`Enemy`)) {
 				if (arrEnemies[Number(Enemy.dataset.ennumber)].Hp <= 0) {
-					textBubble.textContent = `This enemy character is dead. Please select a different character.`;
+					textBubble.textContent = `This enemy character is dead. Select a different character.`;
 				} else {
 					const enemyPath =
 						myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
@@ -334,10 +341,6 @@ function clickEnemy(atknums) {
 
 					let character = document.getElementById(`pg${myHeroes[num].Class}`);
 					moveToCenter(character);
-					// let characterCard = document.getElementById(
-					// 	`pg${myHeroes[num].Class}`
-					// );
-					// characterCard.classList.add("actionAnime");
 					textBubble.textContent = `${myHeroes[num].Name} performed ${
 						myHeroes[num].Attacks.Name[atknums]
 					} on ${enemyPath.Name} which has ${
@@ -373,23 +376,27 @@ function moveToCenter(character) {
 }
 
 //Healing Action
-function clickAlly(atknums) {
-	textBubble.textContent = "Please select an Ally.";
-	let allies = document.querySelectorAll(".Allly");
-	allies.forEach((Ally) => {
-		Ally.addEventListener(
-			"click",
-			function chooseAlly() {
-				alert("This is an Ally.");
-				textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atknums]} on an Ally who has More now.`;
-				played = true;
-				setTimeout(() => {
-					playFight();
-				}, 4000);
-			},
-			{ once: true }
-		);
-	});
+function clickAlly(HeroNum, Ally) {
+	if (textBubble.textContent == "Select an Ally.") {
+		let allyNum = Number(Ally.dataset.heronum);
+		if (myHeroes[allyNum].Hp != myHeroes[allyNum].maxHp) {
+			myHeroes[allyNum].Hp =
+				myHeroes[allyNum].Hp + myHeroes[num].Attacks.Power[atkNumber];
+			textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atkNumber]} on an Ally who has More now.`;
+			if (myHeroes[allyNum].Hp > myHeroes[allyNum].maxHp) {
+				myHeroes[allyNum].Hp = myHeroes[allyNum].maxHp;
+			}
+			let character = document.getElementById(`pg${myHeroes[num].Class}`);
+			moveToCenter(character);
+			setTimeout(() => {
+				playFight();
+			}, 3000);
+		} else {
+			textBubble.textContent = `Ally Character is at maximum Health.`;
+		}
+	} else {
+		openScroll(HeroNum);
+	}
 }
 
 function playFight() {
