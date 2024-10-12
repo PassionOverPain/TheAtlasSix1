@@ -433,6 +433,7 @@ button:hover {
 	left: 20%;
 	height: 15vh;
 	width: 60vw;
+	z-index: 1;
 	/* Healer:rgba(3, 93, 145, 0.199) */
 	/* Titan:rgba(56, 34, 4, 0.199) */
 	/* Eye: rgba(27, 1, 75, 0.199); */
@@ -448,6 +449,7 @@ button:hover {
 	height: fit-content; /* I am HERE */
 }
 .action {
+	z-index: 1;
 	position: absolute;
 	cursor: url(Images/hand-s.png), auto;
 	display: flex;
@@ -464,6 +466,7 @@ button:hover {
 .action img {
 	height: 100%;
 	width: 100%;
+	z-index: inherit;
 }
 .action:hover,
 .action.active,
@@ -484,6 +487,7 @@ button:hover {
 	height: 25px;
 	border-radius: 20px;
 	padding: 3px;
+	z-index: 15;
 }
 .actionCost {
 	position: absolute;
@@ -499,15 +503,18 @@ button:hover {
 	height: 25px;
 	border-radius: 20px;
 	padding: 3px;
+	z-index: 15;
 }
 .actionDesc {
 	font-size: 1.2rem;
 	display: none;
 	width: 20vw;
+	min-height: 100%;
+	height: fit-content;
+	z-index: 1000;
 	position: absolute;
 	left: -300%;
 	transform: translateX(120%);
-	height: 100%;
 	transition: all 5s ease;
 	border: 5px solid;
 	border-image-source: url(Images/frame1.png);
