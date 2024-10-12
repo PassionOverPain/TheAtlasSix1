@@ -421,11 +421,11 @@ button:hover {
 	padding: 15px;
 }
 #pgCenter {
-	position: relative;
-	top: -25%;
-	background-color: rgba(250, 240, 240, 0.13);
-	padding: 5px;
+	padding: 15px;
 	font-size: 2rem;
+	background-image: url(Images/paperbg.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #actions {
 	position: relative;
@@ -451,13 +451,15 @@ button:hover {
 	position: absolute;
 	cursor: url(Images/hand-s.png), auto;
 	display: flex;
+	justify-content: center;
 	border: 5px solid;
 	border-image-source: url(Images/frame1.png);
 	border-image-slice: 70;
 	border-image-repeat: round;
-	height: 90%;
-	width: 10%;
-	transition: all 1s;
+	height: 100%;
+	width: 11%;
+	transition: all 0.75s;
+	object-fit: cover;
 }
 .action img {
 	height: 100%;
@@ -466,7 +468,60 @@ button:hover {
 .action:hover,
 .action.active,
 .action::after {
-	transform: translateY(-110px);
+	transform: translateY(-105%);
+}
+.actionPower {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	top: 0;
+	left: 1%;
+	font-size: 1.2rem;
+	background-color: red;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	padding: 3px;
+}
+.actionCost {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	top: 0;
+	left: 65%;
+	font-size: 1.2rem;
+	background-color: purple;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	padding: 3px;
+}
+.actionDesc {
+	font-size: 1.2rem;
+	display: none;
+	width: 20vw;
+	position: absolute;
+	left: -300%;
+	transform: translateX(120%);
+	height: 100%;
+	transition: all 5s ease;
+	border: 5px solid;
+	border-image-source: url(Images/frame1.png);
+	border-image-slice: 70;
+	border-image-repeat: round;
+	background-image: url(Images/paperbg.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.action:hover .actionDesc {
+	display: grid;
 }
 
 .Heal:hover {

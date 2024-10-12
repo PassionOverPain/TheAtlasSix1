@@ -185,6 +185,18 @@ function openAttacks() {
 		document.getElementById(
 			"Desc1"
 		).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+		document.getElementById(
+			"Action1Power"
+		).textContent = `${myHeroes[num].Attacks.Power[0]}`;
+		document.getElementById(
+			"Action1Cost"
+		).textContent = `${myHeroes[num].Attacks.Power[0]}`;
+		document.getElementById(
+			"Action1Title"
+		).textContent = `${myHeroes[num].Attacks.Name[0]}`;
+		document.getElementById(
+			"Action1Desc"
+		).textContent = `${myHeroes[num].Attacks.Desc[0]}`;
 
 		document.getElementById(
 			"Atk2"
@@ -197,6 +209,19 @@ function openAttacks() {
 		document.getElementById(
 			"Desc2"
 		).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
+		document.getElementById(
+			"Action2Power"
+		).textContent = `${myHeroes[num].Attacks.Power[1]}`;
+		document.getElementById(
+			"Action2Cost"
+		).textContent = `${myHeroes[num].Attacks.Power[1]}`;
+
+		document.getElementById(
+			"Action2Desc"
+		).textContent = `${myHeroes[num].Attacks.Desc[1]}`;
+		document.getElementById(
+			"Action2Title"
+		).textContent = `${myHeroes[num].Attacks.Name[1]}`;
 
 		document.getElementById(
 			"Atk3"
@@ -209,6 +234,18 @@ function openAttacks() {
 		document.getElementById(
 			"Desc3"
 		).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
+		document.getElementById(
+			"Action3Power"
+		).textContent = `${myHeroes[num].Attacks.Power[2]}`;
+		document.getElementById(
+			"Action3Cost"
+		).textContent = `${myHeroes[num].Attacks.Power[2]}`;
+		document.getElementById(
+			"Action3Desc"
+		).textContent = `${myHeroes[num].Attacks.Desc[2]}`;
+		document.getElementById(
+			"Action3Title"
+		).textContent = `${myHeroes[num].Attacks.Name[2]}`;
 
 		document.getElementById(
 			"Atk4"
@@ -221,6 +258,18 @@ function openAttacks() {
 		document.getElementById(
 			"Desc4"
 		).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
+		document.getElementById(
+			"Action4Power"
+		).textContent = `${myHeroes[num].Attacks.Power[3]}`;
+		document.getElementById(
+			"Action4Cost"
+		).textContent = `${myHeroes[num].Attacks.Power[3]}`;
+		document.getElementById(
+			"Action4Desc"
+		).textContent = `${myHeroes[num].Attacks.Desc[3]}`;
+		document.getElementById(
+			"Action4Title"
+		).textContent = `${myHeroes[num].Attacks.Name[3]}`;
 	}
 }
 
