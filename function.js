@@ -185,6 +185,16 @@ function openAttacks() {
 		document.getElementById(
 			"Desc1"
 		).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+		const actionPowers = document.querySelectorAll(`.actionPower`);
+		let x = 0;
+		actionPowers.forEach((actionPower) => {
+			if (myHeroes[num].Attacks.Type[x] == `Attack`) {
+				actionPower.style.backgroundColor = `red`;
+			} else {
+				actionPower.style.backgroundColor = `blue`;
+			}
+			++x;
+		});
 		document.getElementById(
 			"Action1Power"
 		).textContent = `${myHeroes[num].Attacks.Power[0]}`;
