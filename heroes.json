@@ -1,5 +1,6 @@
 [
 	{
+		"FirstName": "Jasim",
 		"Name": "Jasim Adenka",
 		"Hp": 100,
 		"maxHp": 100,
@@ -18,16 +19,19 @@
 				"Holy Nova"
 			],
 			"Desc": [
-				"Basic attack",
+				"Basic attack.",
 				"Increases a target's maximum HP temporarily.",
 				"Restores a moderate amount of HP to a single ally.",
 				"Releases a burst of healing energy that restores HP to all allies within range."
 			],
 			"Power": [70, 50, 30, 45],
-			"Type": ["Attack", "Heal", "Heal", "Heal"]
+			"Type": ["Attack", "Heal", "Heal", "Heal"],
+			"Cost": [10, 15, 20, 25],
+			"CostClass": ["None", "None", "None", "None"]
 		}
 	},
 	{
+		"FirstName": "Llewellyn",
 		"Name": "Llewellyn Artemis",
 		"Hp": 210,
 		"maxHp": 210,
@@ -41,17 +45,20 @@
 		"Attacks": {
 			"Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
 			"Desc": [
-				"Basic attack",
-				"Send forth a rain of attacks on your foes, each attack doubling damage.",
-				"Reforces the body with stone, increasing damage and armor durability.",
-				"Shout courage into the skies, unleashing raw power in your allies with an temporary increase in attack power."
+				"Basic attack that deals damage and reduces enemy defense.",
+				"Enhance your defenses for a few turns, reducing damage taken.",
+				"Smash the ground, creating shockwaves that deal area damage.",
+				"Boosts allies' attack power for a short duration."
 			],
-			"Power": [55, 15, 0, 0],
-			"Type": ["Attack", "Attack", "Attack", "Attack"]
+			"Power": [55, 0, 85, 0],
+			"Type": ["Attack", "Defense", "Attack", "Buff"],
+			"Cost": [15, 10, 30, 20],
+			"CostClass": ["None", "None", "None", "None"]
 		}
 	},
 	{
-		"Name": " Mthi Armorenia",
+		"FirstName": "Mthi",
+		"Name": "Mthi Armorenia",
 		"Hp": 110,
 		"maxHp": 110,
 		"Atk": 60,
@@ -69,16 +76,19 @@
 				"Musical Note"
 			],
 			"Desc": [
-				"Basic attack",
-				"Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time, forcing them to fight alongside you.",
-				"A rapid shot that creates illusions of multiple arrows, confusing the target and lowering their damage for a short duration.",
-				"Striking a unique chord, the archer launches an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable to double damage on the next attack."
+				"Basic attack.",
+				"Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time.",
+				"A rapid shot that creates illusions of multiple arrows, lowering target's damage.",
+				"Launch an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable."
 			],
 			"Power": [60, 0, 0, 0],
-			"Type": ["Attack", "Attack", "Attack", "Attack"]
+			"Type": ["Attack", "Attack", "Attack", "Attack"],
+			"Cost": [10, 25, 15, 20],
+			"CostClass": ["None", "None", "None", "None"]
 		}
 	},
 	{
+		"FirstName": "Zanele",
 		"Name": "Zanele Miyazaki",
 		"Hp": 110,
 		"maxHp": 110,
@@ -97,16 +107,19 @@
 				"Inferno"
 			],
 			"Desc": [
-				"Basic attack",
-				"Engulf enemies in wings of flame, dealing moderate damage over a period of time",
-				"Awaken the cinders within, absorbing incoming damage to heal you.",
-				"Dancing in falling red leaves, exploading and dealing area damage whereever they land."
+				"Basic attack.",
+				"Engulf enemies in wings of flame, dealing damage over time.",
+				"Absorb incoming damage to heal yourself.",
+				"Exploding flames deal area damage where they land."
 			],
 			"Power": [60, 0, 0, 0],
-			"Type": ["Attack", "Attack", "Attack", "Attack"]
+			"Type": ["Attack", "Attack", "Heal", "Attack"],
+			"Cost": [10, 20, 15, 30],
+			"CostClass": ["None", "None", "None", "None"]
 		}
 	},
 	{
+		"FirstName": "Tino",
 		"Name": "Tino Hildaeld",
 		"Hp": 130,
 		"maxHp": 130,
@@ -125,13 +138,15 @@
 				"Seconds Minutes Hours"
 			],
 			"Desc": [
-				"Basic attack",
-				"Create a barrier of time energy that absorbs damage for a brief period and reflects a portion back to attackers.",
-				"Dash through time to a preferred point where enemey is vulnerable delivering a surprise attack that deals double damage.",
-				"Execute a devastating strike that bends time, allowing you to hit multiple enemies in quick succession before returning to your original position."
+				"Basic attack.",
+				"Create a barrier that absorbs damage and reflects a portion.",
+				"Dash through time to surprise attack, dealing double damage.",
+				"Execute a devastating strike that hits multiple enemies quickly."
 			],
 			"Power": [60, 50, 60, 120],
-			"Type": ["Attack", "Attack", "Attack", "Attack"]
+			"Type": ["Attack", "Defense", "Attack", "Attack"],
+			"Cost": [10, 20, 15, 40],
+			"CostClass": ["None", "None", "None", "None"]
 		}
 	}
 ]
