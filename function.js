@@ -25,6 +25,7 @@ function displayInfo(choice, hero) {
 let myMonsters;
 let myHeroes;
 let openMap = false;
+let currentRound = 0;
 
 //Either open the map or close the map
 function displayMap() {
@@ -510,6 +511,7 @@ function playFight() {
 	}
 
 	//The Fight is done
+	++currentRound;
 	fetch("./heroes.json/", {
 		method: "PUT",
 		headers: {
