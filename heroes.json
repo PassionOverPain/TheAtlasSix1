@@ -43,12 +43,7 @@
 		"Dexterity": 90,
 		"Class": "Titan",
 		"Attacks": {
-			"Name": [
-				"Guard Shatter",
-				"Stone Stance",
-				"Titan Terror",
-				"Warrior Warcry"
-			],
+			"Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
 			"Desc": [
 				"Basic attack that deals damage and reduces enemy defense.",
 				"Enhance your defenses for a few turns, reducing damage taken.",

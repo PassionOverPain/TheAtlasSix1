@@ -201,7 +201,7 @@ function openAttacks() {
 		).textContent = `${myHeroes[num].Attacks.Power[0]}`;
 		document.getElementById(
 			"Action1Cost"
-		).textContent = `${myHeroes[num].Attacks.Power[0]}`;
+		).textContent = `${myHeroes[num].Attacks.Cost[0]}`;
 		document.getElementById(
 			"Action1Title"
 		).textContent = `${myHeroes[num].Attacks.Name[0]}`;
@@ -225,7 +225,7 @@ function openAttacks() {
 		).textContent = `${myHeroes[num].Attacks.Power[1]}`;
 		document.getElementById(
 			"Action2Cost"
-		).textContent = `${myHeroes[num].Attacks.Power[1]}`;
+		).textContent = `${myHeroes[num].Attacks.Cost[1]}`;
 
 		document.getElementById(
 			"Action2Desc"
@@ -250,7 +250,7 @@ function openAttacks() {
 		).textContent = `${myHeroes[num].Attacks.Power[2]}`;
 		document.getElementById(
 			"Action3Cost"
-		).textContent = `${myHeroes[num].Attacks.Power[2]}`;
+		).textContent = `${myHeroes[num].Attacks.Cost[2]}`;
 		document.getElementById(
 			"Action3Desc"
 		).textContent = `${myHeroes[num].Attacks.Desc[2]}`;
@@ -274,7 +274,7 @@ function openAttacks() {
 		).textContent = `${myHeroes[num].Attacks.Power[3]}`;
 		document.getElementById(
 			"Action4Cost"
-		).textContent = `${myHeroes[num].Attacks.Power[3]}`;
+		).textContent = `${myHeroes[num].Attacks.Cost[3]}`;
 		document.getElementById(
 			"Action4Desc"
 		).textContent = `${myHeroes[num].Attacks.Desc[3]}`;
