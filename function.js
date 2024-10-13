@@ -347,7 +347,7 @@ actBtns.forEach((button) => {
 		if (num == -1) {
 			textBubble.textContent = `Select an Atlas Six character first.`;
 		} else if (myHeroes[num].Hp <= 0) {
-			textBubble.textContent = `Unable to perform an action because this character is currently Dead.`;
+			textBubble.textContent = `Unable to perform this action because this character is currently Dead.`;
 		} else {
 			if (!played) {
 				if (myHeroes[num].Attacks.Type[button.dataset.atknum] == "Attack") {
