@@ -385,7 +385,7 @@ function deplete() {
   }
 }
 
-function rengenerate() {
+function regenerate() {
   myHeroes.forEach((Hero) => {
     Hero.Mana = Hero.Mana + 15;
     Hero.Stamina = Hero.Stamina + 15;
@@ -537,8 +537,7 @@ function playFight() {
 
   //Player just died
   if (myHeroes[ranHero].Hp <= 0) {
-    alert(`Yes I AM DEAD`);
-    document.getElementById(`pg${myHeroes[ranHero].Class}`).src =
+    document.getElementById(`pg${myHeroes[ranHero].Class}img`).src =
       "Images/dead.webp";
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
@@ -548,7 +547,7 @@ function playFight() {
 
   //The Fight is done
   ++currentRound;
-  rengenerate();
+  regenerate();
   fetch("./heroes.json/", {
     method: "PUT",
     headers: {
