@@ -140,7 +140,6 @@ function openScroll(charNum) {
   document.getElementById("heStats").style.display = `block `;
   if (myHeroes[num].Hp <= 0) {
     document.getElementById("Hp").textContent = `Hp: 0/${myHeroes[num].maxHp}`;
-    // Might NOT NEED THIS -- Dead Player ❌
   } else {
     document.getElementById(
       "Hp"
@@ -150,8 +149,10 @@ function openScroll(charNum) {
   document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
   document.getElementById(
     "Stamina"
-  ).textContent = `Stamina: ${myHeroes[num].Stamina}`;
-  document.getElementById("Mana").textContent = `Mana: ${myHeroes[num].Mana}`;
+  ).textContent = `Stamina: ${myHeroes[num].Stamina}/${myHeroes[num].maxStamina}`;
+  document.getElementById(
+    "Mana"
+  ).textContent = `Mana: ${myHeroes[num].Mana}/${myHeroes[num].maxMana}`;
   document.getElementById(
     "Intelligence"
   ).textContent = `Intelligence: ${myHeroes[num].Intelligence}`;
@@ -351,14 +352,12 @@ actBtns.forEach((button) => {
     } else {
       atkNumber = Number(button.dataset.atknum);
       if (myHeroes[num].Attacks.CostClass[atkNumber] == "Mana") {
-        alert(`My Mana is ${myHeroes[num].Mana}`);
         if (myHeroes[num].Mana < myHeroes[num].Attacks.Cost[atkNumber]) {
           textBubble.textContent = `Unable to perform action due to character's lack of Mana.`;
           return;
         }
       } else {
         if (myHeroes[num].Stamina < myHeroes[num].Attacks.Cost[atkNumber]) {
-          alert(`My stamina is ${myHeroes[num].Stamina}`);
           textBubble.textContent = `Unable to perform action due to character's lack of Stamina.`;
           return;
         }
@@ -369,19 +368,35 @@ actBtns.forEach((button) => {
         } else if (myHeroes[num].Attacks.Type[atkNumber] == "Heal") {
           textBubble.textContent = "Select an Ally.";
         }
-        if (myHeroes[num].Attacks.CostClass[atkNumber] == "Mana")
-          myHeroes[num].Mana =
-            myHeroes[num].Mana - myHeroes[num].Attacks.Cost[atkNumber];
-        else {
-          myHeroes[num].Stamina =
-            myHeroes[num].Stamina - myHeroes[num].Attacks.Cost[atkNumber];
-        }
       } else {
         textBubble.textContent = `Not Your Turn.`;
       }
     }
   });
 });
+
+function deplete() {
+  if (myHeroes[num].Attacks.CostClass[atkNumber] == "Mana")
+    myHeroes[num].Mana =
+      myHeroes[num].Mana - myHeroes[num].Attacks.Cost[atkNumber];
+  else {
+    myHeroes[num].Stamina =
+      myHeroes[num].Stamina - myHeroes[num].Attacks.Cost[atkNumber];
+  }
+}
+
+function rengenerate() {
+  myHeroes.forEach((Hero) => {
+    Hero.Mana = Hero.Mana + 15;
+    Hero.Stamina = Hero.Stamina + 15;
+    if (Hero.Stamina > Hero.maxStamina) {
+      Hero.Stamina = Hero.maxStamina;
+    }
+    if (Hero.Mana > Hero.maxMana) {
+      Hero.Mana = Hero.maxMana;
+    }
+  });
+}
 
 const heroCards = document.querySelectorAll(`.Ally`);
 heroCards.forEach((Hero) => {
@@ -425,6 +440,7 @@ function clickEnemy(atknums) {
             arrEnemies[Number(Enemy.dataset.ennumber)].Hp
           } now.`;
           played = true;
+          deplete();
           setTimeout(() => {
             playFight();
           }, 3000);
@@ -466,6 +482,7 @@ function clickAlly(HeroNum, Ally) {
       }
       let character = document.getElementById(`pg${myHeroes[num].Class}`);
       moveToCenter(character);
+      deplete();
       setTimeout(() => {
         playFight();
       }, 3000);
@@ -520,6 +537,7 @@ function playFight() {
 
   //Player just died
   if (myHeroes[ranHero].Hp <= 0) {
+    alert(`Yes I AM DEAD`);
     document.getElementById(`pg${myHeroes[ranHero].Class}`).src =
       "Images/dead.webp";
     //Party just died
@@ -530,6 +548,7 @@ function playFight() {
 
   //The Fight is done
   ++currentRound;
+  rengenerate();
   fetch("./heroes.json/", {
     method: "PUT",
     headers: {

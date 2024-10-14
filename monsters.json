@@ -1,8 +1,8 @@
 [
   {
     "Name": "Prismara",
-    "Hp": 200,
-    "maxHp": 200,
+    "Hp": 500,
+    "maxHp": 500,
     "Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
     "Type": "Mythical",
     "Attacks": {
@@ -13,13 +13,13 @@
         "Sonic Roar",
         "Tail lash"
       ],
-      "Power": [35, 40, 25, 30, 15]
+      "Power": [35, 80, 25, 50, 45]
     }
   },
   {
     "Name": "FrostFang",
-    "Hp": 100,
-    "maxHp": 100,
+    "Hp": 300,
+    "maxHp": 300,
     "Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
     "Type": "Ice",
     "Attacks": {
@@ -30,7 +30,7 @@
         "Subzero",
         "Winter's wake"
       ],
-      "Power": [5, 15, 45, 30, 45]
+      "Power": [5, 55, 65, 50, 40]
     }
   }
 ]
