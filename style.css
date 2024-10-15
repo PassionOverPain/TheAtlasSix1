@@ -446,7 +446,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: fit-content; /* I am HERE */
+	height: fit-content;
 }
 .action {
 	z-index: 1;

@@ -1,162 +1,162 @@
 [
-  {
-    "FirstName": "Jasim",
-    "Name": "Jasim Adenka",
-    "Hp": 100,
-    "maxHp": 100,
-    "Atk": 60,
-    "Stamina": 90,
-    "maxStamina": 90,
-    "Mana": 120,
-    "maxMana": 120,
-    "Intelligence": 150,
-    "Strength": 50,
-    "Dexterity": 120,
-    "Class": "Healer",
-    "Attacks": {
-      "Name": [
-        "Cat's Claw",
-        "Blessing of Vitality",
-        "Healing Light",
-        "Holy Nova"
-      ],
-      "Desc": [
-        "Basic attack.",
-        "Increases a target's maximum HP temporarily for the fight.",
-        "Restores a moderate amount of HP to a single ally.",
-        "Releases a burst of healing energy that restores HP to all allies."
-      ],
-      "Power": [60, 30, 50, 45],
-      "Type": ["Attack", "Heal", "Heal", "Heal"],
-      "Cost": [50, 40, 45, 80],
-      "CostClass": ["Stamina", "Mana", "Mana", "Mana"]
-    }
-  },
-  {
-    "FirstName": "Llewellyn",
-    "Name": "Llewellyn Artemis",
-    "Hp": 210,
-    "maxHp": 210,
-    "Atk": 140,
-    "Stamina": 110,
-    "maxStamina": 110,
-    "Mana": 60,
-    "maxMana": 60,
-    "Intelligence": 90,
-    "Strength": 50,
-    "Dexterity": 90,
-    "Class": "Titan",
-    "Attacks": {
-      "Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
-      "Desc": [
-        "Basic attack that deals damage and reduces enemy defense.",
-        "Enhance your defenses for a few turns, reducing damage taken.",
-        "Smash the ground, creating shockwaves that deal area damage to 4 enemies.",
-        "Boosts allies' attack power for a short duration."
-      ],
-      "Power": [140, 50, 85, 40],
-      "Type": ["Attack", "Defense", "Attack", "Buff"],
-      "Cost": [75, 35, 70, 30],
-      "CostClass": ["Stamina", "Mana", "Stamina", "Stamina"]
-    }
-  },
-  {
-    "FirstName": "Mthi",
-    "Name": "Mthi Armorenia",
-    "Hp": 110,
-    "maxHp": 110,
-    "Atk": 70,
-    "Stamina": 100,
-    "maxStamina": 100,
-    "Mana": 140,
-    "maxMana": 140,
-    "Intelligence": 120,
-    "Strength": 60,
-    "Dexterity": 100,
-    "Class": "Eye",
-    "Attacks": {
-      "Name": [
-        "Ducky's Descent",
-        "Charming Quiver",
-        "Flicker Shot",
-        "Musical Note"
-      ],
-      "Desc": [
-        "Basic attack.",
-        "Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time.",
-        "A rapid shot that creates illusions of multiple arrows, lowering target's damage.",
-        "Launch an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable."
-      ],
-      "Power": [70, 0, 10, 60],
-      "Type": ["Attack", "Attack", "Attack", "Attack"],
-      "Cost": [55, 75, 45, 40],
-      "CostClass": ["Stamina", "Mana", "Mana", "Mana"]
-    }
-  },
-  {
-    "FirstName": "Zanele",
-    "Name": "Zanele Miyazaki",
-    "Hp": 130,
-    "maxHp": 130,
-    "Atk": 120,
-    "Stamina": 100,
-    "maxStamina": 100,
-    "Mana": 120,
-    "maxMana": 120,
-    "Intelligence": 110,
-    "Strength": 70,
-    "Dexterity": 100,
-    "Class": "Phoenix",
-    "Attacks": {
-      "Name": [
-        "Dragon's Touch",
-        "Blazing Wings",
-        "Rekindling Flame",
-        "Inferno"
-      ],
-      "Desc": [
-        "Basic attack.",
-        "Engulf an enemy in wings of flame, dealing damage over time.",
-        "Absorb incoming damage to heal yourself.",
-        "Exploding flames that deal area damage when they land on 2 enemies."
-      ],
-      "Power": [120, 40, 0, 100],
-      "Type": ["Attack", "Attack", "Heal", "Attack"],
-      "Cost": [65, 70, 65, 55],
-      "CostClass": ["Stamina", "Mana", "Mana", "Mana"]
-    }
-  },
-  {
-    "FirstName": "Tino",
-    "Name": "Tino Hildaeld",
-    "Hp": 130,
-    "maxHp": 130,
-    "Atk": 100,
-    "Stamina": 140,
-    "maxStamina": 140,
-    "Mana": 90,
-    "maxMana": 90,
-    "Intelligence": 120,
-    "Strength": 60,
-    "Dexterity": 180,
-    "Class": "Timekeeper",
-    "Attacks": {
-      "Name": [
-        "Chrono Slash",
-        "Eternal Shield",
-        "Flash Forward",
-        "Seconds Minutes Hours"
-      ],
-      "Desc": [
-        "Basic attack.",
-        "Create a barrier for 2 rounds that absorbs damage and reflects a portion.",
-        "Dash through time to surprise attack, dealing double damage.",
-        "Execute a devastating strike that hits multiple enemies quickly."
-      ],
-      "Power": [100, 0, 60, 80],
-      "Type": ["Attack", "Defense", "Attack", "Attack"],
-      "Cost": [50, 40, 15, 40],
-      "CostClass": ["Stamina", "Mana", "Mana", "Stamina"]
-    }
-  }
+	{
+		"FirstName": "Jasim",
+		"Name": "Jasim Adenka",
+		"Hp": 100,
+		"maxHp": 100,
+		"Atk": 60,
+		"Stamina": 90,
+		"maxStamina": 90,
+		"Mana": 120,
+		"maxMana": 120,
+		"Intelligence": 150,
+		"Strength": 50,
+		"Dexterity": 120,
+		"Class": "Healer",
+		"Attacks": {
+			"Name": [
+				"Cat's Claw",
+				"Blessing of Vitality",
+				"Healing Light",
+				"Holy Nova"
+			],
+			"Desc": [
+				"Basic attack.",
+				"Increases a target's maximum HP temporarily for the fight.",
+				"Restores a moderate amount of HP to a single ally.",
+				"Releases a burst of healing energy that restores HP to all allies."
+			],
+			"Power": [60, 30, 50, 45],
+			"Type": ["Attack", "Heal", "Heal", "Heal"],
+			"Cost": [50, 40, 45, 80],
+			"CostClass": ["Stamina", "Mana", "Mana", "Mana"]
+		}
+	},
+	{
+		"FirstName": "Llewellyn",
+		"Name": "Llewellyn Artemis",
+		"Hp": 210,
+		"maxHp": 210,
+		"Atk": 140,
+		"Stamina": 110,
+		"maxStamina": 110,
+		"Mana": 60,
+		"maxMana": 60,
+		"Intelligence": 90,
+		"Strength": 50,
+		"Dexterity": 90,
+		"Class": "Titan",
+		"Attacks": {
+			"Name": ["Guard Break", "Stone Stance", "Titan Terror", "Warrior Warcry"],
+			"Desc": [
+				"Basic attack that deals damage and reduces enemy defense.",
+				"Enhance your defenses for a few turns, reducing damage taken.",
+				"Smash the ground, creating shockwaves that deal area damage to 4 enemies.",
+				"Boosts allies' attack power for a short duration."
+			],
+			"Power": [140, 50, 85, 40],
+			"Type": ["Attack", "Heal", "Attack", "Heal"],
+			"Cost": [75, 35, 70, 30],
+			"CostClass": ["Stamina", "Mana", "Stamina", "Stamina"]
+		}
+	},
+	{
+		"FirstName": "Mthi",
+		"Name": "Mthi Armorenia",
+		"Hp": 110,
+		"maxHp": 110,
+		"Atk": 70,
+		"Stamina": 100,
+		"maxStamina": 100,
+		"Mana": 140,
+		"maxMana": 140,
+		"Intelligence": 120,
+		"Strength": 60,
+		"Dexterity": 100,
+		"Class": "Eye",
+		"Attacks": {
+			"Name": [
+				"Ducky's Descent",
+				"Charming Quiver",
+				"Flicker Shot",
+				"Musical Note"
+			],
+			"Desc": [
+				"Basic attack.",
+				"Enchants an arrow with hypnosis magic, turning the target into an ally for a limited time.",
+				"A rapid shot that creates illusions of multiple arrows, lowering target's damage.",
+				"Launch an arrow that resonates with hypnotic frequencies. Enemies are left vulnerable."
+			],
+			"Power": [70, 0, 10, 60],
+			"Type": ["Attack", "Attack", "Attack", "Attack"],
+			"Cost": [55, 75, 45, 40],
+			"CostClass": ["Stamina", "Mana", "Mana", "Mana"]
+		}
+	},
+	{
+		"FirstName": "Zanele",
+		"Name": "Zanele Miyazaki",
+		"Hp": 130,
+		"maxHp": 130,
+		"Atk": 120,
+		"Stamina": 100,
+		"maxStamina": 100,
+		"Mana": 120,
+		"maxMana": 120,
+		"Intelligence": 110,
+		"Strength": 70,
+		"Dexterity": 100,
+		"Class": "Phoenix",
+		"Attacks": {
+			"Name": [
+				"Dragon's Touch",
+				"Blazing Wings",
+				"Rekindling Flame",
+				"Inferno"
+			],
+			"Desc": [
+				"Basic attack.",
+				"Engulf an enemy in wings of flame, dealing damage over time.",
+				"Absorb incoming damage to heal yourself.",
+				"Exploding flames that deal area damage when they land on 2 enemies."
+			],
+			"Power": [120, 40, 0, 100],
+			"Type": ["Attack", "Attack", "Heal", "Attack"],
+			"Cost": [65, 70, 65, 55],
+			"CostClass": ["Stamina", "Mana", "Mana", "Mana"]
+		}
+	},
+	{
+		"FirstName": "Tino",
+		"Name": "Tino Hildaeld",
+		"Hp": 130,
+		"maxHp": 130,
+		"Atk": 100,
+		"Stamina": 140,
+		"maxStamina": 140,
+		"Mana": 90,
+		"maxMana": 90,
+		"Intelligence": 120,
+		"Strength": 60,
+		"Dexterity": 180,
+		"Class": "Timekeeper",
+		"Attacks": {
+			"Name": [
+				"Chrono Slash",
+				"Eternal Shield",
+				"Flash Forward",
+				"Seconds Minutes Hours"
+			],
+			"Desc": [
+				"Basic attack.",
+				"Create a barrier for 2 rounds that absorbs damage and reflects a portion.",
+				"Dash through time to surprise attack, dealing double damage.",
+				"Execute a devastating strike that hits multiple enemies quickly."
+			],
+			"Power": [100, 0, 60, 80],
+			"Type": ["Attack", "Defense", "Attack", "Attack"],
+			"Cost": [50, 40, 15, 40],
+			"CostClass": ["Stamina", "Mana", "Mana", "Stamina"]
+		}
+	}
 ]
