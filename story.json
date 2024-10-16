@@ -1,0 +1,22 @@
+[
+	{
+		"Chapterid": "chapter1",
+		"Name": "The Awakening",
+		"branches": [
+			{
+				"Branchid": "branch1",
+				"text": "You awaken on a desolate battlefield, surrounded by a thick fog. The air feels heavy and cold, filled with echoes of distant voices. Shadows stretch across the ground, where remnants of a recent struggle lie. You regain consciousness and notice your friends are scattered on the battleground... Who do you seek for aid:",
+				"character1": "none",
+				"character2": "none",
+				"choices": [
+					{
+						"option": "Llewellyn",
+						"outcome": ""
+					},
+					{}
+				]
+			}
+		]
+	},
+	{}
+]
