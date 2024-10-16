@@ -368,7 +368,6 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  position: relative;
   justify-content: center; /*Change this back*/
   align-items: center;
   transition: all 0.5s;
@@ -427,13 +426,35 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#pgChapter {
+  text-align: center;
+}
+#storyLine {
+  margin: 25px;
+  width: 50vw;
+  height: fit-content;
+  max-height: 80vh;
+  padding: 15px;
+  font-size: 2rem;
+  background-image: url(Images/paperbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+}
 #actions {
+  display: flex; /* Change this back */
   position: relative;
   top: 75%;
   left: 20%;
-  height: 15vh;
+  height: 20vh;
   width: 60vw;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   /* Healer:rgba(3, 93, 145, 0.199) */
   /* Titan:rgba(56, 34, 4, 0.199) */
   /* Eye: rgba(27, 1, 75, 0.199); */
@@ -554,16 +575,6 @@ button:hover {
   display: flex;
   text-align: center;
   justify-content: center;
-}
-#actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  position: absolute;
-  top: 75%;
-  width: 60vw;
-  height: 20vh;
 }
 
 #monstersCon {
