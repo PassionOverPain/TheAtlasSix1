@@ -462,6 +462,9 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+.characterName {
+  font-weight: bolder;
+}
 #actions {
   display: none; /* Change this back */
   position: relative;
