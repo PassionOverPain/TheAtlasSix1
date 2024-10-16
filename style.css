@@ -482,7 +482,10 @@ button:hover {
   top: 0;
   left: 1%;
   font-size: 1.2rem;
-  background-color: red;
+  background: url(Images/Assets/attackPower.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 25px;
   height: 25px;
   border-radius: 20px;
@@ -498,7 +501,10 @@ button:hover {
   top: 0;
   left: 65%;
   font-size: 1.2rem;
-  background-color: purple;
+  background: url(Images/Assets/actionCost.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 25px;
   height: 25px;
   border-radius: 20px;

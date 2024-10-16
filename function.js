@@ -191,9 +191,9 @@ function openAttacks() {
     let x = 0;
     actionPowers.forEach((actionPower) => {
       if (myHeroes[num].Attacks.Type[x] == `Attack`) {
-        actionPower.style.backgroundColor = `red`;
+        actionPower.style.background = `url(Images/Assets/attackPower.webp)`;
       } else {
-        actionPower.style.backgroundColor = `blue`;
+        actionPower.style.background = `url(Images/Assets/healPower.webp)`;
       }
       ++x;
     });
@@ -285,11 +285,21 @@ function openAttacks() {
   }
 }
 
-function loadAttacks() {
+function downAttacks() {
   if (num != 4) {
     ++num;
   } else {
     num = 0;
+  }
+  openAttacks();
+}
+function upAttacks() {
+  if (num == -1) {
+    num = 0;
+  } else if (num != 0) {
+    --num;
+  } else {
+    num = 4;
   }
   openAttacks();
 }
@@ -485,7 +495,7 @@ function clickAlly(HeroNum, Ally) {
     if (myHeroes[allyNum].Hp != myHeroes[allyNum].maxHp) {
       myHeroes[allyNum].Hp =
         myHeroes[allyNum].Hp + myHeroes[num].Attacks.Power[atkNumber];
-      textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atkNumber]} on an Ally who has More now.`;
+      textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atkNumber]} on ${myHeroes[allyNum].Name} who has ${myHeroes[num].Attacks.Power[atkNumber]} more Hp.`;
       if (myHeroes[allyNum].Hp > myHeroes[allyNum].maxHp) {
         myHeroes[allyNum].Hp = myHeroes[allyNum].maxHp;
       }
@@ -496,7 +506,7 @@ function clickAlly(HeroNum, Ally) {
         playFight();
       }, 3000);
     } else {
-      textBubble.textContent = `Ally Character is at maximum Health.`;
+      textBubble.textContent = `${myHeroes[allyNum].Name} is at maximum Health.`;
     }
   } else {
     openScroll(HeroNum);
@@ -537,7 +547,7 @@ function playFight() {
     myMonsters[arrEnemies[ranEnemy].Index].Attacks.Name[ranAtk]
   } on ${myHeroes[ranHero].Name}. This has dealt ${
     myMonsters[arrEnemies[ranEnemy].Index].Attacks.Power[ranAtk]
-  } damage.`;
+  } Hp damage.`;
   myHeroes[ranHero].Hp =
     myHeroes[ranHero].Hp -
     myMonsters[arrEnemies[ranEnemy].Index].Attacks.Power[ranAtk];
