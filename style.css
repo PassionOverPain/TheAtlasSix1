@@ -369,7 +369,7 @@ button:hover {
   background-size: cover;
   position: relative;
   position: relative;
-  justify-content: space-between; /*This is the space between char and words*/
+  justify-content: center; /*Change this back*/
   align-items: center;
   transition: all 0.5s;
 }
@@ -398,7 +398,7 @@ button:hover {
   margin-right: 10px;
   width: fit-content;
   height: 100vh;
-  display: grid;
+  display: none; /* Change this back */
   grid-template-columns: auto;
   row-gap: 15px;
 }

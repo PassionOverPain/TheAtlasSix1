@@ -291,6 +291,9 @@ function downAttacks() {
   } else {
     num = 0;
   }
+  document.getElementById(`actions`).style.display = `none`;
+  document.getElementById(`playground`).style.justifyContent = `center`;
+  document.getElementById(`heroesCon`).style.display = `none`;
   openAttacks();
 }
 function upAttacks() {
@@ -457,7 +460,7 @@ function clickEnemy(atknums) {
             myHeroes[num].Attacks.Name[atknums]
           } on ${enemyPath.Name} which has ${
             arrEnemies[Number(Enemy.dataset.ennumber)].Hp
-          } now.`;
+          } Hp now.`;
           played = true;
           deplete();
           setTimeout(() => {
