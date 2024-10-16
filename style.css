@@ -431,10 +431,10 @@ button:hover {
 }
 #storyLine {
   margin: 25px;
-  width: 50vw;
+  width: 95vw;
   height: fit-content;
   max-height: 80vh;
-  padding: 15px;
+  padding: 25px;
   font-size: 2rem;
   background-image: url(Images/paperbg.webp);
   background-size: cover;
@@ -444,8 +444,26 @@ button:hover {
   border-image-slice: 70;
   border-image-repeat: round;
 }
+.storyImage {
+  position: relative;
+  display: inline-block;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  opacity: 1;
+  height: 50vh;
+  width: 15vw;
+  margin: 10px;
+}
+#storyCon {
+  max-width: inherit;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
 #actions {
-  display: flex; /* Change this back */
+  display: none; /* Change this back */
   position: relative;
   top: 75%;
   left: 20%;
