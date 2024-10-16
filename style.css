@@ -466,7 +466,7 @@ button:hover {
   font-weight: bolder;
 }
 #actions {
-  display: none; /* Change this back */
+  display: flex; /* Change this back */
   position: relative;
   top: 75%;
   left: 20%;

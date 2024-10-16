@@ -29,15 +29,10 @@ let currentRound = 0;
 
 //Either open the map or close the map
 function displayMap() {
-  if (openMap == false) {
-    openMap = true;
-    document.getElementById("thisMap").style.display = "block";
-  } else {
-    openMap = false;
-    document.getElementById("thisMap").style.display = "none";
-  }
+  openMap = !openMap;
+  document.getElementById("thisMap").style.display = openMap ? "block" : "none";
 }
-var loader = document.getElementById("preloader");
+let loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
   // Lazy Loading :) //
   this.window.removeEventListener("load", load, false);
@@ -84,22 +79,20 @@ let gotMonsters = false;
 let textBubble = document.getElementById("pgCenter");
 
 //Load Atlas Six Hero data
-function getHeroes() {
-  fetch("./heroes.json")
-    .then((response) => response.json())
-    .then((values) => (myHeroes = values));
+async function getHeroes() {
+  const response = await fetch("./heroes.json");
+  myHeroes = await response.json();
   gotHeroes = true;
 }
 //Load Monster Data
-function getMonsters() {
-  fetch("./monsters.json")
-    .then((response) => response.json())
-    .then((values) => (myMonsters = values));
-  gotMonsters = true;
+async function getMonsters() {
+  const response = await fetch("./monsters.json");
+  myMonsters = await response.json();
+  gotHeroes = true;
 }
-let num = -1;
+let heroIndex = -1;
 function openScroll(charNum) {
-  num = charNum;
+  heroIndex = charNum;
   if (!gotHeroes) {
     getHeroes();
   }
@@ -133,43 +126,49 @@ function openScroll(charNum) {
 
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
-  document.getElementById("currentTitle").textContent = `${myHeroes[num].Name}`;
+  document.getElementById(
+    "currentTitle"
+  ).textContent = `${myHeroes[heroIndex].Name}`;
   document.getElementById("heDesc").style.display = `none`;
   document.getElementById("heAttacks").style.display = `none`;
   document.getElementById("msDescTab").style.display = `none`;
   document.getElementById("heStats").style.display = `block `;
-  if (myHeroes[num].Hp <= 0) {
-    document.getElementById("Hp").textContent = `Hp: 0/${myHeroes[num].maxHp}`;
+  if (myHeroes[heroIndex].Hp <= 0) {
+    document.getElementById(
+      "Hp"
+    ).textContent = `Hp: 0/${myHeroes[heroIndex].maxHp}`;
   } else {
     document.getElementById(
       "Hp"
-    ).textContent = `Hp: ${myHeroes[num].Hp}/${myHeroes[num].maxHp}`;
+    ).textContent = `Hp: ${myHeroes[heroIndex].Hp}/${myHeroes[heroIndex].maxHp}`;
   }
 
-  document.getElementById("Atk").textContent = `Atk: ${myHeroes[num].Atk}`;
+  document.getElementById(
+    "Atk"
+  ).textContent = `Atk: ${myHeroes[heroIndex].Atk}`;
   document.getElementById(
     "Stamina"
-  ).textContent = `Stamina: ${myHeroes[num].Stamina}/${myHeroes[num].maxStamina}`;
+  ).textContent = `Stamina: ${myHeroes[heroIndex].Stamina}/${myHeroes[heroIndex].maxStamina}`;
   document.getElementById(
     "Mana"
-  ).textContent = `Mana: ${myHeroes[num].Mana}/${myHeroes[num].maxMana}`;
+  ).textContent = `Mana: ${myHeroes[heroIndex].Mana}/${myHeroes[heroIndex].maxMana}`;
   document.getElementById(
     "Intelligence"
-  ).textContent = `Intelligence: ${myHeroes[num].Intelligence}`;
+  ).textContent = `Intelligence: ${myHeroes[heroIndex].Intelligence}`;
   document.getElementById(
     "Strength"
-  ).textContent = `Strength: ${myHeroes[num].Strength}`;
+  ).textContent = `Strength: ${myHeroes[heroIndex].Strength}`;
   document.getElementById(
     "Dexterity"
-  ).textContent = `Dexterity: ${myHeroes[num].Dexterity}`;
+  ).textContent = `Dexterity: ${myHeroes[heroIndex].Dexterity}`;
   document.getElementById(
     "Class"
-  ).textContent = `Class: ${myHeroes[num].Class}`;
+  ).textContent = `Class: ${myHeroes[heroIndex].Class}`;
 }
 
 //Load in Attacks
 function openAttacks() {
-  if (num == -1) {
+  if (heroIndex == -1) {
     textBubble.textContent = `Select an Atlas Six character first.`;
   } else {
     document.getElementById("heStats").style.display = `none`;
@@ -178,19 +177,19 @@ function openAttacks() {
     document.getElementById("heAttacks").style.display = `block `;
     document.getElementById(
       "Atk1"
-    ).textContent = `Attack 1: ${myHeroes[num].Attacks.Name[0]}`;
+    ).textContent = `Attack 1: ${myHeroes[heroIndex].Attacks.Name[0]}`;
 
     document.getElementById(
       "Action1Img"
-    ).src = `Images/Assets/${myHeroes[num].Attacks.Name[0]}.webp`;
+    ).src = `Images/Assets/${myHeroes[heroIndex].Attacks.Name[0]}.webp`;
 
     document.getElementById(
       "Desc1"
-    ).textContent = `Description: ${myHeroes[num].Attacks.Desc[0]}`;
+    ).textContent = `Description: ${myHeroes[heroIndex].Attacks.Desc[0]}`;
     const actionPowers = document.querySelectorAll(`.actionPower`);
     let x = 0;
     actionPowers.forEach((actionPower) => {
-      if (myHeroes[num].Attacks.Type[x] == `Attack`) {
+      if (myHeroes[heroIndex].Attacks.Type[x] == `Attack`) {
         actionPower.style.background = `url(Images/Assets/attackPower.webp)`;
       } else {
         actionPower.style.background = `url(Images/Assets/healPower.webp)`;
@@ -199,97 +198,97 @@ function openAttacks() {
     });
     document.getElementById(
       "Action1Power"
-    ).textContent = `${myHeroes[num].Attacks.Power[0]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Power[0]}`;
     document.getElementById(
       "Action1Cost"
-    ).textContent = `${myHeroes[num].Attacks.Cost[0]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Cost[0]}`;
     document.getElementById(
       "Action1Title"
-    ).textContent = `${myHeroes[num].Attacks.Name[0]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Name[0]}`;
     document.getElementById(
       "Action1Desc"
-    ).textContent = `${myHeroes[num].Attacks.Desc[0]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Desc[0]}`;
 
     document.getElementById(
       "Atk2"
-    ).textContent = `Attack 2: ${myHeroes[num].Attacks.Name[1]}`;
+    ).textContent = `Attack 2: ${myHeroes[heroIndex].Attacks.Name[1]}`;
 
     document.getElementById(
       "Action2Img"
-    ).src = `Images/Assets/${myHeroes[num].Attacks.Name[1]}.webp`;
+    ).src = `Images/Assets/${myHeroes[heroIndex].Attacks.Name[1]}.webp`;
 
     document.getElementById(
       "Desc2"
-    ).textContent = `Description: ${myHeroes[num].Attacks.Desc[1]}`;
+    ).textContent = `Description: ${myHeroes[heroIndex].Attacks.Desc[1]}`;
     document.getElementById(
       "Action2Power"
-    ).textContent = `${myHeroes[num].Attacks.Power[1]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Power[1]}`;
     document.getElementById(
       "Action2Cost"
-    ).textContent = `${myHeroes[num].Attacks.Cost[1]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Cost[1]}`;
 
     document.getElementById(
       "Action2Desc"
-    ).textContent = `${myHeroes[num].Attacks.Desc[1]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Desc[1]}`;
     document.getElementById(
       "Action2Title"
-    ).textContent = `${myHeroes[num].Attacks.Name[1]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Name[1]}`;
 
     document.getElementById(
       "Atk3"
-    ).textContent = `Attack 3: ${myHeroes[num].Attacks.Name[2]}`;
+    ).textContent = `Attack 3: ${myHeroes[heroIndex].Attacks.Name[2]}`;
 
     document.getElementById(
       "Action3Img"
-    ).src = `Images/Assets/${myHeroes[num].Attacks.Name[2]}.webp`;
+    ).src = `Images/Assets/${myHeroes[heroIndex].Attacks.Name[2]}.webp`;
 
     document.getElementById(
       "Desc3"
-    ).textContent = `Description: ${myHeroes[num].Attacks.Desc[2]}`;
+    ).textContent = `Description: ${myHeroes[heroIndex].Attacks.Desc[2]}`;
     document.getElementById(
       "Action3Power"
-    ).textContent = `${myHeroes[num].Attacks.Power[2]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Power[2]}`;
     document.getElementById(
       "Action3Cost"
-    ).textContent = `${myHeroes[num].Attacks.Cost[2]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Cost[2]}`;
     document.getElementById(
       "Action3Desc"
-    ).textContent = `${myHeroes[num].Attacks.Desc[2]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Desc[2]}`;
     document.getElementById(
       "Action3Title"
-    ).textContent = `${myHeroes[num].Attacks.Name[2]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Name[2]}`;
 
     document.getElementById(
       "Atk4"
-    ).textContent = `Attack 4: ${myHeroes[num].Attacks.Name[3]}`;
+    ).textContent = `Attack 4: ${myHeroes[heroIndex].Attacks.Name[3]}`;
 
     document.getElementById(
       "Action4Img"
-    ).src = `Images/Assets/${myHeroes[num].Attacks.Name[3]}.webp`;
+    ).src = `Images/Assets/${myHeroes[heroIndex].Attacks.Name[3]}.webp`;
 
     document.getElementById(
       "Desc4"
-    ).textContent = `Description: ${myHeroes[num].Attacks.Desc[3]}`;
+    ).textContent = `Description: ${myHeroes[heroIndex].Attacks.Desc[3]}`;
     document.getElementById(
       "Action4Power"
-    ).textContent = `${myHeroes[num].Attacks.Power[3]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Power[3]}`;
     document.getElementById(
       "Action4Cost"
-    ).textContent = `${myHeroes[num].Attacks.Cost[3]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Cost[3]}`;
     document.getElementById(
       "Action4Desc"
-    ).textContent = `${myHeroes[num].Attacks.Desc[3]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Desc[3]}`;
     document.getElementById(
       "Action4Title"
-    ).textContent = `${myHeroes[num].Attacks.Name[3]}`;
+    ).textContent = `${myHeroes[heroIndex].Attacks.Name[3]}`;
   }
 }
 
 function downAttacks() {
-  if (num != 4) {
-    ++num;
+  if (heroIndex != 4) {
+    ++heroIndex;
   } else {
-    num = 0;
+    heroIndex = 0;
   }
   document.getElementById(`actions`).style.display = `none`;
   document.getElementById(`playground`).style.justifyContent = `center`;
@@ -297,19 +296,19 @@ function downAttacks() {
   openAttacks();
 }
 function upAttacks() {
-  if (num == -1) {
-    num = 0;
-  } else if (num != 0) {
-    --num;
+  if (heroIndex == -1) {
+    heroIndex = 0;
+  } else if (heroIndex != 0) {
+    --heroIndex;
   } else {
-    num = 4;
+    heroIndex = 4;
   }
   openAttacks();
 }
 
 //Open StoryTeller Tab
 function openScroll2() {
-  openScroll(num);
+  openScroll(heroIndex);
 }
 
 //Close StoryTeller Tab
@@ -367,27 +366,32 @@ let atkNumber = -1;
 const actBtns = document.querySelectorAll(`.action`); //Hero Action
 actBtns.forEach((button) => {
   button.addEventListener("click", function chooseAttack() {
-    if (num == -1) {
+    if (heroIndex == -1) {
       textBubble.textContent = `Select an Atlas Six character first.`;
-    } else if (myHeroes[num].Hp <= 0) {
+    } else if (myHeroes[heroIndex].Hp <= 0) {
       textBubble.textContent = `Unable to perform this action because this character is currently Dead.`;
     } else {
       atkNumber = Number(button.dataset.atknum);
-      if (myHeroes[num].Attacks.CostClass[atkNumber] == "Mana") {
-        if (myHeroes[num].Mana < myHeroes[num].Attacks.Cost[atkNumber]) {
+      if (myHeroes[heroIndex].Attacks.CostClass[atkNumber] == "Mana") {
+        if (
+          myHeroes[heroIndex].Mana < myHeroes[heroIndex].Attacks.Cost[atkNumber]
+        ) {
           textBubble.textContent = `Unable to perform action due to character's lack of Mana.`;
           return;
         }
       } else {
-        if (myHeroes[num].Stamina < myHeroes[num].Attacks.Cost[atkNumber]) {
+        if (
+          myHeroes[heroIndex].Stamina <
+          myHeroes[heroIndex].Attacks.Cost[atkNumber]
+        ) {
           textBubble.textContent = `Unable to perform action due to character's lack of Stamina.`;
           return;
         }
       }
       if (!played) {
-        if (myHeroes[num].Attacks.Type[atkNumber] == "Attack") {
+        if (myHeroes[heroIndex].Attacks.Type[atkNumber] == "Attack") {
           clickEnemy(atkNumber);
-        } else if (myHeroes[num].Attacks.Type[atkNumber] == "Heal") {
+        } else if (myHeroes[heroIndex].Attacks.Type[atkNumber] == "Heal") {
           textBubble.textContent = "Select an Ally.";
         }
       } else {
@@ -398,12 +402,12 @@ actBtns.forEach((button) => {
 });
 
 function deplete() {
-  if (myHeroes[num].Attacks.CostClass[atkNumber] == "Mana")
-    myHeroes[num].Mana =
-      myHeroes[num].Mana - myHeroes[num].Attacks.Cost[atkNumber];
+  if (myHeroes[heroIndex].Attacks.CostClass[atkNumber] == "Mana")
+    myHeroes[heroIndex].Mana =
+      myHeroes[heroIndex].Mana - myHeroes[heroIndex].Attacks.Cost[atkNumber];
   else {
-    myHeroes[num].Stamina =
-      myHeroes[num].Stamina - myHeroes[num].Attacks.Cost[atkNumber];
+    myHeroes[heroIndex].Stamina =
+      myHeroes[heroIndex].Stamina - myHeroes[heroIndex].Attacks.Cost[atkNumber];
   }
 }
 
@@ -443,7 +447,7 @@ function clickEnemy(atknums) {
             myMonsters[arrEnemies[Number(Enemy.dataset.ennumber)].Index];
           arrEnemies[Number(Enemy.dataset.ennumber)].Hp =
             arrEnemies[Number(Enemy.dataset.ennumber)].Hp -
-            myHeroes[num].Attacks.Power[atknums];
+            myHeroes[heroIndex].Attacks.Power[atknums];
           if (arrEnemies[Number(Enemy.dataset.ennumber)].Hp <= 0) {
             //Check if the enemy is dead
             arrEnemies[Number(Enemy.dataset.ennumber)].Hp = 0; // Set Hp  to 0 as this is the Minimum
@@ -454,10 +458,12 @@ function clickEnemy(atknums) {
             ]}" />    `;
           }
 
-          let character = document.getElementById(`pg${myHeroes[num].Class}`);
+          let character = document.getElementById(
+            `pg${myHeroes[heroIndex].Class}`
+          );
           moveToCenter(character);
-          textBubble.textContent = `${myHeroes[num].Name} performed ${
-            myHeroes[num].Attacks.Name[atknums]
+          textBubble.textContent = `${myHeroes[heroIndex].Name} performed ${
+            myHeroes[heroIndex].Attacks.Name[atknums]
           } on ${enemyPath.Name} which has ${
             arrEnemies[Number(Enemy.dataset.ennumber)].Hp
           } Hp now.`;
@@ -497,12 +503,12 @@ function clickAlly(HeroNum, Ally) {
     let allyNum = Number(Ally.dataset.heronum);
     if (myHeroes[allyNum].Hp != myHeroes[allyNum].maxHp) {
       myHeroes[allyNum].Hp =
-        myHeroes[allyNum].Hp + myHeroes[num].Attacks.Power[atkNumber];
-      textBubble.textContent = `${myHeroes[num].Name} performed ${myHeroes[num].Attacks.Name[atkNumber]} on ${myHeroes[allyNum].Name} who has ${myHeroes[num].Attacks.Power[atkNumber]} more Hp.`;
+        myHeroes[allyNum].Hp + myHeroes[heroIndex].Attacks.Power[atkNumber];
+      textBubble.textContent = `${myHeroes[heroIndex].Name} performed ${myHeroes[heroIndex].Attacks.Name[atkNumber]} on ${myHeroes[allyNum].Name} who has ${myHeroes[heroIndex].Attacks.Power[atkNumber]} more Hp.`;
       if (myHeroes[allyNum].Hp > myHeroes[allyNum].maxHp) {
         myHeroes[allyNum].Hp = myHeroes[allyNum].maxHp;
       }
-      let character = document.getElementById(`pg${myHeroes[num].Class}`);
+      let character = document.getElementById(`pg${myHeroes[heroIndex].Class}`);
       moveToCenter(character);
       deplete();
       setTimeout(() => {

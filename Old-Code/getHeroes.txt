@@ -1,0 +1,6 @@
+function getHeroes() {
+  fetch("./heroes.json")
+    .then((response) => response.json())
+    .then((values) => (myHeroes = values));
+  gotHeroes = true;
+}
