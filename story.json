@@ -1,22 +1,57 @@
 [
-	{
-		"Chapterid": "chapter1",
-		"Name": "The Awakening",
-		"branches": [
-			{
-				"Branchid": "branch1",
-				"text": "You awaken on a desolate battlefield, surrounded by a thick fog. The air feels heavy and cold, filled with echoes of distant voices. Shadows stretch across the ground, where remnants of a recent struggle lie. You regain consciousness and notice your friends are scattered on the battleground... Who do you seek for aid:",
-				"character1": "none",
-				"character2": "none",
-				"choices": [
-					{
-						"option": "Llewellyn",
-						"outcome": ""
-					},
-					{}
-				]
-			}
-		]
-	},
-	{}
+  {
+    "chapterId": "chapter1",
+    "Name": "The Awakening",
+    "branches": [
+      {
+        "branchId": "branch1",
+        "text": "You awaken on a desolate battlefield, surrounded by a thick fog. <br>The air feels heavy and cold, filled with echoes of distant voices. <br>Shadows stretch across the ground, where remnants of a recent struggle lie. <br>You regain consciousness and notice your friends are scattered on the battleground... Who do you seek for aid:",
+        "character1": "none",
+        "character2": "none",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "1",
+            "option": "Jasmin",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> (With no words Jasmin hugs you)<br>... I thought you were gone. You took quite a hit... all this time...we should have never trusted them.",
+            "character1": "none",
+            "character2": "Images/healer.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Llewellyn",
+            "outcome": "<span class=\"characterName\">Llewellyn:</span> Ah glad to see you've woken up from that sleep you were in. As you may or may not remember<br>(He points to a cloaked figure)<br>I don't know how but we need to stop them.",
+            "character1": "none",
+            "character2": "Images/titan.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "Mthi",
+            "outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? <br>What would we do without you? Don't go doing that again. <br>(She smiles faintly and hugs you)<br>Anyway our problem lies with them.",
+            "character1": "none",
+            "character2": "Images/eye.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "4",
+            "option": "Zanele",
+            "outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <br> (She hugs you with a sigh of relief). We need to make them pay for this, for everything.",
+            "character1": "",
+            "character2": "Images/phoenix.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "5",
+            "option": "Tino",
+            "outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. <br>Thank you for not dying on us... at least yet (He smiles at you).",
+            "character1": "none",
+            "character2": "Images/timekeeper.webp",
+            "event": "none"
+          }
+        ]
+      }
+    ]
+  }
 ]

@@ -1,5 +1,5 @@
 /** @format */
-
+//The Main function
 function openTab(tab, hero) {
   if (tab == "Info") {
     document.getElementById(`${hero}Stats`).classList.remove("active");
@@ -25,6 +25,7 @@ function displayInfo(choice, hero) {
 let myMonsters;
 let myHeroes;
 let openMap = false;
+let myChapters;
 let currentRound = 0;
 
 //Either open the map or close the map
@@ -38,6 +39,8 @@ window.addEventListener("load", function (load) {
   this.window.removeEventListener("load", load, false);
   getHeroes();
   getMonsters();
+  loadStory();
+  // displayChapter();
   this.setTimeout(function () {
     loader.style.display = "none";
     this.document.body.style.cursor = "url(Images/swordcursor1.png), auto";
@@ -90,6 +93,11 @@ async function getMonsters() {
   myMonsters = await response.json();
   gotHeroes = true;
 }
+
+async function loadStory() {
+  const response = await fetch("./story.json");
+  myChapters = await response.json();
+}
 let heroIndex = -1;
 function openScroll(charNum) {
   heroIndex = charNum;
@@ -123,7 +131,6 @@ function openScroll(charNum) {
   // 		break;
   // 	}
   // }
-
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
   document.getElementById(
@@ -585,4 +592,22 @@ function playFight() {
   })
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
+}
+alert(`This is working`);
+console.log(`${myHeroes[0].Name}`);
+function displayChapter() {
+  const pgStory = document.getElementById("pgStory");
+  pgStory.innerHTML = myChapters[0].branches[0].text; // No need to replace anything
+
+  // const choicesContainer = document.getElementById("choices");
+  // choicesContainer.innerHTML = ""; // Clear previous choices
+
+  // chapter.Branches[0].Choices.forEach((choice) => {
+  //   const button = document.createElement("button");
+  //   button.textContent = choice.Option;
+  //   button.addEventListener("click", () => {
+  //     textBubble.innerHTML = choice.Outcome; // No need to replace anything
+  //   });
+  //   choicesContainer.appendChild(button);
+  // });
 }
