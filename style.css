@@ -185,6 +185,9 @@ body {
 	min-height: 100vh;
 	cursor: none;
 }
+i {
+	font-weight: bolder;
+}
 #About {
 	padding: 50px;
 	height: 100vh;
@@ -465,6 +468,10 @@ button:hover {
 }
 .characterName {
 	font-weight: bolder;
+}
+.choice:hover {
+	cursor: url(Images/hand-s.png), auto;
+	color: red;
 }
 #actions {
 	display: none; /* Change this back */
