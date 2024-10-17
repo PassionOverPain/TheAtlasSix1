@@ -593,8 +593,7 @@ function playFight() {
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
 }
-alert(`This is working`);
-console.log(`${myHeroes[0].Name}`);
+
 function displayChapter() {
   const pgStory = document.getElementById("pgStory");
   pgStory.innerHTML = myChapters[0].branches[0].text; // No need to replace anything
