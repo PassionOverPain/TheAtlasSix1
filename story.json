@@ -62,7 +62,7 @@
 					{
 						"choiceId": "0",
 						"option": "Ask Jasmin to heal the group and set up a defense barrier",
-						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though.<br> <span class=\"characterName\">Jasmin:</span I know, the mana between all of us should be enough for one more transformation. <i> jasmin heals the group</i> <br><span class=\"characterName\">Zanele:</span> Thank you <i>She nods</i>",
+						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though.<br> <span class=\"characterName\">Jasmin:</span> I know, the mana between all of us should be enough for one more transformation. <i> jasmin heals the group</i> <br><span class=\"characterName\">Zanele:</span> Thank you <i>She nods.</i><br><span class=\"characterName\">Mthi:</span> Collectively we should have enough mana now to hold off.<br> <span class=\"characterName\">Jasmin:</span> Okay <i> The group activates a defensive barrier around them.</i> This should hold.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
@@ -78,7 +78,7 @@
 					{
 						"choiceId": "2",
 						"option": "Ask Mthi to hypnotize the enemy while they are disctracted",
-						"outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? What would we do without you? Don't go doing that again. <i>She smiles faintly and hugs you.</i> Anyway our problem lies with them. <i> Mthi turns to face the cloaked figure in the distance. </i>",
+						"outcome": "<span class=\"characterName\">Mthi:</span> Somehow they've managed to dodge all my arrows till this point. I could increase the barrage but that will increase the number of incoming enemies on you guys since I can't focus on both. <br><span class=\"characterName\">Zanele:</span> If I use Inferno in a controlled space, I'll cut down the numbers without harming our allies. <br> <span class=\"characterName\">Jasmin:</span> Good idea, we can't afford to hurt the palace guard. <br> <span class=\"characterName\">Mthi:</span> Kewl, Zanele I'll rain down a storm to cool your flames. <i>Mthi smirks </i>. <br> <span class=\"characterName\">Zanele:</span>... Just don't die.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
@@ -86,7 +86,7 @@
 					{
 						"choiceId": "3",
 						"option": "Ask Tino stop time, giving the group enough time to escape the battlefield",
-						"outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
+						"outcome": "<span class=\"characterName\">Tino:</span> Maybe we just need a good amount of time to get out of this mess. <br> <span class=\"characterName\">Llewellyn:</span> What about our allies? <br><span class=\"characterName\">Tino:</span> There won't be enough time... <br> <span class=\"characterName\">Zanele:</span> If that's a choice we must make...<br> <span class=\"characterName\">Tino:</span> Nothing else needs to said. <i>Tino stops time </i>",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
@@ -94,11 +94,29 @@
 					{
 						"choiceId": "4",
 						"option": "Ask Zanele to burn the battlefield, losing allies but ensuring the enemy is gone",
-						"outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
+						"outcome": "<br> <span class=\"characterName\">Zanele:</span> We need to get out of this, one way or the other. <br> <span class=\"characterName\">Jasmin:</span> And you are suggesting? <br> <span class=\"characterName\">Zanele:</span> Using Inferno around us, we can ensure that the enemy is gone but - <br> <span class=\"characterName\">Mthi:</span> That flame will also devour everything else outside of the protective circle. <br> <span class=\"characterName\">Zanele:</span> Yes. <br> <span class=\"characterName\">Jasmin:</span> At this point- <br> <span class=\"characterName\">Tino:</span> We need to ensure that they are stopped, no matter the cost. <br> <span class=\"characterName\">Zanele:</span> Okay... <i> Zanele lights the circle and everyone steps inside </i>.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
 					}
+				]
+			},
+			{
+				"branchId": "branch3",
+				"text": "<br> <span class=\"characterName\">Cloaked Figure:</span> So That's It?!?",
+				"character1": "all",
+				"character2": "Images/cloakedFigureFront.webp",
+				"event": "skipChoices",
+				"choices": [
+					{
+						"choiceId": "0",
+						"option": "",
+						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> The all powerful five can only hide anyway from a battle and not face it head on? <i> The Cloaked Figure taps the barrier, shattering the field into fragments</i>. Your cowardliness amuses me.<br> Within a blink the enemy teleports and appears right infront of you. <br> <span class=\"characterName\">Cloaked Figure:</span> Face Me.",
+						"character1": "all",
+						"character2": "Images/cloakedFigureBack.webp",
+						"event": "none"
+					},
+					{}
 				]
 			}
 		]

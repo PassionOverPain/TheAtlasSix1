@@ -611,6 +611,8 @@ function displayChapter(branch) {
 	let pgImg1 = document.getElementById(`pgCharacter1`);
 	let pgImg2 = document.getElementById(`pgCharacter2`);
 
+	// Stuff -- Error Logic --- Stuff
+
 	if (branch.character1 == "all") {
 		pgImg1.innerHTML = ` <img
           src="Images/healer.webp"
@@ -668,6 +670,14 @@ function displayChapter(branch) {
           src="${branch.character2}"
           alt="This is a story character Image"
           class="storyImage" />`;
+	}
+	if (branch.event == "skipChoices") {
+		let p = document.createElement("p");
+		p.innerHTML = `${
+			branch.choices[arrChoices[arrChoices.length - 1]].outcome
+		}`;
+		chapterText.appendChild(p);
+		return;
 	}
 
 	// Display choices as narrative text
