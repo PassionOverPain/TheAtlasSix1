@@ -460,6 +460,10 @@ button:hover {
   width: 15vw;
   margin: 10px;
 }
+.storyImageReduced {
+  height: 15vh;
+  width: 5vw;
+}
 #storyCon {
   max-width: inherit;
   height: fit-content;
@@ -474,6 +478,10 @@ button:hover {
   cursor: url(Images/hand-s.png), auto;
   color: red;
   display: inline-block;
+}
+.characterCon {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 #actions {
   display: none; /* Change this back */

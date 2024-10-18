@@ -36,35 +36,35 @@
           },
           {
             "choiceId": "3",
-            "option": "Zanele",
-            "outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
-            "character1": "none",
-            "character2": "Images/phoenix.webp",
-            "event": "none"
-          },
-          {
-            "choiceId": "4",
             "option": "Tino",
             "outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
             "character1": "none",
             "character2": "Images/timekeeper.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "4",
+            "option": "Zanele",
+            "outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
+            "character1": "none",
+            "character2": "Images/phoenix.webp",
             "event": "none"
           }
         ]
       },
       {
         "branchId": "branch2",
-        "text": "",
+        "text": "<i>Your turn to see the others rushing towards you.</i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field either.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.<i/><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
         "character1": "none",
-        "character2": "none",
+        "character2": "all",
         "event": "none",
         "choices": [
           {
             "choiceId": "0",
             "option": "Jasmin",
-            "outcome": "<i>Your turn to see the others rushing towards Jasmin and you.</i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field either.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.<i/><br><span class=\"characterName\">Llewellyn:</span> Yea, I still do a good amount of damage",
+            "outcome": "",
             "character1": "none",
-            "character2": "Images/healer.webp",
+            "character2": "none",
             "event": "none"
           },
           {
@@ -72,7 +72,7 @@
             "option": "Llewellyn",
             "outcome": "<span class=\"characterName\">Llewellyn:</span> Ah glad to see you've woken up from that sleep you were in. As you may or may not remember. <i>He points to a cloaked figure</i>. I don't know how but we need to stop them.",
             "character1": "none",
-            "character2": "Images/titan.webp",
+            "character2": "all",
             "event": "none"
           },
           {
@@ -80,7 +80,15 @@
             "option": "Mthi",
             "outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? What would we do without you? Don't go doing that again. <i>She smiles faintly and hugs you.</i> Anyway our problem lies with them. <i> Mthi turns to face the cloaked figure in the distance. </i>",
             "character1": "none",
-            "character2": "Images/eye.webp",
+            "character2": "all",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "Tino",
+            "outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
+            "character1": "none",
+            "character2": "all",
             "event": "none"
           },
           {
@@ -88,15 +96,7 @@
             "option": "Zanele",
             "outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
             "character1": "none",
-            "character2": "Images/phoenix.webp",
-            "event": "none"
-          },
-          {
-            "choiceId": "4",
-            "option": "Tino",
-            "outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
-            "character1": "none",
-            "character2": "Images/timekeeper.webp",
+            "character2": "all",
             "event": "none"
           }
         ]

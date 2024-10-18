@@ -599,8 +599,6 @@ function cook() {
   displayChapter(myBranch);
 }
 function displayChapter(branch) {
-  // let pgStory = document.getElementById("pgStory");
-  // pgStory.innerHTML = myChapters[0].branches[0].text; // No need to replace anything
   let chapterText = document.getElementById("pgStory");
   let choicesContainer = document.getElementById("pgChoices");
   chapterText.innerHTML = "";
@@ -636,25 +634,68 @@ function displayChapter(branch) {
         arrChoices.push(choiceNum);
         chapterText.innerHTML = branch.choices[choiceNum].outcome;
         choicesContainer.innerHTML = "";
-        if (choice.character1 != "none") {
-          pgImg1.innerHTML = ` <img
-          src="url(${choice.character1})"
+        if (choice.character1 == "all") {
+          pgImg2.innerHTML = ` <img
+          src="Images/healer.webp"
           alt="This is a story character Image"
-          class="storyImage" /> `;
-        }
-        if (choice.character2 != "none") {
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/titan.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/eye.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/phoenix.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/timekeeper.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />`;
+          // Display an Individual character
+        } else if (choice.character1 != "none") {
           pgImg2.innerHTML = ` <img
           src="${choice.character2}"
           alt="This is a story character Image"
-          class="storyImage" /> `;
+          class="storyImage" />`;
         }
+
+        // Display All Atlas Characters
+        if (choice.character2 == "all") {
+          pgImg2.innerHTML = ` <img
+          src="Images/healer.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/titan.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/eye.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/phoenix.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/timekeeper.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />`;
+          // Display an Individual Character
+        } else if (choice.character2 != "none") {
+          pgImg2.innerHTML = ` <img
+          src="${choice.character2}"
+          alt="This is a story character Image"
+          class="storyImage" />`;
+        }
+        displayChapter;
+        myChapters[0].branches[1];
       });
-
       choicesContainer.appendChild(p);
-
-      // const instructionText = document.createElement("p");
-      // instructionText.textContent = "";
-      // chapterText.appendChild(instructionText);
     });
   }
 }
