@@ -37,7 +37,7 @@
 					{
 						"choiceId": "3",
 						"option": "Tino",
-						"outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
+						"outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
 						"character1": "none",
 						"character2": "Images/timekeeper.webp",
 						"event": "none"
@@ -54,29 +54,30 @@
 			},
 			{
 				"branchId": "branch2",
-				"text": "<i>Your turn to see the others rushing towards both of you.<br></i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.</i><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan or something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
+				"text": "<i>You turn to see the others rushing towards both of you.<br></i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.</i><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan or something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
 				"character1": "all",
 				"character2": "Images/cloakedFigureBack.webp",
 				"event": "none",
 				"choices": [
 					{
 						"choiceId": "0",
-						"option": "Ask Jasmin to heal the group to Full Health",
-						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though. <br>",
+						"option": "Ask Jasmin to heal the group and set up a defense barrier",
+						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though.<br> <span class=\"characterName\">Jasmin:</span I know, the mana between all of us should be enough for one more transformation. <i> jasmin heals the group</i> <br><span class=\"characterName\">Zanele:</span> Thank you <i>She nods</i>",
+						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
 					},
 					{
 						"choiceId": "1",
-						"option": "Tell Llewellyn to transform into a Titan and strike the enemy",
-						"outcome": "<span class=\"characterName\">Llewellyn:</span> There is only one way to get through: full force.<br><span class=\"characterName\">Mthi:</span> That's took risky though, you might not make it.<br><span class=\"characterName\">Llewellyn:</span> That mana field is not going anyway anytime soon.<br><span class=\"characterName\">Tino:</span> He's got a point, if we combine the attack force with a rip through time maybe we can deal enough damage. <br>",
+						"option": "Ask Llewellyn to transform into a Titan and strike the enemy",
+						"outcome": "<span class=\"characterName\">Llewellyn:</span> There is only one way to get through: full force.<br><span class=\"characterName\">Mthi:</span> That's took risky though, you might not make it.<br><span class=\"characterName\">Llewellyn:</span> That mana field is not going anyway anytime soon.<br><span class=\"characterName\">Tino:</span> He's got a point, if we combine the attack force with a rip through time maybe we can deal enough damage.<br><span class=\"characterName\">Mthi:</span> I'll guide you incase things get...messier. <br><i>Both Llewellyn and Tino nod</i>",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
 					},
 					{
 						"choiceId": "2",
-						"option": "Get Mthi to try hypnotize the enemy while they are disctracted",
+						"option": "Ask Mthi to hypnotize the enemy while they are disctracted",
 						"outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? What would we do without you? Don't go doing that again. <i>She smiles faintly and hugs you.</i> Anyway our problem lies with them. <i> Mthi turns to face the cloaked figure in the distance. </i>",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
@@ -84,7 +85,7 @@
 					},
 					{
 						"choiceId": "3",
-						"option": "Let Tino stop time, giving the group enough time to escape the battlefield",
+						"option": "Ask Tino stop time, giving the group enough time to escape the battlefield",
 						"outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
@@ -92,7 +93,7 @@
 					},
 					{
 						"choiceId": "4",
-						"option": "Let Zanele burn the battlefield, losing allies but ensuring the enemy is gone",
+						"option": "Ask Zanele to burn the battlefield, losing allies but ensuring the enemy is gone",
 						"outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
