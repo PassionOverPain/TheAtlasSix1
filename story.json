@@ -62,15 +62,14 @@
 					{
 						"choiceId": "0",
 						"option": "Ask Jasmin to heal the group to Full Health",
-						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though. <br><span class=\"characterName\">Llewellyn:</span> There is only one way to get through: full force.<br><span class=\"characterName\">Mthi:</span>",
-						"character1": "all",
+						"outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though. <br>",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
 					},
 					{
 						"choiceId": "1",
 						"option": "Tell Llewellyn to transform into a Titan and strike the enemy",
-						"outcome": "<span class=\"characterName\">Llewellyn:</span> Ah glad to see you've woken up from that sleep you were in. As you may or may not remember. <i>He points to a cloaked figure</i>. I don't know how but we need to stop them.",
+						"outcome": "<span class=\"characterName\">Llewellyn:</span> There is only one way to get through: full force.<br><span class=\"characterName\">Mthi:</span> That's took risky though, you might not make it.<br><span class=\"characterName\">Llewellyn:</span> That mana field is not going anyway anytime soon.<br><span class=\"characterName\">Tino:</span> He's got a point, if we combine the attack force with a rip through time maybe we can deal enough damage. <br>",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
@@ -92,7 +91,7 @@
 						"event": "none"
 					},
 					{
-						"choiceId": "3",
+						"choiceId": "4",
 						"option": "Let Zanele burn the battlefield, losing allies but ensuring the enemy is gone",
 						"outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
 						"character1": "all",

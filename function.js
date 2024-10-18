@@ -748,7 +748,6 @@ function displayChapter(branch) {
 				choicesContainer.appendChild(Continue);
 				Continue.addEventListener("click", () => {
 					++currentBranch;
-					alert(`Our Current Branch is ${currentBranch}`); //Another Error Found
 					displayChapter(myChapters[currentChapter].branches[currentBranch]);
 				});
 			});
