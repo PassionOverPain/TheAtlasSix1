@@ -629,6 +629,7 @@ function displayChapter(branch) {
 			let p = document.createElement("p");
 			p.innerHTML = `${choice.option}`;
 			p.className = "choice";
+      
 
 			// Add event listener for clicking on the choice
 			p.addEventListener("click", () => {

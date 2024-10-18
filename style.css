@@ -472,6 +472,7 @@ button:hover {
 .choice:hover {
 	cursor: url(Images/hand-s.png), auto;
 	color: red;
+	display: inline-block;
 }
 #actions {
 	display: none; /* Change this back */
