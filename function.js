@@ -28,6 +28,8 @@ let openMap = false;
 let myChapters;
 let arrChoices = [];
 let currentRound = 0;
+let currentChapter = 0;
+let currentBranch = 0;
 
 //Either open the map or close the map
 function displayMap() {
@@ -739,11 +741,25 @@ function displayChapter(branch) {
           alt="This is a story character Image"
           class="storyImage" />`;
         }
+        let Continue = document.createElement("p");
+        Continue.innerHTML = `Continue`;
+        Continue.className = "choice";
+        choicesContainer.appendChild(Continue);
+        Continue.addEventListener("click", () => {
+          displayChapter(
+            myChapters[currentChapter].branches[currentBranch + 1]
+          );
+        });
       });
       choicesContainer.appendChild(p);
     });
-    setTimeout(() => {
-      displayChapter(myChapters[0].branches[1]);
-    }, 5000);
+  } else {
+    let Continue = document.createElement("p");
+    Continue.innerHTML = `Continue`;
+    Continue.className = "choice";
+    Continue.addEventListener("click", () => {
+      displayChapter(myChapters[currentChapter].branches[currentBranch + 1]);
+    });
+    choicesContainer.appendChild(Continue);
   }
 }

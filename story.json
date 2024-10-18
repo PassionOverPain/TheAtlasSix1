@@ -62,41 +62,41 @@
           {
             "choiceId": "0",
             "option": "Ask Jasmin to heal the group to Full Health",
-            "outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">LLewellyn:</span> There won't be much room to plan an effective attack though. <span class=\"characterName\">Jasmin:</span>Yea but we can only try our best.<i>Jasmin starts to heal everyone</i>",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though. <br> <span class=\"characterName\">Jasmin:</span>Yea but we can only try our best.<i>jasmin starts to heal everyone</i>",
             "character1": "all",
-            "character2": "",
+            "character2": "Images/cloakedFigureBack.webp",
             "event": "none"
           },
           {
             "choiceId": "1",
             "option": "Tell Llewellyn to transform into a Titan and strike the enemy",
             "outcome": "<span class=\"characterName\">Llewellyn:</span> Ah glad to see you've woken up from that sleep you were in. As you may or may not remember. <i>He points to a cloaked figure</i>. I don't know how but we need to stop them.",
-            "character1": "none",
-            "character2": "all",
+            "character1": "all",
+            "character2": "Images/cloakedFigureBack.webp",
             "event": "none"
           },
           {
             "choiceId": "2",
             "option": "Get Mthi to try hypnotize the enemy while they are disctracted",
             "outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? What would we do without you? Don't go doing that again. <i>She smiles faintly and hugs you.</i> Anyway our problem lies with them. <i> Mthi turns to face the cloaked figure in the distance. </i>",
-            "character1": "none",
-            "character2": "all",
+            "character1": "all",
+            "character2": "Images/cloakedFigureBack.webp",
             "event": "none"
           },
           {
             "choiceId": "3",
             "option": "Let Tino stop time, giving the group enough time to escape the battlefield",
             "outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return's presence is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
-            "character1": "none",
-            "character2": "all",
+            "character1": "all",
+            "character2": "Images/cloakedFigureBack.webp",
             "event": "none"
           },
           {
             "choiceId": "3",
             "option": "Let Zanele burn the battlefield, losing allies but ensuring the enemy is gone",
             "outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
-            "character1": "none",
-            "character2": "all",
+            "character1": "all",
+            "character2": "Images/cloakedFigureBack.webp",
             "event": "none"
           }
         ]
