@@ -54,17 +54,17 @@
       },
       {
         "branchId": "branch2",
-        "text": "<i>Your turn to see the others rushing towards you.<br></i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.</i><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan or something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
-        "character1": "none",
-        "character2": "all",
+        "text": "<i>Your turn to see the others rushing towards both of you.<br></i><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.</i><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan or something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
+        "character1": "all",
+        "character2": "Images/cloakedFigureBack.webp",
         "event": "none",
         "choices": [
           {
             "choiceId": "0",
             "option": "Ask Jasmin to heal the group to Full Health",
-            "outcome": "",
-            "character1": "none",
-            "character2": "none",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">LLewellyn:</span> There won't be much room to plan an effective attack though. <span class=\"characterName\">Jasmin:</span>Yea but we can only try our best.<i>Jasmin starts to heal everyone</i>",
+            "character1": "all",
+            "character2": "",
             "event": "none"
           },
           {

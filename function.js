@@ -633,7 +633,7 @@ function displayChapter(branch) {
     // Display an Individual character
   } else if (branch.character1 != "none") {
     pgImg1.innerHTML = ` <img
-          src="${choice.character2}"
+          src="${branch.character2}"
           alt="This is a story character Image"
           class="storyImage" />`;
   }
@@ -663,7 +663,7 @@ function displayChapter(branch) {
     // Display an Individual Character
   } else if (branch.character2 != "none") {
     pgImg2.innerHTML = ` <img
-          src="${choice.character2}"
+          src="${branch.character2}"
           alt="This is a story character Image"
           class="storyImage" />`;
   }
