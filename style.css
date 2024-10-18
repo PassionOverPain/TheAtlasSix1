@@ -479,6 +479,7 @@ button:hover {
   color: red;
   display: inline-block;
 }
+
 .characterCon {
   display: grid;
   grid-template-columns: auto auto;

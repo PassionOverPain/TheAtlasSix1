@@ -604,21 +604,68 @@ function displayChapter(branch) {
   chapterText.innerHTML = "";
   choicesContainer.innerHTML = "";
   const p = document.createElement("p");
-  p.textContent = branch.text;
+  p.innerHTML = branch.text;
   chapterText.appendChild(p);
   let pgImg1 = document.getElementById(`pgCharacter1`);
   let pgImg2 = document.getElementById(`pgCharacter2`);
-  if (branch.character1 != "none") {
+
+  if (branch.character1 == "all") {
     pgImg1.innerHTML = ` <img
-    src="${branch.character1}"
-    alt="This is a story character Image"
-    class="storyImage" /> `;
+          src="Images/healer.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/titan.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/eye.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/phoenix.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/timekeeper.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />`;
+    // Display an Individual character
+  } else if (branch.character1 != "none") {
+    pgImg1.innerHTML = ` <img
+          src="${choice.character2}"
+          alt="This is a story character Image"
+          class="storyImage" />`;
   }
-  if (branch.character2 != "none") {
+
+  // Display All Atlas Characters
+  if (branch.character2 == "all") {
     pgImg2.innerHTML = ` <img
-    src="${branch.character2}"
-    alt="This is a story character Image"
-    class="storyImage" /> `;
+          src="Images/healer.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/titan.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/eye.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/phoenix.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />
+           <img
+          src="Images/timekeeper.webp"
+          alt="This is a story character Image"
+          class="storyImage storyImageReduced" />`;
+    // Display an Individual Character
+  } else if (branch.character2 != "none") {
+    pgImg2.innerHTML = ` <img
+          src="${choice.character2}"
+          alt="This is a story character Image"
+          class="storyImage" />`;
   }
 
   // Display choices as narrative text
@@ -635,7 +682,7 @@ function displayChapter(branch) {
         chapterText.innerHTML = branch.choices[choiceNum].outcome;
         choicesContainer.innerHTML = "";
         if (choice.character1 == "all") {
-          pgImg2.innerHTML = ` <img
+          pgImg1.innerHTML = ` <img
           src="Images/healer.webp"
           alt="This is a story character Image"
           class="storyImage storyImageReduced" />
@@ -657,7 +704,7 @@ function displayChapter(branch) {
           class="storyImage storyImageReduced" />`;
           // Display an Individual character
         } else if (choice.character1 != "none") {
-          pgImg2.innerHTML = ` <img
+          pgImg1.innerHTML = ` <img
           src="${choice.character2}"
           alt="This is a story character Image"
           class="storyImage" />`;
@@ -692,10 +739,11 @@ function displayChapter(branch) {
           alt="This is a story character Image"
           class="storyImage" />`;
         }
-        displayChapter;
-        myChapters[0].branches[1];
       });
       choicesContainer.appendChild(p);
     });
+    setTimeout(() => {
+      displayChapter(myChapters[0].branches[1]);
+    }, 5000);
   }
 }
