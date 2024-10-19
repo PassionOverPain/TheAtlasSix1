@@ -103,7 +103,7 @@
 			},
 			{
 				"branchId": "branch3",
-				"text": "<br> <span class=\"characterName\">Cloaked Figure:</span> So That's It?!?",
+				"text": "<span class=\"characterName\">Cloaked Figure:</span> So That's It?!?",
 				"character1": "all",
 				"character2": "Images/cloakedFigureFront.webp",
 				"event": "skipChoices",
@@ -113,15 +113,15 @@
 						"option": "",
 						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> The all powerful five can only hide anyway from a battle and not face it head on? <i> The Cloaked Figure taps the barrier, shattering the field into fragments</i>. Your cowardliness amuses me.<br> Within a blink the enemy teleports and appears right infront of you. <br> <span class=\"characterName\">Cloaked Figure:</span> I'll just cut off your heads then.",
 						"character1": "all",
-						"character2": "Images/cloakedFigureBack.webp",
+						"character2": "Images/cloakedFigureFront.webp",
 						"event": "none"
 					},
 					{
 						"choiceId": "1",
 						"option": "",
-						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> Ofcourse you send a Titan.",
+						"outcome": "<span class=\"characterName\">Llewellyn:</span> Now! <br> Llewellyn roars as he transforms into a towering Titan, his every move supercharged by Tino's time magic, making him a blur of speed and power. Together, they launch a relentless assault of attacks on the cloaked figure, each attack crashing down with earth-shaking force. The cloaked figure remained unscaled, dodging at faster speeds. Llewellyn raises his colossal fist for a final strike, slamming it down with all his might. The ground trembles, but the cloaked figure meets the blow with a single hand, stopping the attack effortlessly. <br> <span class=\"characterName\">Cloaked Figure:</span> Hmm....  you done? <br> The group joins for another battle.",
 						"character1": "Images/Assets/Titan Terror.webp",
-						"character2": "Images/cloakedFigureBack.webp",
+						"character2": "Images/cloakedFigureFront.webp",
 						"event": "none"
 					}
 				]
