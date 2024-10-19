@@ -677,6 +677,18 @@ function displayChapter(branch) {
 			branch.choices[arrChoices[arrChoices.length - 1]].outcome
 		}`;
 		chapterText.appendChild(p);
+		let Continue = document.createElement("p");
+		Continue.innerHTML = `Continue`;
+		Continue.className = "choice";
+		choicesContainer.appendChild(Continue);
+		Continue.addEventListener(
+			"click",
+			() => {
+				++currentBranch;
+				displayChapter(myChapters[currentChapter].branches[currentBranch]);
+			},
+			{ once: true }
+		);
 		return;
 	}
 
@@ -756,10 +768,14 @@ function displayChapter(branch) {
 				Continue.innerHTML = `Continue`;
 				Continue.className = "choice";
 				choicesContainer.appendChild(Continue);
-				Continue.addEventListener("click", () => {
-					++currentBranch;
-					displayChapter(myChapters[currentChapter].branches[currentBranch]);
-				});
+				Continue.addEventListener(
+					"click",
+					() => {
+						++currentBranch;
+						displayChapter(myChapters[currentChapter].branches[currentBranch]);
+					},
+					{ once: true }
+				);
 			});
 			choicesContainer.appendChild(p);
 		});
@@ -767,10 +783,14 @@ function displayChapter(branch) {
 		let Continue = document.createElement("p");
 		Continue.innerHTML = `Continue`;
 		Continue.className = "choice";
-		Continue.addEventListener("click", () => {
-			++currentBranch;
-			displayChapter(myChapters[currentChapter].branches[currentBranch]);
-		});
+		Continue.addEventListener(
+			"click",
+			() => {
+				++currentBranch;
+				displayChapter(myChapters[currentChapter].branches[currentBranch]);
+			},
+			{ once: true }
+		);
 		choicesContainer.appendChild(Continue);
 	}
 }

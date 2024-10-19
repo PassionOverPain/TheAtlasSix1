@@ -111,12 +111,19 @@
 					{
 						"choiceId": "0",
 						"option": "",
-						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> The all powerful five can only hide anyway from a battle and not face it head on? <i> The Cloaked Figure taps the barrier, shattering the field into fragments</i>. Your cowardliness amuses me.<br> Within a blink the enemy teleports and appears right infront of you. <br> <span class=\"characterName\">Cloaked Figure:</span> Face Me.",
+						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> The all powerful five can only hide anyway from a battle and not face it head on? <i> The Cloaked Figure taps the barrier, shattering the field into fragments</i>. Your cowardliness amuses me.<br> Within a blink the enemy teleports and appears right infront of you. <br> <span class=\"characterName\">Cloaked Figure:</span> I'll just cut off your heads then.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
 					},
-					{}
+					{
+						"choiceId": "1",
+						"option": "",
+						"outcome": "<span class=\"characterName\">Cloaked Figure:</span> Ofcourse you send a Titan.",
+						"character1": "Images/Assets/Titan Terror.webp",
+						"character2": "Images/cloakedFigureBack.webp",
+						"event": "none"
+					}
 				]
 			}
 		]
