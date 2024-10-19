@@ -123,6 +123,14 @@
 						"character1": "Images/Assets/Titan Terror.webp",
 						"character2": "Images/cloakedFigureFront.webp",
 						"event": "none"
+					},
+					{
+						"choiceId": "2",
+						"option": "",
+						"outcome": "<span class=\"characterName\">Mthi:</span> Just need to get a good angle <i> She",
+						"character1": "Images/eye2.webp",
+						"character2": "Images/cloakedFigureFront.webp",
+						"event": "none"
 					}
 				]
 			}
