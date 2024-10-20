@@ -77,8 +77,8 @@
 					},
 					{
 						"choiceId": "2",
-						"option": "Ask Mthi to hypnotize the enemy while they are disctracted",
-						"outcome": "<span class=\"characterName\">Mthi:</span> Somehow they've managed to dodge all my arrows till this point. I could increase the barrage but that will increase the number of incoming enemies on you guys since I can't focus on both. <br><span class=\"characterName\">Zanele:</span> If I use Inferno in a controlled space, I'll cut down the numbers without harming our allies. <br> <span class=\"characterName\">Jasmin:</span> Good idea, we can't afford to hurt the palace guard. <br> <span class=\"characterName\">Mthi:</span> Kewl, Zanele I'll rain down a storm to cool your flames. <i>Mthi smirks </i>. <br> <span class=\"characterName\">Zanele:</span>... Just don't die.",
+						"option": "Ask Mthi to hypnotize the enemy",
+						"outcome": "<span class=\"characterName\">Mthi:</span> Somehow they've managed to dodge all my arrows till this point. Maybe if I try to gain control of them even just for a second. <br><span class=\"characterName\">Zanele:</span> Don't you think that they are too powerful for mind control? <br> <span class=\"characterName\">Jasmin:</span> Yea we couldn't land a single physical attack, mental attacks are another story. <br> <span class=\"characterName\">Mthi:</span> It's worth a shot... and I always take mine. <i>Mthi smirks </i>. <br> <span class=\"characterName\">Zanele:</span>... Just don't die.",
 						"character1": "all",
 						"character2": "Images/cloakedFigureBack.webp",
 						"event": "none"
