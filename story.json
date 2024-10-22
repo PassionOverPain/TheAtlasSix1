@@ -111,7 +111,7 @@
           {
             "choiceId": "0",
             "option": "",
-            "outcome": "<span class=\"characterName\">Cloaked Figure:</span> The all powerful five can only hide anyway from a battle and not face it head on? <i> The Cloaked Figure taps the barrier, shattering the field into fragments</i>. Your cowardliness amuses me.<br> Within a blink the enemy teleports and appears right infront of you. <br> <span class=\"characterName\">Cloaked Figure:</span> I'll just cut off your heads then.",
+            "outcome": "<span class=\"characterName\">Cloaked Figure:</span> The so-called mighty Five... hiding behind barriers instead of facing me head-on? <i> With a single tap, the Cloaked Figure shatters the protective field into a cascade of glittering fragments.</i>.Your cowardice is laughable. .<br><i>In the blink of an eye, the enemy vanishes, reappearing inches from your face.</i><br> <span class=\"characterName\">Cloaked Figure:</span> I suppose I'll just cut off your heads, then.",
             "character1": "all",
             "character2": "Images/cloakedFigureFront.webp",
             "event": "none"
@@ -119,7 +119,7 @@
           {
             "choiceId": "1",
             "option": "",
-            "outcome": "<span class=\"characterName\">Llewellyn:</span> Now! <br> Llewellyn roars as he transforms into a towering Titan, his every move supercharged by Tino's time magic, making him a blur of speed and power. Together, they launch a relentless assault of attacks on the cloaked figure, each attack crashing down with earth-shaking force. The cloaked figure remained unscaled, dodging at faster speeds. Llewellyn raises his colossal fist for a final strike, slamming it down with all his might. The ground trembles, but the cloaked figure meets the blow with a single hand, stopping the attack effortlessly. <br> <span class=\"characterName\">Cloaked Figure:</span> Hmm....  you done? <br> The group joins for another battle.",
+            "outcome": "<span class=\"characterName\">Llewellyn:</span> Now! <br> Llewellyn roars as he transforms into a towering Titan, his every move supercharged by Tino's time magic, making him a blur of speed and power. Together, they launch a relentless assault of attacks on the cloaked figure, each attack crashing down with earth-shaking force. The cloaked figure remained unscaled, dodging at faster speeds. Llewellyn raises his colossal fist for a final strike, slamming it down with all his might. The ground trembles, but the cloaked figure meets the blow with a single hand, stopping the attack effortlessly. <br> <span class=\"characterName\">Cloaked Figure:</span> Hmm....  you done? <br> The group rallies together, charging into another fierce battle, ready to face the enemy once more.",
             "character1": "Images/Assets/Titan Terror.webp",
             "character2": "Images/cloakedFigureFront.webp",
             "event": "none"
@@ -127,7 +127,15 @@
           {
             "choiceId": "2",
             "option": "",
-            "outcome": "<span class=\"characterName\">Mthi:</span> Just need to get a good angle <i> She dodges all incoming enemies to get to the cloaked figure.</i> <br><span class=\"characterName\">Cloaked Figure:</span> Ofcourse, maybe you Mthi will be a worthy opponent. <br> <span class=\"characterName\">Mthi:</span> Can't say the same for you <i> she shoots an illusionary arrow that diverges into multiple arrows each resembling the orginal one.</i> <br> The cloaked figure catches the correct arrow with ease. <br> Let me guess, you are going to try hypnotize me now ? <i> The hooded person grins with a malice intent. </i> ",
+            "outcome": "<span class=\"characterName\">Mthi:</span> Just need the perfect angle.<i>She dashes through the chaos, weaving effortlessly between enemies, her eyes locked on the cloaked figure.</i> <br><span class=\"characterName\">Cloaked Figure:</span> Mthi... perhaps you’ll prove to be a worthy opponent. <br> <span class=\"characterName\">Mthi:</span> Can't say the same for you. <i>She fires an illusionary arrow that splits into a barrage of identical arrows, each one indistinguishable from the original.</i> <br>The cloaked figure, unphased, snatches the real arrow mid-air with chilling precision.<br><span class=\"characterName\">Cloaked Figure:</span> Let me guess... now comes the hypnosis?<i> A sinister grin spreads across their face, laced with dark intent.</i> <br><span class=\"characterName\">Mthi:</span> <i>Mthi reaches out to seize control of the figure's mind, but instead, she’s violently pulled into a whirlwind of her darkest nightmares. Fear floods her senses as her worst terrors rise to the surface, drowning her in a horrifying reality she can't escape.</i> <br> <span class=\"characterName\">Llewellyn:</span>  Mthi! Change of plan - attack head on. <i>Without hesitation, the group surges forward, weapons drawn, charging into another deadly clash with the enemy, ready to face whatever chaos awaits.</i> ",
+            "character1": "Images/eye2.webp",
+            "character2": "Images/cloakedFigureFront.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "",
+            "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all color, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span>",
             "character1": "Images/eye2.webp",
             "character2": "Images/cloakedFigureFront.webp",
             "event": "none"
