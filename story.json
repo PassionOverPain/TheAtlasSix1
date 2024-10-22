@@ -135,8 +135,16 @@
           {
             "choiceId": "3",
             "option": "",
-            "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all color, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span>",
-            "character1": "Images/eye2.webp",
+            "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all color, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span> Let's go. <i> She opens a portal to place she has visisted, allowing for the group to find safe closure there.</i>",
+            "character1": "Images/timekeeper.webp",
+            "character2": "Images/cloakedFigureFront.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "4",
+            "option": "",
+            "outcome": "<span class=\"characterName\">Zanele:</span> Yes, that's it. <i>Zanele snaps her fingers, igniting a spark that erupts into a roaring inferno. Flames spiral outward, devouring everything in their path. Smoke chokes the air, and the heat is suffocating, leaving behind only the charred scent of scorched earth and burning flesh as the fire consumes all on the battleground.</i>",
+            "character1": "Images/storyInferno.webp",
             "character2": "Images/cloakedFigureFront.webp",
             "event": "none"
           }
