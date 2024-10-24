@@ -155,7 +155,7 @@
         "text": "",
         "character1": "all",
         "character2": "Images/cloakedFigureFront.webp",
-        "event": "triggerBattle",
+        "event": "",
         "choices": [
           {
             "choiceId": "1",

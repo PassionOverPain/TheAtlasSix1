@@ -300,6 +300,7 @@ function downAttacks() {
   } else {
     heroIndex = 0;
   }
+
   openAttacks();
 }
 function upAttacks() {
@@ -608,42 +609,50 @@ function displayChapter(branch) {
   // Stuff -- Error Logic --- Stuff
   addstoryImage(branch);
 
-  if (branch != "none") {
+  if (branch.event != "none") {
     storyEvents(branch);
+    return;
   }
 
   // Display choices as narrative text
   if (branch.choices.length > 0) {
     branch.choices.forEach((choice) => {
-      let p = document.createElement("p");
-      p.innerHTML = `${choice.option}`;
-      p.className = "choice";
+      if (choice.event != "none") {
+        storyEvents(branch);
+        return;
+      } else {
+        let p = document.createElement("p");
+        p.innerHTML = `${choice.option}`;
+        p.className = "choice";
 
-      // Add event listener for clicking on the choice
-      p.addEventListener("click", () => {
-        let choiceNum = choice.choiceId;
-        arrChoices.push(choiceNum);
-        chapterText.innerHTML = "";
-        chapterText.innerHTML = branch.choices[choiceNum].outcome;
-        choicesContainer.innerHTML = "";
+        // Add event listener for clicking on the choice
+        p.addEventListener("click", () => {
+          let choiceNum = choice.choiceId;
+          arrChoices.push(choiceNum);
+          chapterText.innerHTML = "";
+          chapterText.innerHTML = branch.choices[choiceNum].outcome;
+          choicesContainer.innerHTML = "";
 
-        // Display All Atlas Characters
-        addstoryImage(choice);
+          // Display All Atlas Characters
+          addstoryImage(choice);
 
-        let Continue = document.createElement("p");
-        Continue.innerHTML = `Continue`;
-        Continue.className = "choice";
-        choicesContainer.appendChild(Continue);
-        Continue.addEventListener(
-          "click",
-          () => {
-            ++currentBranch;
-            displayChapter(myChapters[currentChapter].branches[currentBranch]);
-          },
-          { once: true }
-        );
-      });
-      choicesContainer.appendChild(p);
+          let Continue = document.createElement("p");
+          Continue.innerHTML = `Continue`;
+          Continue.className = "choice";
+          choicesContainer.appendChild(Continue);
+          Continue.addEventListener(
+            "click",
+            () => {
+              ++currentBranch;
+              displayChapter(
+                myChapters[currentChapter].branches[currentBranch]
+              );
+            },
+            { once: true }
+          );
+        });
+        choicesContainer.appendChild(p);
+      }
     });
   } else {
     let Continue = document.createElement("p");
