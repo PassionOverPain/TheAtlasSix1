@@ -423,6 +423,7 @@ button:hover {
   padding: 15px;
 }
 #pgCenter {
+  display: block;
   padding: 15px;
   font-size: 2rem;
   background-image: url(Images/paperbg.webp);

@@ -149,6 +149,48 @@
             "event": "none"
           }
         ]
+      },
+      {
+        "branchId": "branch4",
+        "text": "",
+        "character1": "all",
+        "character2": "Images/cloakedFigureFront.webp",
+        "event": "triggerBattle",
+        "choices": [
+          {
+            "choiceId": "1",
+            "option": "",
+            "outcome": "",
+            "character1": "",
+            "character2": "",
+            "event": "triggerBattle"
+          },
+          {
+            "choiceId": "2",
+            "option": "",
+            "outcome": "",
+            "character1": "",
+            "character2": "",
+            "event": "triggerBattle"
+          },
+          {
+            "choiceId": "3",
+            "option": "",
+            "outcome": "",
+            "character1": "",
+            "character2": "",
+            "event": "skipBranch"
+          },
+
+          {
+            "choiceId": "4",
+            "option": "",
+            "outcome": "",
+            "character1": "",
+            "character2": "",
+            "event": "skipBranch"
+          }
+        ]
       }
     ]
   }
