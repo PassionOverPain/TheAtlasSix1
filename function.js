@@ -723,6 +723,8 @@ function addstoryImage(place) {
     src="${place.character1}"
     alt="This is a story character Image"
     class="storyImage" />`;
+  } else {
+    pgImg1.innerHTML = ``;
   }
 
   if (place.character2 == "all") {
@@ -752,6 +754,8 @@ function addstoryImage(place) {
     src="${place.character2}"
     alt="This is a story character Image"
     class="storyImage" />`;
+  } else {
+    pgImg2.innerHTML = ``;
   }
 }
 
