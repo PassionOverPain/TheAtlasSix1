@@ -1,8 +1,8 @@
 [
   {
     "Name": "The Sixth Atlas",
-    "Hp": 2000,
-    "maxHp": 2000,
+    "Hp": 2500,
+    "maxHp": 2500,
     "Desc": "The Cloaked Figure stands as a haunting enigma, an apparition in black whose presence seems to consume light and leech warmth from the air. They move with unsettling fluidity, each step a silent echo in the void, as if the shadows themselves were their ally. The dark cloak, frayed and ancient, clings like a shroud, hiding any trace of humanity beneath. But beneath the hood, an elusive glint of eyes gleams with a predatory intelligence, scanning, judging, knowing. In their gaze lies a chilling coldness, a calculated malice—the mark of someone who was once trusted and betrayed that trust with relish. The figure’s aura is one of power and secrecy, an impenetrable shield that commands both awe and terror.",
     "Type": "Unknown",
     "Attacks": {

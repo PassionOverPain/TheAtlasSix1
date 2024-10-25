@@ -409,6 +409,11 @@ actBtns.forEach((button) => {
   });
 });
 
+function skipPlayRound() {
+  playFight();
+  ++currentRound;
+}
+
 function deplete() {
   if (myHeroes[heroIndex].Attacks.CostClass[atkNumber] == "Mana")
     myHeroes[heroIndex].Mana =
@@ -578,6 +583,23 @@ function playFight() {
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
       textBubble.textContent = `Battle Lost!`;
+      document.addEventListener(
+        "click",
+        () => {
+          document.addEventListener(
+            "click",
+            () => {
+              displayStory();
+
+              displayChapter(
+                myChapters[currentChapter].branches[currentBranch]
+              );
+            },
+            { once: true }
+          );
+        },
+        { once: true }
+      );
     }
   }
 
@@ -781,4 +803,19 @@ function storyEvents(branch) {
       creationMonster(Enemy);
     });
   }
+  ++currentBranch;
+}
+function displayStory() {
+  let storyCon = document.getElementById(`storyLine`);
+  let heroesCon = document.getElementById(`heroesCon`);
+  let pgCenter = document.getElementById(`pgCenter`);
+  let actions = document.getElementById(`actions`);
+  let monstersCon = document.getElementById(`monstersCon`);
+  let playground = document.getElementById(`playground`);
+  playground.style.justifyContent = "space-between";
+  storyCon.style.display = "block";
+  heroesCon.style.display = "none";
+  pgCenter.style.display = "none";
+  actions.style.display = "none";
+  monstersCon.style.display = "none";
 }

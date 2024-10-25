@@ -159,6 +159,38 @@
         "startEnemies": [0],
         "spawnEnemies": [],
         "choices": []
+      },
+      {
+        "branchId": "branch5",
+        "text": "As your vision clears, you feel the jagged chill of the hard, cold ground beneath you, echoing the icy dread settling in your bones. A rhythmic pounding fills your ears—your own heartbeat, hammering faster with each passing second. Shadows shift, and a dark figure steps closer, their silhouette seeming to blend into the very void around them. <br><span class=\"characterName\">Cloaked:</span> Look at you — fallen, broken. You've lost more than just this battle. Prepare to watch everything you hold dear slip away … one by one. <br> Their voice is a low, menacing whisper, each word twisting like a blade in your heart. You feel a suffocating weight as the realization dawns—this isn’t just defeat; it’s a reckoning, the merciless unraveling of everything you fought for. In the shadows, you see flashes of familiar faces—your friends, your allies—each one flickering like a candle about to be snuffed out. The Cloaked Figure’s presence presses down, clouding the air with a foreboding that chills you to your core. This isn’t just an end; it’s your end, at the hands of someone who you held close to you.",
+        "character1": "all",
+        "character2": "Images/The Sixth Atlas.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch6",
+        "text": "<span class=\"characterName\">Passion:</span> Hey there, developer Tino here... No not in game Tino, Tino from the past... or in your case the present... but also the future ? Anyway, Thanks for taking your precious time to give The Atlas Six a try. Currently the game is still in early development so there are prone to be bugs but fear not, they don't bite.",
+        "character1": "none",
+        "character2": "Images/timekeeper.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch7",
+        "text": "<span class=\"characterName\">Passion:</span> The narrative of The Atlas Six is centered around 6 heroes... whom the 6th one may or may not betray you as you have just seen. The idea was constructed around a fictional storyline my friends <i>[who are the in game characters]</i> and I came up with. That being said each character is meant to represent a subset of that friend but the actions performed in the world by Atlas characters does not completely reflect actions my friends would actually do.",
+        "character1": "none",
+        "character2": "Images/timekeeper.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch7",
+        "text": "<span class=\"characterName\">Passion:</span> The world you find yourself is a strange one - to say the least. Certain actions will have certain consequences that may or may not align with your desire, certain characters will have certain story narratives and certain.... blah blah blah you get the idea. Morally right choices may not be the best ones overall and vice versa so think carefully. Experience is the best teacher so I will let you play now 😄🦚 - <i>Enjoy</i>",
+        "character1": "none",
+        "character2": "Images/timekeeper.webp",
+        "event": "none",
+        "choices": []
       }
     ]
   }
