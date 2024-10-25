@@ -22,9 +22,9 @@ function newMonster(Index) {
   monsterCon.appendChild(myMonster);
 }
 let arrEnemies = [];
-function creationMonster() {
+function creationMonster(Index) {
   if (arrEnemies.length < 10) {
-    Index = Math.floor(Math.random() * 2);
+    // Index = Math.floor(Math.random() * 2);
     let myMonster = new Monster(Index);
     arrEnemies.push(myMonster);
   }
