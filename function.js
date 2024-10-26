@@ -29,7 +29,7 @@ let myChapters;
 let arrChoices = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 9;
+let currentBranch = 13;
 
 //Either open the map or close the map
 function displayMap() {
@@ -807,9 +807,21 @@ function storyEvents(branch) {
 		branch.startEnemies.forEach((Enemy) => {
 			creationMonster(Enemy);
 		});
+	} else if (branch.event == "triggerGame") {
+		let storyCon = document.getElementById(`storyLine`);
+		storyCon.style.display = "none";
+		if (branch.game == "MemoryGame") {
+			startMemoryGame();
+		} else if (branch.game == "MemoryGame-2") {
+			attemptsLeft = 9999;
+			cheat = true;
+			startMemoryGame();
+			cheat = false;
+		}
 	}
 	++currentBranch;
 }
+
 function displayStory() {
 	let storyCon = document.getElementById(`storyLine`);
 	let heroesCon = document.getElementById(`heroesCon`);

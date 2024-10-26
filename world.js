@@ -50,13 +50,16 @@ let lockBoard = false;
 let cards = [];
 let attemptsLeft = 16;
 let matchedPairs = 0;
+let cheat = false;
 
 // Display attempts left
 document.querySelector(".Attempts").textContent = attemptsLeft;
 
 function startMemoryGame() {
 	document.querySelector(".memoryCon").style.display = "block";
-	attemptsLeft = 16;
+	if (!cheat) {
+		attemptsLeft = 16;
+	}
 	matchedPairs = 0;
 	document.querySelector(".Attempts").textContent = attemptsLeft;
 	memGameCon.innerHTML = ""; // Clear previous cards
@@ -130,6 +133,7 @@ function disableCards() {
 	matchedPairs++;
 	if (matchedPairs === 9) {
 		displayModal("Victory Achieved");
+		displayStory();
 	}
 }
 
