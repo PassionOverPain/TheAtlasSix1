@@ -547,7 +547,7 @@ function playFight() {
 		}
 	}
 	if (arrAliveEnemies.length == 0) {
-		textBubble.textContent = `Victory Achieved!`;
+		displayModal("Victory Achieved !");
 		return;
 	}
 	let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
@@ -582,7 +582,8 @@ function playFight() {
 			"Images/dead.webp";
 		//Party just died
 		if (arrAliveHeroes.length - 1 == 0) {
-			textBubble.textContent = `Battle Lost!`;
+			// textBubble.textContent = `Battle Lost!`;
+			displayModal(`Battle Lost`);
 			document.addEventListener(
 				"click",
 				() => {

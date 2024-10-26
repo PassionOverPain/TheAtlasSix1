@@ -800,8 +800,18 @@
 				<div
 					style="display: block; justify-content: center; text-align: center">
 					<div class="memGameCon"></div>
-					<p class="memGameScore">Score: <span class="Score"></span></p>
-					<button onclick="startGame()">Restart Game</button>
+					<p class="memGameAttempts">
+						Attempts: <span class="Attempts"></span>
+					</p>
+					<button onclick="restartMemGame()">Restart Game</button>
+				</div>
+				<div
+					id="customModal"
+					class="modal hidden">
+					<div class="modal-content">
+						<p id="modalText"></p>
+						<button onclick="closeModal()">Close</button>
+					</div>
 				</div>
 			</section>
 		</main>
