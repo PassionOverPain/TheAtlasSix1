@@ -255,10 +255,10 @@ i {
 	height: 60vh;
 	width: 0vw;
 	cursor: url(Images/hand-s.png), auto;
-	border: 40px solid;
+	border: 10px solid;
 	border-image-source: url(Images/frame1.png);
 	border-image-slice: 70;
-	border-image-repeat: round;
+	border-image-repeat: repeat;
 	transition: all 1s;
 	transition-duration: 500ms;
 	animation: awaken linear 3s 1;
