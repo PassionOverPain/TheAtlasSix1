@@ -49,7 +49,6 @@ let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
 let cards = [];
-
 document.querySelector(`.Score`).textContent = score;
 
 fetch("./memGame.json")
@@ -59,6 +58,7 @@ fetch("./memGame.json")
 		shuffleCards();
 		generateCards();
 	});
+
 function shuffleCards() {
 	let currentIndex = cards.length,
 		randomIndex,
@@ -71,20 +71,6 @@ function shuffleCards() {
 		cards[randomIndex] = temporaryValue;
 	}
 }
-
-// function generateCards() {
-// 	for (let card of cards) {
-// 		const cardElement = document.createElement("div");
-// 		cardElement.classList.add("card");
-// 		cardElement.setAttribute("data-name", card.name);
-// 		cardElement.innerHTML = ` <div class="front">
-//     <img class="front-image" src=${card.image} />
-//     </div>
-//     <div class="back"></div>`;
-// 		memGameCon.appendChild(cardElement);
-// 		cardElement.addEventListener("click", flipCard);
-// 	}
-// }
 
 function generateCards() {
 	for (let card of cards) {
@@ -103,36 +89,35 @@ function generateCards() {
 
 function flipCard() {
 	if (lockBoard) return;
-	if (this == firstCard) return;
+	if (this === firstCard) return;
 
 	this.classList.add("flipped");
 
 	if (!firstCard) {
 		firstCard = this;
 		return;
-	} else {
-		secondCard = this;
-
-		document.querySelector(".Score").textContent = score;
-		// lockBoard = true;
-
-		checkForMatch();
 	}
+
+	secondCard = this;
+	checkForMatch();
 }
 
 function checkForMatch() {
-	let isMatch = firstCard.dataset.name == secondCard.dataset.name;
+	let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
 	isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
-	firstCard.removeEventListner("click", flipCard);
-	secondCard.removeEventListner("click", flipCard);
+	firstCard.removeEventListener("click", flipCard);
+	secondCard.removeEventListener("click", flipCard);
 	score++;
+	document.querySelector(".Score").textContent = score;
+	resetBoard();
 }
 
 function unflipCards() {
+	lockBoard = true; // Lock the board while the cards are unflipping
 	setTimeout(() => {
 		firstCard.classList.remove("flipped");
 		secondCard.classList.remove("flipped");
@@ -141,10 +126,10 @@ function unflipCards() {
 }
 
 function resetBoard() {
-	firstCard = null;
-	secondCard = null;
+	[firstCard, secondCard] = [null, null];
 	lockBoard = false;
 }
+
 function restart() {
 	resetBoard();
 	shuffleCards();
