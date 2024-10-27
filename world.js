@@ -133,6 +133,7 @@ function disableCards() {
 	matchedPairs++;
 	if (matchedPairs === 9) {
 		displayModal("Victory Achieved");
+		document.querySelector(`.memoryCon`).style.display = "none";
 		displayStory();
 	}
 }
@@ -161,7 +162,9 @@ function checkGameOver() {
 function restartMemGame() {
 	resetBoard();
 	shuffleCards();
-	attemptsLeft = 16;
+	if (!cheat) {
+		attemptsLeft = 16;
+	}
 	matchedPairs = 0;
 	document.querySelector(".Attempts").textContent = attemptsLeft;
 	memGameCon.innerHTML = "";

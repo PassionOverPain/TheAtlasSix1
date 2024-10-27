@@ -374,6 +374,8 @@ button:hover {
 	justify-content: center; /*Change this back*/
 	align-items: center;
 	transition: all 0.5s;
+	min-height: 100vh;
+	height: fit-content;
 }
 .pgCard {
 	transition: all 0.5s ease;

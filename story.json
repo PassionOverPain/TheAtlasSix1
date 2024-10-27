@@ -244,7 +244,7 @@
 
 			{
 				"branchId": "branch13",
-				"text": "With unshakable confidence, she accepts the challenge. <br><span class=\"characterName\">Mthi:</span> Uh-huh... might as well go fetch whatever treasure you're hiding now. <i>Her hand glides over the cards on the table, poised to win. </i>. <br>But something feels... off. Mthi’s hand pauses as she notices the cards shifting beneath her fingers. No matter how carefully she plays, the images twist and change as if refusing to pair with any match, slipping through her grasp with every attempt. It’s as if the deck itself is alive, mocking her skill with an eerie magic. <br> <span class=\"characterName\">Game Hoster:</span> Something wrong ?<br>A hand lands firmly on her shoulder, and suddenly, the world goes silent. The birds outside cease their song, the air stills, and everything around them freezes in time.<br><span class=\"characterName\">Tino:</span>Oh, look at that... He's cheating. <br><span class=\"characterName\">Mthi:</span>Not surprised. Animation magic — brings objects to life. Hold on. <i>he waves her hand across the cards, dismantling the illusion with a decisive sweep. The cards flicker, and a new power shimmers across the table. </i> <br><span class=\"characterName\">Tino:</span>Interesting choice of play.",
+				"text": "With unshakable confidence, she accepts the challenge. <br><span class=\"characterName\">Mthi:</span> Uh-huh... might as well go fetch whatever treasure you're hiding now. <i>Her hand glides over the cards on the table, poised to win. </i>. <br>But something feels... off. Mthi’s hand pauses as she notices the cards shifting beneath her fingers. No matter how carefully she plays, the images twist and change as if refusing to pair with any match, slipping through her grasp with every attempt. It’s as if the deck itself is alive, mocking her skill with an eerie magic. <br> <span class=\"characterName\">Game Hoster:</span> Something wrong ?<br>A hand lands firmly on her shoulder, and suddenly, the world goes silent. The birds outside cease their song, the air stills, and everything around them freezes in time.<br><span class=\"characterName\">Tino:</span>Oh, look at that... He's cheating. <br><span class=\"characterName\">Mthi:</span>Not surprised. Animation magic — brings objects to life. Hold on. <i>She waves her hand across the cards, dismantling the illusion with a decisive sweep. The cards flicker, and a new power shimmers across the table. </i> <br><span class=\"characterName\">Tino:</span>Interesting choice of play.",
 				"character1": "Images/eye.webp",
 				"character2": "Images/timekeeper.webp",
 				"event": "none",
@@ -261,11 +261,20 @@
 			},
 			{
 				"branchId": "branch15",
-				"text": "With ease you win",
+				"text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
 				"character1": "Images/eye.webp",
 				"character2": "Images/The Sixth Atlas.webp",
-				"event": "triggerGame",
-				"game": "MemoryGame-2",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch16",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "triggerBattle",
+				"startEnemies": [0],
+				"spawnEnemies": [],
 				"choices": []
 			}
 		]

@@ -29,7 +29,7 @@ let myChapters;
 let arrChoices = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 13;
+let currentBranch = 16;
 
 //Either open the map or close the map
 function displayMap() {
@@ -548,6 +548,7 @@ function playFight() {
 	}
 	if (arrAliveEnemies.length == 0) {
 		displayModal("Victory Achieved !");
+		currentRound = 0;
 		return;
 	}
 	let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
@@ -584,6 +585,7 @@ function playFight() {
 		if (arrAliveHeroes.length - 1 == 0) {
 			// textBubble.textContent = `Battle Lost!`;
 			displayModal(`Battle Lost`);
+			currentRound = 0;
 			document.addEventListener(
 				"click",
 				() => {
@@ -641,7 +643,6 @@ function displayChapter(branch) {
 	if (branch.choices.length > 0) {
 		branch.choices.forEach((choice) => {
 			if (choice.event != "none") {
-				alert(`Yes Start battle`);
 				storyEvents(branch);
 				return;
 			} else {
@@ -800,10 +801,12 @@ function storyEvents(branch) {
 		let playground = document.getElementById(`playground`);
 		playground.style.justifyContent = "space-between";
 		storyCon.style.display = "none";
+
 		heroesCon.style.display = "grid";
 		pgCenter.style.display = "block";
 		actions.style.display = "block";
 		monstersCon.style.display = "grid";
+		++currentBranch;
 		branch.startEnemies.forEach((Enemy) => {
 			creationMonster(Enemy);
 		});
@@ -818,8 +821,8 @@ function storyEvents(branch) {
 			startMemoryGame();
 			cheat = false;
 		}
+		++currentBranch;
 	}
-	++currentBranch;
 }
 
 function displayStory() {
@@ -835,4 +838,5 @@ function displayStory() {
 	pgCenter.style.display = "none";
 	actions.style.display = "none";
 	monstersCon.style.display = "none";
+	displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
