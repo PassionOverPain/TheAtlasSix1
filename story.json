@@ -237,7 +237,7 @@
 				"branchId": "branch12",
 				"text": "<span class=\"characterName\">Game Hoster:</span> A sharp eye indeed... How about a wager: If you win, I’ll part with my most treasured possession. But if you lose... I’ll claim that exquisite instrument of yours. <br><span class=\"characterName\">Mthi:</span>And what exactly is this so-called treasured possession? <br><span class=\"characterName\">Game Hoster:</span>Oh, you’ll find out... once you’ve earned the right to see it. Now, shall we play?",
 				"character1": "Images/eye.webp",
-				"character2": "Images/The Sixth Atlas.webp",
+				"character2": "Images/Characters/Game Host.webp",
 				"event": "none",
 				"choices": []
 			},
@@ -263,7 +263,7 @@
 				"branchId": "branch15",
 				"text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
 				"character1": "Images/eye.webp",
-				"character2": "Images/The Sixth Atlas.webp",
+				"character2": "Images/Characters/Game Host.webp",
 				"event": "none",
 				"choices": []
 			},

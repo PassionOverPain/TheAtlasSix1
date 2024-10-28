@@ -366,7 +366,7 @@ button:hover {
 #playground {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	background: url(Images/background.webp);
+	background: url(Images/Scenes/battleground1.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -486,6 +486,7 @@ button:hover {
 .characterCon {
 	display: grid;
 	grid-template-columns: auto auto;
+	object-fit: cover;
 }
 #actions {
 	display: none; /* Change this back */
