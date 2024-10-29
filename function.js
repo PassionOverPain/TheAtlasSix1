@@ -853,7 +853,6 @@ function storyEvents(branch) {
     );
     let choicesContainer = document.getElementById("pgChoices");
     choicesContainer.appendChild(Continue);
-    ++currentBranch;
   }
 }
 
