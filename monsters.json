@@ -17,6 +17,24 @@
     }
   },
   {
+    "Name": "Game Host",
+    "Hp": 200,
+    "maxHp": 200,
+    "Desc": "The Game Host, once an ordinary bandit, has risen to his own peculiar form of infamy. Dressed in mismatched pieces of stolen armor, he hides a ruthless mind behind a disarming grin. Cunning and sly, he’s mastered the art of deception and thrives on rigged games and stolen fortunes. His movements are a blend of practiced swagger and quick reflexes, every motion calculated to deceive. Known for luring his victims into 'friendly' wagers, the Game Host is feared by those who recognize the glint of malice in his eyes—a sharp warning to anyone who dares play his game.",
+    "Type": "Bandit",
+    "Attacks": {
+      "Name": [
+        "Deceptive Strike",
+        "Calculated Gambit",
+        "Cheap Shot",
+        "Taunting Jab",
+        "Hidden Blade"
+      ],
+      "Power": [55, 70, 60, 65, 50]
+    }
+  },
+
+  {
     "Name": "Prismara",
     "Hp": 500,
     "maxHp": 500,
