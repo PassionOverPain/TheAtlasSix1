@@ -203,7 +203,7 @@
       },
       {
         "branchId": "branch10",
-        "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, pull the trigger… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here.",
+        "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, release it… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/eye.webp",
         "event": "changeScene",
@@ -211,15 +211,15 @@
         "choices": []
       },
       {
-        "branchId": "branch10",
-        "text": "<span class=\"characterName\">Jasmin:</span> Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training withe royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
+        "branchId": "branch11",
+        "text": "<span class=\"characterName\">Jasmin:</span> Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
         "character1": "Images/healer.webp",
         "character2": "Images/phoenix.webp",
         "event": "none",
         "choices": []
       },
       {
-        "branchId": "branch10",
+        "branchId": "branch12",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -227,7 +227,7 @@
         "choices": []
       },
       {
-        "branchId": "branch11",
+        "branchId": "branch13",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -236,7 +236,7 @@
         "choices": []
       },
       {
-        "branchId": "branch12",
+        "branchId": "branch14",
         "text": "<span class=\"characterName\">Game Host:</span> A sharp eye indeed... How about a wager: If you win, I’ll part with my most treasured possession. But if you lose... I’ll claim that exquisite instrument of yours. <br><span class=\"characterName\">Mthi:</span>And what exactly is this so-called treasured possession? <br><span class=\"characterName\">Game Host:</span>Oh, you’ll find out... once you’ve earned the right to see it. Now, shall we play?",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -245,7 +245,7 @@
       },
 
       {
-        "branchId": "branch13",
+        "branchId": "branch15",
         "text": "With unshakable confidence, she accepts the challenge. <br><span class=\"characterName\">Mthi:</span> Uh-huh... might as well go fetch whatever treasure you're hiding now. <i>Her hand glides over the cards on the table, poised to win. </i>. <br>But something feels... off. Mthi’s hand pauses as she notices the cards shifting beneath her fingers. No matter how carefully she plays, the images twist and change as if refusing to pair with any match, slipping through her grasp with every attempt. It’s as if the deck itself is alive, mocking her skill with an eerie magic. <br> <span class=\"characterName\">Game Host:</span> Something wrong ?<br>A hand lands firmly on her shoulder, and suddenly, the world goes silent. The birds outside cease their song, the air stills, and everything around them freezes in time.<br><span class=\"characterName\">Tino:</span>Oh, look at that... He's cheating. <br><span class=\"characterName\">Mthi:</span>Not surprised. Animation magic — brings objects to life. Hold on. <i>She waves her hand across the cards, dismantling the illusion with a decisive sweep. The cards flicker, and a new power shimmers across the table. </i> <br><span class=\"characterName\">Tino:</span>Interesting choice of play.",
         "character1": "Images/eye.webp",
         "character2": "Images/timekeeper.webp",
@@ -253,7 +253,7 @@
         "choices": []
       },
       {
-        "branchId": "branch14",
+        "branchId": "branch16",
         "text": "",
         "character1": "Images/eye.webp",
         "character2": "Images/The Sixth Atlas.webp",
@@ -262,7 +262,7 @@
         "choices": []
       },
       {
-        "branchId": "branch15",
+        "branchId": "branch17",
         "text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -270,7 +270,7 @@
         "choices": []
       },
       {
-        "branchId": "branch16",
+        "branchId": "branch18",
         "text": "",
         "character1": "none",
         "character2": "none",
