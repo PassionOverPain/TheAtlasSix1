@@ -747,3 +747,8 @@ button:hover {
   transition: background 0.3s;
   font-family: myFont;
 }
+a {
+  color: red;
+  cursor: url(Images/hand-s.png), auto;
+  text-decoration: none;
+}

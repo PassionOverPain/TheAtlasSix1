@@ -29,7 +29,7 @@ let myChapters;
 let arrChoices = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 3;
+let currentBranch = 4;
 
 //Either open the map or close the map
 function displayMap() {
@@ -553,17 +553,8 @@ function playFight() {
       document.addEventListener(
         "click",
         () => {
-          document.addEventListener(
-            "click",
-            () => {
-              displayStory();
-
-              displayChapter(
-                myChapters[currentChapter].branches[currentBranch]
-              );
-            },
-            { once: true }
-          );
+          displayStory();
+          displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
         { once: true }
       );
@@ -849,6 +840,19 @@ function storyEvents(branch) {
     ).style.backgroundImage = `url(Images/Scenes/${encodeURI(
       branch.background
     )}.webp)`;
+    let Continue = document.createElement("p");
+    Continue.innerHTML = `Continue`;
+    Continue.className = "choice";
+    Continue.addEventListener(
+      "click",
+      () => {
+        ++currentBranch;
+        displayChapter(myChapters[currentChapter].branches[currentBranch]);
+      },
+      { once: true }
+    );
+    let choicesContainer = document.getElementById("pgChoices");
+    choicesContainer.appendChild(Continue);
     ++currentBranch;
   }
 }
