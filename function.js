@@ -29,7 +29,7 @@ let myChapters;
 let arrChoices = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 16;
+let currentBranch = 3;
 
 //Either open the map or close the map
 function displayMap() {
@@ -135,7 +135,7 @@ function openScroll(charNum) {
   // 	}
   // }
   document.getElementById("storyTeller").style.display = "inline-block";
-  document.getElementById("battleTitle").style.display = "none";
+  document.getElementById("pgCenter").style.display = "none";
 
   document.getElementById(
     "currentTitle"
@@ -549,6 +549,25 @@ function playFight() {
   }
   if (arrAliveEnemies.length == 0) {
     displayModal("Victory Achieved !");
+    if (myChapters[currentChapter].branches[currentBranch - 1].winnable) {
+      document.addEventListener(
+        "click",
+        () => {
+          document.addEventListener(
+            "click",
+            () => {
+              displayStory();
+
+              displayChapter(
+                myChapters[currentChapter].branches[currentBranch]
+              );
+            },
+            { once: true }
+          );
+        },
+        { once: true }
+      );
+    }
     currentRound = 0;
     return;
   }
@@ -577,7 +596,6 @@ function playFight() {
     myMonsters[arrEnemies[ranEnemy].Index].Attacks.Power[ranAtk];
   played = false;
   moveToCenter(document.getElementById(`enemy${ranEnemy}`));
-
   //Player just died
   if (myHeroes[ranHero].Hp <= 0) {
     document.getElementById(`pg${myHeroes[ranHero].Class}img`).src =
@@ -585,25 +603,27 @@ function playFight() {
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
       // textBubble.textContent = `Battle Lost!`;
-      displayModal(`Battle Lost`);
-      currentRound = 0;
-      document.addEventListener(
-        "click",
-        () => {
-          document.addEventListener(
-            "click",
-            () => {
-              displayStory();
+      if (!myChapters[currentChapter].branches[currentBranch - 1].winnable) {
+        displayModal(`Battle Lost`);
+        currentRound = 0;
+        document.addEventListener(
+          "click",
+          () => {
+            document.addEventListener(
+              "click",
+              () => {
+                displayStory();
 
-              displayChapter(
-                myChapters[currentChapter].branches[currentBranch]
-              );
-            },
-            { once: true }
-          );
-        },
-        { once: true }
-      );
+                displayChapter(
+                  myChapters[currentChapter].branches[currentBranch]
+                );
+              },
+              { once: true }
+            );
+          },
+          { once: true }
+        );
+      }
     }
   }
 
@@ -822,6 +842,13 @@ function storyEvents(branch) {
       startMemoryGame();
       cheat = false;
     }
+    ++currentBranch;
+  } else if (branch.event == "changeScene") {
+    document.getElementById(
+      "playground"
+    ).style.backgroundImage = `url(Images/Scenes/${encodeURI(
+      branch.background
+    )}.webp)`;
     ++currentBranch;
   }
 }

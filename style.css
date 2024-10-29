@@ -366,7 +366,7 @@ button:hover {
 #playground {
   display: grid;
   grid-template-columns: auto auto auto;
-  background: url(Images/Scenes/battleground1.webp);
+  background-image: url(Images/Scenes/battleground1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,8 +407,7 @@ button:hover {
   row-gap: 15px;
 }
 #storyTeller {
-  position: absolute;
-  left: 40%; /* Needs fixing  */
+  position: relative;
   z-index: 1;
   display: none;
   justify-content: center;

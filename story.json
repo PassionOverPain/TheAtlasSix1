@@ -156,6 +156,7 @@
         "character1": "all",
         "character2": "Images/cloakedFigureFront.webp",
         "event": "triggerBattle",
+        "winnable": false,
         "startEnemies": [0],
         "spawnEnemies": [],
         "choices": []
@@ -205,7 +206,8 @@
         "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, pull the trigger… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/eye.webp",
-        "event": "none",
+        "event": "changeScene",
+        "background": "The Inn",
         "choices": []
       },
       {
@@ -273,6 +275,7 @@
         "character1": "none",
         "character2": "none",
         "event": "triggerBattle",
+        "winnable": true,
         "startEnemies": [1],
         "spawnEnemies": [],
         "choices": []

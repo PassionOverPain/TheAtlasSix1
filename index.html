@@ -370,7 +370,72 @@
             />
           </div>
         </div>
-
+        <div class="quest story" id="storyTeller">
+          <div id="story">
+            <h1 style="text-align: center" id="currentTitle">
+              The Legend tells a tale of Six heroes
+              <!--Should I change this to five? food for thought-->
+            </h1>
+            <!-- //Still need to add AI voiceover -->
+            <span id="heDesc">
+              In a world teetering on the brink of apocalypse, darkness
+              shattered the light and unleashed unknown horrors upon humanity.
+              Amidst the chaos, hope lay dormant in the form of six
+              extraordinary individuals the Atlas Six scattered across a
+              fractured world. Each possessed unique abilities and destinies
+              entwined with the fate of humanity. As they navigated through the
+              ruins of civilization, their paths converged, forging an uneasy
+              alliance against both the monstrous creatures prowling the land
+              and their own inner demons.
+            </span>
+            <div
+              id="heStats"
+              style="display: none; font-size: 1.5rem; text-align: center"
+            >
+              <p id="Hp">Hp:</p>
+              <p id="Atk">Atk:</p>
+              <p id="Stamina">Stamina:</p>
+              <p id="Mana">Mana:</p>
+              <p id="Intelligence">Intelligence:</p>
+              <p id="Strength">Hp:</p>
+              <p id="Dexterity">Dexterity:</p>
+              <p id="Class">Class:</p>
+            </div>
+            <div
+              id="heAttacks"
+              style="display: none; font-size: 1.3rem; text-align: center"
+            >
+              <p id="Atk1" class="Attack" data-power="">This is Atk 1</p>
+              <p id="Desc1">This is Desc 1</p>
+              <p id="Atk2" class="Attack" data-power="">This is Atk 2</p>
+              <p id="Desc2">This is Desc 2</p>
+              <p id="Atk3" class="Attack" data-power="">This is Atk 3</p>
+              <p id="Desc3">This is Desc 3</p>
+              <p id="Atk4" class="Attack" data-power="">This is Atk 4</p>
+              <p id="Desc4">This is Desc 4</p>
+            </div>
+            <div
+              id="msDescTab"
+              style="font-size: 1.3rem; text-align: center; display: none"
+            >
+              <p id="msDesc">Monster Description</p>
+              <p id="msHp">My Monster Hp</p>
+              <p id="msType">Monster Type</p>
+              <h2>Attacks:</h2>
+              <p id="msAtk1">This is Atk 1</p>
+              <p id="msAtk2">This is Atk 2</p>
+              <p id="msAtk3">This is Atk 3</p>
+              <p id="msAtk4">This is Atk 4</p>
+              <p id="msAtk5">This is Atk 4</p>
+            </div>
+            <div id="pgBtns" class="btns">
+              <button onclick="openScroll2()">Stats</button>
+              <button onclick="openAttacks()">Actions</button>
+              <button onclick="openMonster(0)">Enemies</button>
+              <button onclick="closeScroll()">Close</button>
+            </div>
+          </div>
+        </div>
         <div
           style="
             position: relative;
@@ -383,72 +448,6 @@
         >
           <div id="pgCenter" onclick="creationMonster()" style="display: none">
             <p id="battleTitle">Welcome to The Atlas Six beta 1.2.</p>
-            <div class="quest story" id="storyTeller">
-              <div id="story">
-                <h1 style="text-align: center" id="currentTitle">
-                  The Legend tells a tale of Six heroes
-                  <!--Should I change this to five? food for thought-->
-                </h1>
-                <!-- //Still need to add AI voiceover -->
-                <span id="heDesc">
-                  In a world teetering on the brink of apocalypse, darkness
-                  shattered the light and unleashed unknown horrors upon
-                  humanity. Amidst the chaos, hope lay dormant in the form of
-                  six extraordinary individuals the Atlas Six scattered across a
-                  fractured world. Each possessed unique abilities and destinies
-                  entwined with the fate of humanity. As they navigated through
-                  the ruins of civilization, their paths converged, forging an
-                  uneasy alliance against both the monstrous creatures prowling
-                  the land and their own inner demons.
-                </span>
-                <div
-                  id="heStats"
-                  style="display: none; font-size: 1.5rem; text-align: center"
-                >
-                  <p id="Hp">Hp:</p>
-                  <p id="Atk">Atk:</p>
-                  <p id="Stamina">Stamina:</p>
-                  <p id="Mana">Mana:</p>
-                  <p id="Intelligence">Intelligence:</p>
-                  <p id="Strength">Hp:</p>
-                  <p id="Dexterity">Dexterity:</p>
-                  <p id="Class">Class:</p>
-                </div>
-                <div
-                  id="heAttacks"
-                  style="display: none; font-size: 1.3rem; text-align: center"
-                >
-                  <p id="Atk1" class="Attack" data-power="">This is Atk 1</p>
-                  <p id="Desc1">This is Desc 1</p>
-                  <p id="Atk2" class="Attack" data-power="">This is Atk 2</p>
-                  <p id="Desc2">This is Desc 2</p>
-                  <p id="Atk3" class="Attack" data-power="">This is Atk 3</p>
-                  <p id="Desc3">This is Desc 3</p>
-                  <p id="Atk4" class="Attack" data-power="">This is Atk 4</p>
-                  <p id="Desc4">This is Desc 4</p>
-                </div>
-                <div
-                  id="msDescTab"
-                  style="font-size: 1.3rem; text-align: center; display: none"
-                >
-                  <p id="msDesc">Monster Description</p>
-                  <p id="msHp">My Monster Hp</p>
-                  <p id="msType">Monster Type</p>
-                  <h2>Attacks:</h2>
-                  <p id="msAtk1">This is Atk 1</p>
-                  <p id="msAtk2">This is Atk 2</p>
-                  <p id="msAtk3">This is Atk 3</p>
-                  <p id="msAtk4">This is Atk 4</p>
-                  <p id="msAtk5">This is Atk 4</p>
-                </div>
-                <div id="pgBtns" class="btns">
-                  <button onclick="openScroll2()">Stats</button>
-                  <button onclick="openAttacks()">Actions</button>
-                  <button onclick="openMonster(0)">Enemies</button>
-                  <button onclick="closeScroll()">Close</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div id="storyLine" style="display: block">
