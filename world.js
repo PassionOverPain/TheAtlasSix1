@@ -171,9 +171,6 @@ function restartMemGame() {
   generateCards();
 }
 
-// Call this function when you want to start the mini-game
-// startMemoryGame();
-
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.Model Stuff <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,
 
 function displayModal(text) {
