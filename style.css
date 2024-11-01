@@ -589,6 +589,7 @@ button:hover {
   z-index: 15;
 }
 .actionDesc {
+  font-family: "IM Fell English", serif;
   font-size: 1.2rem;
   display: none;
   width: 20vw;

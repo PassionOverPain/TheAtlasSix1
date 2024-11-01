@@ -48,7 +48,7 @@ const memGameCon = document.querySelector(`.memGameCon`);
 let firstCard, secondCard;
 let lockBoard = false;
 let cards = [];
-let attemptsLeft = 16;
+let attemptsLeft = 20;
 let matchedPairs = 0;
 let cheat = false;
 
@@ -58,7 +58,7 @@ document.querySelector(".Attempts").textContent = attemptsLeft;
 function startMemoryGame() {
   document.querySelector(".memoryCon").style.display = "block";
   if (!cheat) {
-    attemptsLeft = 16;
+    attemptsLeft = 20;
   }
   matchedPairs = 0;
   document.querySelector(".Attempts").textContent = attemptsLeft;
@@ -163,7 +163,7 @@ function restartMemGame() {
   resetBoard();
   shuffleCards();
   if (!cheat) {
-    attemptsLeft = 16;
+    attemptsLeft = 20;
   }
   matchedPairs = 0;
   document.querySelector(".Attempts").textContent = attemptsLeft;

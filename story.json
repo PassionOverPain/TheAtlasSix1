@@ -203,7 +203,7 @@
       },
       {
         "branchId": "branch10",
-        "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, release it… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here.",
+        "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, release it… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here, especially in Bloomhaven.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/eye.webp",
         "event": "changeScene",
@@ -212,7 +212,7 @@
       },
       {
         "branchId": "branch11",
-        "text": "<span class=\"characterName\">Jasmin:</span> Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
+        "text": "Bloomhaven is a charming inn tucked in the heart of Aurelia, exuding warmth and inviting tranquility to all who pass through. Known for its namesake lanterns that emit a soft, golden glow, the inn’s cozy ambiance is perfect for weary travelers and townsfolk alike. The inn’s flower-laden windows and ivy-wrapped walls reflect Aurelia’s affinity for nature, with scents of lavender drifting through the air.<span class=\"characterName\">Jasmin:</span> Bloomhaven, I remember coming here as a girl. <br> <span class=\"characterName\">Tino:</span> So you are not a girl anymore ? <br> <span class=\"characterName\">Jasmin:</span> ...A <i>Young</i> girl... <i> Tino </i>. <br>  Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
         "character1": "Images/healer.webp",
         "character2": "Images/phoenix.webp",
         "event": "none",
@@ -279,6 +279,64 @@
         "startEnemies": [1],
         "spawnEnemies": [],
         "choices": []
+      },
+      {
+        "branchId": "branch19",
+        "text": "Following the chaotic burst of action, the inn is ablaze with shouts and overturned tables as fists fly and drinks spill. The Game Host, now seething and vengeful, grabs a nearby chair, swinging it in Mthi’s direction. She ducks just in time, but not before another bystander takes the hit, adding to the pandemonium.As the group grapples with the chaos, the Game Host, now humiliated and vengeful, grabs a knife from a nearby table, sneering at Mthi. His eyes are filled with murderous intent, and he lunges toward her with reckless abandon. The group finds themselves at a critical choice, each path leading to a different outcome.",
+        "character1": "Images/eye.webp",
+        "character2": "Images/Characters/Game Host.webp",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Let him live",
+            "outcome": "Mthi disarms the Game Host with a swift move, knocking the knife from his hand and forcing him to the ground. She looks down, calm but resolute. <br> <span class=\"characterName\">Mthi:</span> This isn't worth anyone’s life. Take this as a warning. <br> The Game Host stumbles back, humiliated and resentful, but alive. He sneers, vowing that Mthi and her group will pay for this insult, hinting at potential consequences down the line...",
+            "character1": "Images/eye.webp",
+            "character2": "Images/Characters/Game Host.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Strike the final blow",
+            "outcome": "Mthi pauses, taking in the desperation in the Game Host’s eyes. But this isn’t a look of regret or shame—only raw terror as he realizes his gamble has failed. Llewellyn steps forward, casting a glance at Mthi, whose expression is unreadable. Slowly, she nods, giving silent permission. Llewellyn raises his sword, and the Game Host’s face twists in silent protest, his voice catching as he whispers, <i>Please…</i> before the blade falls, ending him.",
+            "character1": "Images/eye.webp",
+            "character2": "Images/Characters/Game Host.webp",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch20",
+        "text": "As the dust settles from the chaotic scuffle, the atmosphere in Bloomhaven turns tense. Lily, the innkeeper, stands behind the counter, arms crossed and a frown etched across her face",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch20",
+        "text": "",
+        "character1": "all",
+        "character2": "none",
+        "event": "skipChoices",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "",
+            "outcome": "Yes You set him free",
+            "character1": "all",
+            "character2": "none",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "",
+            "outcome": "You Killed Him?",
+            "character1": "all",
+            "character2": "none",
+            "event": "none"
+          }
+        ]
       }
     ]
   }
