@@ -1,755 +1,755 @@
 /** @format */
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 @font-face {
-	font-family: myFont;
-	src: url(Wigtone.otf);
+  font-family: myFont;
+  src: url(Wigtone.otf);
 }
 #preloader {
-	position: fixed;
-	display: block;
-	width: 100%;
-	height: 100vh;
-	z-index: 10000;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
 }
 #preloader video {
-	width: 100%;
+  width: 100%;
 }
 #preloader span {
-	position: absolute;
-	top: 70%;
-	left: 50%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
 }
 .banner {
-	width: 100%;
-	height: 100vh;
-	text-align: center;
-	overflow: hidden;
-	position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 .banner .slider {
-	position: absolute;
-	width: 200px;
-	height: 250px;
-	top: 27%;
-	left: calc(50% - 100px);
-	transform-style: preserve-3d;
-	transform: perspective(1000px);
-	animation: spinCards 20s linear infinite;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 27%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: spinCards 20s linear infinite;
 }
 @keyframes spinCards {
-	from {
-		transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
-	}
-	to {
-		transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
-	}
+  from {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+  }
 }
 .banner .slider .item {
-	position: absolute;
-	inset: 0 0 0 0;
-	transform: rotateY(
-			calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-		)
-		translateZ(400px);
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(400px);
 }
 .banner .slider .item img {
-	width: 80%;
-	height: 80%;
-	border: 10px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	object-fit: cover;
+  width: 80%;
+  height: 80%;
+  border: 10px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  object-fit: cover;
 }
 header {
-	height: 100vh;
-	background: url(Images/background.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  height: 100vh;
+  background: url(Images/background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #Title {
-	background: url(Images/titlebg.webp);
-	background-size: cover;
-	background-clip: text;
-	color: transparent;
-	word-spacing: 5px;
-	letter-spacing: 5px;
-	position: relative;
-	top: 100%;
-	font-size: 7.2rem;
-	overflow: hidden;
-	animation: fade 2s linear 2s 1 forwards;
-	opacity: 0;
-	transition: 0.5s;
+  background: url(Images/titlebg.webp);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  position: relative;
+  top: 100%;
+  font-size: 7.2rem;
+  overflow: hidden;
+  animation: fade 2s linear 2s 1 forwards;
+  opacity: 0;
+  transition: 0.5s;
 }
 @keyframes fade {
-	100% {
-		opacity: 1;
-	}
+  100% {
+    opacity: 1;
+  }
 }
 #playbtn {
-	position: relative;
-	left: 0%;
-	top: -100px;
-	height: 50px;
-	border-radius: 100px;
-	animation: circle 6s linear infinite;
+  position: relative;
+  left: 0%;
+  top: -100px;
+  height: 50px;
+  border-radius: 100px;
+  animation: circle 6s linear infinite;
 }
 @keyframes circle {
-	0% {
-		transform: rotate(0deg) translate(-185px) rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
-	}
+  0% {
+    transform: rotate(0deg) translate(-185px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
+  }
 }
 
 #myMap {
-	position: fixed;
-	top: 5%;
-	left: 85%;
-	height: 10vh;
-	width: 5vw;
-	transition: all 0.5s;
-	cursor: url(Images/hand-s.png), auto;
-	z-index: 1000;
+  position: fixed;
+  top: 5%;
+  left: 85%;
+  height: 10vh;
+  width: 5vw;
+  transition: all 0.5s;
+  cursor: url(Images/hand-s.png), auto;
+  z-index: 1000;
 }
 #myMap img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 #myMap:hover {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 #thisMap {
-	top: 5%;
-	left: 40%;
-	position: fixed;
-	display: none;
-	height: 90vh;
-	width: 30vw;
-	z-index: 1000;
-	transition: all 0.5s;
-	transition-duration: 500ms;
-	animation: awaken linear 3s 1;
+  top: 5%;
+  left: 40%;
+  position: fixed;
+  display: none;
+  height: 90vh;
+  width: 30vw;
+  z-index: 1000;
+  transition: all 0.5s;
+  transition-duration: 500ms;
+  animation: awaken linear 3s 1;
 }
 #Mapimg {
-	height: 100%;
-	width: 100%;
-	position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 .mapCard {
-	position: absolute;
-	height: 10vh;
-	width: 4vw;
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	animation: awaken linear 3s 1;
+  position: absolute;
+  height: 10vh;
+  width: 4vw;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  animation: awaken linear 3s 1;
 }
 .mapCard img {
-	cursor: url(Images/hand-s.png), auto;
-	height: 100%;
-	width: 100%;
+  cursor: url(Images/hand-s.png), auto;
+  height: 100%;
+  width: 100%;
 }
 .mapCard:hover {
-	transform: scale(1.3);
+  transform: scale(1.3);
 }
 section {
-	position: relative;
-	display: flex;
-	justify-content: space-around; /*This is the space between char and words*/
-	align-items: center;
-	height: 100vh;
-	transition: all 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: space-around; /*This is the space between char and words*/
+  align-items: center;
+  height: 100vh;
+  transition: all 0.5s;
 }
 body {
-	overflow-y: hidden;
-	overflow-x: hidden;
-	height: fit-content;
-	scroll-behavior: smooth;
-	font-family: myFont;
-	min-height: 100vh;
-	cursor: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: fit-content;
+  scroll-behavior: smooth;
+  font-family: myFont;
+  min-height: 100vh;
+  cursor: none;
 }
 i {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 #About {
-	padding: 50px;
-	height: 100vh;
-	font-size: clamp(1rem, 20vw, 1.7rem);
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: url(Images/dragon.webp);
-	background-position: center;
-	background-size: cover;
+  padding: 50px;
+  height: 100vh;
+  font-size: clamp(1rem, 20vw, 1.7rem);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Images/dragon.webp);
+  background-position: center;
+  background-size: cover;
 }
 #narrator {
-	position: relative;
-	left: -5%;
-	height: 60vh;
-	width: 20vw;
+  position: relative;
+  left: -5%;
+  height: 60vh;
+  width: 20vw;
 }
 .quest {
-	background-color: transparent;
-	width: fit-content;
-	height: fit-content;
-	border: 40px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: repeat;
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: repeat;
 }
 #About p {
-	padding: 10px;
+  padding: 10px;
 }
 #titan {
-	background: url(Images/titanbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(Images/titanbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #healer {
-	background: url(Images/healerbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(Images/healerbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #timekeeper {
-	background: url(Images/timekeeperbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(Images/timekeeperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #eye {
-	background: url(Images/eyebg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(Images/eyebg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #phoenix {
-	background: url(Images/phoenixbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: url(Images/phoenixbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero {
-	position: relative;
-	left: 5%;
-	height: 60vh;
-	width: 0vw;
-	cursor: url(Images/hand-s.png), auto;
-	border: 10px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: repeat;
-	transition: all 1s;
-	transition-duration: 500ms;
-	animation: awaken linear 3s 1;
-	animation-delay: 3s;
-	opacity: 0;
-	object-fit: cover;
+  position: relative;
+  left: 5%;
+  height: 60vh;
+  width: 0vw;
+  cursor: url(Images/hand-s.png), auto;
+  border: 10px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: repeat;
+  transition: all 1s;
+  transition-duration: 500ms;
+  animation: awaken linear 3s 1;
+  animation-delay: 3s;
+  opacity: 0;
+  object-fit: cover;
 }
 .hero:hover,
 .pgCard:hover {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 .show {
-	opacity: 1;
-	width: 25vw;
+  opacity: 1;
+  width: 25vw;
 }
 
 .hero img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .herodesc {
-	position: relative;
-	display: none;
-	max-width: 60vw;
-	min-height: 60vh;
-	height: fit-content;
-	border: 40px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	overflow: hidden;
+  position: relative;
+  display: none;
+  max-width: 60vw;
+  min-height: 60vh;
+  height: fit-content;
+  border: 40px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  overflow: hidden;
 }
 .heDesc {
-	background: url(Images/paperbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: grid;
-	justify-content: center;
-	align-items: center;
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .awakes {
-	animation: awaken linear 3s 1 running;
+  animation: awaken linear 3s 1 running;
 }
 .sleeps {
-	animation: slumber linear 3s 1 running;
+  animation: slumber linear 3s 1 running;
 }
 @keyframes awaken {
-	0% {
-		max-width: 1vw;
-	}
-	100% {
-		max-width: 60vw;
-	}
+  0% {
+    max-width: 1vw;
+  }
+  100% {
+    max-width: 60vw;
+  }
 }
 @keyframes slumber {
-	0% {
-		max-width: 60vw;
-	}
-	100% {
-		max-width: 1vw;
-	}
+  0% {
+    max-width: 60vw;
+  }
+  100% {
+    max-width: 1vw;
+  }
 }
 .herodesc p {
-	font-size: 1.7rem;
-	text-align: center;
-	padding-bottom: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 10px;
 }
 .inactive {
-	display: none;
+  display: none;
 }
 .active {
-	display: block;
+  display: block;
 }
 .btns {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background: transparent;
-	padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: transparent;
+  padding-bottom: 10px;
 }
 button {
-	font-size: 1.5rem;
-	position: relative;
-	font-family: myFont;
-	cursor: url(Images/hand-s.png), auto;
-	background: url(Images/dragon.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-width: 70px;
-	width: fit-content;
-	height: fit-content;
-	margin: 10px;
-	transition: all 0.5s;
-	border-width: 5px;
-	border-image-source: url(Images/frame1.png);
-	border-image-repeat: round;
-	border-image-slice: 70;
+  font-size: 1.5rem;
+  position: relative;
+  font-family: myFont;
+  cursor: url(Images/hand-s.png), auto;
+  background: url(Images/dragon.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 70px;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  transition: all 0.5s;
+  border-width: 5px;
+  border-image-source: url(Images/frame1.png);
+  border-image-repeat: round;
+  border-image-slice: 70;
 }
 button:hover {
-	background-color: goldenrod;
-	transform: scale(1.2);
+  background-color: goldenrod;
+  transform: scale(1.2);
 }
 #playground {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	background-image: url(Images/Scenes/Outside\ Bloomhaven.webp);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	justify-content: center; /*Change this back*/
-	align-items: center;
-	transition: all 0.5s;
-	min-height: 100vh;
-	height: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: url(Images/Scenes/battleground1.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  justify-content: center; /*Change this back*/
+  align-items: center;
+  transition: all 0.5s;
+  min-height: 100vh;
+  height: fit-content;
 }
 .pgCard {
-	transition: all 0.5s ease;
-	cursor: url(Images/hand-s.png), auto;
-	position: relative;
-	display: inline-block;
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	opacity: 1;
-	height: 15vh;
-	width: 5vw;
-	margin-top: 10px;
+  transition: all 0.5s ease;
+  cursor: url(Images/hand-s.png), auto;
+  position: relative;
+  display: inline-block;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  opacity: 1;
+  height: 15vh;
+  width: 5vw;
+  margin-top: 10px;
 }
 .pgCard img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .pgCardCon {
-	align-items: center;
-	margin-left: 10px;
-	margin-right: 10px;
-	width: fit-content;
-	height: 100vh;
-	display: none; /* Change this back */
-	grid-template-columns: auto;
-	row-gap: 15px;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: fit-content;
+  height: 100vh;
+  display: none; /* Change this back */
+  grid-template-columns: auto;
+  row-gap: 15px;
 }
 #storyTeller {
-	position: relative;
-	z-index: 1;
-	display: none;
-	justify-content: center;
-	height: fit-content;
-	margin-left: 15px;
-	overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  height: fit-content;
+  margin-left: 15px;
+  overflow: hidden;
 }
 #story {
-	background: url(Images/paperbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: fit-content;
-	max-height: 90vh;
-	font-size: 1.7rem;
-	padding: 15px;
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  max-height: 90vh;
+  font-size: 1.7rem;
+  padding: 15px;
 }
 #pgCenter {
-	display: block;
-	padding: 15px;
-	font-size: 2rem;
-	background-image: url(Images/paperbg.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
+  padding: 15px;
+  font-size: 2rem;
+  background-image: url(Images/paperbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #pgChapter {
-	text-align: center;
+  text-align: center;
 }
 #storyLine {
-	margin: 25px;
-	width: 95vw;
-	height: fit-content;
-	max-height: 80vh;
-	padding: 25px;
-	font-size: 2rem;
-	background-image: url(Images/paperbg.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border: 10px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	overflow-y: scroll;
+  display: block;
+  margin: 25px;
+  width: 95vw;
+  height: fit-content;
+  max-height: 80vh;
+  padding: 25px;
+  font-size: 2rem;
+  background-image: url(Images/paperbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  overflow-y: scroll;
 }
 .storyImage {
-	position: relative;
-	display: inline-block;
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	opacity: 1;
-	height: 50vh;
-	width: 15vw;
-	margin: 10px;
+  position: relative;
+  display: inline-block;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  opacity: 1;
+  height: 50vh;
+  width: 15vw;
+  margin: 10px;
 }
 .storyImageReduced {
-	height: 15vh;
-	width: 5vw;
+  height: 15vh;
+  width: 5vw;
 }
 #storyCon {
-	max-width: inherit;
-	height: fit-content;
-	display: flex;
-	justify-content: space-between;
+  max-width: inherit;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
 }
 .characterName {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 .choice:hover {
-	transform: scale(1.1);
-	cursor: url(Images/hand-s.png), auto;
-	color: red;
-	display: inline-block;
+  transform: scale(1.1);
+  cursor: url(Images/hand-s.png), auto;
+  color: red;
+  display: inline-block;
 }
 
 .characterCon {
-	display: grid;
-	grid-template-columns: auto auto;
-	object-fit: cover;
+  display: grid;
+  grid-template-columns: auto auto;
+  object-fit: cover;
 }
 #actions {
-	display: none; /* Change this back */
-	position: relative;
-	top: 75%;
-	left: 20%;
-	height: 20vh;
-	width: 60vw;
-	z-index: 1;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	/* Healer:rgba(3, 93, 145, 0.199) */
-	/* Titan:rgba(56, 34, 4, 0.199) */
-	/* Eye: rgba(27, 1, 75, 0.199); */
-	/* Phoenix:rgba(255, 0, 0, 0.199) */
-	/* Timekeeper: rgba(145, 105, 7, 0.199) */
+  display: none; /* Change this back */
+  position: relative;
+  top: 75%;
+  left: 20%;
+  height: 20vh;
+  width: 60vw;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* Healer:rgba(3, 93, 145, 0.199) */
+  /* Titan:rgba(56, 34, 4, 0.199) */
+  /* Eye: rgba(27, 1, 75, 0.199); */
+  /* Phoenix:rgba(255, 0, 0, 0.199) */
+  /* Timekeeper: rgba(145, 105, 7, 0.199) */
 }
 .bgmove {
-	font-size: 2rem;
-	top: 50%;
-	position: relative;
-	cursor: url(Images/hand-s.png), auto;
-	transition: all 0.5s;
+  font-size: 2rem;
+  top: 50%;
+  position: relative;
+  cursor: url(Images/hand-s.png), auto;
+  transition: all 0.5s;
 }
 .bgmove:hover {
-	transform: scale(1.1);
-	color: red;
+  transform: scale(1.1);
+  color: red;
 }
 .cardInfo {
-	position: absolute;
-	width: 8%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: fit-content;
+  position: absolute;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 }
 .action {
-	z-index: 1;
-	position: absolute;
-	cursor: url(Images/hand-s.png), auto;
-	display: flex;
-	justify-content: center;
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	height: 100%;
-	width: 11%;
-	transition: all 0.75s;
-	object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  cursor: url(Images/hand-s.png), auto;
+  display: flex;
+  justify-content: center;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  height: 100%;
+  width: 11%;
+  transition: all 0.75s;
+  object-fit: cover;
 }
 .action img {
-	height: 100%;
-	width: 100%;
-	z-index: inherit;
+  height: 100%;
+  width: 100%;
+  z-index: inherit;
 }
 .action:hover,
 .action.active,
 .action::after {
-	transform: translateY(-105%);
+  transform: translateY(-105%);
 }
 .actionPower {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	top: 0;
-	left: 1%;
-	font-size: 1.2rem;
-	background: url(Images/Assets/attackPower.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 25px;
-	height: 25px;
-	border-radius: 20px;
-	padding: 3px;
-	z-index: 15;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  left: 1%;
+  font-size: 1.2rem;
+  background: url(Images/Assets/attackPower.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  padding: 3px;
+  z-index: 15;
 }
 .actionCost {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	top: 0;
-	left: 65%;
-	font-size: 1.2rem;
-	background: url(Images/Assets/actionCost.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 25px;
-	height: 25px;
-	border-radius: 20px;
-	padding: 3px;
-	z-index: 15;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  left: 65%;
+  font-size: 1.2rem;
+  background: url(Images/Assets/actionCost.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  padding: 3px;
+  z-index: 15;
 }
 .actionDesc {
-	font-family: "IM Fell English", serif;
-	font-size: 1.2rem;
-	display: none;
-	width: 20vw;
-	min-height: 100%;
-	height: fit-content;
-	z-index: 1000;
-	position: absolute;
-	left: -300%;
-	transform: translateX(120%);
-	transition: all 5s ease;
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	background-image: url(Images/paperbg.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+  font-family: "IM Fell English", serif;
+  font-size: 1.2rem;
+  display: none;
+  width: 20vw;
+  min-height: 100%;
+  height: fit-content;
+  z-index: 1000;
+  position: absolute;
+  left: -300%;
+  transform: translateX(120%);
+  transition: all 5s ease;
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  background-image: url(Images/paperbg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .action:hover .actionDesc {
-	display: grid;
+  display: grid;
 }
 .arrow {
-	position: absolute;
-	width: 80px;
+  position: absolute;
+  width: 80px;
 }
 .arrow:active {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .Heal:hover {
-	color: darkblue;
+  color: darkblue;
 }
 .Attack:hover {
-	color: red;
+  color: red;
 }
 #pgBtns {
-	display: flex;
-	text-align: center;
-	justify-content: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 #monstersCon {
-	opacity: 1;
-	position: relative;
-	top: 0%;
-	left: 0%;
+  opacity: 1;
+  position: relative;
+  top: 0%;
+  left: 0%;
 }
 #monstersCon img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .memGameCon {
-	display: grid;
-	justify-content: center;
-	grid-gap: 10px;
-	grid-template-columns: repeat(6, 100px);
-	grid-template-rows: repeat(2, calc(100px / 2 * 3));
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(2, calc(100px / 2 * 3));
 }
 .memGameAttempts {
-	text-align: center;
-	font-size: 2rem;
-	font-weight: bold;
-	font-family: "IM Fell English", serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "IM Fell English", serif;
 }
 .card {
-	height: calc(100px / 2 * 3);
-	width: 100px;
-	border-radius: 10px;
+  height: calc(100px / 2 * 3);
+  width: 100px;
+  border-radius: 10px;
 
-	position: relative;
-	transform-style: preserve-3d;
-	transition: all 0.5s ease-in-out;
-	cursor: url(Images/hand-s.png), auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  cursor: url(Images/hand-s.png), auto;
 }
 .front-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card.flipped {
-	transform: rotateY(180deg);
-	border: 5px solid;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
+  transform: rotateY(180deg);
+  border: 5px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
 }
 .front,
 .back {
-	backface-visibility: hidden;
-	position: absolute;
-	border-radius: 10px;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .card .front {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
 }
 .card .back {
-	background-image: url(Images/hand.webp);
-	background-position: center center;
-	background-size: cover;
-	backface-visibility: hidden;
+  background-image: url(Images/hand.webp);
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
 }
 .modal {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .modal.hidden {
-	display: none;
+  display: none;
 }
 
 .modal-content {
-	background: url(Images/paperbg.webp);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border: 5px solid transparent;
-	border-image-source: url(Images/frame1.png);
-	border-image-slice: 70;
-	border-image-repeat: round;
-	padding: 20px;
-	min-width: 300px;
-	width: 50%;
-	max-width: 500px;
-	color: black;
-	font-family: myFont;
-	font-size: 2rem;
-	text-align: center;
-	position: relative;
-	box-sizing: border-box;
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid transparent;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  padding: 20px;
+  min-width: 300px;
+  width: 50%;
+  max-width: 500px;
+  color: black;
+  font-family: myFont;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .modal-content button {
-	margin-top: 15px;
-	font-size: 1rem;
-	padding: 8px 16px;
-	color: black;
-	border: none;
-	transition: background 0.3s;
-	font-family: myFont;
+  margin-top: 15px;
+  font-size: 1rem;
+  padding: 8px 16px;
+  color: black;
+  border: none;
+  transition: background 0.3s;
+  font-family: myFont;
 }
 a {
-	color: red;
-	cursor: url(Images/hand-s.png), auto;
-	text-decoration: none;
+  color: red;
+  cursor: url(Images/hand-s.png), auto;
+  text-decoration: none;
 }

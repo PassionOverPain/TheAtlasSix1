@@ -29,7 +29,7 @@ let myChapters;
 let arrChoices = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 18;
+let currentBranch = 17;
 
 //Either open the map or close the map
 function displayMap() {
@@ -561,6 +561,10 @@ function playFight() {
     }
     currentRound = 0;
     return;
+  } else if (!myChapters[currentChapter].branches[currentBranch - 1].winnable) {
+    displayModal(
+      `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
+    );
   }
   let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
   ranEnemy = arrAliveEnemies[ranEnemy];
@@ -614,6 +618,17 @@ function playFight() {
           },
           { once: true }
         );
+      } else if (
+        myChapters[currentChapter].branches[currentBranch - 1].winnable
+      ) {
+        displayModal(`Battle Lost`);
+        currentRound = 0;
+        document.addEventListener("click", () => {
+          document.getElementById("monsterCon").replaceChildren();
+          displayChapter(
+            myChapters[currentChapter].branches[currentBranch - 1]
+          );
+        });
       }
     }
   }
@@ -631,6 +646,8 @@ function playFight() {
     .then((response) => response.json())
     .then((values) => (myHeroes = values));
 }
+
+function restartBattle() {}
 function cook() {
   let myBranch = myChapters[currentChapter].branches[currentBranch];
   displayChapter(myBranch);
@@ -843,16 +860,23 @@ function storyEvents(branch) {
     let Continue = document.createElement("p");
     Continue.innerHTML = `Continue`;
     Continue.className = "choice";
+    Continue.style.fontSize = "2rem";
     Continue.addEventListener(
       "click",
       () => {
         ++currentBranch;
-        displayChapter(myChapters[currentChapter].branches[currentBranch]);
+        document.getElementById("storyLine").style.display = "block";
+        displayStory();
+        playground.removeChild(Continue);
+        playground.style.gridTemplateColumns = "auto auto auto";
       },
       { once: true }
     );
-    let choicesContainer = document.getElementById("pgChoices");
-    choicesContainer.appendChild(Continue);
+    let playground = document.getElementById("playground");
+    document.getElementById("storyLine").style.display = "none";
+    playground.appendChild(Continue);
+    playground.style.display = "grid";
+    playground.style.justifyContent = "center";
   }
 }
 
