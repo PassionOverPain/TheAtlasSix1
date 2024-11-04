@@ -198,7 +198,7 @@ function triggerAttack(enemyId, gifSrc) {
   attackEffect.onload = () => {
     setTimeout(() => {
       attackEffect.remove();
-    }, 2500);
+    }, 3000);
   };
 
   enemyDiv.appendChild(attackEffect);
