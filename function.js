@@ -629,12 +629,19 @@ function playFight() {
       ) {
         displayModal(`Battle Lost`);
         currentRound = 0;
-        document.addEventListener("click", () => {
-          document.getElementById("monsterCon").replaceChildren();
-          displayChapter(
-            myChapters[currentChapter].branches[currentBranch - 1]
-          );
-        });
+        document.addEventListener(
+          "click",
+          () => {
+            document.addEventListener(
+              "click",
+              () => {
+                restartBattle();
+              },
+              { once: true }
+            );
+          },
+          { once: true }
+        );
       }
     }
   }
@@ -642,18 +649,36 @@ function playFight() {
   //The Fight is done
   ++currentRound;
   regenerate();
-  fetch("./heroes.json/", {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(myHeroes),
-  })
-    .then((response) => response.json())
-    .then((values) => (myHeroes = values));
+  // fetch("./heroes.json/", {  //////////////////////////////////////////////////////////////////////Error Here //////////////////////////////////////
+  //   method: "PUT",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(myHeroes),
+  // })
+  //   .then((response) => response.json())
+  //   .then((values) => (myHeroes = values));
 }
-
-function restartBattle() {}
+function restartBattle() {
+  let x = 0;
+  let y = 0;
+  myHeroes.forEach((Hero) => {
+    Hero.Hp = Hero.maxHp;
+    Hero.Stamina = Hero.maxStamina;
+    Hero.Mana = Hero.maxMana;
+    document.getElementById(
+      `pg${myHeroes[x].Class}img`
+    ).src = `Images/${myHeroes[x].Class}.webp`;
+    ++x;
+  });
+  arrEnemies.forEach((Enemy) => {
+    Enemy.Hp = Enemy.maxHp;
+    document.getElementById(`enemy${y}img`).src = `Images/${encodeURI(
+      myMonsters[arrEnemies[y].Index].Name
+    )}.webp`;
+    ++y;
+  });
+}
 function cook() {
   let myBranch = myChapters[currentChapter].branches[currentBranch];
   displayChapter(myBranch);

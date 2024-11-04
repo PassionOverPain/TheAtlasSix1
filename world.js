@@ -2,7 +2,7 @@ function createMonster(options) {
   const template = document.createElement("template");
 
   template.innerHTML = `<div id="enemy${arrEnemies.length}" class="hero pgCard">
-         <img src="${options.picture}" alt="This is a enemy player"  class="Enemy" data-ennumber="${arrEnemies.length}" />    
+         <img src="${options.picture}" alt="This is a enemy player"  class="Enemy" data-ennumber="${arrEnemies.length}"  id="enemy${arrEnemies.length}img"/>    
           </div>`;
 
   const monster = template.content.firstElementChild;
