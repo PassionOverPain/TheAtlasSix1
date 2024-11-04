@@ -569,7 +569,9 @@ function clickAlly(HeroNum, Ally) {
 function addEnemyToEncyclopedia(Number) {
   if (!Encyclopedia.includes(Number)) {
     Encyclopedia.push(Number);
-    displayModal(`Added ${myMonsters[Number].Name} to Encyclopedia.`);
+    displayModal(
+      `Recorded a new enemy: ${myMonsters[Number].Name}, to your Encyclopedia.`
+    );
   }
 }
 function playFight() {
@@ -604,7 +606,7 @@ function playFight() {
       displayModal(
         `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
       );
-      restartBattle(); // HEHEHEHEHEHEH
+      restartBattle(); // HEHEHEHEHEHEH :)
       arrEnemies = [];
       currentRound = 0;
 
