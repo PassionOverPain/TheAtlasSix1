@@ -545,10 +545,8 @@ function clickAlly(HeroNum, Ally) {
 
 function addEnemyToEncyclopedia(Number) {
   if (!Encyclopedia.includes(Number)) {
-    Encyclopedia.push(Index);
+    Encyclopedia.push(Number);
     displayModal(`Added ${myMonsters[Number].Name} to Encyclopedia.`);
-  } else {
-    displayModal(`Did Not Add Enemy`);
   }
 }
 function playFight() {
@@ -566,10 +564,9 @@ function playFight() {
       document.addEventListener(
         "click",
         () => {
-          console.log(arrEnemies);
           addEnemyToEncyclopedia(arrEnemies[0].Index);
-          // arrEnemies = [];
-          // currentRound = 0;
+          arrEnemies = [];
+          currentRound = 0;
           displayStory();
           displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
