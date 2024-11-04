@@ -24,7 +24,6 @@ function newMonster(Index) {
 let arrEnemies = [];
 function creationMonster(Index) {
   if (arrEnemies.length < 10) {
-    // Index = Math.floor(Math.random() * 2);
     let myMonster = new Monster(Index);
     arrEnemies.push(myMonster);
   }

@@ -284,7 +284,7 @@
         "character2": "none",
         "event": "triggerBattle",
         "winnable": true,
-        "startEnemies": [1, 1, 1],
+        "startEnemies": [1],
         "spawnEnemies": [],
         "choices": []
       },

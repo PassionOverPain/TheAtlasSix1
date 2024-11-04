@@ -27,9 +27,10 @@ let myHeroes;
 let openMap = false;
 let myChapters;
 let arrChoices = [];
+let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 18;
+let currentBranch = 17;
 
 //Either open the map or close the map
 function displayMap() {
@@ -542,13 +543,19 @@ function clickAlly(HeroNum, Ally) {
   }
 }
 
+function addEnemyToEncyclopedia(Number) {
+  if (!Encyclopedia.includes(Number)) {
+    Encyclopedia.push(Index);
+    displayModal(`Added ${myMonsters[Number].Name} to Encyclopedia.`);
+  } else {
+    displayModal(`Did Not Add Enemy`);
+  }
+}
 function playFight() {
   let arrAliveHeroes = []; // Recheck if Heroes are alive
   let arrAliveEnemies = []; //Recheck if Enemies are alive
-  let enemiesDead = true;
   for (let i = 0; i < arrEnemies.length; ++i) {
     if (arrEnemies[i].Hp <= 0) {
-      enemiesDead = false;
     } else {
       arrAliveEnemies.push(i);
     }
@@ -559,18 +566,24 @@ function playFight() {
       document.addEventListener(
         "click",
         () => {
+          console.log(arrEnemies);
+          addEnemyToEncyclopedia(arrEnemies[0].Index);
+          // arrEnemies = [];
+          // currentRound = 0;
           displayStory();
           displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
         { once: true }
       );
     }
-    currentRound = 0;
+
     return;
   } else if (!myChapters[currentChapter].branches[currentBranch - 1].winnable) {
     displayModal(
       `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
     );
+    arrEnemies = [];
+    currentRound = 0;
   }
   let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
   ranEnemy = arrAliveEnemies[ranEnemy];
@@ -618,6 +631,8 @@ function playFight() {
                 displayChapter(
                   myChapters[currentChapter].branches[currentBranch]
                 );
+                arrEnemies = [];
+                currentRound = 0;
               },
               { once: true }
             );
@@ -628,7 +643,7 @@ function playFight() {
         myChapters[currentChapter].branches[currentBranch - 1].winnable
       ) {
         displayModal(`Battle Lost`);
-        currentRound = 0;
+        textBubble.textContent = "Click anywhere to Restart battle.";
 
         document.addEventListener(
           "click",
@@ -661,6 +676,8 @@ function playFight() {
   //   .then((values) => (myHeroes = values));
 }
 function restartBattle() {
+  arrEnemies = [];
+  currentRound = 0;
   let x = 0;
   myHeroes.forEach((Hero) => {
     Hero.Hp = Hero.maxHp;
@@ -671,6 +688,7 @@ function restartBattle() {
     ).src = `Images/${myHeroes[x].Class}.webp`;
     ++x;
   });
+  //Option 1
   // let y = 0;
   // arrEnemies.forEach((Enemy) => {
   //   Enemy.Hp = Enemy.maxHp;
@@ -680,10 +698,12 @@ function restartBattle() {
   //   ++y;
   // });
 
+  // Option 2
   document.getElementById("monstersCon").replaceChildren();
   displayStory();
   --currentBranch;
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
+  textBubble.textContent = "Battle Restarted.";
 }
 function cook() {
   let myBranch = myChapters[currentChapter].branches[currentBranch];
