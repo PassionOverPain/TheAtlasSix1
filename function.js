@@ -629,6 +629,7 @@ function playFight() {
       ) {
         displayModal(`Battle Lost`);
         currentRound = 0;
+
         document.addEventListener(
           "click",
           () => {
@@ -661,7 +662,6 @@ function playFight() {
 }
 function restartBattle() {
   let x = 0;
-  let y = 0;
   myHeroes.forEach((Hero) => {
     Hero.Hp = Hero.maxHp;
     Hero.Stamina = Hero.maxStamina;
@@ -671,13 +671,19 @@ function restartBattle() {
     ).src = `Images/${myHeroes[x].Class}.webp`;
     ++x;
   });
-  arrEnemies.forEach((Enemy) => {
-    Enemy.Hp = Enemy.maxHp;
-    document.getElementById(`enemy${y}img`).src = `Images/${encodeURI(
-      myMonsters[arrEnemies[y].Index].Name
-    )}.webp`;
-    ++y;
-  });
+  // let y = 0;
+  // arrEnemies.forEach((Enemy) => {
+  //   Enemy.Hp = Enemy.maxHp;
+  //   document.getElementById(`enemy${y}img`).src = `Images/${encodeURI(
+  //     myMonsters[arrEnemies[y].Index].Name
+  //   )}.webp`;
+  //   ++y;
+  // });
+
+  document.getElementById("monstersCon").replaceChildren();
+  displayStory();
+  --currentBranch;
+  displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function cook() {
   let myBranch = myChapters[currentChapter].branches[currentBranch];
