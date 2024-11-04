@@ -30,7 +30,8 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 17;
+let currentBranch = 0;
+let encNum = 0;
 
 //Either open the map or close the map
 function displayMap() {
@@ -327,7 +328,29 @@ function closeScroll() {
   document.getElementById("pgCenter").style.display = "block";
 }
 
-function openMonster(num) {
+function upEncyclopedia() {
+  if (encNum === Encyclopedia.length) {
+    encNum == 0;
+  } else {
+    ++encNum;
+  }
+  openEncyclopedia(Encyclopedia[encNum]);
+}
+function downEncyclopedia() {
+  if (encNum === 0) {
+    encNum = Encyclopedia.length;
+  } else {
+    --encNum;
+  }
+
+  openEncyclopedia(Encyclopedia[encNum]);
+}
+
+function openEncyclopedia(num) {
+  if (currentBranch >= 5) {
+    displayModal(`You have no enemies .... Yet...`);
+    return;
+  }
   if (!gotHeroes) {
     getHeroes();
   }
@@ -564,23 +587,29 @@ function playFight() {
       document.addEventListener(
         "click",
         () => {
-          addEnemyToEncyclopedia(arrEnemies[0].Index);
+          arrEnemies.forEach((Enemy) => {
+            addEnemyToEncyclopedia(Enemy.Index);
+          });
           arrEnemies = [];
           currentRound = 0;
+          reviveHeroes();
           displayStory();
           displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
         { once: true }
       );
-    }
+    } else if (
+      !myChapters[currentChapter].branches[currentBranch - 1].winnable
+    ) {
+      displayModal(
+        `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
+      );
+      restartBattle(); // HEHEHEHEHEHEH
+      arrEnemies = [];
+      currentRound = 0;
 
-    return;
-  } else if (!myChapters[currentChapter].branches[currentBranch - 1].winnable) {
-    displayModal(
-      `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
-    );
-    arrEnemies = [];
-    currentRound = 0;
+      return;
+    }
   }
   let ranEnemy = Math.floor(Math.random() * arrAliveEnemies.length);
   ranEnemy = arrAliveEnemies[ranEnemy];
@@ -625,6 +654,10 @@ function playFight() {
               () => {
                 displayStory();
 
+                arrEnemies.forEach((Enemy) => {
+                  addEnemyToEncyclopedia(Enemy.Index);
+                });
+                reviveHeroes();
                 displayChapter(
                   myChapters[currentChapter].branches[currentBranch]
                 );
@@ -672,7 +705,7 @@ function playFight() {
   //   .then((response) => response.json())
   //   .then((values) => (myHeroes = values));
 }
-function restartBattle() {
+function reviveHeroes() {
   arrEnemies = [];
   currentRound = 0;
   let x = 0;
@@ -685,6 +718,9 @@ function restartBattle() {
     ).src = `Images/${myHeroes[x].Class}.webp`;
     ++x;
   });
+}
+function restartBattle() {
+  reviveHeroes();
   //Option 1
   // let y = 0;
   // arrEnemies.forEach((Enemy) => {
