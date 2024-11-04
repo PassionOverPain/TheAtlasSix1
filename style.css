@@ -753,3 +753,18 @@ a {
   cursor: url(Images/hand-s.png), auto;
   text-decoration: none;
 }
+.attack-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+#fire {
+  top: -100px;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
