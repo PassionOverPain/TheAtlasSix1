@@ -185,3 +185,21 @@ function closeModal() {
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Battle Events And Effects <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+function triggerAttack(enemyId, gifSrc) {
+  const enemyDiv = document.getElementById(`enemy${enemyId}`);
+
+  // Create an img element for the attack effect
+  const attackEffect = document.createElement("img");
+  attackEffect.src = gifSrc;
+  attackEffect.classList.add("attack-gif");
+  attackEffect.style.width = "400%";
+
+  attackEffect.onload = () => {
+    setTimeout(() => {
+      attackEffect.remove();
+    }, 2500);
+  };
+
+  enemyDiv.appendChild(attackEffect);
+}

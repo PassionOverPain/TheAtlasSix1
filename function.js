@@ -483,6 +483,11 @@ function clickEnemy(atknums) {
           } Hp now.`;
           played = true;
           deplete();
+          triggerAttack(
+            0,
+            `Images/Assets/anime${myHeroes[heroIndex].Attacks.Name[atknums]}.gif`
+          );
+
           setTimeout(() => {
             playFight();
           }, 3000);
