@@ -348,7 +348,32 @@
           {
             "choiceId": "1",
             "option": "",
-            "outcome": "You Killed Him?",
+            "outcome": "As the Atlas Six gather outside Bloomhaven, the air is heavy with tension and a mix of guilt and anger. The night feels colder, and the distant lights of the town seem to mock their predicament. Mthi tightens her cloak, her eyes scanning their surroundings, alert for any signs of pursuit. The group stands in silence for a moment, each processing the weight of what they’ve just done. <br> Suddenly, Llewellyn breaks the silence, his voice strained. <br> <span class=\"characterName\">Llewellyn:</span> We had no choice. He forced our hand. <br> <span class=\"characterName\">Jasmin:</span> We’ll need to lie low for now. The townsfolk… they may not understand what we did or why. <br> <span class=\"characterName\">Mthi:</span> Let's get going. The less attention we draw, the better. <br> She glances toward the woods on the edge of town, where the shadows seem to promise safety.",
+            "character1": "all",
+            "character2": "none",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch21",
+        "text": "",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "",
+            "outcome": " The Atlas Six find themselves standing outside Bloomhaven in the cool night air, the door firmly closed behind them. The muffled sounds of laughter and conversation continue within, but they’re no longer welcome in the inn. The group exchanges a few uneasy glances, unsure of their next move. <br> <span class=\"characterName\">Mthi:</span> Well, that went well. <i>she says, brushing off a stray leaf from her cloak.</i><br> <i>Llewellyn shrugs, unfazed.</i> <br> <span class=\"characterName\">Llewellyn:</span>Can’t say it was unexpected. <br> <span class=\"characterName\">Tino:</span> Yeeaaa.. that was fun.",
+            "character1": "all",
+            "character2": "none",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "",
+            "outcome": "As the Atlas Six gather outside Bloomhaven, the air is heavy with tension and a mix of guilt and anger. The night feels colder, and the distant lights of the town seem to mock their predicament. Mthi tightens her cloak, her eyes scanning their surroundings, alert for any signs of pursuit. The group stands in silence for a moment, each processing the weight of what they’ve just done. <br> Suddenly, Llewellyn breaks the silence, his voice strained. <br> <span class=\"characterName\">Llewellyn:</span> We had no choice. He forced our hand. <br> <span class=\"characterName\">Jasmin:</span> We’ll need to lie low for now. The townsfolk… they may not understand what we did or why. <br> <span class=\"characterName\">Mthi:</span> Let's get going. The less attention we draw, the better. <br> She glances toward the woods on the edge of town, where the shadows seem to promise safety.",
             "character1": "all",
             "character2": "none",
             "event": "none"
