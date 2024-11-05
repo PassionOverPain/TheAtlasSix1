@@ -113,31 +113,10 @@ function openScroll(charNum) {
     getMonsters();
   }
   openAttacks();
-  // let actionsCon = document.getElementById("actions");
-  // switch (num) {
-  // 	case 0: {
-  // 		actionsCon.style.backgroundColor = `rgba(3, 93, 145, 0.199)`;
-  // 		break;
-  // 	}
-  // 	case 1: {
-  // 		actionsCon.style.backgroundColor = `rgba(56, 34, 4, 0.199)`;
-  // 		break;
-  // 	}
-  // 	case 2: {
-  // 		actionsCon.style.backgroundColor = `rgba(27, 1, 75, 0.199)`;
-  // 		break;
-  // 	}
-  // 	case 3: {
-  // 		actionsCon.style.backgroundColor = `rgba(255, 0, 0, 0.199)`;
-  // 		break;
-  // 	}
-  // 	case 4: {
-  // 		actionsCon.style.backgroundColor = `rgba(145, 105, 7, 0.199)`;
-  // 		break;
-  // 	}
-  // }
   document.getElementById("storyTeller").style.display = "inline-block";
   document.getElementById("pgCenter").style.display = "none";
+  document.getElementById("actions").style.display = "none";
+  document.getElementById("centerCon").style.display = "none";
 
   document.getElementById(
     "currentTitle"
@@ -744,7 +723,7 @@ function displayChapter(branch) {
   const p = document.createElement("p");
   p.innerHTML = branch.text;
   chapterText.appendChild(p);
-  // Stuff -- Error Logic --- Stuff
+  // Stuff -- Error Logic --- Stuff ??? Fixed
   addstoryImage(branch);
 
   if (branch.event != "none") {

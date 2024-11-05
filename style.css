@@ -61,10 +61,27 @@
 .banner .slider .item img {
   width: 80%;
   height: 80%;
-  border: 10px solid;
-  border-image-source: url(Images/frame1.png);
+  object-fit: cover;
+}
+.enemyCard {
+  border: 5px solid;
   border-image-slice: 70;
-  border-image-repeat: round;
+  border-image-repeat: repeat;
+  border-image-source: url(Images/evilframe.png);
+  object-fit: cover;
+}
+.neutralCard {
+  border: 5px solid;
+  border-image-slice: 70;
+  border-image-repeat: repeat;
+  border-image-source: url(Images/neutralframe.png);
+  object-fit: cover;
+}
+.allyCard {
+  border: 5px solid;
+  border-image-slice: 70;
+  border-image-repeat: repeat;
+  border-image-source: url(Images/frame1.png);
   object-fit: cover;
 }
 header {
@@ -399,10 +416,6 @@ button:hover {
   cursor: url(Images/hand-s.png), auto;
   position: relative;
   display: inline-block;
-  border: 5px solid;
-  border-image-source: url(Images/frame1.png);
-  border-image-slice: 70;
-  border-image-repeat: round;
   opacity: 1;
   height: 15vh;
   width: 5vw;

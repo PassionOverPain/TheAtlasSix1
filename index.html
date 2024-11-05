@@ -33,50 +33,73 @@
       <div class="banner">
         <div class="slider" style="--quantity: 10">
           <div class="item" style="--position: 1">
-            <img src="Images/healer.webp" alt="The healer carousel image" />
+            <img
+              src="Images/healer.webp"
+              alt="The healer carousel image"
+              class="allyCard"
+            />
           </div>
           <div class="item" style="--position: 2">
-            <img src="Images/titan.webp" alt="The titan carousel image" />
+            <img
+              src="Images/titan.webp"
+              alt="The titan carousel image"
+              class="allyCard"
+            />
           </div>
           <div class="item" style="--position: 3">
-            <img src="Images/eye.webp" alt="The eye carousel image" />
+            <img
+              src="Images/eye.webp"
+              alt="The eye carousel image"
+              class="allyCard"
+            />
           </div>
           <div class="item" style="--position: 4">
-            <img src="Images/phoenix.webp" alt="The phoenix carousel image" />
+            <img
+              src="Images/phoenix.webp"
+              alt="The phoenix carousel image"
+              class="allyCard"
+            />
           </div>
           <div class="item" style="--position: 5">
             <img
               src="Images/timekeeper.webp"
               alt="The timekeeper carousel image"
+              class="allyCard"
             />
           </div>
+
           <div class="item" style="--position: 6">
             <img
-              src="Images/The Sixth Atlas.webp"
+              src="Images/Golden Order.webp"
+              class="neutralCard"
               alt="A monster image for the carousel"
             />
           </div>
           <div class="item" style="--position: 7">
             <img
-              src="Images/Prismara.webp"
+              src="Images/Silver Order.webp"
+              class="neutralCard"
               alt="A monster image for the carousel"
             />
           </div>
           <div class="item" style="--position: 8">
             <img
-              src="Images/msflame.webp"
+              src="Images/Ezraya Nightshade.webp"
+              class="enemyCard"
               alt="A monster image for the carousel"
             />
           </div>
           <div class="item" style="--position: 9">
             <img
-              src="Images/mstime.webp"
+              src="Images/Forgotten Knight.webp"
+              class="enemyCard"
               alt="A monster image for the carousel"
             />
           </div>
           <div class="item" style="--position: 10">
             <img
-              src="Images/monsters.webp"
+              src="Images/The Sixth Atlas.webp"
+              class="enemyCard"
               alt="A monster image for the carousel"
             />
           </div>
@@ -145,7 +168,9 @@
             <img src="Images/mstime.webp" alt="A monster map image" />
           </div>
           <div class="mapCard" style="top: 30%; left: 7%">
-            <img src="Images/hand.webp" alt="The playground map image" />
+            <a href="#playground" alt="Begin the Story" onclick="displayMap()">
+              <img src="Images/hand.webp" alt="The playground map image" />
+            </a>
           </div>
         </div>
       </div>
@@ -362,7 +387,7 @@
               src="Images/healer.webp"
               alt="The healer playground card"
               id="pgHealerimg"
-              class="Ally"
+              class="Ally allyCard"
               data-heronum="0"
             />
             <!---I removed hero class... may be needed later -->
@@ -371,7 +396,7 @@
             <img
               src="Images/titan.webp"
               alt="The titan playground card"
-              class="Ally"
+              class="Ally allyCard"
               data-heronum="1"
               id="pgTitanimg"
             />
@@ -380,7 +405,7 @@
             <img
               src="Images/eye.webp"
               alt="The eye playground card"
-              class="Ally"
+              class="Ally allyCard"
               data-heronum="2"
               id="pgEyeimg"
             />
@@ -389,7 +414,7 @@
             <img
               src="Images/phoenix.webp"
               alt="The phoenix playground card"
-              class="Ally"
+              class="Ally allyCard"
               data-heronum="3"
               id="pgPhoeniximg"
             />
@@ -399,7 +424,7 @@
             <img
               src="Images/timekeeper.webp"
               alt="The timekeeper playground card"
-              class="Ally"
+              class="Ally allyCard"
               data-heronum="4"
               id="pgTimekeeperimg"
             />
