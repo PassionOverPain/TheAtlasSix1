@@ -1,7 +1,11 @@
 /** @format */
 //The Main function
 function openTab(tab, hero) {
-  if (tab == "Info") {
+  if (
+    myChapters[currentChapter].branches[currentBranch].event != "triggerBattle"
+  ) {
+    return; //Error Right Here;
+  } else if (tab == "Info") {
     document.getElementById(`${hero}Stats`).classList.remove("active");
     document.getElementById(`${hero}Info`).classList.add("active");
   } else {
@@ -30,7 +34,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 17;
+let currentBranch = 0;
 let encNum = 0;
 
 //Either open the map or close the map
@@ -307,6 +311,10 @@ function closeScroll() {
   // document.getElementById("pgCenter").style.display = "block";
   if (myChapters[currentChapter].branches[currentBranch].event === "none") {
     document.getElementById("storyLine").style.display = "block";
+  } else {
+    document.getElementById("pgCenter").style.display = "block";
+    document.getElementById("actions").style.display = "block";
+    document.getElementById("centerCon").style.display = "block";
   }
 }
 
@@ -556,7 +564,7 @@ function playFight() {
   }
   if (arrAliveEnemies.length == 0) {
     displayModal("Victory Achieved !");
-    if (myChapters[currentChapter].branches[currentBranch - 1].winnable) {
+    if (myChapters[currentChapter].branches[currentBranch].winnable) {
       document.addEventListener(
         "click",
         () => {
@@ -565,15 +573,14 @@ function playFight() {
           });
           arrEnemies = [];
           currentRound = 0;
+          ++currentBranch;
           reviveHeroes();
           displayStory();
           displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
         { once: true }
       );
-    } else if (
-      !myChapters[currentChapter].branches[currentBranch - 1].winnable
-    ) {
+    } else if (!myChapters[currentChapter].branches[currentBranch].winnable) {
       displayModal(
         `You really just won an unwinnable battle? Wow I am Amazed. Anyway Now there is a bug since I didn't cater for this yet :).`
       );
@@ -615,8 +622,7 @@ function playFight() {
       "Images/dead.webp";
     //Party just died
     if (arrAliveHeroes.length - 1 == 0) {
-      // textBubble.textContent = `Battle Lost!`;
-      if (!myChapters[currentChapter].branches[currentBranch - 1].winnable) {
+      if (!myChapters[currentChapter].branches[currentBranch].winnable) {
         displayModal(`Battle Lost`);
         currentRound = 0;
         document.addEventListener(
@@ -625,8 +631,8 @@ function playFight() {
             document.addEventListener(
               "click",
               () => {
+                ++currentBranch;
                 displayStory();
-
                 arrEnemies.forEach((Enemy) => {
                   addEnemyToEncyclopedia(Enemy.Index);
                 });
@@ -642,9 +648,7 @@ function playFight() {
           },
           { once: true }
         );
-      } else if (
-        myChapters[currentChapter].branches[currentBranch - 1].winnable
-      ) {
+      } else if (myChapters[currentChapter].branches[currentBranch].winnable) {
         displayModal(`Battle Lost`);
         textBubble.textContent = "Click anywhere to Restart battle.";
 
@@ -885,6 +889,8 @@ function storyEvents(branch) {
     return;
   }
   if (branch.event == "triggerBattle") {
+    document.getElementById(`myMap`).style.display = "none";
+    document.getElementById("myEncyclopedia").style.display = "none";
     let storyCon = document.getElementById(`storyLine`);
     let heroesCon = document.getElementById(`heroesCon`);
     let pgCenter = document.getElementById(`pgCenter`);
@@ -899,11 +905,12 @@ function storyEvents(branch) {
     pgCenter.style.display = "block";
     actions.style.display = "block";
     monstersCon.style.display = "grid";
-    ++currentBranch;
     branch.startEnemies.forEach((Enemy) => {
       creationMonster(Enemy);
     });
   } else if (branch.event == "triggerGame") {
+    document.getElementById(`myMap`).style.display = "none";
+    document.getElementById("myEncyclopedia").style.display = "none";
     let storyCon = document.getElementById(`storyLine`);
     storyCon.style.display = "none";
     if (branch.game == "MemoryGame") {
@@ -916,6 +923,8 @@ function storyEvents(branch) {
     }
     ++currentBranch;
   } else if (branch.event == "changeScene") {
+    document.getElementById(`myMap`).style.display = "none";
+    document.getElementById("myEncyclopedia").style.display = "none";
     document.getElementById(
       "playground"
     ).style.backgroundImage = `url(Images/Scenes/${encodeURI(
@@ -945,6 +954,8 @@ function storyEvents(branch) {
 }
 
 function displayStory() {
+  document.getElementById(`myMap`).style.display = "inline-block";
+  document.getElementById("myEncyclopedia").style.display = "inline-block";
   let storyCon = document.getElementById(`storyLine`);
   let heroesCon = document.getElementById(`heroesCon`);
   let pgCenter = document.getElementById(`pgCenter`);
