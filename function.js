@@ -325,29 +325,28 @@ function openScroll2() {
 //Close StoryTeller Tab
 function closeScroll() {
   document.getElementById(`storyTeller`).style.display = "none";
-  document.getElementById("pgCenter").style.display = "block";
+  // document.getElementById("pgCenter").style.display = "block";
+  if (myChapters[currentChapter].branches[currentBranch].event === "none") {
+    document.getElementById("storyLine").style.display = "block";
+  }
 }
 
+// Move up in the Encyclopedia (next enemy)
 function upEncyclopedia() {
-  if (encNum === Encyclopedia.length) {
-    encNum == 0;
-  } else {
-    ++encNum;
-  }
+  encNum = (encNum + 1) % Encyclopedia.length;
   openEncyclopedia(Encyclopedia[encNum]);
 }
-function downEncyclopedia() {
-  if (encNum === 0) {
-    encNum = Encyclopedia.length;
-  } else {
-    --encNum;
-  }
 
+// Move down in the Encyclopedia (previous enemy)
+function downEncyclopedia() {
+  encNum = (encNum - 1 + Encyclopedia.length) % Encyclopedia.length;
   openEncyclopedia(Encyclopedia[encNum]);
 }
 
 function openEncyclopedia(num) {
-  if (currentBranch >= 5) {
+  console.log(Encyclopedia);
+  console.log(encNum);
+  if (currentBranch <= 4) {
     displayModal(`You have no enemies .... Yet...`);
     return;
   }
@@ -358,6 +357,7 @@ function openEncyclopedia(num) {
     getMonsters();
   }
 
+  document.getElementById("storyLine").style.display = "none";
   document.getElementById("storyTeller").style.display = "block";
   document.getElementById("pgCenter").style.display = "none";
   document.getElementById("heDesc").style.display = `none`;
@@ -377,21 +377,13 @@ function openEncyclopedia(num) {
   document.getElementById(
     "msType"
   ).textContent = `Type: ${myMonsters[num].Type}`;
-  document.getElementById(
-    "msAtk1"
-  ).textContent = `Attack 1: ${myMonsters[num].Attacks.Name[0]}`;
-  document.getElementById(
-    "msAtk2"
-  ).textContent = `Attack 2: ${myMonsters[num].Attacks.Name[1]}`;
-  document.getElementById(
-    "msAtk3"
-  ).textContent = `Attack 3: ${myMonsters[num].Attacks.Name[2]}`;
-  document.getElementById(
-    "msAtk4"
-  ).textContent = `Attack 4: ${myMonsters[num].Attacks.Name[3]}`;
-  document.getElementById(
-    "msAtk5"
-  ).textContent = `Attack 5: ${myMonsters[num].Attacks.Name[4]}`;
+  for (let i = 0; i < 5; i++) {
+    const attackElement = document.getElementById(`msAtk${i + 1}`);
+    const attackName = myMonsters[num].Attacks.Name[i];
+    attackElement.textContent = attackName
+      ? `Attack ${i + 1}: ${attackName}`
+      : "";
+  }
 }
 
 let played = false;
@@ -920,6 +912,7 @@ function storyEvents(branch) {
     let actions = document.getElementById(`actions`);
     let monstersCon = document.getElementById(`monstersCon`);
     let playground = document.getElementById(`playground`);
+    document.getElementById("centerCon").style.display = "block";
     playground.style.justifyContent = "space-between";
     storyCon.style.display = "none";
 
@@ -979,6 +972,7 @@ function displayStory() {
   let actions = document.getElementById(`actions`);
   let monstersCon = document.getElementById(`monstersCon`);
   let playground = document.getElementById(`playground`);
+  document.getElementById("centerCon").style.display = "none";
   playground.style.justifyContent = "space-between";
   storyCon.style.display = "block";
   heroesCon.style.display = "none";

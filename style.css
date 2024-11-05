@@ -115,6 +115,23 @@ header {
     transform: rotate(360deg) translate(-185px) rotate(-360deg) rotateZ(360deg);
   }
 }
+#myEncyclopedia {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  height: 10vh;
+  width: 5vw;
+  transition: all 0.5s;
+  cursor: url(Images/hand-s.png), auto;
+  z-index: 1000;
+}
+#myEncyclopedia img {
+  height: 100%;
+  width: 100%;
+}
+#myEncyclopedia:hover {
+  transform: scale(1.2);
+}
 
 #myMap {
   position: fixed;
