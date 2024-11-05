@@ -340,7 +340,7 @@
           {
             "choiceId": "0",
             "option": "",
-            "outcome": " The Atlas Six find themselves standing outside Bloomhaven in the cool night air, the door firmly closed behind them. The muffled sounds of laughter and conversation continue within, but they’re no longer welcome in the inn. The group exchanges a few uneasy glances, unsure of their next move. <br> <span class=\"characterName\">Mthi:</span> Well, that went well. <i>she says, brushing off a stray leaf from her cloak.</i><br> <i>Llewellyn shrugs, unfazed.</i> <br> <span class=\"characterName\">Llewellyn:</span>Can’t say it was unexpected. <br> <span class=\"characterName\">Tino:</span> Yeeaaa.. that was fun.",
+            "outcome": " The Atlas Six find themselves standing outside Bloomhaven in the cool night air, the door firmly closed behind them. The muffled sounds of laughter and conversation continue within, but they’re no longer welcome in the inn. The group exchanges a few uneasy glances, unsure of their next move. <br> <span class=\"characterName\">Mthi:</span> Well, that went well. <i>she says, brushing off a stray leaf from her cloak.</i><br> <i>Llewellyn shrugs, unfazed.</i> <br> <span class=\"characterName\">Llewellyn:</span>Can’t say it was unexpected. <br> <span class=\"characterName\">Tino:</span> Yeeaaa.. that was fun. <br> Jasmin, ever the voice of compassion, places a hand on Mthi's shoulder. <br> <span class=\"characterName\">Jasmin:</span> Violence isn’t always the answer. Sometimes mercy is the stronger path. <br> <span class=\"characterName\">Llewellyn:</span> Either way, we’re not welcome here anymore. We need to put some distance between us and Bloomhaven. <br> <i>He gestures toward the nearby forest, where the trees stand tall and dark, offering a concealed path away from Aurelia.</i> ",
             "character1": "all",
             "character2": "none",
             "event": "none"
@@ -357,28 +357,29 @@
       },
       {
         "branchId": "branch21",
-        "text": "",
+        "text": "The party agrees to venture into the forest, seeking a temporary camp where they can regroup and plan their next move. As they fade into the darkness, the reality of their decision settles over them, binding them even closer, for better or for worse.",
         "character1": "all",
         "character2": "none",
         "event": "none",
-        "choices": [
-          {
-            "choiceId": "0",
-            "option": "",
-            "outcome": " The Atlas Six find themselves standing outside Bloomhaven in the cool night air, the door firmly closed behind them. The muffled sounds of laughter and conversation continue within, but they’re no longer welcome in the inn. The group exchanges a few uneasy glances, unsure of their next move. <br> <span class=\"characterName\">Mthi:</span> Well, that went well. <i>she says, brushing off a stray leaf from her cloak.</i><br> <i>Llewellyn shrugs, unfazed.</i> <br> <span class=\"characterName\">Llewellyn:</span>Can’t say it was unexpected. <br> <span class=\"characterName\">Tino:</span> Yeeaaa.. that was fun.",
-            "character1": "all",
-            "character2": "none",
-            "event": "none"
-          },
-          {
-            "choiceId": "1",
-            "option": "",
-            "outcome": "As the Atlas Six gather outside Bloomhaven, the air is heavy with tension and a mix of guilt and anger. The night feels colder, and the distant lights of the town seem to mock their predicament. Mthi tightens her cloak, her eyes scanning their surroundings, alert for any signs of pursuit. The group stands in silence for a moment, each processing the weight of what they’ve just done. <br> Suddenly, Llewellyn breaks the silence, his voice strained. <br> <span class=\"characterName\">Llewellyn:</span> We had no choice. He forced our hand. <br> <span class=\"characterName\">Jasmin:</span> We’ll need to lie low for now. The townsfolk… they may not understand what we did or why. <br> <span class=\"characterName\">Mthi:</span> Let's get going. The less attention we draw, the better. <br> She glances toward the woods on the edge of town, where the shadows seem to promise safety.",
-            "character1": "all",
-            "character2": "none",
-            "event": "none"
-          }
-        ]
+        "choices": []
+      },
+      {
+        "branchId": "branch22",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "changeScene",
+        "background": "forest beginning",
+        "choices": []
+      },
+
+      {
+        "branchId": "branch22",
+        "text": "<br> <span class=\"characterName\">Tino:</span> Why are we in a creepy dark forest at night again ? Seems like we are just asking to be killed at this point. <br><span class=\"characterName\">Zanele:</span> You're not afraid aren't you Tino? Who knows what we will encounter... <br> <span class=\"characterName\">Mthi:</span> I agree with Tino, maybe we can try a different inn... Aurelia is big. <br> <span class=\"characterName\">Llewellyn:</span> Word spreads like wildfire unfortunately, We best lay low for now.",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": []
       }
     ]
   }

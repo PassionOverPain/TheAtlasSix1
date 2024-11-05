@@ -30,7 +30,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 0;
+let currentBranch = 17;
 let encNum = 0;
 
 //Either open the map or close the map
