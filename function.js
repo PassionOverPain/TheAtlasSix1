@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 13;
+let currentBranch = 0;
 let encNum = 0;
 function openTab(tab, hero) {
   if (tab == "Info") {
@@ -35,7 +35,7 @@ function displayInfo(choice, hero) {
 
 //Either open the map or close the map
 function displayMap() {
-  if (currentBranch <= 4) {
+  if (currentBranch <= 14) {
     displayModal(`You have not acquired the world map yet.`);
     return;
   }
@@ -109,7 +109,6 @@ async function loadStory() {
 }
 let heroIndex = -1;
 function openScroll(charNum) {
-  alert(`Blurrr`);
   if (
     myChapters[currentChapter].branches[currentBranch].event != "triggerBattle"
   ) {
@@ -337,8 +336,8 @@ function downEncyclopedia() {
 }
 
 function openEncyclopedia(num) {
-  if (currentBranch <= 4) {
-    displayModal(`You have no enemies .... Yet...`);
+  if (currentBranch <= 14) {
+    displayModal(`You have not acquired the world encylopedia yet.`);
     return;
   }
   if (!gotHeroes) {

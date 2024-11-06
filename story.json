@@ -260,7 +260,7 @@
           {
             "choiceId": "1",
             "option": "Knowing the world",
-            "outcome": "<br><span class=\"characterName\">Caelia:</span> So, you've made your choice. But the world you're stepping into... well, it's more than what meets the eye. <br><span class=\"characterName\">Chronos:</span> You will need more than instinct to understand the world around you. This will help. <br>He reaches into his cloak and pulls out a book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive.It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. <br><span class=\"characterName\">Chronos:</span> This is the Encyclopedia of the Known World. It holds the knowledge of many lands, cultures, creatures, and even some secrets... if you know where to look. <br><span class=\"characterName\">Caelia:</span>  It will open your eyes to things you never thought possible. The more you know, the better you'll understand the path you’re on. <br><span class=\"characterName\">Chronos:</span>The truth is rarely exciting, but it is always necessary. <br> Caelia also hands you a map, revealing paths to places you've never encountered before. <br><span class=\"characterName\">Caelia:</span> You'll need that as well.",
+            "outcome": "<span class=\"characterName\">Caelia:</span> So, you've made your choice. But the world you're stepping into... well, it's more than what meets the eye. <br><span class=\"characterName\">Chronos:</span> You will need more than instinct to understand the world around you. This will help. <br>He reaches into his cloak and pulls out a book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive.It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. <br><span class=\"characterName\">Chronos:</span> This is the Encyclopedia of the Known World. It holds the knowledge of many lands, cultures, creatures, and even some secrets... if you know where to look. <br><span class=\"characterName\">Caelia:</span>  It will open your eyes to things you never thought possible. The more you know, the better you'll understand the path you’re on. <br><span class=\"characterName\">Chronos:</span>The truth is rarely exciting, but it is always necessary. <br> Caelia also hands you a map, revealing paths to places you've never encountered before. <br><span class=\"characterName\">Caelia:</span> You'll need that as well.",
             "character1": "Images/phoenix.webp",
             "character2": "Images/Characters/The twins.webp",
             "event": "none"
@@ -425,6 +425,14 @@
       {
         "branchId": "branch30",
         "text": "<br> <span class=\"characterName\">Tino:</span> Why are we in a creepy dark forest at night again ? Seems like we are just asking to be killed at this point. <br><span class=\"characterName\">Zanele:</span> You're not afraid aren't you Tino? Who knows what we will encounter... <br> <span class=\"characterName\">Mthi:</span> I agree with Tino, maybe we can try a different inn... Aurelia is big. <br> <span class=\"characterName\">Llewellyn:</span> Word spreads like wildfire unfortunately, We best lay low for now.",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      }
+      {
+        "branchId": "branch31",
+        "text": "Mini Game ",
         "character1": "all",
         "character2": "none",
         "event": "none",
