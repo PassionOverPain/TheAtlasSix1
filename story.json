@@ -244,15 +244,39 @@
       },
       {
         "branchId": "branch15",
-        "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia<i>they both look at you.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around? ",
+        "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia <i> they both look at you.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around? ",
+        "character1": "Images/phoenix.webp",
+        "character2": "Images/Characters/The twins.webp",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": " Knowing yourself",
+            "outcome": "<span class=\"characterName\">Caelia:</span> Well, well, it seems my words have had their effect. <i>She tilts her head slightly, her smile still warm but reserved, as if she's trying to hide her satisfaction.</i> <br><span class=\"characterName\">Caelia:</span> I must admit, I wasn't sure how you'd choose, but… I suppose I shouldn't be surprised. <br> <span class=\"characterName\">Chronos:</span>She doesn’t say it, but she’s pleased. <i> His voice carries the faintest trace of amusement, though his tone is as calm and measured as ever. He stands a little further away, arms crossed, watching the interaction with interest.</i> <br><span class=\"characterName\">Caelia:</span> Take this <i> She hands takes out a map  and hands it over with a quiet nod, her eyes scanning your face for a reaction.</i> It's not just a map of the lands; it's a map of what's to come. Follow its paths, and you’ll find more than just landmarks. <br><span class=\"characterName\">Chronos:</span>The path ahead is uncertain, but the map ... is certain. Hmmm might as well also hand over this. <br> He reaches into his cloak and pulls out an ancient book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive. It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. ",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Knowing the world",
+            "outcome": "<br><span class=\"characterName\">Caelia:</span> So, you've made your choice. But the world you're stepping into... well, it's more than what meets the eye. <br><span class=\"characterName\">Chronos:</span> You will need more than instinct to understand the world around you. This will help. <br>He reaches into his cloak and pulls out a book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive.It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. <br><span class=\"characterName\">Chronos:</span> This is the Encyclopedia of the Known World. It holds the knowledge of many lands, cultures, creatures, and even some secrets... if you know where to look. <br><span class=\"characterName\">Caelia:</span>  It will open your eyes to things you never thought possible. The more you know, the better you'll understand the path you’re on. <br><span class=\"characterName\">Chronos:</span>The truth is rarely exciting, but it is always necessary. <br> Caelia also hands you a map, revealing paths to places you've never encountered before. <br><span class=\"characterName\">Caelia:</span> You'll need that as well.",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch16",
+        "text": "<span class=\"characterName\">Zanele:</span> Hold on, this is all well and good, but who are you people, and how do you even know my name? <br><span class=\"characterName\">Chronos:</span> Heh, that’s the spirit—always ask when you're not told. <br> They both wave off your questions, continuing their debate as they walk out of the inn. <br><span class=\"characterName\">Caelia:</span> Do you think the others would have chosen differently? Maybe Mthi? <br><span class=\"characterName\">Chronos:</span> Perhaps Llewellyn, but I can’t say for certain about Jasmin.. <br> Zanele tries to follow them, eager for answers, but in the blink of an eye, they disappear, leaving no trace behind.",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The twins.webp",
         "event": "none",
         "choices": []
       },
-
       {
-        "branchId": "branch13",
+        "branchId": "branch17",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -260,7 +284,7 @@
         "choices": []
       },
       {
-        "branchId": "branch14",
+        "branchId": "branch18",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -269,7 +293,7 @@
         "choices": []
       },
       {
-        "branchId": "branch15",
+        "branchId": "branch19",
         "text": "<span class=\"characterName\">Game Host:</span> A sharp eye indeed... How about a wager: If you win, I’ll part with my most treasured possession. But if you lose... I’ll claim that exquisite instrument of yours. <br><span class=\"characterName\">Mthi:</span>And what exactly is this so-called treasured possession? <br><span class=\"characterName\">Game Host:</span>Oh, you’ll find out... once you’ve earned the right to see it. Now, shall we play?",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -278,7 +302,7 @@
       },
 
       {
-        "branchId": "branch16",
+        "branchId": "branch20",
         "text": "With unshakable confidence, she accepts the challenge. <br><span class=\"characterName\">Mthi:</span> Uh-huh... might as well go fetch whatever treasure you're hiding now. <i>Her hand glides over the cards on the table, poised to win. </i>. <br>But something feels... off. Mthi’s hand pauses as she notices the cards shifting beneath her fingers. No matter how carefully she plays, the images twist and change as if refusing to pair with any match, slipping through her grasp with every attempt. It’s as if the deck itself is alive, mocking her skill with an eerie magic. <br> <span class=\"characterName\">Game Host:</span> Something wrong ?<br>A hand lands firmly on her shoulder, and suddenly, the world goes silent. The birds outside cease their song, the air stills, and everything around them freezes in time.<br><span class=\"characterName\">Tino:</span>Oh, look at that... He's cheating. <br><span class=\"characterName\">Mthi:</span>Not surprised. Animation magic — brings objects to life. Hold on. <i>She waves her hand across the cards, dismantling the illusion with a decisive sweep. The cards flicker, and a new power shimmers across the table. </i> <br><span class=\"characterName\">Tino:</span>Interesting choice of play.",
         "character1": "Images/eye.webp",
         "character2": "Images/timekeeper.webp",
@@ -286,7 +310,7 @@
         "choices": []
       },
       {
-        "branchId": "branch17",
+        "branchId": "branch21",
         "text": "",
         "character1": "Images/eye.webp",
         "character2": "Images/The Sixth Atlas.webp",
@@ -295,7 +319,7 @@
         "choices": []
       },
       {
-        "branchId": "branch18",
+        "branchId": "branch22",
         "text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -303,7 +327,7 @@
         "choices": []
       },
       {
-        "branchId": "branch19",
+        "branchId": "branch23",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -314,7 +338,7 @@
         "choices": []
       },
       {
-        "branchId": "branch20",
+        "branchId": "branch24",
         "text": "Following the chaotic burst of action, the inn is ablaze with shouts and overturned tables as fists fly and drinks spill. The Game Host, now seething and vengeful, grabs a nearby chair, swinging it in Mthi’s direction. She ducks just in time, but not before another bystander takes the hit, adding to the pandemonium.As the group grapples with the chaos, the Game Host, now humiliated and vengeful, grabs a knife from a nearby table, sneering at Mthi. His eyes are filled with murderous intent, and he lunges toward her with reckless abandon. The group finds themselves at a critical choice, each path leading to a different outcome.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -339,7 +363,7 @@
         ]
       },
       {
-        "branchId": "branch20",
+        "branchId": "branch25",
         "text": "As the dust settles from the chaotic scuffle, the atmosphere in Bloomhaven turns tense. Lily, the innkeeper, stands behind the counter, arms crossed and a frown etched across her face. <br><span class=\"characterName\">Lily:</span> Enough! <i>  she exclaims, her voice cutting through the remnants of the brawl.</i> <br> <span class=\"characterName\">Lily:</span>I won’t have this ruckus in my inn. <br>The Group, still catching their breath from the unexpected fight, exchange glances, feeling the weight of her disappointment. <br>Lily continues, her irritation palpable.<br> <span class=\"characterName\">Lily:</span> You’ve disturbed my guests and wrecked my establishment. I can’t afford to have troublemakers like you here. It’s time for you to leave! <br>With a resigned nod, Mthi steps forward, attempting to diffuse the situation. <br><span class=\"characterName\">Mthi:</span> We didn’t mean to cause a scene, Lily. We were just— <br><span class=\"characterName\">Lily:</span>Just what? <i> She interrupts, her eyes narrowing</i>. Just playing games while destroying my peaceful haven? This isn’t a tavern for drunken brawls; it’s a place of respite. <br> The group’s morale dips as they realize their actions have consequences. They gather their belongings and shuffle toward the exit, feeling the weight of Lily’s anger.",
         "character1": "all",
         "character2": "Images/Characters/Lily.webp",
@@ -347,7 +371,7 @@
         "choices": []
       },
       {
-        "branchId": "branch21",
+        "branchId": "branch26",
         "text": "",
         "character1": "",
         "character2": "",
@@ -356,7 +380,7 @@
         "choices": []
       },
       {
-        "branchId": "branch20",
+        "branchId": "branch27",
         "text": "",
         "character1": "all",
         "character2": "none",
@@ -381,7 +405,7 @@
         ]
       },
       {
-        "branchId": "branch21",
+        "branchId": "branch28",
         "text": "The party agrees to venture into the forest, seeking a temporary camp where they can regroup and plan their next move. As they fade into the darkness, the reality of their decision settles over them, binding them even closer, for better or for worse.",
         "character1": "all",
         "character2": "none",
@@ -389,7 +413,7 @@
         "choices": []
       },
       {
-        "branchId": "branch22",
+        "branchId": "branch29",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -399,7 +423,7 @@
       },
 
       {
-        "branchId": "branch22",
+        "branchId": "branch30",
         "text": "<br> <span class=\"characterName\">Tino:</span> Why are we in a creepy dark forest at night again ? Seems like we are just asking to be killed at this point. <br><span class=\"characterName\">Zanele:</span> You're not afraid aren't you Tino? Who knows what we will encounter... <br> <span class=\"characterName\">Mthi:</span> I agree with Tino, maybe we can try a different inn... Aurelia is big. <br> <span class=\"characterName\">Llewellyn:</span> Word spreads like wildfire unfortunately, We best lay low for now.",
         "character1": "all",
         "character2": "none",
