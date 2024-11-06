@@ -32,6 +32,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .banner .slider {
   position: absolute;
   width: 200px;
@@ -42,6 +43,7 @@
   transform: perspective(1000px);
   animation: spinCards 20s linear infinite;
 }
+
 @keyframes spinCards {
   from {
     transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
@@ -50,6 +52,7 @@
     transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
   }
 }
+
 .banner .slider .item {
   position: absolute;
   inset: 0 0 0 0;
@@ -57,12 +60,26 @@
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
     translateZ(400px);
+  transition: z-index 0.3s ease; /* Smooth transition for z-index */
 }
+
 .banner .slider .item img {
   width: 80%;
   height: 80%;
   object-fit: cover;
+  z-index: 1;
 }
+
+.sword {
+  position: absolute;
+  height: 60%;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; /* Sword is behind the carousel */
+}
+
 .enemyCard {
   border: 5px solid;
   border-image-slice: 70;
@@ -97,7 +114,7 @@ header {
   text-align: center;
 }
 #Title {
-  background: url(Images/titlebg.webp);
+  background: url(Images/paperbg.webp);
   background-size: cover;
   background-clip: text;
   color: transparent;
@@ -219,6 +236,36 @@ body {
   min-height: 100vh;
   cursor: none;
 }
+
+/* Customize the scroll bar for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 15px;
+}
+
+/* Customize the scroll bar track (background) */
+::-webkit-scrollbar-track {
+  background: url(Images/paperbg.webp);
+  background-position: center;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+/* Customize the scroll bar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  border-radius: 60px;
+  border: 10px solid;
+  border-image-source: url(Images/frame1.png);
+  border-image-slice: 70;
+  border-image-repeat: repeat;
+  cursor: url("Images/hand-s.png"), pointer; /* Use a custom cursor */
+}
+
+/* Customize the thumb when hovering */
+::-webkit-scrollbar-thumb:hover {
+  cursor: url("Images/hand-s.png"), pointer; /* Use the same custom cursor on hover */
+}
+
 i {
   font-weight: bolder;
 }

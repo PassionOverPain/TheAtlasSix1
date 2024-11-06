@@ -974,3 +974,34 @@ function displayStory() {
   monstersCon.style.display = "none";
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
+
+// // Get all items in the carousel
+// const items = document.querySelectorAll(".slider .item");
+
+// // Function to update z-index based on rotation
+// function updateZIndex() {
+//   items.forEach((item) => {
+//     // Get the position from the custom property --position
+//     const position = parseFloat(
+//       getComputedStyle(item).getPropertyValue("--position")
+//     );
+
+//     // Calculate the rotation angle in degrees based on position
+//     const angle = (position - 1) * (360 / 10); // 10 is the total number of items
+
+//     // Adjust the z-index based on the angle
+//     if (angle >= -90 && angle <= 90) {
+//       // Items in front of the sword
+//       item.style.zIndex = 4;
+//     } else {
+//       // Items behind the sword
+//       item.style.zIndex = 0;
+//     }
+//   });
+// }
+
+// // Run the update function every frame to adjust z-index dynamically
+// setInterval(updateZIndex, 100);
+
+// // Initial z-index adjustment on page load
+// updateZIndex();
