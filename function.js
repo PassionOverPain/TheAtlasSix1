@@ -1,11 +1,17 @@
 /** @format */
 //The Main function
+let myMonsters;
+let myHeroes;
+let openMap = false;
+let myChapters;
+let arrChoices = [];
+let Encyclopedia = [];
+let currentRound = 0;
+let currentChapter = 0;
+let currentBranch = 13;
+let encNum = 0;
 function openTab(tab, hero) {
-  if (
-    myChapters[currentChapter].branches[currentBranch].event != "triggerBattle"
-  ) {
-    return; //Error Right Here;
-  } else if (tab == "Info") {
+  if (tab == "Info") {
     document.getElementById(`${hero}Stats`).classList.remove("active");
     document.getElementById(`${hero}Info`).classList.add("active");
   } else {
@@ -26,19 +32,13 @@ function displayInfo(choice, hero) {
     }, 3000);
   }
 }
-let myMonsters;
-let myHeroes;
-let openMap = false;
-let myChapters;
-let arrChoices = [];
-let Encyclopedia = [];
-let currentRound = 0;
-let currentChapter = 0;
-let currentBranch = 0;
-let encNum = 0;
 
 //Either open the map or close the map
 function displayMap() {
+  if (currentBranch <= 4) {
+    displayModal(`You have not acquired the world map yet.`);
+    return;
+  }
   openMap = !openMap;
   document.getElementById("thisMap").style.display = openMap ? "block" : "none";
 }
@@ -109,6 +109,12 @@ async function loadStory() {
 }
 let heroIndex = -1;
 function openScroll(charNum) {
+  alert(`Blurrr`);
+  if (
+    myChapters[currentChapter].branches[currentBranch].event != "triggerBattle"
+  ) {
+    return; //Error Right Here  ------ Fixed Temporarily, will come back to it later;
+  }
   heroIndex = charNum;
   if (!gotHeroes) {
     getHeroes();
@@ -331,8 +337,6 @@ function downEncyclopedia() {
 }
 
 function openEncyclopedia(num) {
-  console.log(Encyclopedia);
-  console.log(encNum);
   if (currentBranch <= 4) {
     displayModal(`You have no enemies .... Yet...`);
     return;

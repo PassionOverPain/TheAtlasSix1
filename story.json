@@ -228,6 +228,31 @@
       },
       {
         "branchId": "branch13",
+        "text": "As Zanele walks towards the innkeeper, her eyes catch sight of two figures standing side-by-side, shrouded in the warm light. They each wear steampunk-inspired attire, detailed with gears, buckles, and straps in shimmering brass and worn leather. Their outfits, however, are primarily a deep, rich shade of purple, blending into the twilight hues around them. The first figure, taller with a sturdy posture, is a man whose presence feels timeless. His face is partially shadowed beneath a hat. His eyes hold a far-off gaze, as though he’s not entirely present, one foot grounded in this moment and the other in a place beyond comprehension. <br> Beside him, the second figure is more slight and nimble, exuding a sharp, clever energy. This one—the shorter, with a mischievous gleam in her eye — has an air of wit and keen observation, her expression one of amusement. She glances toward her companion with a knowing smirk, her attention flicking from him to the world around with effortless curiosity. They notice Zanele but don’t address her, continuing their debate, their words cryptic, laced with double meanings and a weight she can't quite place. For now, they refer only to vague ideas—life, choices, paths, knowledge—dancing around deeper subjects that feel just out of reach, waiting for Zanele to uncover their true purpose in her journey.",
+        "character1": "Images/phoenix.webp",
+        "character2": "Images/Characters/The twins.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch14",
+        "text": "<span class=\"characterName\">Twin 1:</span>To live is to understand the world around you, the roads that twist and turn, the choices branching into every possibility. Without knowing the pathways before us, we become lost, endlessly wandering. Life is best understood as a series of external paths to traverse, and mastery comes from navigating them well. Only through awareness of our surroundings and understanding of the world’s patterns can we move forward with certainty. Those who ignore the greater map risk being swept away by currents they cannot see. <br> The female twin nods with her eyes closed, assimilating her brother's point while conjuring her own. <br><span class=\"characterName\">Twin 2:</span> And yet, dear twin, all the paths in the world are meaningless if one doesn't know oneself. To explore the outer world without examining one's own depths is to chase reflections, shadows cast by the soul. Knowing who you are—your strengths, your weaknesses, your friends, your enemies—this is the true anchor. How can one stand firm in the shifting sands of fate without first understanding the inner workings of the heart? <br><span class=\"characterName\">Twin 1:</span>To focus solely inward is to miss the infinite beauty and danger of the world beyond. If we know ourselves but not the world we live in, we become trapped within our own minds, circling familiar thoughts. It is the journey outward that shapes us, just as we shape the journey. <br> With a patient smile, the female twin looks at Zanele then answers with her response. <br><span class=\"characterName\">Twin 2:</span> Perhaps. But it is only through looking within that we find the tools to face the world without. A map may guide your steps, but it cannot help you understand why you walk or who walks with you. True mastery comes from learning to see with the heart as well as the eye. . <br> They fall silent, each pondering the other’s words, as Zanele watches them in quiet fascination, sensing that this is no ordinary debate but a glimpse into something much deeper.",
+        "character1": "Images/phoenix.webp",
+        "character2": "Images/Characters/The twins.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch15",
+        "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia<i>they both look at you.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around? ",
+        "character1": "Images/phoenix.webp",
+        "character2": "Images/Characters/The twins.webp",
+        "event": "none",
+        "choices": []
+      },
+
+      {
+        "branchId": "branch13",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
