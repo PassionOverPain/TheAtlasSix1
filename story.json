@@ -326,7 +326,7 @@
           {
             "choiceId": "4",
             "option": "Relationships",
-            "outcome": "",
+            "outcome": "<br><span class=\"characterName\">Jasmin:</span> So, any hopeful admirers, Nora? <br><span class=\"characterName\">Elenora:</span> You, of all people, are really asking me this? <i>She raises a brow and her face becomes emotionless.</i> <br> Her tone is light, but there's a spark of challenge in her eyes. Sensing you may have hit a nerve, you try to backtrack. <br><span class=\"characterName\">Jasmin:</span> I mean—no offense, I was just curious— <br> Before you can continue, she narrows her gaze, crossing her arms in exaggerated indignation. <br><span class=\"characterName\">Elenora:</span> Curious, were you? <br> She lets the silence hang a moment too long, her expression unreadable. <br><span class=\"characterName\">Jasmin:</span> Nora... <br>Just as you start to wonder if you've really crossed a line, her face breaks into laughter. Elenora’s laughter rings out, filling the air with a warmth that diffuses any tension. <br><span class=\"characterName\">Elenora:</span> Relax, Jas. I’m just messing with you. As for romance... no one at the moment. My focus is on training, becoming someone worthy of our kingdom. <br><span class=\"characterName\">Jasmin:</span> Nah girl I can never with you. Because, honestly, every guy I meet either wants to marry me or ‘get to know me better’ - which, let’s be real, we both know what that means. <br> Elenora bursts out into more laughter. <br><span class=\"characterName\">Jasmin:</span> And I mean, not even marriage, really. Half of them can barely hold a conversation before they’re already planning our wedding in their heads. <br> Elenora’s laughter fades, and her expression shifts, her eyes narrowing as if she’s genuinely considering the weight of your words.<br><span class=\"characterName\">Elenora:</span>But... if this is your way of asking me out, Jas, well, maybe I’d make an exception.",
             "character1": "Images/healer.webp",
             "character2": "Images/Characters/Elenora-expressionless.webp",
             "event": "none"
@@ -334,7 +334,7 @@
           {
             "choiceId": "5",
             "option": "End Conversation",
-            "outcome": "",
+            "outcome": "As the conversation winds down, Elenora steps forward, her eyes warm as she pulls you into a tight embrace. The familiar scent of cedar fills the air, bringing back memories of the long nights spent laughing and dreaming together. <br><span class=\"characterName\">Elenora:</span> Even in all the chaos, we somehow always find our way back to each other. <br>You both linger in the moment, each lost in the memory of shared adventures and quiet moments under the Aurelia stars. <br><span class=\"characterName\">Elenora:</span> I’ll see you again, Jasmin. Don’t go finding trouble without me, alright? <br><span class=\"characterName\">Jasmin:</span> I won't Nora. <i> You feel ",
             "character1": "Images/healer.webp",
             "character2": "Images/Characters/Elenora.webp",
             "event": "none"
