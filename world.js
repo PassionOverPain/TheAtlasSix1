@@ -55,6 +55,7 @@ let cheat = false;
 document.querySelector(".Attempts").textContent = attemptsLeft;
 
 function startMemoryGame() {
+  document.querySelector("#memGame").style.display = "block";
   document.querySelector(".memoryCon").style.display = "block";
   let playground = document.getElementById("playground");
   playground.style.justifyContent = "center";
@@ -135,6 +136,7 @@ function disableCards() {
   if (matchedPairs === 9) {
     displayModal("Victory Achieved");
     document.querySelector(`.memoryCon`).style.display = "none";
+    document.querySelector(".memGame").style.display = "none";
     displayStory();
   }
 }

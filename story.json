@@ -228,7 +228,7 @@
       },
       {
         "branchId": "branch13",
-        "text": "As Zanele walks towards the innkeeper, her eyes catch sight of two figures standing side-by-side, shrouded in the warm light. They each wear steampunk-inspired attire, detailed with gears, buckles, and straps in shimmering brass and worn leather. Their outfits, however, are primarily a deep, rich shade of purple, blending into the twilight hues around them. The first figure, taller with a sturdy posture, is a man whose presence feels timeless. His face is partially shadowed beneath a hat. His eyes hold a far-off gaze, as though he’s not entirely present, one foot grounded in this moment and the other in a place beyond comprehension. <br> Beside him, the second figure is more slight and nimble, exuding a sharp, clever energy. This one—the shorter, with a mischievous gleam in her eye — has an air of wit and keen observation, her expression one of amusement. She glances toward her companion with a knowing smirk, her attention flicking from him to the world around with effortless curiosity. They notice Zanele but don’t address her, continuing their debate, their words cryptic, laced with double meanings and a weight she can't quite place. For now, they refer only to vague ideas—life, choices, paths, knowledge—dancing around deeper subjects that feel just out of reach, waiting for Zanele to uncover their true purpose in her journey.",
+        "text": "As Zanele walks towards the innkeeper, her eyes catch sight of two figures standing side-by-side, shrouded in the warm light. They each wear steampunk-inspired attire, detailed with gears, buckles, and straps in shimmering brass and worn leather. Their outfits, however, are primarily a deep, rich shade of purple, blending into the twilight hues around them. The first figure, taller with a sturdy posture, is a man whose presence feels timeless. His face is partially shadowed beneath a hat. His eyes hold a far-off gaze, as though he’s not entirely present, one foot grounded in this moment and the other in a place beyond comprehension. <br> Beside him, the second figure is more slight and nimble, exuding a sharp, clever energy. This one—the shorter, with a mischievous gleam in her eye — has an air of wit and keen observation, her expression is one of amusement. She glances toward her companion with a knowing smirk, her attention flicking from him to the world around with effortless curiosity. They notice Zanele but don’t address her, continuing their debate, their words cryptic, laced with double meanings and a weight she can't quite place. For now, they refer only to vague ideas—life, choices, paths, knowledge—dancing around deeper subjects that feel just out of reach, waiting for Zanele to uncover their true purpose in her journey.",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The twins.webp",
         "event": "none",
@@ -275,6 +275,42 @@
         "event": "none",
         "choices": []
       },
+
+      {
+        "branchId": "branch17++++++++++++++++++++++++++",
+        "text": "Under the warm glow of Bloomhaven’s lamplight, Jasmin and Alenora share a rare moment of peace. Though they have walked different paths, the magic they once learned together still binds them. Jasmin, whose hands have healed countless wounds within the Atlas Six, feels a quiet nostalgia here, with Alenora's familiar smile across the table. <br><span class=\"characterName\">Alenora:</span> You’ve come a long way, Jasmin, <i>Alenora says, pouring another cup of tea</i>  hear the Atlas Six has made quite a name for themselves. <br> Jasmin smiles, fondly recalling the adventures and bonds she’s forged, yet grateful for the steady friendship that Nora has always offered—one that stretches back to childhood training sessions and letters exchanged over the years. Their lives may be different now, but in moments like these, it’s as if nothing has changed at all.<br><span class=\"characterName\">Jasmin:</span> Yes, we’ve been through more than I ever imagined... battles, journeys, mysteries unraveling one after another. But it’s the little things I miss most, like these quiet moments. <i>She says, meeting Alenora's gaze.</i> <br><span class=\"characterName\">Alenora:</span> You’re the healer, after all. The one who’s always making sure everyone else’s spirits are intact. <i>She leans back thoughtfully, the firelight casting warm shadows on her face. </i> I suppose that hasn’t changed since we were kids, huh? <br><span class=\"characterName\">Jasmin:</span> No, I guess it hasn’t. And you Nora, hehe — you’re still as sharp as ever, I bet. I remember how you’d always get ahead in our lessons, even when I struggled to keep up.<br> Alenora raising an eyebrow while grinning at you.<br><span class=\"characterName\">Alenora:</span> Oh please, your flattery won’t get you out of an extra training session with me. <br> You put on a mock frown, as if truly let down. ",
+        "character1": "Images/healer.webp",
+        "character2": "Images/Characters/Alenora.webp",
+        "event": "none",
+        "choices": []
+      },
+
+      {
+        "branchId": "branch18++++++++++++++++++++++++++",
+        "text": "<span class=\"characterName\">Alenora:</span> What would you like us to talk about ?",
+        "character1": "Images/healer.webp",
+        "character2": "Images/Characters/Alenora.webp",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": " Option A",
+            "outcome": "",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Option B",
+            "outcome": "",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          }
+        ]
+      },
+
       {
         "branchId": "branch17",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
