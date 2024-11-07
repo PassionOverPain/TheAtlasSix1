@@ -1004,4 +1004,4 @@ function displayStory() {
 // setInterval(updateZIndex, 100);
 
 // // Initial z-index adjustment on page load
-// updateZIndex();
+// updateZIndex(); ====== BLEEEEEEHHHHH Doesnt WORK
