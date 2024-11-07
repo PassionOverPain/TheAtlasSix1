@@ -8,7 +8,8 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 12;
+let currentBranch = 17;
+let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
   if (tab == "Info") {
@@ -314,12 +315,14 @@ function openScroll2() {
 function closeScroll() {
   document.getElementById(`storyTeller`).style.display = "none";
   // document.getElementById("pgCenter").style.display = "block";
-  if (myChapters[currentChapter].branches[currentBranch].event === "none") {
-    document.getElementById("storyLine").style.display = "block";
-  } else {
+  if (
+    myChapters[currentChapter].branches[currentBranch].event === "triggerBattle"
+  ) {
     document.getElementById("pgCenter").style.display = "block";
     document.getElementById("actions").style.display = "block";
     document.getElementById("centerCon").style.display = "block";
+  } else {
+    document.getElementById("storyLine").style.display = "block";
   }
 }
 
@@ -745,37 +748,7 @@ function displayChapter(branch) {
         storyEvents(branch);
         return;
       } else {
-        let p = document.createElement("p");
-        p.innerHTML = `${choice.option}`;
-        p.className = "choice";
-
-        // Add event listener for clicking on the choice
-        p.addEventListener("click", () => {
-          let choiceNum = choice.choiceId;
-          arrChoices.push(choiceNum);
-          chapterText.innerHTML = "";
-          chapterText.innerHTML = branch.choices[choiceNum].outcome;
-          choicesContainer.innerHTML = "";
-
-          // Display All Atlas Characters
-          addstoryImage(choice);
-
-          let Continue = document.createElement("p");
-          Continue.innerHTML = `Continue`;
-          Continue.className = "choice";
-          choicesContainer.appendChild(Continue);
-          Continue.addEventListener(
-            "click",
-            () => {
-              ++currentBranch;
-              displayChapter(
-                myChapters[currentChapter].branches[currentBranch]
-              );
-            },
-            { once: true }
-          );
-        });
-        choicesContainer.appendChild(p);
+        storyChoices(branch, choice, false);
       }
     });
   } else {
@@ -793,6 +766,69 @@ function displayChapter(branch) {
     choicesContainer.appendChild(Continue);
   }
 }
+function storyChoices(branch, choice, loop) {
+  let chapterText = document.getElementById("pgStory");
+  let choicesContainer = document.getElementById("pgChoices");
+  let p = document.createElement("p");
+  p.innerHTML = `${choice.option}`;
+  p.className = "choice";
+
+  // Add event listener for clicking on the choice
+  p.addEventListener("click", () => {
+    choiceNum = choice.choiceId;
+    // If it's in loop mode, we need to capture the choice and keep looping.
+    if (loop) {
+      // Keep looping (do not advance the branch, stay on current branch)
+      chapterText.innerHTML = branch.choices[choiceNum].outcome;
+      choicesContainer.innerHTML = "";
+
+      addstoryImage(choice);
+
+      let Continue = document.createElement("p");
+      Continue.innerHTML = `Continue`;
+      Continue.className = "choice";
+      choicesContainer.appendChild(Continue);
+
+      Continue.addEventListener(
+        "click",
+        () => {
+          // Only exit the loop if it's the closing choice
+          if (choiceNum == branch.closingChoice) {
+            ++currentBranch;
+            // Move to the next branch once we exit the loop
+            displayChapter(myChapters[currentChapter].branches[currentBranch]);
+          } else {
+            // Otherwise, keep showing the looped choices.
+            displayChapter(branch); // Re-show the same branch
+          }
+        },
+        { once: true }
+      );
+    } else {
+      // If it's not a loop, proceed as normal
+      arrChoices.push(choiceNum);
+      chapterText.innerHTML = branch.choices[choiceNum].outcome;
+      choicesContainer.innerHTML = "";
+      addstoryImage(choice);
+
+      let Continue = document.createElement("p");
+      Continue.innerHTML = `Continue`;
+      Continue.className = "choice";
+      choicesContainer.appendChild(Continue);
+      Continue.addEventListener(
+        "click",
+        () => {
+          ++currentBranch;
+          displayChapter(myChapters[currentChapter].branches[currentBranch]);
+        },
+        { once: true }
+      );
+    }
+  });
+
+  choicesContainer.appendChild(p);
+}
+
 function addstoryImage(place) {
   let pgImg1 = document.getElementById(`pgCharacter1`);
   let pgImg2 = document.getElementById(`pgCharacter2`);
@@ -953,9 +989,12 @@ function storyEvents(branch) {
     playground.appendChild(Continue);
     playground.style.display = "grid";
     playground.style.justifyContent = "center";
+  } else if (branch.event == "choiceLoop") {
+    branch.choices.forEach((choice) => {
+      storyChoices(branch, choice, true); // Pass `true` for looping mode
+    });
   }
 }
-
 function displayStory() {
   document.getElementById(`myMap`).style.display = "inline-block";
   document.getElementById("myEncyclopedia").style.display = "inline-block";
@@ -974,7 +1013,6 @@ function displayStory() {
   monstersCon.style.display = "none";
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
-
 // // Get all items in the carousel
 // const items = document.querySelectorAll(".slider .item");
 

@@ -295,51 +295,52 @@
             "choiceId": "0",
             "option": " Elenora's family",
             "outcome": "<span class=\"characterName\">Jasmin:</span> Your family, how are they? <br><span class=\"characterName\">Elenora:</span> Oh, they’re doing well enough. You know how it is—busy with their duties. My father’s been working on his latest project in the city, and my mother ...well, she’s always involved in one of her gardens. It’s hard to get a quiet moment with her sometimes. <br> <span class=\"characterName\">Jasmin:</span> Sounds like the usual. I’m sure they’re all proud of you, though. Especially your mother — she spends so much time in the garden, but I’m sure you’re the thing she’s most proud of nurturing. <br><span class=\"characterName\">Elenora:</span> Thing? from flattery to insults huh Jasmin ? <i> she playfully winks at you </i> Yeah, I get that. My independence grows from the seeds my parents have planted, all the effort they've put in to help me blossom into who I am today.",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora.webp",
             "event": "none"
           },
           {
             "choiceId": "1",
             "option": "Aurelia and the World",
-            "outcome": "<span class=\"characterName\">Jasmin:</span> Aurelia is still as vibrant as it ever was. <span class=\"characterName\">Elenora:</span> It remains ever so alive, the kingdom and its folk. We’re holding strong, despite the challenges. The heart of Aurelia beats in its people, as always.<br><span class=\"characterName\">Jasmin:</span> What kind of challenges have you been facing lately? <br><span class=\"characterName\">Elenora:</span> Oh, you know, the usual... There are whispers of unrest, small pockets of rebellion, but nothing we can't handle. The land itself still flourishes, but with the growing tensions between kingdoms, it’s harder to maintain the same peace we once had. It’s not just the politics, but the rising threats from beyond our borders, too. <br><span class=\"characterName\">Jasmin:</span> We were. And many still are. But not all share the same vision for the future of the kingdoms. Some are growing bolder, others more fearful. <i>Eryndor </i>, the land of stone titans, has always sought to expand its horizons. More often than not, this has led them into conflict with <i> Kurohana </i>, the land hidden among the mountains. Who would have thought that stone and fire — two elements that should naturally find balance — would be at odds? It's a strange time. The winds of change are swirling, Jas.",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> Aurelia is still as vibrant as it ever was. <br> <span class=\"characterName\">Elenora:</span> It remains ever so alive, the kingdom and its folk. We’re holding strong, despite the challenges. The heart of Aurelia beats in its people, as always.<br><span class=\"characterName\">Jasmin:</span> What kind of challenges have you been facing lately? <br><span class=\"characterName\">Elenora:</span> Oh, you know, the usual... There are whispers of unrest, small pockets of rebellion, but nothing we can't handle. The land itself still flourishes, but with the growing tensions between kingdoms, it’s harder to maintain the same peace we once had. It’s not just the politics, but the rising threats from beyond our borders, too. <br><span class=\"characterName\">Jasmin:</span> We were. And many still are. But not all share the same vision for the future of the kingdoms. Some are growing bolder, others more fearful. <i>Eryndor </i>, the land of fierce stone titans, has always sought to expand its horizons. More often than not, this has led them into conflict with <i> Kurohana </i>, the land hidden among the mountains with it's graceful traditions. Who would have thought that stone and fire — two elements that should naturally find balance — would be at odds? It's a strange time. The winds of change are swirling, Jas.",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora.webp",
             "event": "none"
           },
           {
             "choiceId": "2",
             "option": "Current Affairs",
-            "outcome": "",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "outcome": "<br><span class=\"characterName\">Jasmin:</span> How are the royals Nora? <br><span class=\"characterName\">Elenora:</span> Girl <i> please </i>,when have you ever cared about politics? <i>A slight shadow of concern crosses Elenora's face. She leans in close, her eyes narrowing as she examines yours.</i>. Wait... you're not a shifter, are you?<br> <span class=\"characterName\">Jasmin:</span> Oh trust me, I still don't, but what I do care about are the decisions made by the higher ranks. Those affect me and the people around me. <br><span class=\"characterName\">Elenora:</span> Fair enough, you always did care more about people than power. <i>Elenora gives a small, knowing smile before her expression grows more serious.</i> <br><span class=\"characterName\">Elenora:</span> Aurelia is still thriving, Jas. The kingdom itself is stable for now, but there are growing concerns. The unrest is there, simmering beneath the surface. Small protests here and there, mostly about the royals’ handling of trade agreements and the distribution of resources. Nothing major, yet, but it could escalate if they don't handle it right. <i>Her voice softens, but there's a hint of caution in her tone.</i> <br> If things do take a turn for the worse... we could see something far more serious. The possibility of war is becoming harder to ignore, and if that happens, healers like us might be forced to stay in Aurelia. We’d be bound to the kingdom, regardless of the personal cost. It’s a future none of us want to face, but it’s something we’ll have to prepare for if the royals can’t keep the peace.",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora.webp",
             "event": "none"
           },
           {
             "choiceId": "3",
             "option": "Combat",
-            "outcome": "",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "outcome": "<br><span class=\"characterName\">Jasmin:</span> How do you find the world's battles Nor- <i> before you finish, Elenora interjects </i> <br> <span class=\"characterName\">Elenora:</span> You’ve heard the tales—how our battles are more than just swinging swords and casting spells, right? In this world, combat is as much about strategy as it is about power. The clash of blades and the weave of magic are just the beginning. <br> Elenora looks over her shoulder, scanning the room, then leans in a bit closer, her voice lowering, almost as if sharing a secret. <br><span class=\"characterName\">Elenora:</span> The battlefield is a dance. You take your turn, then the enemy takes theirs. You can either strike with all your might—attack—or you can tend to your own wounds and heal those around you. Sometimes, the best offense is a strong defense, so we’ve got ways to bolster ourselves. With the right focus, you can strengthen your body or sharpen your mind—boosting your health and energy for what's to come. It’s a delicate balance. <i>Her eyes sparkle with a glint of excitement, revealing the possibilities that lie ahead.</i> <br><span class=\"characterName\">Elenora:</span> But it doesn't stop there. As you journey through this land, you’ll unlock new abilities, new ways of fighting. Our classes aren't set in stone, Jas. A healer, like you, could one day wield the forbidden arts of blood magic or tap into the vampiric energies of your foes. Instead of drawing from mana, you could steal life from your enemies, turning their strength into your own. And that’s just one example. <br><span class=\"characterName\">Jasmin:</span> Nora - <i> You try to stop her, but she presses on, undeterred, her voice unwavering.</i> <br><span class=\"characterName\">Elenora:</span> Imagine this: <i> She grabs your hand, her gaze drifting to the distant horizon, </i> synergies. The Atlas Six working together, combining their strength, magic, and willpower for a devastating super attack. Picture it: you and Mthi, weaving your powers together, striking down an enemy in a single, unstoppable blow. Each of us is a thread in a greater tapestry, Jas. Alone, we are powerful. Together, we are unstoppable. <br><span class=\"characterName\">Jasmin:</span> Nora, that’s a lot to take in. Thank you, but... I think I need a moment to process all of that. <br><span class=\"characterName\">Elenora:</span>Heh, You asked for it. <i>She flashes a knowing smile, clearly amused by the amount of information she just unloaded on you.</i>",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora.webp",
             "event": "none"
           },
           {
             "choiceId": "4",
             "option": "Relationships",
             "outcome": "",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora-expressionless.webp",
             "event": "none"
           },
           {
             "choiceId": "5",
             "option": "End Conversation",
             "outcome": "",
-            "character1": "Images/phoenix.webp",
-            "character2": "Images/Characters/The twins.webp",
+            "character1": "Images/healer.webp",
+            "character2": "Images/Characters/Elenora.webp",
             "event": "none"
           }
-        ]
+        ],
+        "closingChoice": 5
       },
 
       {
