@@ -278,31 +278,62 @@
 
       {
         "branchId": "branch17++++++++++++++++++++++++++",
-        "text": "Under the warm glow of Bloomhaven’s lamplight, Jasmin and Alenora share a rare moment of peace. Though they have walked different paths, the magic they once learned together still binds them. Jasmin, whose hands have healed countless wounds within the Atlas Six, feels a quiet nostalgia here, with Alenora's familiar smile across the table. <br><span class=\"characterName\">Alenora:</span> You’ve come a long way, Jasmin, <i>Alenora says, pouring another cup of tea</i>  hear the Atlas Six has made quite a name for themselves. <br> Jasmin smiles, fondly recalling the adventures and bonds she’s forged, yet grateful for the steady friendship that Nora has always offered—one that stretches back to childhood training sessions and letters exchanged over the years. Their lives may be different now, but in moments like these, it’s as if nothing has changed at all.<br><span class=\"characterName\">Jasmin:</span> Yes, we’ve been through more than I ever imagined... battles, journeys, mysteries unraveling one after another. But it’s the little things I miss most, like these quiet moments. <i>She says, meeting Alenora's gaze.</i> <br><span class=\"characterName\">Alenora:</span> You’re the healer, after all. The one who’s always making sure everyone else’s spirits are intact. <i>She leans back thoughtfully, the firelight casting warm shadows on her face. </i> I suppose that hasn’t changed since we were kids, huh? <br><span class=\"characterName\">Jasmin:</span> No, I guess it hasn’t. And you Nora, hehe — you’re still as sharp as ever, I bet. I remember how you’d always get ahead in our lessons, even when I struggled to keep up.<br> Alenora raising an eyebrow while grinning at you.<br><span class=\"characterName\">Alenora:</span> Oh please, your flattery won’t get you out of an extra training session with me. <br> You put on a mock frown, as if truly let down. ",
+        "text": "Under the warm glow of Bloomhaven’s lamplight, Jasmin and Elenora share a rare moment of peace. Though they have walked different paths, the magic they once learned together still binds them. Jasmin, whose hands have healed countless wounds within the Atlas Six, feels a quiet nostalgia here, with Elenora's familiar smile across the table. <br><span class=\"characterName\">Elenora:</span> You’ve come a long way, Jasmin, <i>Elenora says, pouring another cup of tea</i> I hear the Atlas Six has made quite a name for themselves. <br> Jasmin smiles, fondly recalling the adventures and bonds she’s forged, yet grateful for the steady friendship that Nora has always offered: one that stretches back to childhood training sessions and letters exchanged over the years. Their lives may be different now, but in moments like these, it’s as if nothing has changed at all.<br><span class=\"characterName\">Jasmin:</span> Yes, we’ve been through more than I ever imagined... battles, journeys, mysteries unraveling one after another. But it’s the little things I miss most, like these quiet moments. <i>She says, meeting Elenora's gaze.</i> <br><span class=\"characterName\">Elenora:</span> You’re the healer, after all. The one who’s always making sure everyone else’s spirits are intact. <i>She leans back thoughtfully, the firelight casting warm shadows on her face. </i> I suppose that hasn’t changed since we were kids, huh? <br><span class=\"characterName\">Jasmin:</span> No, I guess it hasn’t. And you Nora, hehe — you’re still as sharp as ever, I bet. I remember how you’d always get ahead in our lessons, even when I struggled to keep up.<br> Elenora raising an eyebrow while grinning at you.<br><span class=\"characterName\">Elenora:</span> Oh please, your flattery won’t get you an extra training session with me. <br> You put on a mock frown, as if truly let down. ",
         "character1": "Images/healer.webp",
-        "character2": "Images/Characters/Alenora.webp",
+        "character2": "Images/Characters/Elenora.webp",
         "event": "none",
         "choices": []
       },
-
       {
         "branchId": "branch18++++++++++++++++++++++++++",
-        "text": "<span class=\"characterName\">Alenora:</span> What would you like us to talk about ?",
+        "text": "<span class=\"characterName\">Elenora:</span> What would you like us to talk about ?",
         "character1": "Images/healer.webp",
-        "character2": "Images/Characters/Alenora.webp",
-        "event": "none",
+        "character2": "Images/Characters/Elenora.webp",
+        "event": "choiceLoop",
         "choices": [
           {
             "choiceId": "0",
-            "option": " Option A",
-            "outcome": "",
+            "option": " Elenora's family",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> Your family, how are they? <br><span class=\"characterName\">Elenora:</span> Oh, they’re doing well enough. You know how it is—busy with their duties. My father’s been working on his latest project in the city, and my mother ...well, she’s always involved in one of her gardens. It’s hard to get a quiet moment with her sometimes. <br> <span class=\"characterName\">Jasmin:</span> Sounds like the usual. I’m sure they’re all proud of you, though. Especially your mother — she spends so much time in the garden, but I’m sure you’re the thing she’s most proud of nurturing. <br><span class=\"characterName\">Elenora:</span> Thing? from flattery to insults huh Jasmin ? <i> she playfully winks at you </i> Yeah, I get that. My independence grows from the seeds my parents have planted, all the effort they've put in to help me blossom into who I am today.",
             "character1": "Images/phoenix.webp",
             "character2": "Images/Characters/The twins.webp",
             "event": "none"
           },
           {
             "choiceId": "1",
-            "option": "Option B",
+            "option": "Aurelia and the World",
+            "outcome": "<span class=\"characterName\">Jasmin:</span> Aurelia is still as vibrant as it ever was. <span class=\"characterName\">Elenora:</span> It remains ever so alive, the kingdom and its folk. We’re holding strong, despite the challenges. The heart of Aurelia beats in its people, as always.<br><span class=\"characterName\">Jasmin:</span> What kind of challenges have you been facing lately? <br><span class=\"characterName\">Elenora:</span> Oh, you know, the usual... There are whispers of unrest, small pockets of rebellion, but nothing we can't handle. The land itself still flourishes, but with the growing tensions between kingdoms, it’s harder to maintain the same peace we once had. It’s not just the politics, but the rising threats from beyond our borders, too. <br><span class=\"characterName\">Jasmin:</span> We were. And many still are. But not all share the same vision for the future of the kingdoms. Some are growing bolder, others more fearful. <i>Eryndor </i>, the land of stone titans, has always sought to expand its horizons. More often than not, this has led them into conflict with <i> Kurohana </i>, the land hidden among the mountains. Who would have thought that stone and fire — two elements that should naturally find balance — would be at odds? It's a strange time. The winds of change are swirling, Jas.",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Current Affairs",
+            "outcome": "",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "Combat",
+            "outcome": "",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "4",
+            "option": "Relationships",
+            "outcome": "",
+            "character1": "Images/phoenix.webp",
+            "character2": "Images/Characters/The twins.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "5",
+            "option": "End Conversation",
             "outcome": "",
             "character1": "Images/phoenix.webp",
             "character2": "Images/Characters/The twins.webp",
