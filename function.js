@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 17;
+let currentBranch = 11;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
