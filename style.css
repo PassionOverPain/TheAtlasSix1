@@ -839,3 +839,31 @@ a {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+#goblinSlayerCon {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  width: 100vw;
+  height: 80vh;
+}
+
+#controls {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 10px;
+}
+
+#score,
+#timer {
+  font-size: 1.7rem;
+}

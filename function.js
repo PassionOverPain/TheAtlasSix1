@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 11;
+let currentBranch = 20;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
@@ -959,6 +959,7 @@ function storyEvents(branch) {
       cheat = true;
       startMemoryGame();
       cheat = false;
+    } else if (branch.game == "GoblinSlayer") {
     }
     ++currentBranch;
   } else if (branch.event == "changeScene") {

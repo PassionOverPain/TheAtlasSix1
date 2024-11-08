@@ -486,7 +486,7 @@
         "character1": "none",
         "character2": "none",
         "event": "changeScene",
-        "background": "forest beginning",
+        "background": "Goblin forest",
         "choices": []
       },
 
@@ -500,10 +500,11 @@
       },
       {
         "branchId": "branch33",
-        "text": "Mini Game ",
-        "character1": "all",
+        "text": "",
+        "character1": "none",
         "character2": "none",
-        "event": "none",
+        "event": "triggerGame",
+        "game": "GoblinSlayer",
         "choices": []
       }
     ]
