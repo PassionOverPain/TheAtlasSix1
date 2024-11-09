@@ -508,7 +508,7 @@
 			},
 			{
 				"branchId": "branch34",
-				"text": "As goblins close in on the Atlas Six, you stand side by side with your companions, preparing to hold your ground.<br> Objective: Work with the team to defeat as many goblins as possible within the time limit. Reach enough points to secure a win and protect everyone from the horde. <br> Gameplay: Every goblin you take down adds points, but be careful: Hidden bombs are scattered throughout the chaos, and accidentally hitting one will cost you. <br> Keep your accuracy sharp to avoid losing valuable points. <br> Mechanics: Hold down your left mouse button to slice through goblins with precision. The more goblins you strike, the closer you bring the group to victory. Good luck! The Atlas Six are counting on your skill to survive this onslaught! ",
+				"text": "As goblins close in on the Atlas Six, you stand side by side with your companions, preparing to hold your ground.<br> Objective: Work with the team to defeat as many goblins as possible within the time limit. Reach enough points to secure a win and protect everyone from the horde. <br> Gameplay: Every goblin you take down adds points, but be careful: the goblins use green bombs scattered throughout the chaos, and hitting one will cost you. <br> Keep your accuracy sharp to avoid losing valuable points. <br> Mechanics: Hold down your left mouse button to slice through goblins with precision. The more goblins you strike, the closer you bring the group to victory. Good luck! The Atlas Six are counting on your skill to survive this onslaught! ",
 				"character1": "none",
 				"character2": "none",
 				"event": "none",
