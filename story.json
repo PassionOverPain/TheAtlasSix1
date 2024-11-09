@@ -522,6 +522,30 @@
 				"event": "triggerGame",
 				"game": "GoblinSlayer",
 				"choices": []
+			},
+			{
+				"branchId": "branch36",
+				"text": "The battlefield settles for just a moment, and the group stands amid the aftermath of their victory. Tino’s sword gleams, streaked with dark goblin blood, and he gives Zanele a triumphant grin. <br> Zanele brushes a strand of hair from her face, her chains still crackling with residual energy. Mthi’s bow is lowered but ready, her sharp eyes scanning the shadows. <br>Just as a faint sigh of relief begins to escape, a low growl ripples through the forest. Rustling sounds echo from all around, followed by the unmistakable, guttural snarls of goblins hungry for vengeance. From the shadows, a fresh wave of goblins emerges, twice as many as before, their eyes gleaming with feral determination.",
+				"character1": "all",
+				"character2": "none",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch37",
+				"text": "Without missing a beat, Jasmin raises her hands, calling upon a shimmering shield of healing energy around her companions. Zanele’s chains pulse with a fiery glow, her focus sharp as she mutters an incantation, setting the ground alight with searing embers around the approaching goblins. <br> Mthi, with deadly precision, releases a rapid volley of arrows, each one finding its mark as goblins drop from the trees like broken puppet. <br>Llewellyn drives his blade into the earth with a thunderous crash, sending a shockwave that stuns a cluster of goblins. In one swift, fierce sweep, he cuts them down, his blade slicing through the air with lethal precision.<br><span class=\"characterName\">Jasmin:</span> They won't stop. <br><span class=\"characterName\">Llewellyn:</span> More target practice for us.",
+				"character1": "all",
+				"character2": "none",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch38",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "triggerBattle",
+				"choices": []
 			}
 		]
 	}
