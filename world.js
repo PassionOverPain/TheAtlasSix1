@@ -384,6 +384,7 @@ function endGoblinGame() {
 	clearInterval(timerInterval);
 	startBtn.style.display = "inline";
 	resetBtn.style.display = "none";
+	document.getElementById("goblinSlayerCon").style.display = "none";
 }
 
 function updateTimer() {

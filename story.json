@@ -545,6 +545,9 @@
 				"character1": "none",
 				"character2": "none",
 				"event": "triggerBattle",
+				"winnable": true,
+				"startEnemies": [2, 3, 4, 5, 6],
+				"spawnEnemies": [],
 				"choices": []
 			}
 		]
