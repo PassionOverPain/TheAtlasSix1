@@ -220,7 +220,7 @@
 			},
 			{
 				"branchId": "branch12",
-				"text": "Bloomhaven is a charming inn tucked in the heart of Aurelia, exuding warmth and inviting tranquility to all who pass through. Known for its namesake lanterns that emit a soft, golden glow, the inn’s cozy ambiance is perfect for weary travelers and townsfolk alike. The inn’s flower-laden windows and ivy-wrapped walls reflect Aurelia’s affinity for nature, with scents of lavender drifting through the air.<span class=\"characterName\">Jasmin:</span> Bloomhaven, I remember coming here as a girl. <br> <span class=\"characterName\">Tino:</span> So you are not a girl anymore ? <br> <span class=\"characterName\">Jasmin:</span> ...A <i>Young</i> girl... <i> Tino </i>. <br>  Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
+				"text": "Bloomhaven is a charming inn tucked in the heart of Aurelia, exuding warmth and inviting tranquility to all who pass through. Known for its namesake lanterns that emit a soft, golden glow, the inn’s cozy ambiance is perfect for weary travelers and townsfolk alike. The inn’s flower-laden windows and ivy-wrapped walls reflect Aurelia’s affinity for nature, with scents of lavender drifting through the air. <br><span class=\"characterName\">Jasmin:</span> Bloomhaven, I remember coming here as a girl. <br> <span class=\"characterName\">Tino:</span> So you are not a girl anymore ? <br> <span class=\"characterName\">Jasmin:</span> ...A <i>Young</i> girl... <i> Tino </i>. <br>  Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
 				"character1": "Images/healer.webp",
 				"character2": "Images/phoenix.webp",
 				"event": "none",
@@ -552,6 +552,14 @@
 			},
 			{
 				"branchId": "branch39",
+				"text": " The group, weary and bruised from battle, trudges deeper into the forest. Shadows grow longer as twilight settles, and they come upon a spacious clearing carpeted with soft moss and encircled by towering oaks and whispering pines.",
+				"character1": "all",
+				"character2": "none",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch40",
 				"text": "",
 				"character1": "none",
 				"character2": "none",
@@ -560,25 +568,26 @@
 				"choices": []
 			},
 			{
-				"branchId": "branch40",
-				"text": "The group, weary and bruised from battle, trudges deeper into the forest. Shadows grow longer as twilight settles, and they come upon a spacious clearing carpeted with soft moss and encircled by towering oaks and whispering pines. The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs and fruits, while Llewellyn and Tino collect firewood and materials for shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch. <br> The group accepts their respective tasks and begin preparing for the night ahead.",
+				"branchId": "branch41",
+				"text": "The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs and fruits, while Llewellyn and Tino collect firewood and materials for shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch. <br> The group accepts their respective tasks and begin preparing for the night ahead.",
 				"character1": "all",
 				"character2": "none",
 				"event": "none",
 				"choices": []
 			},
 			{
-				"branchId": "branch41",
-				"text": "<span class=\"characterName\">Jasmin:</span> Looks like it’s just us, Mthi. Let’s see what we can find. They move quietly through the forest, the soft crackling of leaves underfoot as they pick their way through patches of herbs and low-hanging fruits. Jasmin’s eyes roam over the foliage, keenly spotting bright clusters of berries hidden among the leaves. <br><span class=\"characterName\">Mthi:</span> You always seem to know exactly what to look for, Jas. <br><span class=\"characterName\">Jasmin:</span> Comes with the job. Healer’s instinct, you know? And there’s something calming about it - being that helping hand in difficult situations. Just as your music puts us at ease <i> she playfully nudges Mthi </i>. <br><span class=\"characterName\">Mthi:</span> Thank you <i>she struggles not to smile shyly </i>. It’s beautiful how the moon filters down like this, isn’t it? Almost like the forest is alive with secrets. <br> They both stop, momentarily lost in the stillness of the night, their eyes drawn to the 3 moons hanging high above. The silver light casts a soft glow over the forest, illuminating the leaves and bathing the world in a tranquil silence.",
+				"branchId": "branch42",
+				"text": "<span class=\"characterName\">Jasmin:</span> Looks like it’s just us, Mthi. Let’s see what we can find.<br> They move quietly through the forest, the soft crackling of leaves underfoot as they pick their way through patches of herbs and low-hanging fruits. Jasmin’s eyes roam over the foliage, keenly spotting bright clusters of berries hidden among the leaves. <br><span class=\"characterName\">Mthi:</span> You always seem to know exactly what to look for, Jas. <br><span class=\"characterName\">Jasmin:</span> Comes with the job. Healer’s instinct, you know? And there’s something calming about it - being that helping hand in difficult situations. Just as your music puts us at ease <i> she playfully nudges Mthi </i>. <br><span class=\"characterName\">Mthi:</span> Thank you <i>she struggles not to smile shyly </i>. It’s beautiful how the moon filters down like this, isn’t it? Almost like the forest is alive with secrets. <br> They both stop, momentarily lost in the stillness of the night, their eyes drawn to the 3 moons hanging high above. The silver light casts a soft glow over the forest, illuminating the leaves and bathing the world in a tranquil silence.",
 				"character1": "Images/healer.webp",
 				"character2": "Images/eye.webp",
 				"event": "none",
 				"choices": []
 			},
 			{
-				"branchId": "branch42",
-				"text": "",
-				"character2": "none",
+				"branchId": "branch43",
+				"text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - moonshade and mistberry. Moonshade works for quick stamina recovery, and mistberry can help replenish mana. Which ones do you think we should take?<br><span class=\"characterName\">Jasmin:</span> And we can't take both, I remember from my potion classes that these two in conjuction don't work, rather they are - well poisonous. <br><span class=\"characterName\">Mthi:</span> Yup and we need enough of one to fully recover that.",
+				"character1": "Images/healer.webp",
+				"character2": "Images/eye.webp",
 				"event": "none",
 				"choices": []
 			}
