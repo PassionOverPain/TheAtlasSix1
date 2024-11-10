@@ -549,6 +549,38 @@
 				"startEnemies": [2, 3, 4, 5, 6],
 				"spawnEnemies": [],
 				"choices": []
+			},
+			{
+				"branchId": "branch39",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "changeScene",
+				"background": "forest campsite",
+				"choices": []
+			},
+			{
+				"branchId": "branch40",
+				"text": "The group, weary and bruised from battle, trudges deeper into the forest. Shadows grow longer as twilight settles, and they come upon a spacious clearing carpeted with soft moss and encircled by towering oaks and whispering pines. The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs and fruits, while Llewellyn and Tino collect firewood and materials for shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch. <br> The group accepts their respective tasks and begin preparing for the night ahead.",
+				"character1": "all",
+				"character2": "none",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch41",
+				"text": "<span class=\"characterName\">Jasmin:</span> Looks like it’s just us, Mthi. Let’s see what we can find. They move quietly through the forest, the soft crackling of leaves underfoot as they pick their way through patches of herbs and low-hanging fruits. Jasmin’s eyes roam over the foliage, keenly spotting bright clusters of berries hidden among the leaves. <br><span class=\"characterName\">Mthi:</span> You always seem to know exactly what to look for, Jas. <br><span class=\"characterName\">Jasmin:</span> Comes with the job. Healer’s instinct, you know? And there’s something calming about it - being that helping hand in difficult situations. Just as your music puts us at ease <i> she playfully nudges Mthi </i>. <br><span class=\"characterName\">Mthi:</span> Thank you <i>she struggles not to smile shyly </i>. It’s beautiful how the moon filters down like this, isn’t it? Almost like the forest is alive with secrets. <br> They both stop, momentarily lost in the stillness of the night, their eyes drawn to the 3 moons hanging high above. The silver light casts a soft glow over the forest, illuminating the leaves and bathing the world in a tranquil silence.",
+				"character1": "Images/healer.webp",
+				"character2": "Images/eye.webp",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch42",
+				"text": "",
+				"character2": "none",
+				"event": "none",
+				"choices": []
 			}
 		]
 	}
