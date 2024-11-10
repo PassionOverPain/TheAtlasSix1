@@ -598,9 +598,8 @@
 				"character2": "none",
 				"event": "visualChoices",
 				"choices": [
-					{ "name": "Moonshade", "imgSrc": "Images/healer.webp" },
-					{ "name": "Hidrana", "imgSrc": "Images/healer.webp" },
-					{ "name": "Mistveil", "imgSrc": "Images/eye.webp" }
+					{ "name": "Moonshade", "imgSrc": "Images/moonshade.webp" },
+					{ "name": "Mistveil", "imgSrc": "Images/mistveil.webp" }
 				]
 			}
 		]

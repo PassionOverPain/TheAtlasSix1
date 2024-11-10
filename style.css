@@ -899,7 +899,7 @@ canvas {
 }
 
 .visChoice:hover::before {
-	background: linear-gradient(45deg, #ffd700, red);
+	background: linear-gradient(45deg, #dd9d48, beige);
 	/* Creates a golden border effect */
 }
 
