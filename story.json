@@ -590,6 +590,18 @@
 				"character2": "Images/eye.webp",
 				"event": "none",
 				"choices": []
+			},
+			{
+				"branchId": "branch43",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "visualChoices",
+				"choices": [
+					{ "name": "Moonshade", "imgSrc": "Images/healer.webp" },
+					{ "name": "Hidrana", "imgSrc": "Images/healer.webp" },
+					{ "name": "Mistveil", "imgSrc": "Images/eye.webp" }
+				]
 			}
 		]
 	}

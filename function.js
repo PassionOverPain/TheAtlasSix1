@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 0;
+let currentBranch = 40;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
@@ -45,12 +45,11 @@ function displayMap() {
 }
 let loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
-	// Lazy Loading :) //
 	this.window.removeEventListener("load", load, false);
 	getHeroes();
 	getMonsters();
 	loadStory();
-	// displayChapter();
+
 	this.setTimeout(function () {
 		loader.style.display = "none";
 		this.document.body.style.cursor = "url(Images/swordcursor1.png), auto";
@@ -995,6 +994,8 @@ function storyEvents(branch) {
 		branch.choices.forEach((choice) => {
 			storyChoices(branch, choice, true); // Pass `true` for looping mode
 		});
+	} else if (branch.event == "visualChoices") {
+		renderChoices(branch);
 	}
 }
 function displayStory() {
@@ -1015,33 +1016,41 @@ function displayStory() {
 	monstersCon.style.display = "none";
 	displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
-// // Get all items in the carousel
-// const items = document.querySelectorAll(".slider .item");
+function renderChoices(branch) {
+	alert(`We are Here`);
+	document.getElementById(`storyLine`).style.display = `none`;
+	document.getElementById(`visChoiceCon`).style.display = `flex`;
+	const choices = [];
+	branch.choices.forEach((choice) => {
+		choices.push(choice);
+	});
+	const container = document.getElementById("visChoiceCon");
+	container.innerHTML = ""; // Clear previous choices if any
 
-// // Function to update z-index based on rotation
-// function updateZIndex() {
-//   items.forEach((item) => {
-//     // Get the position from the custom property --position
-//     const position = parseFloat(
-//       getComputedStyle(item).getPropertyValue("--position")
-//     );
+	choices.forEach((choice, index) => {
+		const choiceDiv = document.createElement("div");
+		choiceDiv.classList.add("visChoice");
 
-//     // Calculate the rotation angle in degrees based on position
-//     const angle = (position - 1) * (360 / 10); // 10 is the total number of items
+		const img = document.createElement("img");
+		img.src = choice.imgSrc;
+		img.alt = choice.name;
 
-//     // Adjust the z-index based on the angle
-//     if (angle >= -90 && angle <= 90) {
-//       // Items in front of the sword
-//       item.style.zIndex = 4;
-//     } else {
-//       // Items behind the sword
-//       item.style.zIndex = 0;
-//     }
-//   });
-// }
+		const label = document.createElement("p");
+		label.textContent = choice.name;
 
-// // Run the update function every frame to adjust z-index dynamically
-// setInterval(updateZIndex, 100);
+		choiceDiv.appendChild(img);
+		choiceDiv.appendChild(label);
 
-// // Initial z-index adjustment on page load
-// updateZIndex(); ====== BLEEEEEEHHHHH Doesnt WORK
+		// Add click event for selection
+		choiceDiv.addEventListener("click", () => handleChoice(index));
+
+		container.appendChild(choiceDiv);
+	});
+}
+
+function handleChoice(choiceIndex) {
+	alert(`${choiceIndex}`);
+	// arrChoices.push(choiceIndex);
+	// chapterText.innerHTML = branch.choices[choiceIndex].outcome;
+	// Continue game logic here
+}
