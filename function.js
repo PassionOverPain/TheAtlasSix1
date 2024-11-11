@@ -1033,10 +1033,10 @@ function renderChoices(branch) {
 
     const img = document.createElement("img");
     img.src = choice.imgSrc;
-    img.alt = choice.name;
+    img.alt = choice.option;
 
     const label = document.createElement("p");
-    label.textContent = choice.name;
+    label.textContent = choice.option;
 
     choiceDiv.appendChild(img);
     choiceDiv.appendChild(label);
@@ -1052,7 +1052,6 @@ function renderChoices(branch) {
       document.getElementById(`visChoiceCon`).style.display = `none`;
       displayStory();
       ++currentBranch;
-      displayChapter(myChapters[currentChapter].branches[currentBranch]);
     });
 
     container.appendChild(choiceDiv);

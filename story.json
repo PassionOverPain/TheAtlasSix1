@@ -599,14 +599,22 @@
         "event": "visualChoices",
         "choices": [
           {
-            "name": "Moonshade",
+            "choiceId": "0",
             "imgSrc": "Images/moonshade.webp",
-            "outcome": "You now have Moonshade"
+            "outcome": "You now have Moonshade",
+            "option": "Moonshade",
+            "character1": "Images/healer.webp",
+            "character2": "Images/eye.webp",
+            "event": "none"
           },
           {
-            "name": "Mistveil",
+            "choiceId": "1",
             "imgSrc": "Images/mistveil.webp",
-            "outcome": "You now have Mistveil"
+            "outcome": "You now have Mistveil",
+            "option": "Mistveil",
+            "character1": "Images/healer.webp",
+            "character2": "Images/eye.webp",
+            "event": "none"
           }
         ]
       },
