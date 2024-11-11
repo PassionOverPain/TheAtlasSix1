@@ -585,7 +585,7 @@
       },
       {
         "branchId": "branch43",
-        "text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - moonshade and mistberry. Moonshade works for quick mana recovery, and mistberry can help replenish stamina. Which ones do you think we should take?<br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
+        "text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - Moonshade and Fernshade. Moonshade works for quick mana recovery, Fernshade on the other hand can help replenish stamina. Which one do you think we should take? <br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
         "event": "none",
@@ -609,9 +609,9 @@
           },
           {
             "choiceId": "1",
-            "imgSrc": "Images/mistveil.webp",
-            "outcome": "You now have Mistveil",
-            "option": "Mistveil",
+            "imgSrc": "Images/Fernshade.webp",
+            "outcome": "<span class=\"characterName\">Mthi:</span> Hmmm, let's go with stamina.<br><span class=\"characterName\">Jasmin:</span> Agreed. It might not be as dazzling as moonshade, but it’s just as vital - especially if we need to keep our strength up. With Zanele putting us on herb duty, we’d better be ready for anything.<br><span class=\"characterName\">Mthi:</span> Exactly and if needed, atleast we will be able to run, although I would rather fight. <br><span class=\"characterName\">Jasmin:</span> You're always the first one to run, I will do it if push comes to shove but that's a last resort. <br> The two of them begin harvesting the Fernshade carefully, filling their pouches with the vibrant green leaves that seem to hum with earthy energy. <br><span class=\"characterName\">Mthi:</span> Speaking of running, race you to Zanele - <br> Mthi darts ahead with a burst of speed, her steps light and precise as she weaves through the underbrush. She nimbly dodges low-hanging branches and leaps over fallen logs with practiced grace, her movements so fluid it’s as though she’s gliding through the forest. Each stride is swift yet silent, her form barely a whisper. <br><span class=\"characterName\">Jasmin:</span>  Hey! ... wait Mthi, don't leave me here alone.",
+            "option": "Fernshade",
             "character1": "Images/healer.webp",
             "character2": "Images/eye.webp",
             "event": "none"

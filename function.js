@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 40;
+let currentBranch = 42;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
@@ -1017,7 +1017,6 @@ function displayStory() {
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function renderChoices(branch) {
-  alert(`We are Here`);
   document.getElementById(`storyLine`).style.display = `none`;
   document.getElementById(`visChoiceCon`).style.display = `flex`;
   const choices = [];
@@ -1048,7 +1047,6 @@ function renderChoices(branch) {
     choiceDiv.addEventListener(
       "click",
       () => {
-        alert(`${index}`);
         arrChoices.push(index);
         chapterText.innerHTML = branch.choices[index].outcome;
         addstoryImage(choice);
