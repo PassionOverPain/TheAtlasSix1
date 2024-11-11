@@ -448,7 +448,7 @@ button:hover {
   display: grid;
   grid-template-columns: auto auto auto;
   background-image: url(Images/Scenes/battleground1.webp);
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

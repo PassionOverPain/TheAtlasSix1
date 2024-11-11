@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 0;
+let currentBranch = 39;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
@@ -1017,6 +1017,8 @@ function displayStory() {
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function renderChoices(branch) {
+  let playground = document.getElementById("playground");
+  playground.style.justifyContent = "center";
   document.getElementById(`storyLine`).style.display = `none`;
   document.getElementById(`visChoiceCon`).style.display = `flex`;
   const choices = [];
@@ -1059,6 +1061,7 @@ function renderChoices(branch) {
         Continue.addEventListener(
           "click",
           () => {
+            playground.style.justifyContent = "space-between";
             ++currentBranch;
             displayChapter(myChapters[currentChapter].branches[currentBranch]);
           },

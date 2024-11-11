@@ -590,6 +590,16 @@
       },
       {
         "branchId": "branch43",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "changeScene",
+        "background": "picking forest",
+        "choices": []
+      },
+
+      {
+        "branchId": "branch44",
         "text": "<span class=\"characterName\">Jasmin:</span> Looks like it’s just us, Mthi. Let’s see what we can find.<br> They move quietly through the forest, the soft crackling of leaves underfoot as they pick their way through patches of herbs and low-hanging fruits. Jasmin’s eyes roam over the foliage, keenly spotting bright clusters of berries hidden among the leaves. <br><span class=\"characterName\">Mthi:</span> You always seem to know exactly what to look for, Jas. <br><span class=\"characterName\">Jasmin:</span> Comes with the job. Healer’s instinct, you know? And there’s something calming about it - being that helping hand in difficult situations. Just as your music puts us at ease <i> she playfully nudges Mthi </i>. <br><span class=\"characterName\">Mthi:</span> Thank you <i>she struggles not to smile shyly </i>. It’s beautiful how the moon filters down like this, isn’t it? Almost like the forest is alive with secrets. <br> They both stop, momentarily lost in the stillness of the night, their eyes drawn to the 3 moons hanging high above. The silver light casts a soft glow over the forest, illuminating the leaves and bathing the world in a tranquil silence.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
@@ -597,7 +607,7 @@
         "choices": []
       },
       {
-        "branchId": "branch44",
+        "branchId": "branch45",
         "text": "<span class=\"characterName\">Jasmin:</span> It really is. <br><span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - Moonshade and Fernshade. Moonshade works for quick mana recovery, Fernshade on the other hand can help replenish stamina. Which one do you think we should take? <br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
@@ -605,7 +615,7 @@
         "choices": []
       },
       {
-        "branchId": "branch45",
+        "branchId": "branch46",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -632,7 +642,7 @@
         ]
       },
       {
-        "branchId": "branch46",
+        "branchId": "branch47",
         "text": "The forest hums with a quiet vigor, its massive trees stretching skyward, their silhouettes stretching long and dark under the pale moonlight. Tendrils of mist drift close to the ground, curling around knotted roots and thick ferns, obscuring the forest’s hidden mysteries. The silence is punctuated by soft rustling as nocturnal creatures move, their eyes catching light like tiny, scattered stars amid the foliage. Overhead, the leaves murmur in response to the light breeze, while the air hangs heavy with the rich, damp scent of moss and earth.",
         "character1": "none",
         "character2": "none",
@@ -640,7 +650,16 @@
         "choices": []
       },
       {
-        "branchId": "branch47",
+        "branchId": "branch48",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "changeScene",
+        "background": "fighting forest",
+        "choices": []
+      },
+      {
+        "branchId": "branch49",
         "text": "<span class=\"characterName\">Tino:</span> So then she says, <i>Only someone truly daring could handle this...</i> staring straight at me with those fiery eyes. <br><span class=\"characterName\">Llewellyn:</span> Sooo, did you handle it? <br><span class=\"characterName\">Tino:</span> It was creating such a mess, almost got soaked.<br><span class=\"characterName\">Llewellyn:</span> Yea but Did you Handle it though ?<br><span class=\"characterName\">Tino:</span> The Basilisk? Nah, I left, not because I wasn’t up for it — but because... <i> He grabs a solid, rugged branch, its bark still fresh and damp from the night’s dew, perfect for stoking a strong fire.</i> <br><span class=\"characterName\">Llewellyn:</span> Because...? <br><span class=\"characterName\">Tino:</span> Because I was halfway across the kingdom on a very important errand, and the royal guard had already started to show up. No point in stepping into a mess like that. It's diffucult fighting a water type without a fire type. <br><span class=\"characterName\">Llewellyn:</span> Right and also it resembling a snake. I'm sure the guards had it all under control. <br>Llewellyn finishes chopping the branches and starts securing them to his back.<br><span class=\"characterName\">Tino:</span> That as well. <br> They both laugh then continue to gather materials throughout the forest's domain.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -648,7 +667,7 @@
         "choices": []
       },
       {
-        "branchId": "branch48",
+        "branchId": "branch50",
         "text": "Under the cold moonlight, the clearing buzzed with tension. A black bear, its fur dark as night and eyes glowing a deep brown, stood its ground, claws scraping the earth. Its orange magic flickered around it, crackling with raw power. Across from it, a black wolf—sleek, agile, and with eyes gleaming green—shifted low to the ground, its fur shimmering with an ethereal green glow. The air hummed with their magic, the forest holding its breath. <br><span class=\"characterName\">Tino:</span> What do we have here? <br><span class=\"characterName\">Llewellyn:</span> Seems like we've got a show, you can have first pick. <br> Llewellyn looks at Tino awaiting his response to the bet. <br><span class=\"characterName\">Tino:</span> We both know what the obvious choice is here but just to be different I will go with...",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
@@ -656,7 +675,7 @@
         "choices": []
       },
       {
-        "branchId": "branch49",
+        "branchId": "branch51",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -683,7 +702,7 @@
         ]
       },
       {
-        "branchId": "branch50",
+        "branchId": "branch52",
         "text": "",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
