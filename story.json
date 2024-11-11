@@ -569,7 +569,7 @@
       },
       {
         "branchId": "branch41",
-        "text": "The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs and fruits, while Llewellyn and Tino collect firewood and materials for shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch. <br> The group accepts their respective tasks and begin preparing for the night ahead.",
+        "text": "The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs,fibers and fruit, while Llewellyn and Tino collect firewood and materials to build a shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch.<br> The group accepts their respective tasks and begin preparing for the night ahead.",
         "character1": "all",
         "character2": "none",
         "event": "none",
@@ -585,7 +585,7 @@
       },
       {
         "branchId": "branch43",
-        "text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - Moonshade and Fernshade. Moonshade works for quick mana recovery, Fernshade on the other hand can help replenish stamina. Which one do you think we should take? <br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
+        "text": "<span class=\"characterName\">Jasmin:</span> It really is. <br><span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - Moonshade and Fernshade. Moonshade works for quick mana recovery, Fernshade on the other hand can help replenish stamina. Which one do you think we should take? <br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
         "event": "none",
@@ -620,9 +620,17 @@
       },
       {
         "branchId": "branch44",
-        "text": "Yes we are now working",
+        "text": "The forest hums with a quiet vigor, its massive trees stretching skyward, their silhouettes stretching long and dark under the pale moonlight. Tendrils of mist drift close to the ground, curling around knotted roots and thick ferns, obscuring the forest’s hidden mysteries. The silence is punctuated by soft rustling as nocturnal creatures move, their eyes catching light like tiny, scattered stars amid the foliage. Overhead, the leaves murmur in response to the light breeze, while the air hangs heavy with the rich, damp scent of moss and earth.",
         "character1": "none",
         "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch45",
+        "text": "<span class=\"characterName\">Tino:</span> So then she says, <i>Only someone truly daring could handle this...</i> staring straight at me with those fiery eyes. <br><span class=\"characterName\">Llewellyn:</span> Sooo, did you handle it? <br><span class=\"characterName\">Tino:</span> It was creating such a mess, almost got soaked.<br><span class=\"characterName\">Llewellyn:</span> Yea but Did you Handle it though ?<br><span class=\"characterName\">Tino:</span> The Basilisk? Nah, I left, not because I wasn’t up for it — but because... <i> He grabs a solid, rugged branch, its bark still fresh and damp from the night’s dew, perfect for stoking a strong fire.</i> <br><span class=\"characterName\">Llewellyn:</span> Because...? <br><span class=\"characterName\">Tino:</span> Because I was halfway across the kingdom on a very important errand, and the royal guard had already started to show up. No point in stepping into a mess like that. It's diffucult fighting a water type without a fire type. <br><span class=\"characterName\">Llewellyn:</span> Right and also it resembling a snake. I'm sure the guards had it all under control. <br>Llewellyn finishes chopping the branches and starts securing them to his back.<br><span class=\"characterName\">Tino:</span> That as well. <br> They both laugh then continue to gather materials throughout the forest's domain.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "Images/titan.webp",
         "event": "none",
         "choices": []
       }

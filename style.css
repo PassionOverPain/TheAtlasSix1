@@ -240,7 +240,6 @@ body {
 /* Customize the scroll bar for webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 20px;
-  height: 15px;
 }
 
 /* Customize the scroll bar track (background) */
@@ -871,7 +870,8 @@ canvas {
   display: none;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  padding: 60px;
+  overflow: hidden;
 }
 
 .visChoice {
@@ -891,7 +891,7 @@ canvas {
   top: -2px;
   left: -2px;
   right: -2px;
-  bottom: -2px;
+  bottom: 0px;
   border-radius: 10px;
   background: transparent;
   transition: background 0.3s ease;
