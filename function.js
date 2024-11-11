@@ -1042,17 +1042,33 @@ function renderChoices(branch) {
     choiceDiv.appendChild(label);
 
     let chapterText = document.getElementById("pgStory");
+    let choicesContainer = document.getElementById("pgChoices");
 
     // Add click event for selection
-    choiceDiv.addEventListener("click", () => {
-      alert(`${index}`);
-      arrChoices.push(index);
-      chapterText.innerHTML = branch.choices[index].outcome;
-      addstoryImage(choice);
-      document.getElementById(`visChoiceCon`).style.display = `none`;
-      displayStory();
-      ++currentBranch;
-    });
+    choiceDiv.addEventListener(
+      "click",
+      () => {
+        alert(`${index}`);
+        arrChoices.push(index);
+        chapterText.innerHTML = branch.choices[index].outcome;
+        addstoryImage(choice);
+        document.getElementById(`visChoiceCon`).style.display = `none`;
+        document.getElementById(`storyLine`).style.display = `block`;
+        let Continue = document.createElement("p");
+        Continue.innerHTML = `Continue`;
+        Continue.className = "choice";
+        choicesContainer.appendChild(Continue);
+        Continue.addEventListener(
+          "click",
+          () => {
+            ++currentBranch;
+            displayChapter(myChapters[currentChapter].branches[currentBranch]);
+          },
+          { once: true }
+        );
+      },
+      { once: true }
+    );
 
     container.appendChild(choiceDiv);
   });

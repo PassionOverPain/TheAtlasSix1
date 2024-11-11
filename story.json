@@ -585,7 +585,7 @@
       },
       {
         "branchId": "branch43",
-        "text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - moonshade and mistberry. Moonshade works for quick stamina recovery, and mistberry can help replenish mana. Which ones do you think we should take?<br><span class=\"characterName\">Jasmin:</span> And we can't take both, I remember from my potion classes that these two in conjuction don't work, rather they are - well poisonous. <br><span class=\"characterName\">Mthi:</span> Yup and we need enough of one to fully recover that.",
+        "text": "<span class=\"characterName\">Jasmin:</span> It really is.<span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - moonshade and mistberry. Moonshade works for quick mana recovery, and mistberry can help replenish stamina. Which ones do you think we should take?<br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
         "event": "none",
@@ -601,7 +601,7 @@
           {
             "choiceId": "0",
             "imgSrc": "Images/moonshade.webp",
-            "outcome": "You now have Moonshade",
+            "outcome": "Examining the plants in her hand, Jasmin frowns thoughtfully. <br><span class=\"characterName\">Jasmin:</span> We might need our magic more than anything else right now. Stamina’s good, but without mana, we’re defenseless.<br> Mthi nods in agreement, her gaze drifting over the glimmering blue ocean of the moonshade. <span class=\"characterName\">Mthi:</span> Mhm. And moonshade’s potency is just what we need to restore mana. If we bring enough of this back, it’ll give us an edge. <br><span class=\"characterName\">Jasmin:</span> Zanele’s probably expecting us to make the right call here. She looked ready to take on the world when we left. <br><span class=\"characterName\">Mthi:</span> I'm sure she’ll approve of this. Moonshade isn’t easy to find, but it’s worth it. <br> As they carefully gather the delicate, glowing leaves, the forest wraps them in a blanket of silence. The faint blue light of the moonshade reflects in their eyes, casting an fluorescent glow around them.",
             "option": "Moonshade",
             "character1": "Images/healer.webp",
             "character2": "Images/eye.webp",
