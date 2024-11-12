@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 39;
+let currentBranch = 0;
 let choiceNum = null;
 let encNum = 0;
 function openTab(tab, hero) {
@@ -925,6 +925,8 @@ function storyEvents(branch) {
       { once: true }
     );
     return;
+  } else if (branch.event == "skipChoices") {
+    checkChoices();
   }
   if (branch.event == "triggerBattle") {
     document.getElementById(`myMap`).style.display = "none";
@@ -995,7 +997,6 @@ function storyEvents(branch) {
       storyChoices(branch, choice, true); // Pass `true` for looping mode
     });
   } else if (branch.event == "visualChoices") {
-    console.log(arrChoices);
     renderChoices(branch);
   }
 }
@@ -1016,6 +1017,11 @@ function displayStory() {
   actions.style.display = "none";
   monstersCon.style.display = "none";
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
+}
+function checkChoices(choiceIndex, values, endBranch) {
+  if (!values.includes(arrChoices[choiceIndex])) {
+    currentBranch = endBranch;
+  }
 }
 function renderChoices(branch) {
   let playground = document.getElementById("playground");
@@ -1074,10 +1080,4 @@ function renderChoices(branch) {
 
     container.appendChild(choiceDiv);
   });
-}
-
-function handleChoice(choiceIndex) {
-  // arrChoices.push(choiceIndex);
-  // chapterText.innerHTML = branch.choices[choiceIndex].outcome;
-  // Continue game logic here
 }

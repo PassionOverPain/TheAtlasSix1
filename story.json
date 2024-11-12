@@ -166,6 +166,18 @@
       {
         "branchId": "branch5",
         "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "checkChoices",
+        "choice": 0,
+        "value": [0, 1, 2],
+        "endBranch": 5,
+        "choices": []
+      },
+
+      {
+        "branchId": "branch6++++++++++++++",
+        "text": "",
         "character1": "all",
         "character2": "Images/cloakedFigureFront.webp",
         "event": "triggerBattle",
@@ -703,10 +715,11 @@
       },
       {
         "branchId": "branch52",
-        "text": "",
+        "text": "Let's Jump some branches",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
-        "event": "none"
+        "event": "none",
+        "choices": []
       }
     ]
   }
