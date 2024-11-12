@@ -176,7 +176,7 @@
       },
 
       {
-        "branchId": "branch6++++++++++++++",
+        "branchId": "branch6",
         "text": "",
         "character1": "all",
         "character2": "Images/cloakedFigureFront.webp",
@@ -187,7 +187,7 @@
         "choices": []
       },
       {
-        "branchId": "branch6",
+        "branchId": "branch7",
         "text": "As your vision clears, you feel the jagged chill of the hard, cold ground beneath you, echoing the icy dread settling in your bones. A rhythmic pounding fills your ears—your own heartbeat, hammering faster with each passing second. Shadows shift, and a dark figure steps closer, their silhouette seeming to blend into the very void around them. <br><span class=\"characterName\">Cloaked:</span> Look at you — fallen, broken. You've lost more than just this battle. Prepare to watch everything you hold dear slip away … one by one. <br> Their voice is a low, menacing whisper, each word twisting like a blade in your heart. You feel a suffocating weight as the realization dawns—this isn’t just defeat; it’s a reckoning, the merciless unraveling of everything you fought for. In the shadows, you see flashes of familiar faces—your friends, your allies—each one flickering like a candle about to be snuffed out. The Cloaked Figure’s presence presses down, clouding the air with a foreboding that chills you to your core. This isn’t just an end; it’s your end, at the hands of someone who you held close to you.",
         "character1": "all",
         "character2": "Images/The Sixth Atlas.webp",
@@ -195,7 +195,7 @@
         "choices": []
       },
       {
-        "branchId": "branch7",
+        "branchId": "branch8",
         "text": "......",
         "character1": "none",
         "character2": "none",
@@ -203,7 +203,7 @@
         "choices": []
       },
       {
-        "branchId": "branch8",
+        "branchId": "branch9",
         "text": "<span class=\"characterName\">Passion:</span> Hey there, developer Tino here... No not in game Tino, Tino from the past... or in your case the present... but also the future ? Anyway, Thanks for taking your precious time to give The Atlas Six a try. Currently the game is still in early development so there are prone to be bugs but fear not, they don't bite. Feel free to let me know if you encounter any bug that does bite though <a href=\"mailto:tinomhedziso21@gmail.com\">tinomhedziso21@gmail.com</a>.",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
@@ -211,7 +211,7 @@
         "choices": []
       },
       {
-        "branchId": "branch9",
+        "branchId": "branch10",
         "text": "<span class=\"characterName\">Passion:</span> The narrative of The Atlas Six is centered around 6 heroes... whom the 6th one may or may not betray you as you have just seen. The idea was constructed around a fictional storyline my friends <i>[who are the in game characters]</i> and I came up with. That being said each character is meant to represent a subset of that friend but the actions performed in the world by Atlas characters does not completely reflect actions my friends would actually do.",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
@@ -219,7 +219,7 @@
         "choices": []
       },
       {
-        "branchId": "branch10",
+        "branchId": "branch11",
         "text": "<span class=\"characterName\">Passion:</span> The world you find yourself is a strange one - to say the least. It is one that is constantly changing based on Your choices such as this timeline where your 6th friend betrays you, whoever that is. Certain actions will have certain consequences that may or may not align with your desire, certain characters will have certain story narratives and certain.... blah blah blah you get the idea. Morally right choices may not be the best ones overall and vice versa so think carefully. Experience is the best teacher so I will let you play now 😄🦚 - <i>Enjoy</i>",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
@@ -227,7 +227,7 @@
         "choices": []
       },
       {
-        "branchId": "branch11",
+        "branchId": "branch12",
         "text": "",
         "character1": "",
         "character2": "",
@@ -236,7 +236,7 @@
         "choices": []
       },
       {
-        "branchId": "branch12",
+        "branchId": "branch13",
         "text": "Tino’s mind clears, his senses snapping back to reality, only to find himself staring down the gleaming tip of an arrow aimed directly at his head.. <br> <span class=\"characterName\">Mthi:</span> Rise an shine sleepy head. <i>Mthi’s voice rings out, and a mischievous grin lights up her face, clearly savoring the moment.</i> <br><span class=\"characterName\">Tino:</span> Go on, release it… I dare you. Your aim’s about as good as the guys who try to shoot <i>their shot</i> at you. <i>He laughs at the challenge sparking between them</i>. <br> <span class=\"characterName\">Mthi:</span> How is it possible to be both the fastest and the slowest here? <i> Her bowstring pulls back, just a hair’s breadth from releasing.</i> <br> <span class=\"characterName\">Tino:</span> One second is all I need.<i> Tino raises his hand, fingers resting against the hilt of his blade - </i>. <br>Before the tension thickens any further, Zanele steps forward, casting a warning glance between them. <br> <span class=\"characterName\">Zanele:</span> Knock it off you two, we don't want any problems here, especially in Bloomhaven.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/eye.webp",
@@ -244,7 +244,7 @@
         "choices": []
       },
       {
-        "branchId": "branch13",
+        "branchId": "branch14",
         "text": "Bloomhaven is a charming inn tucked in the heart of Aurelia, exuding warmth and inviting tranquility to all who pass through. Known for its namesake lanterns that emit a soft, golden glow, the inn’s cozy ambiance is perfect for weary travelers and townsfolk alike. The inn’s flower-laden windows and ivy-wrapped walls reflect Aurelia’s affinity for nature, with scents of lavender drifting through the air. <br><span class=\"characterName\">Jasmin:</span> Bloomhaven, I remember coming here as a girl. <br> <span class=\"characterName\">Tino:</span> So you are not a girl anymore ? <br> <span class=\"characterName\">Jasmin:</span> ...A <i>Young</i> girl... <i> Tino </i>. <br>  Where is Llewellyn anyway? <br> <span class=\"characterName\">Tino:</span> Probably training with the royal guard or things of that nature. I don't know. <br> <span class=\"characterName\">Mthi:</span> In that case, I am going to find a game to play. <i> She starts searching for a game host. </i> <br> <span class=\"characterName\">Zanele:</span> Meanwhile I'll get us the usual drinks.",
         "character1": "Images/healer.webp",
         "character2": "Images/phoenix.webp",
@@ -252,7 +252,7 @@
         "choices": []
       },
       {
-        "branchId": "branch14",
+        "branchId": "branch15",
         "text": "As Zanele walks towards the innkeeper, her eyes catch sight of two figures standing side-by-side, shrouded in the warm light. They each wear steampunk-inspired attire, detailed with gears, buckles, and straps in shimmering brass and worn leather. Their outfits, however, are primarily a deep, rich shade of purple, blending into the twilight hues around them. The first figure, taller with a sturdy posture, is a man whose presence feels timeless. His face is partially shadowed beneath a hat. His eyes hold a far-off gaze, as though he’s not entirely present, one foot grounded in this moment and the other in a place beyond comprehension. <br> Beside him, the second figure is more slight and nimble, exuding a sharp, clever energy. This one—the shorter, with a mischievous gleam in her eye — has an air of wit and keen observation, her expression is one of amusement. She glances toward her companion with a knowing smirk, her attention flicking from him to the world around with effortless curiosity. They notice Zanele but don’t address her, continuing their debate, their words cryptic, laced with double meanings and a weight she can't quite place. For now, they refer only to vague ideas—life, choices, paths, knowledge—dancing around deeper subjects that feel just out of reach, waiting for Zanele to uncover their true purpose in her journey.",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins-purple.webp",
@@ -260,7 +260,7 @@
         "choices": []
       },
       {
-        "branchId": "branch15",
+        "branchId": "branch16",
         "text": "<span class=\"characterName\">Twin 1:</span>To live is to understand the world around you, the roads that twist and turn, the choices branching into every possibility. Without knowing the pathways before us, we become lost, endlessly wandering. Life is best understood as a series of external paths to traverse, and mastery comes from navigating them well. Only through awareness of our surroundings and understanding of the world’s patterns can we move forward with certainty. Those who ignore the greater map risk being swept away by currents they cannot see. <br> The female twin nods with her eyes closed, assimilating her brother's point while conjuring her own. <br><span class=\"characterName\">Twin 2:</span> And yet, dear twin, all the paths in the world are meaningless if one doesn't know oneself. To explore the outer world without examining one's own depths is to chase reflections, shadows cast by the soul. Knowing who you are—your strengths, your weaknesses, your friends, your enemies—this is the true anchor. How can one stand firm in the shifting sands of fate without first understanding the inner workings of the heart? <br><span class=\"characterName\">Twin 1:</span>To focus solely inward is to miss the infinite beauty and danger of the world beyond. If we know ourselves but not the world we live in, we become trapped within our own minds, circling familiar thoughts. It is the journey outward that shapes us, just as we shape the journey. <br> With a patient smile, the female twin looks at Zanele then answers with her response. <br><span class=\"characterName\">Twin 2:</span> Perhaps. But it is only through looking within that we find the tools to face the world without. A map may guide your steps, but it cannot help you understand why you walk or who walks with you. True mastery comes from learning to see with the heart as well as the eye. . <br> They fall silent, each pondering the other’s words, as Zanele watches them in quiet fascination, sensing that this is no ordinary debate but a glimpse into something much deeper.",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins-purple.webp",
@@ -268,7 +268,7 @@
         "choices": []
       },
       {
-        "branchId": "branch16",
+        "branchId": "branch17",
         "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia - <i>They both gaze at you, allowing the purple radiance of their magic to dissipate into nothingness, granting you passage.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around?",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins-purple.webp",
@@ -276,7 +276,7 @@
         "choices": []
       },
       {
-        "branchId": "branch16",
+        "branchId": "branch18",
         "text": "",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins.webp",
@@ -303,7 +303,7 @@
         ]
       },
       {
-        "branchId": "branch17",
+        "branchId": "branch19",
         "text": "<span class=\"characterName\">Zanele:</span> Hold on, this is all well and good, but who are you people, and how do you even know my name? <br><span class=\"characterName\">Chronos:</span> Heh, that’s the spirit—always ask when you're not told. <br> With a dismissive wave, they cast the purple barrier of energy once more, sealing you off from further interaction. Unfazed, they continue their intricate debate as they stride out of the inn, leaving you in their wake.<br><span class=\"characterName\">Caelia:</span> Do you think the others would have chosen differently? Maybe Mthi? <br><span class=\"characterName\">Chronos:</span> Perhaps Llewellyn, but I can’t say for certain about Jasmin.. <br> Zanele tries to follow them, eager for answers, but in the blink of an eye, they disappear, leaving no trace behind.",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins-purple.webp",
@@ -312,7 +312,7 @@
       },
 
       {
-        "branchId": "branch18",
+        "branchId": "branch20",
         "text": "Under the warm glow of Bloomhaven’s lamplight, Jasmin and Elenora share a rare moment of peace. Though they have walked different paths, the magic they once learned together still binds them. Jasmin, whose hands have healed countless wounds within the Atlas Six, feels a quiet nostalgia here, with Elenora's familiar smile across the table. <br><span class=\"characterName\">Elenora:</span> You’ve come a long way, Jasmin, <i>Elenora says, pouring another cup of tea</i> I hear the Atlas Six has made quite a name for themselves. <br> Jasmin smiles, fondly recalling the adventures and bonds she’s forged, yet grateful for the steady friendship that Nora has always offered: one that stretches back to childhood training sessions and letters exchanged over the years. Their lives may be different now, but in moments like these, it’s as if nothing has changed at all.<br><span class=\"characterName\">Jasmin:</span> Yes, we’ve been through more than I ever imagined... battles, journeys, mysteries unraveling one after another. But it’s the little things I miss most, like these quiet moments. <i>She says, meeting Elenora's gaze.</i> <br><span class=\"characterName\">Elenora:</span> You’re the healer, after all. The one who’s always making sure everyone else’s spirits are intact. <i>She leans back thoughtfully, the firelight casting warm shadows on her face. </i> I suppose that hasn’t changed since we were kids, huh? <br><span class=\"characterName\">Jasmin:</span> No, I guess it hasn’t. And you Nora, hehe — you’re still as sharp as ever, I bet. I remember how you’d always get ahead in our lessons, even when I struggled to keep up.<br> Elenora raising an eyebrow while grinning at you.<br><span class=\"characterName\">Elenora:</span> Oh please, your flattery won’t get you an extra training session with me. <br> You put on a mock frown, as if truly let down. ",
         "character1": "Images/healer.webp",
         "character2": "Images/Characters/Elenora.webp",
@@ -320,7 +320,7 @@
         "choices": []
       },
       {
-        "branchId": "branch19",
+        "branchId": "branch21",
         "text": "<span class=\"characterName\">Elenora:</span> What would you like us to talk about ?",
         "character1": "Images/healer.webp",
         "character2": "Images/Characters/Elenora.webp",
@@ -379,7 +379,7 @@
       },
 
       {
-        "branchId": "branch20",
+        "branchId": "branch22",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -387,7 +387,7 @@
         "choices": []
       },
       {
-        "branchId": "branch21",
+        "branchId": "branch23",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -396,7 +396,7 @@
         "choices": []
       },
       {
-        "branchId": "branch22",
+        "branchId": "branch24",
         "text": "<span class=\"characterName\">Game Host:</span> A sharp eye indeed... How about a wager: If you win, I’ll part with my most treasured possession. But if you lose... I’ll claim that exquisite instrument of yours. <br><span class=\"characterName\">Mthi:</span>And what exactly is this so-called treasured possession? <br><span class=\"characterName\">Game Host:</span>Oh, you’ll find out... once you’ve earned the right to see it. Now, shall we play?",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -405,7 +405,7 @@
       },
 
       {
-        "branchId": "branch23",
+        "branchId": "branch25",
         "text": "With unshakable confidence, she accepts the challenge. <br><span class=\"characterName\">Mthi:</span> Uh-huh... might as well go fetch whatever treasure you're hiding now. <i>Her hand glides over the cards on the table, poised to win. </i>. <br>But something feels... off. Mthi’s hand pauses as she notices the cards shifting beneath her fingers. No matter how carefully she plays, the images twist and change as if refusing to pair with any match, slipping through her grasp with every attempt. It’s as if the deck itself is alive, mocking her skill with an eerie magic. <br> <span class=\"characterName\">Game Host:</span> Something wrong ?<br>A hand lands firmly on her shoulder, and suddenly, the world goes silent. The birds outside cease their song, the air stills, and everything around them freezes in time.<br><span class=\"characterName\">Tino:</span>Oh, look at that... He's cheating. <br><span class=\"characterName\">Mthi:</span>Not surprised. Animation magic — brings objects to life. Hold on. <i>She waves her hand across the cards, dismantling the illusion with a decisive sweep. The cards flicker, and a new power shimmers across the table. </i> <br><span class=\"characterName\">Tino:</span>Interesting choice of play.",
         "character1": "Images/eye.webp",
         "character2": "Images/timekeeper.webp",
@@ -413,7 +413,7 @@
         "choices": []
       },
       {
-        "branchId": "branch24",
+        "branchId": "branch26",
         "text": "",
         "character1": "Images/eye.webp",
         "character2": "Images/The Sixth Atlas.webp",
@@ -422,7 +422,7 @@
         "choices": []
       },
       {
-        "branchId": "branch25",
+        "branchId": "branch27",
         "text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -430,7 +430,7 @@
         "choices": []
       },
       {
-        "branchId": "branch26",
+        "branchId": "branch28",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -441,7 +441,7 @@
         "choices": []
       },
       {
-        "branchId": "branch27",
+        "branchId": "branch29",
         "text": "Following the chaotic burst of action, the inn is ablaze with shouts and overturned tables as fists fly and drinks spill. The Game Host, now seething and vengeful, grabs a nearby chair, swinging it in Mthi’s direction. She ducks just in time, but not before another bystander takes the hit, adding to the pandemonium.As the group grapples with the chaos, the Game Host, now humiliated and vengeful, grabs a knife from a nearby table, sneering at Mthi. His eyes are filled with murderous intent, and he lunges toward her with reckless abandon. The group finds themselves at a critical choice, each path leading to a different outcome.",
         "character1": "Images/eye.webp",
         "character2": "Images/Characters/Game Host.webp",
@@ -466,7 +466,7 @@
         ]
       },
       {
-        "branchId": "branch28",
+        "branchId": "branch30",
         "text": "As the dust settles from the chaotic scuffle, the atmosphere in Bloomhaven turns tense. Lily, the innkeeper, stands behind the counter, arms crossed and a frown etched across her face. <br><span class=\"characterName\">Lily:</span> Enough! <i>  she exclaims, her voice cutting through the remnants of the brawl.</i> <br> <span class=\"characterName\">Lily:</span>I won’t have this ruckus in my inn. <br>The Group, still catching their breath from the unexpected fight, exchange glances, feeling the weight of her disappointment. <br>Lily continues, her irritation palpable.<br> <span class=\"characterName\">Lily:</span> You’ve disturbed my guests and wrecked my establishment. I can’t afford to have troublemakers like you here. It’s time for you to leave! <br>With a resigned nod, Mthi steps forward, attempting to diffuse the situation. <br><span class=\"characterName\">Mthi:</span> We didn’t mean to cause a scene, Lily. We were just— <br><span class=\"characterName\">Lily:</span>Just what? <i> She interrupts, her eyes narrowing</i>. Just playing games while destroying my peaceful haven? This isn’t a tavern for drunken brawls; it’s a place of respite. <br> The group’s morale dips as they realize their actions have consequences. They gather their belongings and shuffle toward the exit, feeling the weight of Lily’s anger.",
         "character1": "all",
         "character2": "Images/Characters/Lily.webp",
@@ -474,7 +474,7 @@
         "choices": []
       },
       {
-        "branchId": "branch29",
+        "branchId": "branch31",
         "text": "",
         "character1": "",
         "character2": "",
@@ -483,7 +483,7 @@
         "choices": []
       },
       {
-        "branchId": "branch30",
+        "branchId": "branch32",
         "text": "",
         "character1": "all",
         "character2": "none",
@@ -508,7 +508,7 @@
         ]
       },
       {
-        "branchId": "branch31",
+        "branchId": "branch33",
         "text": "The party agrees to venture into the forest, seeking a temporary camp where they can regroup and plan their next move. As they fade into the darkness, the reality of their decision settles over them, binding them even closer, for better or for worse.",
         "character1": "all",
         "character2": "none",
@@ -516,7 +516,7 @@
         "choices": []
       },
       {
-        "branchId": "branch32",
+        "branchId": "branch34",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -526,7 +526,7 @@
       },
 
       {
-        "branchId": "branch33",
+        "branchId": "branch35",
         "text": "<span class=\"characterName\">Tino:</span> Why are we in a creepy dark forest at night again ? Seems like we are just asking to be killed at this point. <br><span class=\"characterName\">Zanele:</span> You're not afraid aren't you Tino? Who knows what we will encounter... <br> <span class=\"characterName\">Mthi:</span> I agree with Tino, maybe we can try a different inn... Aurelia is big. <br> <span class=\"characterName\">Llewellyn:</span> Word spreads like wildfire unfortunately, We best lay low for now.",
         "character1": "all",
         "character2": "none",
@@ -534,7 +534,7 @@
         "choices": []
       },
       {
-        "branchId": "branch34",
+        "branchId": "branch36",
         "text": "<span class=\"characterName\">Jasmin:</span> This forest ... it may be our only shelter, but it feels like something’s lurking.<br><span class=\"characterName\">Llewellyn:</span> We don’t have many options. It’ll keep us hidden, at least.<br><span class=\"characterName\">Tino:</span> Doesn’t exactly feel cozy.<br> As they press deeper into the forest’s shadows, Tino feels a light tap on his shoulder.<br><span class=\"characterName\">Tino:</span> <i>Zee, now’s really not the time.</i> <br> He glances back toward Zanele.<br><span class=\"characterName\">Zanele:</span> Huh? I didn’t do anything.<br>Llewellyn suddenly feels something brush against his leg, and a dark figure slips away into the trees.<br><span class=\"characterName\">Llewellyn:</span> Um, guys ... I don’t think we’re alone here.<br>The surrounding leaves rustle, shadows twist, and the grass stirs as if alive.<br><span class=\"characterName\">Mthi:</span> Everyone, stay sharp.",
         "character1": "all",
         "character2": "none",
@@ -542,7 +542,7 @@
         "choices": []
       },
       {
-        "branchId": "branch35",
+        "branchId": "branch37",
         "text": "As goblins close in on the Atlas Six, you stand side by side with your companions, preparing to hold your ground.<br> Objective: Work with the team to defeat as many goblins as possible within the time limit. Reach enough points to secure a win and protect everyone from the horde. <br> Gameplay: Every goblin you take down adds points, but be careful: the goblins use green bombs scattered throughout the chaos, and hitting one will cost you. <br> Keep your accuracy sharp to avoid losing valuable points. <br> Mechanics: Hold down your left mouse button to slice through goblins with precision. The more goblins you strike, the closer you bring the group to victory. Good luck! The Atlas Six are counting on your skill to survive this onslaught! ",
         "character1": "none",
         "character2": "none",
@@ -550,7 +550,7 @@
         "choices": []
       },
       {
-        "branchId": "branch36",
+        "branchId": "branch38",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -559,7 +559,7 @@
         "choices": []
       },
       {
-        "branchId": "branch37",
+        "branchId": "branch39",
         "text": "The battlefield settles for just a moment, and the group stands amid the aftermath of their victory. Tino’s sword gleams, streaked with dark goblin blood, and he gives Zanele a triumphant grin. <br> Zanele brushes a strand of hair from her face, her chains still crackling with residual energy. Mthi’s bow is lowered but ready, her sharp eyes scanning the shadows. <br>Just as a faint sigh of relief begins to escape, a low growl ripples through the forest. Rustling sounds echo from all around, followed by the unmistakable, guttural snarls of goblins hungry for vengeance. From the shadows, a fresh wave of goblins emerges, twice as many as before, their eyes gleaming with feral determination.",
         "character1": "all",
         "character2": "none",
@@ -567,27 +567,8 @@
         "choices": []
       },
       {
-        "branchId": "branch38",
-        "text": "Without missing a beat, Jasmin raises her hands, calling upon a shimmering shield of healing energy around her companions. Zanele’s chains pulse with a fiery glow, her focus sharp as she mutters an incantation, setting the ground alight with searing embers around the approaching goblins. <br> Mthi, with deadly precision, releases a rapid volley of arrows, each one finding its mark as goblins drop from the trees like broken puppet. <br>Llewellyn drives his blade into the earth with a thunderous crash, sending a shockwave that stuns a cluster of goblins. In one swift, fierce sweep, he cuts them down, his blade slicing through the air with lethal precision.<br><span class=\"characterName\">Jasmin:</span> They won't stop. <br><span class=\"characterName\">Llewellyn:</span> More target practice for us.",
-        "character1": "all",
-        "character2": "none",
-        "event": "none",
-        "choices": []
-      },
-      {
-        "branchId": "branch39",
-        "text": "",
-        "character1": "none",
-        "character2": "none",
-        "event": "triggerBattle",
-        "winnable": true,
-        "startEnemies": [2, 3, 4, 5, 6],
-        "spawnEnemies": [],
-        "choices": []
-      },
-      {
         "branchId": "branch40",
-        "text": " The group, weary and bruised from battle, trudges deeper into the forest. Shadows grow longer as twilight settles, and they come upon a spacious clearing carpeted with soft moss and encircled by towering oaks and whispering pines.",
+        "text": "Without missing a beat, Jasmin raises her hands, calling upon a shimmering shield of healing energy around her companions. Zanele’s chains pulse with a fiery glow, her focus sharp as she mutters an incantation, setting the ground alight with searing embers around the approaching goblins. <br> Mthi, with deadly precision, releases a rapid volley of arrows, each one finding its mark as goblins drop from the trees like broken puppet. <br>Llewellyn drives his blade into the earth with a thunderous crash, sending a shockwave that stuns a cluster of goblins. In one swift, fierce sweep, he cuts them down, his blade slicing through the air with lethal precision.<br><span class=\"characterName\">Jasmin:</span> They won't stop. <br><span class=\"characterName\">Llewellyn:</span> More target practice for us.",
         "character1": "all",
         "character2": "none",
         "event": "none",
@@ -598,13 +579,15 @@
         "text": "",
         "character1": "none",
         "character2": "none",
-        "event": "changeScene",
-        "background": "forest campsite",
+        "event": "triggerBattle",
+        "winnable": true,
+        "startEnemies": [2, 3, 4, 5, 6],
+        "spawnEnemies": [],
         "choices": []
       },
       {
         "branchId": "branch42",
-        "text": "The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs,fibers and fruit, while Llewellyn and Tino collect firewood and materials to build a shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch.<br> The group accepts their respective tasks and begin preparing for the night ahead.",
+        "text": " The group, weary and bruised from battle, trudges deeper into the forest. Shadows grow longer as twilight settles, and they come upon a spacious clearing carpeted with soft moss and encircled by towering oaks and whispering pines.",
         "character1": "all",
         "character2": "none",
         "event": "none",
@@ -616,12 +599,29 @@
         "character1": "none",
         "character2": "none",
         "event": "changeScene",
+        "background": "forest campsite",
+        "choices": []
+      },
+      {
+        "branchId": "branch44",
+        "text": "The scent of damp earth and pine needles hangs in the air, providing a strange sense of comfort amid the fading light. <br><span class=\"characterName\">Zanele:</span>Alright, let’s set up here. <br>  Zanele declares, her voice steady yet softened by fatigue. She assigns tasks: Mthi and Jasmin are to gather herbs,fibers and fruit, while Llewellyn and Tino collect firewood and materials to build a shelter. <br><span class=\"characterName\">Zanele:</span> I'll set up a defensive spell and keep watch.<br> The group accepts their respective tasks and begin preparing for the night ahead.",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch45",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "changeScene",
         "background": "picking forest",
         "choices": []
       },
 
       {
-        "branchId": "branch44",
+        "branchId": "branch46",
         "text": "<span class=\"characterName\">Jasmin:</span> Looks like it’s just us, Mthi. Let’s see what we can find.<br> They move quietly through the forest, the soft crackling of leaves underfoot as they pick their way through patches of herbs and low-hanging fruits. Jasmin’s eyes roam over the foliage, keenly spotting bright clusters of berries hidden among the leaves. <br><span class=\"characterName\">Mthi:</span> You always seem to know exactly what to look for, Jas. <br><span class=\"characterName\">Jasmin:</span> Comes with the job. Healer’s instinct, you know? And there’s something calming about it - being that helping hand in difficult situations. Just as your music puts us at ease <i> she playfully nudges Mthi </i>. <br><span class=\"characterName\">Mthi:</span> Thank you <i>she struggles not to smile shyly </i>. It’s beautiful how the moon filters down like this, isn’t it? Almost like the forest is alive with secrets. <br> They both stop, momentarily lost in the stillness of the night, their eyes drawn to the 3 moons hanging high above. The silver light casts a soft glow over the forest, illuminating the leaves and bathing the world in a tranquil silence.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
@@ -629,7 +629,7 @@
         "choices": []
       },
       {
-        "branchId": "branch45",
+        "branchId": "branch47",
         "text": "<span class=\"characterName\">Jasmin:</span> It really is. <br><span class=\"characterName\">Mthi:</span It reminds me of home. The wind, the animals , the silence, brings back memories of the hunt. Especially nights like these, they always feel familiar.<br> <i>She bends down to examine some dark green leaves hidden in the underbrush.</i> <br><span class=\"characterName\">Jasmin:</span> What is it? <br><span class=\"characterName\">Mthi:</span> These herbs - Moonshade and Fernshade. Moonshade works for quick mana recovery, Fernshade on the other hand can help replenish stamina. Which one do you think we should take? <br><span class=\"characterName\">Jasmin:</span> And we can't take both. I remember from my potion classes that these two don’t mix well -in fact, combined, they’re actually... poisonous.. <br><span class=\"characterName\">Mthi:</span> And we’ll need a good amount of one or the other to fully restore our mana or stamina.",
         "character1": "Images/healer.webp",
         "character2": "Images/eye.webp",
@@ -637,7 +637,7 @@
         "choices": []
       },
       {
-        "branchId": "branch46",
+        "branchId": "branch48",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -664,7 +664,7 @@
         ]
       },
       {
-        "branchId": "branch47",
+        "branchId": "branch49",
         "text": "The forest hums with a quiet vigor, its massive trees stretching skyward, their silhouettes stretching long and dark under the pale moonlight. Tendrils of mist drift close to the ground, curling around knotted roots and thick ferns, obscuring the forest’s hidden mysteries. The silence is punctuated by soft rustling as nocturnal creatures move, their eyes catching light like tiny, scattered stars amid the foliage. Overhead, the leaves murmur in response to the light breeze, while the air hangs heavy with the rich, damp scent of moss and earth.",
         "character1": "none",
         "character2": "none",
@@ -672,7 +672,7 @@
         "choices": []
       },
       {
-        "branchId": "branch48",
+        "branchId": "branch50",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -681,7 +681,7 @@
         "choices": []
       },
       {
-        "branchId": "branch49",
+        "branchId": "branch51",
         "text": "<span class=\"characterName\">Tino:</span> So then she says, <i>Only someone truly daring could handle this...</i> staring straight at me with those fiery eyes. <br><span class=\"characterName\">Llewellyn:</span> Sooo, did you handle it? <br><span class=\"characterName\">Tino:</span> It was creating such a mess, almost got soaked.<br><span class=\"characterName\">Llewellyn:</span> Yea but Did you Handle it though ?<br><span class=\"characterName\">Tino:</span> The Basilisk? Nah, I left, not because I wasn’t up for it — but because... <i> He grabs a solid, rugged branch, its bark still fresh and damp from the night’s dew, perfect for stoking a strong fire.</i> <br><span class=\"characterName\">Llewellyn:</span> Because...? <br><span class=\"characterName\">Tino:</span> Because I was halfway across the kingdom on a very important errand, and the royal guard had already started to show up. No point in stepping into a mess like that. It's diffucult fighting a water type without a fire type. <br><span class=\"characterName\">Llewellyn:</span> Right and also it resembling a snake. I'm sure the guards had it all under control. <br>Llewellyn finishes chopping the branches and starts securing them to his back.<br><span class=\"characterName\">Tino:</span> That as well. <br> They both laugh then continue to gather materials throughout the forest's domain.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -689,7 +689,7 @@
         "choices": []
       },
       {
-        "branchId": "branch50",
+        "branchId": "branch52",
         "text": "Under the cold moonlight, the clearing buzzed with tension. A black bear, its fur dark as night and eyes glowing a deep brown, stood its ground, claws scraping the earth. Its orange magic flickered around it, crackling with raw power. Across from it, a black wolf—sleek, agile, and with eyes gleaming green—shifted low to the ground, its fur shimmering with an ethereal green glow. The air hummed with their magic, the forest holding its breath. <br><span class=\"characterName\">Tino:</span> What do we have here? <br><span class=\"characterName\">Llewellyn:</span> Seems like we've got a show, you can have first pick. <br> Llewellyn looks at Tino awaiting his response to the bet. <br><span class=\"characterName\">Tino:</span> We both know what the obvious choice is here but just to be different I will go with...",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
@@ -697,7 +697,7 @@
         "choices": []
       },
       {
-        "branchId": "branch51",
+        "branchId": "branch53",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -724,7 +724,7 @@
         ]
       },
       {
-        "branchId": "branch52",
+        "branchId": "branch54",
         "text": "To Resume here LATER",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
