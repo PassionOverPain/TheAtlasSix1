@@ -925,8 +925,8 @@ function storyEvents(branch) {
       { once: true }
     );
     return;
-  } else if (branch.event == "skipChoices") {
-    checkChoices();
+  } else if (branch.event == "checkChoices") {
+    checkChoices(branch.choice, branch.values, branch.endBranch);
   }
   if (branch.event == "triggerBattle") {
     document.getElementById(`myMap`).style.display = "none";
@@ -1019,8 +1019,13 @@ function displayStory() {
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function checkChoices(choiceIndex, values, endBranch) {
-  if (!values.includes(arrChoices[choiceIndex])) {
+  let x = Number(arrChoices[choiceIndex]);
+  if (!values.includes(x)) {
     currentBranch = endBranch;
+    displayStory();
+  } else {
+    ++currentBranch;
+    displayStory();
   }
 }
 function renderChoices(branch) {

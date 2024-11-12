@@ -169,9 +169,9 @@
         "character1": "none",
         "character2": "none",
         "event": "checkChoices",
-        "choice": 0,
-        "value": [0, 1, 2],
-        "endBranch": 5,
+        "choice": 1,
+        "values": [0, 1, 2],
+        "endBranch": 7,
         "choices": []
       },
 
