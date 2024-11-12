@@ -995,6 +995,7 @@ function storyEvents(branch) {
       storyChoices(branch, choice, true); // Pass `true` for looping mode
     });
   } else if (branch.event == "visualChoices") {
+    console.log(arrChoices);
     renderChoices(branch);
   }
 }
