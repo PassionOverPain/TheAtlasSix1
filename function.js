@@ -558,6 +558,8 @@ function addEnemyToEncyclopedia(Number) {
     );
   }
 }
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> AI Battle Fight <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function playFight() {
   let arrAliveHeroes = []; // Recheck if Heroes are alive
   let arrAliveEnemies = []; //Recheck if Enemies are alive
@@ -765,6 +767,7 @@ function displayChapter(branch) {
     choicesContainer.appendChild(Continue);
   }
 }
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Story Choices <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function storyChoices(branch, choice, loop) {
   let chapterText = document.getElementById("pgStory");
   let choicesContainer = document.getElementById("pgChoices");
@@ -827,7 +830,7 @@ function storyChoices(branch, choice, loop) {
 
   choicesContainer.appendChild(p);
 }
-
+//  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Story Images Adder <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 function addstoryImage(place) {
   let pgImg1 = document.getElementById(`pgCharacter1`);
   let pgImg2 = document.getElementById(`pgCharacter2`);
