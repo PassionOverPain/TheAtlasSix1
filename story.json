@@ -269,13 +269,22 @@
       },
       {
         "branchId": "branch16",
-        "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia - <i>They both gaze at you, allowing the purple radiance of their magic to dissipate into nothingness, granting you passage.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around? ",
+        "text": "<span class=\"characterName\">Twin 2:</span>Consider a book, dear Chronos. Some are open, easy to read, their pages clear to anyone who looks. But others hide their truths, requiring patience, insight, and time to understand. And just as we learn to read others, we must also learn to read ourselves, to turn our own pages and understand the story we’re telling. Without this inner knowledge, how can we interpret the world’s challenges, let alone respond to them? <br><span class=\"characterName\">Twin 1:</span> Quiet so indeed Caelia - <i>They both gaze at you, allowing the purple radiance of their magic to dissipate into nothingness, granting you passage.</i> Ah, but we have a guest, tell us <i> Zanele - </i> <br> A wave of confusion fills your mind; you've just learned their names, yet they speak yours as if it were known to them for ages. <br> <span class=\"characterName\">Caelia:</span> —what do you believe is more important? <br><span class=\"characterName\">Chronos:</span> Is it knowing oneself? <br><span class=\"characterName\">Caelia:</span> Or understanding the world around?",
+        "character1": "Images/phoenix.webp",
+        "character2": "Images/Characters/The Twins-purple.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch16",
+        "text": "",
         "character1": "Images/phoenix.webp",
         "character2": "Images/Characters/The Twins.webp",
-        "event": "none",
+        "event": "visualChoices",
         "choices": [
           {
             "choiceId": "0",
+            "imgSrc": "Images/Choices/Knowing Yourself.webp",
             "option": " Knowing yourself",
             "outcome": "<span class=\"characterName\">Caelia:</span> Well, well, it seems my words have had their effect. <i>She tilts her head slightly, her smile still warm but reserved, as if she's trying to hide her satisfaction.</i> <br><span class=\"characterName\">Caelia:</span> I must admit, I wasn't sure how you'd choose, but… I suppose I shouldn't be surprised. <br> <span class=\"characterName\">Chronos:</span>She doesn’t say it, but she’s pleased. <i> His voice carries the faintest trace of amusement, though his tone is as calm and measured as ever. He stands a little further away, arms crossed, watching the interaction with interest.</i> <br><span class=\"characterName\">Caelia:</span> Take this <i> She hands takes out a map  and hands it over with a quiet nod, her eyes scanning your face for a reaction.</i> It's not just a map of the lands; it's a map of what's to come. Follow its paths, and you’ll find more than just landmarks. <br><span class=\"characterName\">Chronos:</span>The path ahead is uncertain, but the map ... is certain. Hmmm might as well also hand over this. <br> He reaches into his cloak and pulls out an ancient book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive. It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. ",
             "character1": "Images/phoenix.webp",
@@ -284,6 +293,7 @@
           },
           {
             "choiceId": "1",
+            "imgSrc": "Images/Choices/Knowing The World.webp",
             "option": "Knowing the world",
             "outcome": "<span class=\"characterName\">Caelia:</span> So, you've made your choice. But the world you're stepping into... well, it's more than what meets the eye. <br><span class=\"characterName\">Chronos:</span> You will need more than instinct to understand the world around you. This will help. <br>He reaches into his cloak and pulls out a book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive.It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. <br><span class=\"characterName\">Chronos:</span> This is the Encyclopedia of the Known World. It holds the knowledge of many lands, cultures, creatures, and even some secrets... if you know where to look. <br><span class=\"characterName\">Caelia:</span>  It will open your eyes to things you never thought possible. The more you know, the better you'll understand the path you’re on. <br><span class=\"characterName\">Chronos:</span>The truth is rarely exciting, but it is always necessary. <br> Caelia also hands you a map, revealing paths to places you've never encountered before. <br><span class=\"characterName\">Caelia:</span> You'll need that as well.",
             "character1": "Images/phoenix.webp",
@@ -715,7 +725,7 @@
       },
       {
         "branchId": "branch52",
-        "text": "Let's Jump some branches",
+        "text": "To Resume here LATER",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
         "event": "none",
