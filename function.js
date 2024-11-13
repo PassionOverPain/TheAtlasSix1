@@ -8,9 +8,11 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 0;
+let currentBranch = 38;
 let choiceNum = null;
 let encNum = 0;
+// Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
+
 function openTab(tab, hero) {
   if (tab == "Info") {
     document.getElementById(`${hero}Stats`).classList.remove("active");
@@ -553,9 +555,13 @@ function clickAlly(HeroNum, Ally) {
 function addEnemyToEncyclopedia(Number) {
   if (!Encyclopedia.includes(Number)) {
     Encyclopedia.push(Number);
-    displayModal(
-      `Recorded a new enemy: ${myMonsters[Number].Name}, to your Encyclopedia.`
-    );
+    if (arrEnemies.length == 1) {
+      displayModal(
+        `Recorded a new enemy: ${myMonsters[Number].Name}, to your Encyclopedia.`
+      );
+    } else {
+      displayModal(`Recorded multiple new enemies to your Encyclopedia.`);
+    }
   }
 }
 
