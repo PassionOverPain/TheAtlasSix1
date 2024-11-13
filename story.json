@@ -25,6 +25,7 @@
             "character1": "Images/healer.webp",
             "character2": "none",
             "imgSrc": "Images/healer.webp",
+            "gradient": "linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1)",
             "event": "none"
           },
           {
@@ -34,6 +35,7 @@
             "character1": "Images/titan.webp",
             "character2": "none",
             "imgSrc": "Images/titan.webp",
+            "gradient": "radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e)",
             "event": "none"
           },
           {
@@ -43,6 +45,7 @@
             "character1": "Images/eye.webp",
             "character2": "none",
             "imgSrc": "Images/eye.webp",
+            "gradient": "linear-gradient(195deg, #ff00c3, #d123ba, #a42dab, #7b2f97, #552b80, #342465, #181a48, #050b2b)",
             "event": "none"
           },
           {
@@ -52,6 +55,7 @@
             "character1": "Images/timekeeper.webp",
             "character2": "none",
             "imgSrc": "Images/timekeeper.webp",
+            "gradient": "radial-gradient(circle at 100% 10%, #ffdf42, #ffcb2a, #ffb60e, #ffa000, #ff8900, #ff6f00, #ff5000, #ff2212)",
             "event": "none"
           },
           {
@@ -61,6 +65,7 @@
             "character1": "Images/phoenix.webp",
             "character2": "none",
             "imgSrc": "Images/phoenix.webp",
+            "gradient": "linear-gradient(45deg, #7d0928, #962521, #ad3e0f, #c15900, #d27500, #de9200, #e6b100, #e8d103)",
             "event": "none"
           }
         ]
@@ -289,6 +294,7 @@
             "outcome": "<span class=\"characterName\">Caelia:</span> Well, well, it seems my words have had their effect. <i>She tilts her head slightly, her smile still warm but reserved, as if she's trying to hide her satisfaction.</i> <br><span class=\"characterName\">Caelia:</span> I must admit, I wasn't sure how you'd choose, but… I suppose I shouldn't be surprised. <br> <span class=\"characterName\">Chronos:</span>She doesn’t say it, but she’s pleased. <i> His voice carries the faintest trace of amusement, though his tone is as calm and measured as ever. He stands a little further away, arms crossed, watching the interaction with interest.</i> <br><span class=\"characterName\">Caelia:</span> Take this <i> She hands takes out a map  and hands it over with a quiet nod, her eyes scanning your face for a reaction.</i> It's not just a map of the lands; it's a map of what's to come. Follow its paths, and you’ll find more than just landmarks. <br><span class=\"characterName\">Chronos:</span>The path ahead is uncertain, but the map ... is certain. Hmmm might as well also hand over this. <br> He reaches into his cloak and pulls out an ancient book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive. It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. ",
             "character1": "Images/phoenix.webp",
             "character2": "Images/Characters/The Twins.webp",
+            "gradient": "linear-gradient(0deg, rgba(127,59,66,1) 0%, rgba(28,20,41,1) 100%)",
             "event": "none"
           },
           {
@@ -298,6 +304,7 @@
             "outcome": "<span class=\"characterName\">Caelia:</span> So, you've made your choice. But the world you're stepping into... well, it's more than what meets the eye. <br><span class=\"characterName\">Chronos:</span> You will need more than instinct to understand the world around you. This will help. <br>He reaches into his cloak and pulls out a book, its cover glowing faintly with an ethereal light. The worn leather feels surprisingly warm, as if it recognizes your touch. As you open it, the pages shimmer with energy, whispering secrets in languages unknown, while the illustrations seem to come alive.It’s both a guide and a challenge—offering wisdom yet guarding dangerous truths. The book feels like a paradox, a trusted companion and a formidable foe, revealing only what it chooses. <br><span class=\"characterName\">Chronos:</span> This is the Encyclopedia of the Known World. It holds the knowledge of many lands, cultures, creatures, and even some secrets... if you know where to look. <br><span class=\"characterName\">Caelia:</span>  It will open your eyes to things you never thought possible. The more you know, the better you'll understand the path you’re on. <br><span class=\"characterName\">Chronos:</span>The truth is rarely exciting, but it is always necessary. <br> Caelia also hands you a map, revealing paths to places you've never encountered before. <br><span class=\"characterName\">Caelia:</span> You'll need that as well.",
             "character1": "Images/phoenix.webp",
             "character2": "Images/Characters/The Twins.webp",
+            "gradient": "linear-gradient(180deg, #dc781f, #b8860b, #8b4513)",
             "event": "none"
           }
         ]

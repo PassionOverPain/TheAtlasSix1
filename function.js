@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 38;
+let currentBranch = 0;
 let choiceNum = null;
 let encNum = 0;
 // Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
@@ -1057,9 +1057,11 @@ function renderChoices(branch) {
     choiceDiv.classList.add("visChoice");
 
     const img = document.createElement("img");
+    const gradient = choice.gradient;
     img.src = choice.imgSrc;
     img.alt = choice.option;
 
+    choiceDiv.style.setProperty("--dynamic-gradient", gradient);
     const label = document.createElement("p");
     label.textContent = choice.option;
 

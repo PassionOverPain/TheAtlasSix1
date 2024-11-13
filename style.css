@@ -869,7 +869,7 @@ canvas {
 .visChoiceCon {
   display: none;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   padding: 60px;
   overflow: hidden;
 }
@@ -878,29 +878,24 @@ canvas {
   width: 250px;
   text-align: center;
   cursor: url(Images/hand-s.png), auto;
-  transition: transform 0.3s;
+  position: relative;
 }
 
 .visChoice img {
   width: 100%;
   border-radius: 10px;
 }
+
 .visChoice::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: 0px;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -2px;
   border-radius: 10px;
-  background: transparent;
-  transition: background 0.3s ease;
+  background: var(--dynamic-gradient, transparent);
   z-index: -1;
-}
-
-.visChoice:hover::before {
-  background: linear-gradient(45deg, #dd9d48, beige);
-  /* Creates a golden border effect */
 }
 
 .visChoice:hover {
