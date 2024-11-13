@@ -879,6 +879,8 @@ canvas {
   text-align: center;
   cursor: url(Images/hand-s.png), auto;
   position: relative;
+  font-size: 2rem;
+  transition: background 0.5s;
 }
 
 .visChoice img {
@@ -895,9 +897,20 @@ canvas {
   bottom: -2px;
   border-radius: 10px;
   background: var(--dynamic-gradient, transparent);
+  animation: rotateLG 3s linear infinite;
+  transition: all 0.2s linear;
+  /* background: */
   z-index: -1;
 }
 
 .visChoice:hover {
   transform: scale(1.05);
+}
+@keyframes rotateLG {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
