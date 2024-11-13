@@ -571,6 +571,8 @@ function playFight() {
   }
   if (arrAliveEnemies.length == 0) {
     displayModal("Victory Achieved !");
+    textBubble.textContent = "Welcome to the Atlas Six beta 1.2;";
+    played = false;
     if (myChapters[currentChapter].branches[currentBranch].winnable) {
       document.addEventListener(
         "click",
@@ -631,6 +633,7 @@ function playFight() {
     if (arrAliveHeroes.length - 1 == 0) {
       if (!myChapters[currentChapter].branches[currentBranch].winnable) {
         displayModal(`Battle Lost`);
+        textBubble.textContent = "Welcome to the Atlas Six beta 1.2;";
         currentRound = 0;
         document.addEventListener(
           "click",
