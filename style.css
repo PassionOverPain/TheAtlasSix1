@@ -906,3 +906,20 @@ canvas {
 .visChoice:hover {
 	transform: scale(1.05);
 }
+
+#pgStory {
+	text-align: center;
+	font-family: "IM Fell English", serif;
+	font-size: 1.7rem;
+	white-space: pre-line; /* Allows for multi-line text if needed */
+}
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 0.5s forwards; /* Applies fade-in effect */
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
