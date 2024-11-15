@@ -736,12 +736,59 @@
 			},
 			{
 				"branchId": "branch54",
-				"text": "To Resume here LATER",
+				"text": "Llewellyn and Tino make their way back through the forest, the tension from the earlier spectacle lingering faintly in the air. The distant crackle of twigs keeps them alert, their hands instinctively brushing their weapons.",
 				"character1": "Images/Characters/Bear.webp",
 				"character2": "Images/Characters/Wolf.webp",
 				"event": "none",
 				"choices": []
+			},
+			{
+				"branchId": "branch55",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "changeScene",
+				"background": "picking forest",
+				"choices": []
+			},
+			{
+				"branchId": "branch56",
+				"text": "Suddenly, a rustling ahead stops them in their tracks. Two figures dart between the trees, their movements quick and chaotic. <span class=\"characterName\">Tino:</span> Hasn't enough happended today already ? <br>Tino sighs with a hint of annoyance <br><span class=\"characterName\">Llewellyn:</span> I guess not. Whatever they are... they are <i>definitely small</i>. <br><span class=\"characterName\">Tino:</span> Please not more goblins, they are so difficult to hit. <br><span class=\"characterName\">Llewellyn:</span> Hopefully not. We're a lot slower right now since we are carrying these, if we don't react quickly it could end badly. <br> You decide to:",
+				"character1": "Images/timekeeper.webp",
+				"character2": "Images/titan.webp",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch57",
+				"text": "",
+				"character1": "Images/timekeeper.webp",
+				"character2": "Images/titan.webp",
+				"event": "visualChoices",
+				"choices": [
+					{
+						"choiceId": "0",
+						"imgSrc": "Images/Choices/Act quickly.webp",
+						"option": "Act quickly",
+						"outcome": " ",
+						"character1": "Images/healer.webp",
+						"character2": "Images/eye.webp",
+						"gradient": " linear-gradient(135deg, #3AEB38, #062A92)",
+						"event": "none"
+					},
+					{
+						"choiceId": "1",
+						"imgSrc": "Images/Choices/Do nothing.webp",
+						"option": "Do nothing",
+						"outcome": "",
+						"character1": "Images/healer.webp",
+						"character2": "Images/eye.webp",
+						"gradient": "linear-gradient(black, red)",
+						"event": "none"
+					}
+				]
 			}
+			
 		]
 	}
 ]
