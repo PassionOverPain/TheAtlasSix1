@@ -153,7 +153,7 @@
           {
             "choiceId": "3",
             "option": "",
-            "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all color, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span> Let's go. <i> She opens a portal to place she has visisted, allowing for the group to find safe closure there.</i>",
+            "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all colour, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span> Let's go. <i> She opens a portal to place she has visisted, allowing for the group to find safe closure there.</i>",
             "character1": "Images/timekeeper.webp",
             "character2": "Images/cloakedFigureFront.webp",
             "event": "none"
@@ -770,7 +770,7 @@
             "choiceId": "0",
             "imgSrc": "Images/Choices/Act swiftly.webp",
             "option": "Act swiftly",
-            "outcome": "The shapes emerge from the undergrowth, moving with surprising speed. Instinct takes over as Llewellyn’s sword arcs out, his stance grounded like a fortress. Tino, ever quicker, darts forward, closing the distance in a blur. In a single fluid motion, he drives one of the figures to the ground. <br><span class=\"characterName\">Tino:</span> Mthi !? <br> Tino blurts out, realizing who he’s tackled. Mthi scowls up at him, clutching a bundle of brightly colored plants, her bow askew on her shoulder. <br><span class=\"characterName\">Mthi:</span> Get off me, Tino! <br> Llewellyn halts his blade in a heartbeat, the weapon slicing through the air with precision, stopping mere inches from Jasmin. The edge hums with restrained power, shimmering in the faint light, as if the very air trembles in its wake. <br><span class=\"characterName\">Jasmin:</span> Hey, rude! <br> They realize the consequences of their impulsive actions. <br><span class=\"characterName\">Llewellyn:</span> Oh sorry girls, we thought you were goblins - <br> Both Jasmin and Mthi look at each other in disbelief.<br><span class=\"characterName\">Jasmin:</span> Rude. <br><span class=\"characterName\"> Llewellyn:</span> Not like that, you looked like goblins - <br> Mthi pushes Tino aside, brushing off the dust clinging to her clothes before inspecting the herbs with a sharp, critical eye.",
+            "outcome": "The shapes emerge from the undergrowth, moving with surprising speed. Instinct takes over as Llewellyn’s sword arcs out, his stance grounded like a fortress. Tino, ever quicker, darts forward, closing the distance in a blur. In a single fluid motion, he drives one of the figures to the ground. <br><span class=\"characterName\">Tino:</span> Mthi !? <br> Tino blurts out, realizing who he’s tackled. Mthi scowls up at him, clutching a bundle of brightly coloured plants, her bow askew on her shoulder. <br><span class=\"characterName\">Mthi:</span> Get off me, Tino! <br> Llewellyn halts his blade in a heartbeat, the weapon slicing through the air with precision, stopping mere inches from Jasmin. The edge hums with restrained power, shimmering in the faint light, as if the very air trembles in its wake. <br><span class=\"characterName\">Jasmin:</span> Hey, rude! <br> They realize the consequences of their impulsive actions. <br><span class=\"characterName\">Llewellyn:</span> Oh sorry girls, we thought you were goblins - <br> Both Jasmin and Mthi look at each other in disbelief.<br><span class=\"characterName\">Jasmin:</span> Rude. <br><span class=\"characterName\"> Llewellyn:</span> Not like that, you looked like goblins - <br> Mthi pushes Tino aside, brushing off the dust clinging to her clothes before inspecting the herbs with a sharp, critical eye.",
             "character1": "Images/healer.webp",
             "character2": "Images/eye.webp",
             "gradient": " linear-gradient(orange,red, orange)",
@@ -807,9 +807,58 @@
       },
       {
         "branchId": "branch60",
-        "text": "",
+        "text": "You arrive back at the forest campsite. Zanele has set up a potent fire spell that will incinerate anyone who doesn’t bear the name inscribed on the inner palm of her hand. The fire barrier crackles with an intense, fiery glow, casting an amber hue over the campsite. The heat radiates from the flames, yet the sight is mesmerizing. The intricate patterns of Kurohana fire magic weave through the air, a symphony of colour and energy. Everything about it speaks of power and grace—just like the people from the mountain kingdom. The towering, ornate structures of Kurohana, with their flame-etched roofs and red-hued stone, seem almost like an extension of the very fire that powers them. Zanele stands tall at the heart of it all, her aura as commanding as the flames she controls.",
         "character1": "all",
-        "character2": "none",
+        "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch61",
+        "text": "<span class=\"characterName\">Passion:</span> Me Again, sorry to interrupt (not reallly). You've reached a safe point, indicated by that orb over there to my left. Home is where your heart is and for the Atlas Six, as much as everyone has a physical place to stay, they prefer to be together while navigating the Known World. This home along with other safe points acts as a place of respite, offering you the ability to talk to your friends along with other activities depending on the story point and decisions you have made thus far. Each orb throughout the world is different though, some such as this one require you to have defensive measures in place (Yes yes, you are inside the orb) others allow you to do other things. This does not limit you though from living in the physical world, such as the inn that you were in earlier, see what I did there? , by the way: what was the name of that said inn ? Get it right and I'll reward you, wrong and ... you restart the game 😉.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Aurelia",
+            "outcome": "",
+            "character1": "Images/eye.webp",
+            "character2": "Images/Characters/Game Host.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Bloomhaven",
+            "outcome": "",
+            "character1": "Images/eye.webp",
+            "character2": "Images/Characters/Game Host.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Eryndor",
+            "outcome": "",
+            "character1": "Images/eye.webp",
+            "character2": "Images/Characters/Game Host.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "I don't know",
+            "outcome": "<span class=\"characterName\">Passion:</span>What, you don't know? HeHe you're joking right.... Well then, I might as well restart the game, matter of fact: I might as well delete the game from your local files since you seem to not care much about my effort into this project. The again, you are my favourite one out of the 4 so I will let you off the hook for now.",
+            "character1": "Images/timekeeper.webp",
+            "character2": "none",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch62",
+        "text": "<span class=\"characterName\">Zanele:</span>",
+        "character1": "all",
+        "character2": "Images/Scenes/Orb - Forest Campsite.webp",
         "event": "none",
         "choices": []
       }

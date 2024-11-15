@@ -1,156 +1,156 @@
 [
-	{
-		"Name": "The Sixth Atlas",
-		"Hp": 5000,
-		"maxHp": 5000,
-		"Desc": "The Cloaked Figure stands as a haunting enigma, an apparition in black whose presence seems to consume light and leech warmth from the air. They move with unsettling fluidity, each step a silent echo in the void, as if the shadows themselves were their ally. The dark cloak, frayed and ancient, clings like a shroud, hiding any trace of humanity beneath. But beneath the hood, an elusive glint of eyes gleams with a predatory intelligence, scanning, judging, knowing. In their gaze lies a chilling coldness, a calculated malice—the mark of someone who was once trusted and betrayed that trust with relish. The figure’s aura is one of power and secrecy, an impenetrable shield that commands both awe and terror.",
-		"Type": "Unknown",
-		"Attacks": {
-			"Name": [
-				"Dreadbound Gaze",
-				"Echoes of the Lost",
-				"Oblivion Siphon",
-				"Shadow's Refuge",
-				"Veil of Shadows"
-			],
-			"Power": [65, 70, 85, 90, 65]
-		}
-	},
-	{
-		"Name": "Game Host",
-		"Hp": 300,
-		"maxHp": 300,
-		"Desc": "The Game Host, once an ordinary bandit, has risen to his own peculiar form of infamy. Dressed in mismatched pieces of stolen armor, he hides a ruthless mind behind a disarming grin. Cunning and sly, he’s mastered the art of deception and thrives on rigged games and stolen fortunes. His movements are a blend of practiced swagger and quick reflexes, every motion calculated to deceive. Known for luring his victims into 'friendly' wagers, the Game Host is feared by those who recognize the glint of malice in his eyes—a sharp warning to anyone who dares play his game.",
-		"Type": "Bandit",
-		"Attacks": {
-			"Name": [
-				"Deceptive Strike",
-				"Calculated Gambit",
-				"Cheap Shot",
-				"Taunting Jab",
-				"Hidden Blade"
-			],
-			"Power": [155, 170, 160, 165, 150]
-		}
-	},
-	{
-		"Name": "Goblin Sprinter",
-		"Hp": 120,
-		"maxHp": 120,
-		"Desc": "A wiry goblin with lightning-fast reflexes and an almost wild energy, the Sprinter dashes in and out of reach, striking before opponents can react.",
-		"Type": "Scout",
-		"Attacks": {
-			"Name": [
-				"Quick Stab",
-				"Sprinting Slice",
-				"Darting Strike",
-				"Fleet Footed Jab",
-				"Elusive Jab"
-			],
-			"Power": [45, 50, 48, 47, 46]
-		}
-	},
-	{
-		"Name": "Goblin Crusher",
-		"Hp": 200,
-		"maxHp": 200,
-		"Desc": "The Crusher is a lumbering brute, wielding a rusted club and relying on brute strength to smash anything in his way, though he’s slow on his feet.",
-		"Type": "Brute",
-		"Attacks": {
-			"Name": [
-				"Crushing Blow",
-				"Club Bash",
-				"Heavy Swing",
-				"Ground Pound",
-				"Brutal Slam"
-			],
-			"Power": [60, 65, 62, 58, 63]
-		}
-	},
-	{
-		"Name": "Goblin Knight",
-		"Hp": 180,
-		"maxHp": 180,
-		"Desc": "Donning scraps of mismatched armor, the Goblin Knight fancies himself a noble warrior, though he’s anything but graceful in battle.",
-		"Type": "Defender",
-		"Attacks": {
-			"Name": [
-				"Clumsy Slash",
-				"Rusty Shield Bash",
-				"Heavy Stab",
-				"Defensive Jab",
-				"Armored Swing"
-			],
-			"Power": [50, 55, 52, 49, 53]
-		}
-	},
-	{
-		"Name": "Goblin Tinkerer",
-		"Hp": 140,
-		"maxHp": 140,
-		"Desc": "This crafty goblin carries a bag of crude gadgets, using traps and tricks to frustrate and weaken his foes before they can strike back.",
-		"Type": "Trapper",
-		"Attacks": {
-			"Name": [
-				"Trip Wire",
-				"Blinding Powder",
-				"Caltrops Toss",
-				"Sticky Slime",
-				"Sneaky Slash"
-			],
-			"Power": [45, 48, 46, 44, 47]
-		}
-	},
-	{
-		"Name": "Goblin Scribe",
-		"Hp": 100,
-		"maxHp": 100,
-		"Desc": "Known as the record-keeper, the Scribe hides behind his allies and uses scrolls to cast minor curses, believing his 'words have power.'",
-		"Type": "Support",
-		"Attacks": {
-			"Name": [
-				"Weakening Hex",
-				"Sapping Words",
-				"Flick of Ink",
-				"Minor Curse",
-				"Distracting Chant"
-			],
-			"Power": [40, 42, 39, 41, 43]
-		}
-	},
+  {
+    "Name": "The Sixth Atlas",
+    "Hp": 5000,
+    "maxHp": 5000,
+    "Desc": "The Cloaked Figure stands as a haunting enigma, an apparition in black whose presence seems to consume light and leech warmth from the air. They move with unsettling fluidity, each step a silent echo in the void, as if the shadows themselves were their ally. The dark cloak, frayed and ancient, clings like a shroud, hiding any trace of humanity beneath. But beneath the hood, an elusive glint of eyes gleams with a predatory intelligence, scanning, judging, knowing. In their gaze lies a chilling coldness, a calculated malice—the mark of someone who was once trusted and betrayed that trust with relish. The figure’s aura is one of power and secrecy, an impenetrable shield that commands both awe and terror.",
+    "Type": "Unknown",
+    "Attacks": {
+      "Name": [
+        "Dreadbound Gaze",
+        "Echoes of the Lost",
+        "Oblivion Siphon",
+        "Shadow's Refuge",
+        "Veil of Shadows"
+      ],
+      "Power": [65, 70, 85, 90, 65]
+    }
+  },
+  {
+    "Name": "Game Host",
+    "Hp": 300,
+    "maxHp": 300,
+    "Desc": "The Game Host, once an ordinary bandit, has risen to his own peculiar form of infamy. Dressed in mismatched pieces of stolen armor, he hides a ruthless mind behind a disarming grin. Cunning and sly, he’s mastered the art of deception and thrives on rigged games and stolen fortunes. His movements are a blend of practiced swagger and quick reflexes, every motion calculated to deceive. Known for luring his victims into 'friendly' wagers, the Game Host is feared by those who recognize the glint of malice in his eyes—a sharp warning to anyone who dares play his game.",
+    "Type": "Bandit",
+    "Attacks": {
+      "Name": [
+        "Deceptive Strike",
+        "Calculated Gambit",
+        "Cheap Shot",
+        "Taunting Jab",
+        "Hidden Blade"
+      ],
+      "Power": [55, 70, 60, 65, 50]
+    }
+  },
+  {
+    "Name": "Goblin Sprinter",
+    "Hp": 120,
+    "maxHp": 120,
+    "Desc": "A wiry goblin with lightning-fast reflexes and an almost wild energy, the Sprinter dashes in and out of reach, striking before opponents can react.",
+    "Type": "Scout",
+    "Attacks": {
+      "Name": [
+        "Quick Stab",
+        "Sprinting Slice",
+        "Darting Strike",
+        "Fleet Footed Jab",
+        "Elusive Jab"
+      ],
+      "Power": [45, 50, 48, 47, 46]
+    }
+  },
+  {
+    "Name": "Goblin Crusher",
+    "Hp": 200,
+    "maxHp": 200,
+    "Desc": "The Crusher is a lumbering brute, wielding a rusted club and relying on brute strength to smash anything in his way, though he’s slow on his feet.",
+    "Type": "Brute",
+    "Attacks": {
+      "Name": [
+        "Crushing Blow",
+        "Club Bash",
+        "Heavy Swing",
+        "Ground Pound",
+        "Brutal Slam"
+      ],
+      "Power": [60, 65, 62, 58, 63]
+    }
+  },
+  {
+    "Name": "Goblin Knight",
+    "Hp": 180,
+    "maxHp": 180,
+    "Desc": "Donning scraps of mismatched armor, the Goblin Knight fancies himself a noble warrior, though he’s anything but graceful in battle.",
+    "Type": "Defender",
+    "Attacks": {
+      "Name": [
+        "Clumsy Slash",
+        "Rusty Shield Bash",
+        "Heavy Stab",
+        "Defensive Jab",
+        "Armored Swing"
+      ],
+      "Power": [50, 55, 52, 49, 53]
+    }
+  },
+  {
+    "Name": "Goblin Tinkerer",
+    "Hp": 140,
+    "maxHp": 140,
+    "Desc": "This crafty goblin carries a bag of crude gadgets, using traps and tricks to frustrate and weaken his foes before they can strike back.",
+    "Type": "Trapper",
+    "Attacks": {
+      "Name": [
+        "Trip Wire",
+        "Blinding Powder",
+        "Caltrops Toss",
+        "Sticky Slime",
+        "Sneaky Slash"
+      ],
+      "Power": [45, 48, 46, 44, 47]
+    }
+  },
+  {
+    "Name": "Goblin Scribe",
+    "Hp": 100,
+    "maxHp": 100,
+    "Desc": "Known as the record-keeper, the Scribe hides behind his allies and uses scrolls to cast minor curses, believing his 'words have power.'",
+    "Type": "Support",
+    "Attacks": {
+      "Name": [
+        "Weakening Hex",
+        "Sapping Words",
+        "Flick of Ink",
+        "Minor Curse",
+        "Distracting Chant"
+      ],
+      "Power": [40, 42, 39, 41, 43]
+    }
+  },
 
-	{
-		"Name": "Prismara",
-		"Hp": 600,
-		"maxHp": 600,
-		"Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
-		"Type": "Mythical",
-		"Attacks": {
-			"Name": [
-				"Claw Strike",
-				"Flash-render",
-				"Mind Fog",
-				"Sonic Roar",
-				"Tail lash"
-			],
-			"Power": [35, 80, 25, 50, 45]
-		}
-	},
-	{
-		"Name": "FrostFang",
-		"Hp": 500,
-		"maxHp": 500,
-		"Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
-		"Type": "Ice",
-		"Attacks": {
-			"Name": [
-				"Avalanche Howl",
-				"Blizzard Breath",
-				"Frostbite",
-				"Subzero",
-				"Winter's wake"
-			],
-			"Power": [5, 55, 65, 50, 40]
-		}
-	}
+  {
+    "Name": "Prismara",
+    "Hp": 600,
+    "maxHp": 600,
+    "Desc": "Cloaked in shimmering scales, this dragon haunts the Bloodstone Mountains, striking terror into the hearts of those who dare to venture near. With eyes like burning coals and a roar that echoes the wails of the damned, it feeds on fear, leaving only silence and despair in its wake.",
+    "Type": "Mythical",
+    "Attacks": {
+      "Name": [
+        "Claw Strike",
+        "Flash-render",
+        "Mind Fog",
+        "Sonic Roar",
+        "Tail lash"
+      ],
+      "Power": [35, 80, 25, 50, 45]
+    }
+  },
+  {
+    "Name": "FrostFang",
+    "Hp": 500,
+    "maxHp": 500,
+    "Desc": "An Eternal beast that moves with an otherworldly grace, appearing and disappearing within the snow. Its ethereal form gives it an almost ghostly quality, making it a haunting figure in the winter night.",
+    "Type": "Ice",
+    "Attacks": {
+      "Name": [
+        "Avalanche Howl",
+        "Blizzard Breath",
+        "Frostbite",
+        "Subzero",
+        "Winter's wake"
+      ],
+      "Power": [5, 55, 65, 50, 40]
+    }
+  }
 ]

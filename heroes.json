@@ -55,7 +55,7 @@
         "Smash the ground, creating shockwaves that deal area damage to 4 enemies.",
         "Boosts allies' attack power for a short duration."
       ],
-      "Power": [1400, 50, 85, 40],
+      "Power": [140, 50, 85, 40],
       "Type": ["Attack", "Heal", "Attack", "Heal"],
       "Cost": [75, 35, 70, 30],
       "CostClass": ["Stamina", "Mana", "Stamina", "Stamina"],
