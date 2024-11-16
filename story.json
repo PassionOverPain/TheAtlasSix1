@@ -856,7 +856,15 @@
 			},
 			{
 				"branchId": "branch62",
-				"text": "<span class=\"characterName\">Zanele:</span> Finally, you guys are back. <br> Zanele takes your hand and pulls you into the orb. <br><span class=\"characterName\">Mthi:</span> I can sense you put a lot of enegry into this Zanele.",
+				"text": "<span class=\"characterName\">Zanele:</span> Finally, you guys are back. <br> Zanele takes your hand and pulls you into the orb. <br><span class=\"characterName\">Mthi:</span> I can sense you put a lot of enegry into this Zanele. <br><span class=\"characterName\">Zanele:</span> Of course I did. I don’t do things halfway. Besides, with the lot of you roaming about, I need to make sure we’re not ambushed again. <br> The orb’s fiery barrier pulses around you, its light casting warm shadows on the group. The air inside feels charged, almost alive with Zanele's fire magic.<br><span class=\"characterName\">Jasmin:</span> It’s beautiful, though. Trust Zanele to make protection look like an art piece.<br><span class=\"characterName\">Zanele:</span> <i> Ofcourse my dear</i>. <br><span class=\"characterName\">Llewellyn:</span> Appreciation’s nice and all, but how do we leave without torching ourselves? <br><span class=\"characterName\">Zanele:</span> Relax, Llewellyn. The barrier knows our names - we're free to enter and exit safely. I can also block the enterance thus nothing enters or exits completey.",
+				"character1": "all",
+				"character2": "Images/Scenes/Orb - Forest Campsite.webp",
+				"event": "none",
+				"choices": []
+			},
+			{
+				"branchId": "branch63",
+				"text": "<span class=\"characterName\">Tino:</span> Tino is such a <i> great name </i> though, needless to say that so many bear it. What if another Tino tries to enter? <br><span class=\"characterName\">Zanele:</span> Since it's on my hand, the barrier responds to my memories therefore only <i> our </i> Tino can enter. <br><span class=\"characterName\">Tino:</span> You honour me, <i>princess</i>. <br><span class=\"characterName\">Zanele:</span> Great, looks like we found who's on watch duty.",
 				"character1": "all",
 				"character2": "Images/Scenes/Orb - Forest Campsite.webp",
 				"event": "none",
