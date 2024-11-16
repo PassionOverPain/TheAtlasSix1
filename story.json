@@ -869,6 +869,75 @@
 				"character2": "Images/Scenes/Orb - Forest Campsite.webp",
 				"event": "none",
 				"choices": []
+			},
+			{
+				"branchId": "branch64",
+				"text": "",
+				"character1": "none",
+				"character2": "none",
+				"event": "visualChoices",
+				"choices": [
+					{
+						"choiceId": "0",
+						"option": "Jasmin",
+						"outcome": "<span class=\"characterName\">Jasmin:</span> <i>With no words She hugs you </i>... I thought you were gone. You took quite a hit... all this time...we should have never trusted them. <i> She looks into the north to a cloaked figure</i>.",
+						"character1": "Images/healer.webp",
+						"character2": "none",
+						"imgSrc": "Images/healer.webp",
+						"gradient": "linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1)",
+						"event": "none"
+					},
+					{
+						"choiceId": "1",
+						"option": "Llewellyn",
+						"outcome": "<span class=\"characterName\">Llewellyn:</span> Ah glad to see you've woken up from that sleep you were in. As you may or may not remember. <i>He points to a cloaked figure</i>. I don't know how but we need to stop them.",
+						"character1": "Images/titan.webp",
+						"character2": "none",
+						"imgSrc": "Images/titan.webp",
+						"gradient": "radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e)",
+						"event": "none"
+					},
+					{
+						"choiceId": "2",
+						"option": "Mthi",
+						"outcome": "<span class=\"characterName\">Mthi:</span> Do my eyes deceive me? What would we do without you? Don't go doing that again. <i>She smiles faintly and hugs you.</i> Anyway our problem lies with them. <i> Mthi turns to face the cloaked figure in the distance. </i>",
+						"character1": "Images/eye.webp",
+						"character2": "none",
+						"imgSrc": "Images/eye.webp",
+						"gradient": "linear-gradient(195deg, #ff00c3, #d123ba, #a42dab, #7b2f97, #552b80, #342465, #181a48, #050b2b)",
+						"event": "none"
+					},
+					{
+						"choiceId": "3",
+						"option": "Tino",
+						"outcome": "<span class=\"characterName\">Tino:</span> Well well well, your return is right on time. Thank you for not dying on us... at least yet. <i>He smiles at you </i>. Although for now, I don't see us getting out of this one. <i> He states while looking at a cloaked figure </i>.",
+						"character1": "Images/timekeeper.webp",
+						"character2": "none",
+						"imgSrc": "Images/timekeeper.webp",
+						"gradient": "linear-gradient(90deg, #dc781f, #b8860b, #8b4513)",
+						"event": "none"
+					},
+					{
+						"choiceId": "4",
+						"option": "Zanele",
+						"outcome": "<span class=\"characterName\">Zanele:</span> You poor little thing... I thought you were dead. <i>She hugs you with a sigh of relief</i>. We need to make them pay for this <i>She looks at a cloaked figure in the distance </i> for everything...",
+						"character1": "Images/phoenix.webp",
+						"character2": "none",
+						"imgSrc": "Images/phoenix.webp",
+						"gradient": "linear-gradient(45deg, #7d0928, #962521, #ad3e0f, #c15900, #d27500, #de9200, #e6b100, #e8d103)",
+						"event": "none"
+					},
+					{
+						"choiceId": "5",
+						"option": "Sleep",
+						"outcome": "",
+						"character1": "all",
+						"character2": "none",
+						"imgSrc": "Images/Choices/Sleep.webp",
+						"gradient": "linear-gradient(violet, pink)",
+						"event": "none"
+					}
+				]
 			}
 		]
 	}
