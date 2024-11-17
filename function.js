@@ -8,7 +8,7 @@ let arrChoices = [];
 let Encyclopedia = [];
 let currentRound = 0;
 let currentChapter = 0;
-let currentBranch = 63;
+let currentBranch = 0;
 let choiceNum = null;
 let encNum = 0;
 // Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
@@ -769,6 +769,7 @@ function displayChapter(branch) {
 	p.innerHTML = branch.text;
 	// revealText(branch.text);
 	chapterText.appendChild(p);
+	document.getElementById("storyLine").scrollTop = 0; // This will enable scrolling back to the top of the page
 	addstoryImage(branch);
 
 	if (branch.event != "none") {
