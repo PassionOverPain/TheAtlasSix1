@@ -321,7 +321,7 @@ class ExplosionParticle {
 		this.velocityX = (Math.random() - 0.5) * 6;
 		this.velocityY = (Math.random() - 0.5) * 6;
 		this.life = 30; // Particle life in frames
-		this.alpha = 1; // Initial opacity
+		this.alpha = 1;
 	}
 
 	update() {
