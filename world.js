@@ -129,6 +129,9 @@ function checkForMatch() {
 }
 
 function disableCards() {
+	const correctSound = new Audio("Audio/Effects/Correct.mp3");
+	correctSound.currentTime = 0;
+	correctSound.play();
 	firstCard.removeEventListener("click", flipCard);
 	secondCard.removeEventListener("click", flipCard);
 	resetBoard();
