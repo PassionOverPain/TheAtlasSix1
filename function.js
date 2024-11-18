@@ -769,8 +769,8 @@ function displayChapter(branch) {
   choicesContainer.innerHTML = "";
   const p = document.createElement("p");
   p.innerHTML = branch.text;
-  console.log(arrChoices);
-  // revealText(branch.text);
+  //   console.log(arrChoices);
+
   chapterText.appendChild(p);
   document.getElementById("storyLine").scrollTop = 0; // This will enable scrolling back to the top of the page
   addstoryImage(branch);
@@ -1099,6 +1099,9 @@ function renderChoices(branch) {
   const container = document.getElementById("visChoiceCon");
   container.innerHTML = "";
 
+  const hoverSound = new Audio("Audio/Effects/ChoiceSwipe.mp3");
+  const clickSound = new Audio("Audio/Effects/ChoiceClick.mp3");
+
   choices.forEach((choice, index) => {
     const choiceDiv = document.createElement("div");
     choiceDiv.classList.add("visChoice");
@@ -1122,6 +1125,8 @@ function renderChoices(branch) {
     choiceDiv.addEventListener(
       "click",
       () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
         arrChoices.push(index);
         chapterText.innerHTML = branch.choices[index].outcome;
         addstoryImage(choice);
@@ -1145,5 +1150,10 @@ function renderChoices(branch) {
     );
 
     container.appendChild(choiceDiv);
+
+    choiceDiv.addEventListener("mouseenter", () => {
+      hoverSound.currentTime = 0;
+      hoverSound.play();
+    });
   });
 }

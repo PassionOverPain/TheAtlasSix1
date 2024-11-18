@@ -1041,20 +1041,28 @@
           {
             "choiceId": "0",
             "option": "Play",
-            "outcome": "<span class=\"characterName\">Llewellyn:</span> Yay. I'll start just to give you some guidance. Llewellyn tosses the first stone, his movements fluid and precise. The stone skims across the water’s surface, bouncing effortlessly before sinking into the pond. He gives you a quick glance, awaiting your attempt. <br> You focus, selecting a smooth stone from the sand. With careful aim, you hurl it forward, but the rock sinks after a single, dismal hop. Llewellyn chuckles, the sound lighthearted but unmistakably triumphant. <br><span class=\"characterName\">Llewellyn:</span> Not bad for a first try. <br><span class=\"characterName\">You:</span> Right it didn't even make it to two hops. <br><span class=\"characterName\">Llewellyn:</span> Tilt your hand. <br> He retrieves another stone and throws it, this one covering double the distance as the first. <br><span class=\"characterName\">Llewellyn:</span> Like that, <i>simple</i>. <br> Determined, you grab another stone and try again, but no matter how much effort you put in, your throws fall short. Llewellyn is relentless, offering pointers between throws but never missing the opportunity to outdo you.",
+            "outcome": "<span class=\"characterName\">Llewellyn:</span> Yay. I'll start just to give you some guidance. Llewellyn tosses the first stone, his movements fluid and precise. The stone skims across the water’s surface, bouncing effortlessly before sinking into the pond. He gives you a quick glance, awaiting your attempt. <br> You focus, selecting a smooth stone from the sand. With careful aim, you hurl it forward, but the rock sinks after a single, dismal hop. Llewellyn chuckles, the sound lighthearted but unmistakably triumphant. <br><span class=\"characterName\">Llewellyn:</span> Not bad for a first try. <br><span class=\"characterName\">You:</span> Right it didn't even make it to two hops. <br><span class=\"characterName\">Llewellyn:</span> Tilt your hand. <br> He retrieves another stone and throws it, this one covering double the distance as the first. <br><span class=\"characterName\">Llewellyn:</span> Like that, <i>simple</i>. <br> Determined, you grab another stone and try again, but no matter how much effort you put in, your throws fall short. Llewellyn is relentless, offering pointers between throws but never missing the opportunity to outdo you. <br><span class=\"characterName\">Llewellyn:</span> Looks like the stones favor me tonight. <br> He says while tossing the last one with a lazy flick. Despite the loss, there’s joy to the moment, a bond forming in the shared experience. The challenge might not have ended in your favor, but Llewellyn’s genuine enjoyment makes it hard to feel bitter.",
             "character1": "none",
-            "character2": "Images/healer.webp",
+            "character2": "Images/titan.webp",
             "event": "none"
           },
           {
             "choiceId": "1",
             "option": "Don't Play",
-            "outcome": "",
+            "outcome": "<span class=\"characterName\">You:</span> I think I'll pass. <br> Llewellyn glances at you, tossing a stone between his fingers. His grin is teasing but not insistent. <br><span class=\"characterName\">Llewellyn:</span> Not feeling competitive tonight? Fair enough. <br>  He says with a shrug, his tone light. <br> He steps closer to the edge of the pond, scanning the ground for another smooth stone. Finding one, he flicks it out over the water with a sharp, practiced motion. The stone skips across the pond's surface, sending out rippling rings with each graceful hop before sinking quietly beneath the water. The soft splashes of stones gliding across the pond mingle with the chirps of crickets and the occasional swish of leaves caught in the night air. In the distance, the campfire’s faint glow flickers, its light just skimming the edge of the water, while the moon’s pale radiance washes over the pond in a cool, silvery sheen. After sending a few more stones skittering across the pond, Llewellyn straightens and turns back toward you. <br><span class=\"characterName\">Chronos:</span> Alright, I’ve had my fun. <br> He says with a half-smile while walking over to settle beside you on the soft grass. He leans back on his elbows, his expression distant yet calm as his gaze lingers on the still surface of the pond. <br><span class=\"characterName\">You:</span> Always finding a way to have fun. <br> Llewellyn chuckles at your remark as he knows it's true. With no defense, he responds: <br><span class=\"characterName\">Llewellyn:</span> Skipping stones, as simple as it is, has always been a way to clear my head.",
             "character1": "none",
-            "character2": "Images/healer.webp",
+            "character2": "Images/titan.webp",
             "event": "none"
           }
         ]
+      },
+      {
+        "branchId": "branch72",
+        "text": "<span class=\"characterName\">Llewellyn:</span> Anything to talk about ?",
+        "character1": "none",
+        "character2": "Images/healer.webp",
+        "event": "choiceLoop",
+        "choices": []
       }
     ]
   }
