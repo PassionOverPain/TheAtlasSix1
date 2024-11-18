@@ -872,7 +872,7 @@
       },
       {
         "branchId": "branch64",
-        "text": "The forest at night hums with life, a symphony of distant calls and rustling leaves blending into the backdrop. The magical orb encasing the campsite glows faintly, its fiery aura a stark contrast to the cool, dark expanse beyond. Outside, unseen animals chirp and chatter, their sounds weaving into the serenity of the evening.At the center, the campfire blazes with a steady, warm glow, its flickering flames casting dancing shadows on the group's faces. The light bathes them in an amber hue, softening their features and creating a sense of familiratiy.Zanele rests her head gently on Llewellyn's shoulder, her usual guarded demeanor softened by the moment. Across from them, Mthi and Jasmin sit back-to-back, their postures relaxed. Mthi absently twirls an arrow between her fingers, while Jasmin hums a quiet tune, her fingers brushing against the edges of her druidic charm.",
+        "text": "The forest at night hums with life, a symphony of distant calls and rustling leaves blending into the backdrop. The magical orb encasing the campsite glows faintly, its fiery aura a stark contrast to the cool, dark expanse beyond. Outside, unseen animals chirp and chatter, their sounds weaving into the serenity of the evening.At the center, the campfire blazes with a steady, warm glow, its flickering flames casting dancing shadows on the group's faces. The light bathes them in an amber hue, softening their features and creating a sense of familiratiy.Zanele rests her head gently on Llewellyn's shoulder, her usual guarded demeanor softened by the moment. Across from them, Mthi and Jasmin sit back-to-back, their postures relaxed. Mthi absently twirls an arrow between her fingers, while Jasmin hums a quiet tune, her fingers brushing against the edges of her druidic charm. <br> The campsite now offers you the ability to interact with the group.",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
         "event": "none",
@@ -898,7 +898,7 @@
           {
             "choiceId": "1",
             "option": "Llewellyn",
-            "outcome": "",
+            "outcome": "You approach Llewellyn, who seems to be invested in stone skipping. His fingers brush the flat stones, and each one pulses with a faint glow. As he flicks his wrist, the stones don’t just skip—they glide across the water, suspended in midair for a brief moment before they break the silence. Each impact sends out ripples that spread across the pond like an echo.",
             "character1": "none",
             "character2": "Images/titan.webp",
             "imgSrc": "Images/titan.webp",
@@ -949,11 +949,11 @@
       },
       {
         "branchId": "branch67",
-        "text": "You should NOT be HERE",
+        "text": ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Error - Broken ChoiceLoop<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
         "event": "multipleChoices",
-        "goToBranches": [68, 0, 70, 4, 5, 6],
+        "goToBranches": [68, 71, 0, 0, 0, 0],
         "choices": []
       },
       {
@@ -1014,30 +1014,47 @@
           },
           {
             "choiceId": "3",
-            "option": "Conclude Conversation",
-            "outcome": "<span class=\"characterName\">You:</span> You can choose",
+            "option": "Nothing else",
+            "outcome": "The cool night air envelops you as the campfire crackles, casting flickering shadows across the forest floor. The gentle sounds of the wilderness—chirping insects, the rustle of leaves—create a peaceful atmosphere.The firelight reflects off the herbs she’s carefully arranging, her movements rhythmic and serene. <br><span class=\"characterName\">Jasmin:</span> Leaving so soon? <br><span class=\"characterName\">You:</span> I need to check up on the others. <br><span class=\"characterName\">Jasmin:</span> Once you're done, you should rest. <br> She nods at you then continues to absorb herself in her work.",
             "character1": "none",
             "character2": "Images/healer.webp",
             "event": "none"
           }
         ],
-        "closingChoice": 4
+        "closingChoice": 3
       },
       {
         "branchId": "branch70",
-        "text": "Jasmin continues speaking",
+        "text": "",
         "character1": "none",
-        "character2": "Images/healer.webp",
-        "event": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
         "choices": []
       },
       {
-        "branchId": "branch71+++++++++++++++++++++++++++++++++++++++++++++++++++++++",
-        "text": "This is Mthis talk",
+        "branchId": "branch71",
+        "text": "<span class=\"characterName\">You:</span> Having Fun? <br><span class=\"characterName\">Llewellyn:</span> Not as much without a competitor. <br> He rubs his hands together, a playful glint in his eye, signaling that he's ready for a challenge. <br><span class=\"characterName\">You:</span> Aren't you an <i> earth type </i> stone skipping is literally childsplay to you. <br><span class=\"characterName\">Llewellyn:</span> I promise I'll go easy, for now atleast. <br> You decide to: ",
         "character1": "none",
-        "character2": "Images/eye.webp",
+        "character2": "Images/titan.webp",
         "event": "none",
-        "choices": []
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Play",
+            "outcome": "<span class=\"characterName\">Llewellyn:</span> Yay. I'll start just to give you some guidance. Llewellyn tosses the first stone, his movements fluid and precise. The stone skims across the water’s surface, bouncing effortlessly before sinking into the pond. He gives you a quick glance, awaiting your attempt. <br> You focus, selecting a smooth stone from the sand. With careful aim, you hurl it forward, but the rock sinks after a single, dismal hop. Llewellyn chuckles, the sound lighthearted but unmistakably triumphant. <br><span class=\"characterName\">Llewellyn:</span> Not bad for a first try. <br><span class=\"characterName\">You:</span> Right it didn't even make it to two hops. <br><span class=\"characterName\">Llewellyn:</span> Tilt your hand. <br> He retrieves another stone and throws it, this one covering double the distance as the first. <br><span class=\"characterName\">Llewellyn:</span> Like that, <i>simple</i>. <br> Determined, you grab another stone and try again, but no matter how much effort you put in, your throws fall short. Llewellyn is relentless, offering pointers between throws but never missing the opportunity to outdo you.",
+            "character1": "none",
+            "character2": "Images/healer.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Don't Play",
+            "outcome": "",
+            "character1": "none",
+            "character2": "Images/healer.webp",
+            "event": "none"
+          }
+        ]
       }
     ]
   }

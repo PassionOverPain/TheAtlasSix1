@@ -11,7 +11,8 @@ let currentChapter = 0; //The current story chapter
 let currentBranch = 64; //The current story branch
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
-let startBranch = -1; // The starting branch for a multi choice scene between different characters.
+let startBranch = -1;
+let multiChoicesEndNum; // The starting branch for a multi choice scene between different characters.
 // Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
 // Feature to Add 2.  For choice loop, add a start branch so we can jump through character side quests
 function openTab(tab, hero) {
@@ -768,6 +769,7 @@ function displayChapter(branch) {
   choicesContainer.innerHTML = "";
   const p = document.createElement("p");
   p.innerHTML = branch.text;
+  console.log(arrChoices);
   // revealText(branch.text);
   chapterText.appendChild(p);
   document.getElementById("storyLine").scrollTop = 0; // This will enable scrolling back to the top of the page
@@ -968,6 +970,8 @@ function storyEvents(branch) {
     checkChoices(branch.choice, branch.values, branch.endBranch);
   } else if (branch.event == "multipleChoices") {
     multipleChoices(branch);
+  } else if (branch.event == "multipleChoicesEnd") {
+    multipleChoicesEnd();
   }
   if (branch.event == "triggerBattle") {
     document.getElementById(`myMap`).style.display = "none";
@@ -1071,10 +1075,15 @@ function checkChoices(choiceIndex, values, endBranch) {
 }
 function multipleChoices(branch) {
   startBranch = currentBranch - 1;
-  console.log(currentBranch);
+  console.log(startBranch);
   currentBranch = branch.goToBranches[arrChoices[arrChoices.length - 1]] - 2;
-  console.log(arrChoices);
+  multiChoicesEndNum = arrChoices.length - 1;
   console.log(currentBranch);
+  displayStory();
+}
+function multipleChoicesEnd() {
+  arrChoices.splice(multiChoicesEndNum);
+  currentBranch = startBranch;
   displayStory();
 }
 // Display the visual choices
