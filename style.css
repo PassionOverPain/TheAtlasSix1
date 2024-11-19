@@ -270,12 +270,6 @@ i {
   background-position: center;
   background-size: cover;
 }
-#narrator {
-  position: relative;
-  left: -5%;
-  height: 60vh;
-  width: 20vw;
-}
 .quest {
   width: fit-content;
   height: fit-content;
