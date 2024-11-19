@@ -74,7 +74,7 @@
         "branchId": "branch3",
         "text": "<i>You turn to see the others rushing towards both of you.</i><br><span class=\"characterName\">Jasmin:</span>We can't hold on for much longer. I can only heal everyone a couple more times then I am out of Mana.<br><span class=\"characterName\">Mthi:</span> And I can't transform for a prelonged period of time now thanks to their Mana depletion field.<br><span class=\"characterName\">Tino:</span> Then I'm presuming you can't transform into a Titan for long as well? <i>He looks at Llewellyn.</i><br><span class=\"characterName\">Llewellyn:</span> Yea, I am still able to do a good amount of damage but at the cost of defense. <br><span class=\"characterName\">Zanele:</span> Clearly we need a plan or something. This can't be the end. <br>The group looks to you, awaiting a decision that will determine the stratergy. You decide to: ",
         "character1": "all",
-        "character2": "Images/cloakedFigureBack.webp",
+        "character2": "Images/Characters/cloakedFigureBack.webp",
         "event": "none",
         "choices": [
           {
@@ -82,7 +82,7 @@
             "option": "Jasmin to heal the group and set up a defense barrier",
             "outcome": "<span class=\"characterName\">Jasmin:</span> I'll heal you guys first then we can move on to an attack.<br><span class=\"characterName\">Llewellyn:</span> There won't be much room to plan an effective attack though.<br> <span class=\"characterName\">Jasmin:</span> I know, the mana between all of us should be enough for one more transformation. <i> jasmin heals the group</i> <br><span class=\"characterName\">Zanele:</span> Thank you <i>She nods.</i><br><span class=\"characterName\">Mthi:</span> Collectively we should have enough mana now to hold off.<br> <span class=\"characterName\">Jasmin:</span> Okay <i> The group activates a defensive barrier around them.</i> This should hold.",
             "character1": "all",
-            "character2": "Images/cloakedFigureBack.webp",
+            "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
           },
           {
@@ -90,7 +90,7 @@
             "option": "Llewellyn to transform into a Titan and strike the enemy",
             "outcome": "<span class=\"characterName\">Llewellyn:</span> There is only one way to get through: full force.<br><span class=\"characterName\">Mthi:</span> That's took risky though, you might not make it.<br><span class=\"characterName\">Llewellyn:</span> That mana field is not going anyway anytime soon.<br><span class=\"characterName\">Tino:</span> He's got a point, if we combine the attack force with a rip through time maybe we can deal enough damage.<br><span class=\"characterName\">Mthi:</span> I'll guide you incase things get...messier. <br><i>Both Llewellyn and Tino nod</i>",
             "character1": "all",
-            "character2": "Images/cloakedFigureBack.webp",
+            "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
           },
           {
@@ -98,7 +98,7 @@
             "option": "Mthi to sneak up and hypnotize the enemy",
             "outcome": "<span class=\"characterName\">Mthi:</span> Somehow they've managed to dodge all my arrows till this point. Maybe if I try to gain control of them even just for a second. <br><span class=\"characterName\">Zanele:</span> Don't you think that they are too powerful for mind control? <br> <span class=\"characterName\">Jasmin:</span> Yea we couldn't land a single physical attack, mental attacks are another story. <br> <span class=\"characterName\">Mthi:</span> It's worth a shot... and I always take mine. <i>Mthi smirks </i>. <br> <span class=\"characterName\">Zanele:</span>... Just don't die.",
             "character1": "all",
-            "character2": "Images/cloakedFigureBack.webp",
+            "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
           },
           {
@@ -106,7 +106,7 @@
             "option": "Tino stops time, giving the group enough time to escape the battlefield",
             "outcome": "<span class=\"characterName\">Tino:</span> Maybe we just need a good amount of time to get out of this mess. <br> <span class=\"characterName\">Llewellyn:</span> What about our allies? <br><span class=\"characterName\">Tino:</span> There won't be enough time... <br> <span class=\"characterName\">Zanele:</span> If that's a choice we must make...<br> <span class=\"characterName\">Tino:</span> Nothing else needs to said. <i>Tino stops time </i>",
             "character1": "all",
-            "character2": "Images/cloakedFigureBack.webp",
+            "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
           },
           {
@@ -114,7 +114,7 @@
             "option": "Zanele to burn the battlefield, losing allies but ensuring the enemy is gone",
             "outcome": "<br> <span class=\"characterName\">Zanele:</span> We need to get out of this, one way or the other. <br> <span class=\"characterName\">Jasmin:</span> And you are suggesting? <br> <span class=\"characterName\">Zanele:</span> Using Inferno around us, we can ensure that the enemy is gone but - <br> <span class=\"characterName\">Mthi:</span> That flame will also devour everything else outside of the protective circle. <br> <span class=\"characterName\">Zanele:</span> Yes. <br> <span class=\"characterName\">Jasmin:</span> At this point- <br> <span class=\"characterName\">Tino:</span> We need to ensure that they are stopped, no matter the cost. <br> <span class=\"characterName\">Zanele:</span> Okay... <i> Zanele lights the circle and everyone steps inside </i>.",
             "character1": "all",
-            "character2": "Images/cloakedFigureBack.webp",
+            "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
           }
         ]
@@ -123,7 +123,7 @@
         "branchId": "branch4",
         "text": "<span class=\"characterName\">Cloaked Figure:</span> So That's It?!?",
         "character1": "all",
-        "character2": "Images/cloakedFigureFront.webp",
+        "character2": "Images/Characters/cloakedFigureFront.webp",
         "event": "skipChoices",
         "choices": [
           {
@@ -131,7 +131,7 @@
             "option": "",
             "outcome": "<span class=\"characterName\">Cloaked Figure:</span> The so-called mighty Five... hiding behind barriers instead of facing me head-on? <i> With a single tap, the Cloaked Figure shatters the protective field into a cascade of glittering fragments.</i>.Your cowardice is laughable. .<br><i>In the blink of an eye, the enemy vanishes, reappearing inches from your face.</i><br> <span class=\"characterName\">Cloaked Figure:</span> I suppose I'll just cut off your heads, then.",
             "character1": "all",
-            "character2": "Images/cloakedFigureFront.webp",
+            "character2": "Images/Characters/cloakedFigureFront.webp",
             "event": "none"
           },
           {
@@ -139,7 +139,7 @@
             "option": "",
             "outcome": "<span class=\"characterName\">Llewellyn:</span> Now! <br> Llewellyn roars as he transforms into a towering Titan, his every move supercharged by Tino's time magic, making him a blur of speed and power. Together, they launch a relentless assault of attacks on the cloaked figure, each attack crashing down with earth-shaking force. The cloaked figure remained unscaled, dodging at faster speeds. Llewellyn raises his colossal fist for a final strike, slamming it down with all his might. The ground trembles, but the cloaked figure meets the blow with a single hand, stopping the attack effortlessly. <br> <span class=\"characterName\">Cloaked Figure:</span> Hmm....  you done? <br> The group rallies together, charging into another fierce battle, ready to face the enemy once more.",
             "character1": "Images/Assets/Titan Terror.webp",
-            "character2": "Images/cloakedFigureFront.webp",
+            "character2": "Images/Characters/cloakedFigureFront.webp",
             "event": "none"
           },
           {
@@ -147,7 +147,7 @@
             "option": "",
             "outcome": "<span class=\"characterName\">Mthi:</span> Just need the perfect angle.<i>She dashes through the chaos, weaving effortlessly between enemies, her eyes locked on the cloaked figure.</i> <br><span class=\"characterName\">Cloaked Figure:</span> Mthi... perhaps you’ll prove to be a worthy opponent. <br> <span class=\"characterName\">Mthi:</span> Can't say the same for you. <i>She fires an illusionary arrow that splits into a barrage of identical arrows, each one indistinguishable from the original.</i> <br>The cloaked figure, unphased, snatches the real arrow mid-air with chilling precision.<br><span class=\"characterName\">Cloaked Figure:</span> Let me guess... now comes the hypnosis?<i> A sinister grin spreads across their face, laced with dark intent.</i> <br><span class=\"characterName\">Mthi:</span> <i>Mthi reaches out to seize control of the figure's mind, but instead, she’s violently pulled into a whirlwind of her darkest nightmares. Fear floods her senses as her worst terrors rise to the surface, drowning her in a horrifying reality she can't escape.</i> <br> <span class=\"characterName\">Llewellyn:</span>  Mthi! Change of plan - attack head on. <i>Without hesitation, the group surges forward, weapons drawn, charging into another deadly clash with the enemy, ready to face whatever chaos awaits.</i> ",
             "character1": "Images/eye2.webp",
-            "character2": "Images/cloakedFigureFront.webp",
+            "character2": "Images/Characters/cloakedFigureFront.webp",
             "event": "none"
           },
           {
@@ -155,7 +155,7 @@
             "option": "",
             "outcome": "<span class=\"characterName\">Tino:</span> A second is enough to change this.<i>The sky darkens, drained of all colour, as He slams his hands together with a thunderous force, halting the flow of time itself. Everything freezes in place, except for the group, suspended in the eerie stillness of the world around them.</i> <br><span class=\"characterName\">Jasmin:</span> Let's go. <i> She opens a portal to place she has visisted, allowing for the group to find safe closure there.</i>",
             "character1": "Images/timekeeper.webp",
-            "character2": "Images/cloakedFigureFront.webp",
+            "character2": "Images/Characters/cloakedFigureFront.webp",
             "event": "none"
           },
           {
@@ -163,7 +163,7 @@
             "option": "",
             "outcome": "<span class=\"characterName\">Zanele:</span> Yes, that's it. <i>Zanele snaps her fingers, igniting a spark that erupts into a roaring inferno. Flames spiral outward, devouring everything in their path. Smoke chokes the air, and the heat is suffocating, leaving behind only the charred scent of scorched earth and burning flesh as the fire consumes all on the battleground.</i>",
             "character1": "Images/storyInferno.webp",
-            "character2": "Images/cloakedFigureFront.webp",
+            "character2": "Images/Characters/cloakedFigureFront.webp",
             "event": "none"
           }
         ]
@@ -184,7 +184,7 @@
         "branchId": "branch6",
         "text": "",
         "character1": "all",
-        "character2": "Images/cloakedFigureFront.webp",
+        "character2": "Images/Characters/cloakedFigureFront.webp",
         "event": "triggerBattle",
         "winnable": false,
         "startEnemies": [0],
@@ -195,7 +195,7 @@
         "branchId": "branch7",
         "text": "As your vision clears, you feel the jagged chill of the hard, cold ground beneath you, echoing the icy dread settling in your bones. A rhythmic pounding fills your ears—your own heartbeat, hammering faster with each passing second. Shadows shift, and a dark figure steps closer, their silhouette seeming to blend into the very void around them. <br><span class=\"characterName\">Cloaked:</span> Look at you — fallen, broken. You've lost more than just this battle. Prepare to watch everything you hold dear slip away … one by one. <br> Their voice is a low, menacing whisper, each word twisting like a blade in your heart. You feel a suffocating weight as the realization dawns—this isn’t just defeat; it’s a reckoning, the merciless unraveling of everything you fought for. In the shadows, you see flashes of familiar faces—your friends, your allies—each one flickering like a candle about to be snuffed out. The Cloaked Figure’s presence presses down, clouding the air with a foreboding that chills you to your core. This isn’t just an end; it’s your end, at the hands of someone who you held close to you.",
         "character1": "all",
-        "character2": "Images/The Sixth Atlas.webp",
+        "character2": "Images/Characters/The Sixth Atlas.webp",
         "event": "none",
         "choices": []
       },
@@ -389,7 +389,7 @@
         "branchId": "branch22",
         "text": "Mthi's search is resolved shortly as she finds a game host. Analysing the table, the game is simple: A memory game that requires you to flip the cards creating pairs until you match all 18 cards. <br> <span class=\"characterName\">Game Host:</span> Tis an easy game, just match the cards that's all. What do you say to a round or two? <br> <span class=\"characterName\">Mthi:</span> Hmmm, okay, it's a good way to kill time I guess.",
         "character1": "Images/eye.webp",
-        "character2": "Images/Characters/Game Host.webp",
+        "character2": "Images/Characters/Game Host-normal.webp",
         "event": "none",
         "choices": []
       },
@@ -406,7 +406,7 @@
         "branchId": "branch24",
         "text": "<span class=\"characterName\">Game Host:</span> A sharp eye indeed... How about a wager: If you win, I’ll part with my most treasured possession. But if you lose... I’ll claim that exquisite instrument of yours. <br><span class=\"characterName\">Mthi:</span>And what exactly is this so-called treasured possession? <br><span class=\"characterName\">Game Host:</span>Oh, you’ll find out... once you’ve earned the right to see it. Now, shall we play?",
         "character1": "Images/eye.webp",
-        "character2": "Images/Characters/Game Host.webp",
+        "character2": "Images/Characters/Game Host-normal.webp",
         "event": "none",
         "choices": []
       },
@@ -423,7 +423,7 @@
         "branchId": "branch26",
         "text": "",
         "character1": "Images/eye.webp",
-        "character2": "Images/The Sixth Atlas.webp",
+        "character2": "Images/Characters/The Sixth Atlas.webp",
         "event": "triggerGame",
         "game": "MemoryGame-2",
         "choices": []
@@ -432,7 +432,7 @@
         "branchId": "branch27",
         "text": "As you lay down the final pair of cards with an effortless flourish, the Game Host's face twists in disbelief, his composure shattered. <br><span class=\"characterName\">Mthi:</span> And done. <br><span class=\"characterName\">Game host:</span> But—no, that’s impossible!. <i> Rage and confusion flicker in his eyes as he glares at the cards, each one mocking him with its defiance. </i> <br><span class=\"characterName\">Game Host:</span> You cheated! <br><span class=\"characterName\">Mthi:</span> Right, right... imagine having to rig your own game and still losing. <br><span class=\"characterName\">Game Host:</span> You—cheater! <i>  He lunges, fist raised, but Mthi sidesteps effortlessly, his punch landing squarely on an unsuspecting bystander.</i> <br><span class=\"characterName\">Mthi:</span> So much for subtle exits. <br>Just then, Llewellyn strolls in, late as ever, with his usual nonchalant grin. <br><span class=\"characterName\">Llewellyn:</span> Hello humans - Huh? <br> His words hang unfinished as another bystander charges at him, shouting in fury. In an instant, chaos erupts, and the group braces themselves for the impending brawl.",
         "character1": "Images/eye.webp",
-        "character2": "Images/Characters/Game Host.webp",
+        "character2": "Images/Characters/Game Host-normal.webp",
         "event": "none",
         "choices": []
       },
@@ -451,7 +451,7 @@
         "branchId": "branch29",
         "text": "Following the chaotic burst of action, the inn is ablaze with shouts and overturned tables as fists fly and drinks spill. The Game Host, now seething and vengeful, grabs a nearby chair, swinging it in Mthi’s direction. She ducks just in time, but not before another bystander takes the hit, adding to the pandemonium.As the group grapples with the chaos, the Game Host, now humiliated and vengeful, grabs a knife from a nearby table, sneering at Mthi. His eyes are filled with murderous intent, and he lunges toward her with reckless abandon. The group finds themselves at a critical choice, each path leading to a different outcome.",
         "character1": "Images/eye.webp",
-        "character2": "Images/Characters/Game Host.webp",
+        "character2": "Images/Characters/Game Host-normal.webp",
         "event": "none",
         "choices": [
           {
@@ -459,7 +459,7 @@
             "option": "Let him live",
             "outcome": "Mthi disarms the Game Host with a swift move, knocking the knife from his hand and forcing him to the ground. She looks down, calm but resolute. <br> <span class=\"characterName\">Mthi:</span> This isn't worth anyone’s life. Take this as a warning. <br> The Game Host stumbles back, humiliated and resentful, but alive. He sneers, vowing that Mthi and her group will pay for this insult, hinting at potential consequences down the line...",
             "character1": "Images/eye.webp",
-            "character2": "Images/Characters/Game Host.webp",
+            "character2": "Images/Characters/Game Host-normal.webp",
             "event": "none"
           },
           {
@@ -467,7 +467,7 @@
             "option": "Strike the final blow",
             "outcome": "Mthi pauses, taking in the desperation in the Game Host’s eyes. But this isn’t a look of regret or shame—only raw terror as he realizes his gamble has failed. Llewellyn steps forward, casting a glance at Mthi, whose expression is unreadable. Slowly, she nods, giving silent permission. Llewellyn raises his sword, and the Game Host’s face twists in silent protest, his voice catching as he whispers, <i>Please…</i> before the blade falls, ending him.",
             "character1": "Images/eye.webp",
-            "character2": "Images/Characters/Game Host.webp",
+            "character2": "Images/Characters/Game Host-normal.webp",
             "event": "none"
           }
         ]

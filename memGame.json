@@ -1,11 +1,23 @@
 [
-	{ "image": "Images/healer.webp", "name": "healer" },
-	{ "image": "Images/titan.webp", "name": "titan" },
-	{ "image": "Images/eye.webp", "name": "eye" },
-	{ "image": "Images/phoenix.webp", "name": "phoenix" },
-	{ "image": "Images/timekeeper.webp", "name": "timekeeper" },
-	{ "image": "/Images/Assets/Blazing Wings.webp", "name": "Blazing Wings" },
-	{ "image": "/Images/Assets/Chrono Slash.webp", "name": "Chrono Slash" },
-	{ "image": "/Images/Assets/Flicker shot.webp", "name": "Flicker shot" },
-	{ "image": "/Images/Assets/Eternal Shield.webp", "name": "Eternal Shield" }
+  { "image": "Images/healer.webp", "name": "healer" },
+  { "image": "Images/titan.webp", "name": "titan" },
+  { "image": "Images/eye.webp", "name": "eye" },
+  { "image": "Images/phoenix.webp", "name": "phoenix" },
+  { "image": "Images/timekeeper.webp", "name": "timekeeper" },
+  {
+    "image": "/Images/Characters/The Twins-purple.webp",
+    "name": "The Twins"
+  },
+  {
+    "image": "/Images/Characters/Golden Order.webp",
+    "name": "Golden Order"
+  },
+  {
+    "image": "/Images/Characters/The Sixth Atlas.webp",
+    "name": "The Sixth Atlas"
+  },
+  {
+    "image": "/Images/Characters/Silver Order.webp",
+    "name": "Silver Order"
+  }
 ]
