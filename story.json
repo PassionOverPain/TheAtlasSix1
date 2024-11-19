@@ -725,7 +725,7 @@
           {
             "choiceId": "1",
             "imgSrc": "Images/Characters/Wolf.webp",
-            "outcome": "<span class=\"characterName\">Tino:</span> I'm going with the wolf, something about speed that sits right with me. <br><span class=\"characterName\"> Llewellyn:</span> You don't say ? Well only makes sense I take strength then. <br> The wolf launches forward, a blur of green, and with a flash of magic, it summons a whirlwind of thorns, spiraling toward the bear. The bear counters with a shockwave of orange magic, slamming into the earth with explosive force, sending the thorns scattering. The wolf dodges, rolling under the bear’s swipe, its green magic pulsing as it creates a barrier of swirling energy to deflect the bear’s fiery assault. <br><span class=\"characterName\">Tino:</span> That's crazy speed right? <br><span class=\"characterName\">Llewellyn:</span> Yup but the fight has just begun. The bear roars, sending out a wave of fiery orange force, surging toward the wolf. But the wolf darts to the side, just out of reach, and strikes back with a devastating blast of green magic, freezing the air in front of it. The wolf’s jaws snap shut, aimed at the bear’s throat. For a moment, it looks like the wolf will win, but the bear, with a brutal swing, swipes the wolf’s magic aside and lands a crushing blow. The wolf staggers, but its pack emerges, shifting the momentum. With a final, explosive burst of green energy, the wolf forces the bear to retreat, its magic overwhelming the bear’s defenses. <br><span class=\"characterName\">Tino:</span> Interesting turn of events. <br><span class=\"characterName\">Llewellyn:</span> You got lucky. The wolf’s agility saved it this time. <i> Llewellyn chuckles </i>, Guess I'll have to do it then.<br><span class=\"characterName\">Tino:</span> Fear not your royal highess: You still remain the strongest in all the kingdoms.",
+            "outcome": "<span class=\"characterName\">Tino:</span> I'm going with the wolf, something about speed that sits right with me. <br><span class=\"characterName\"> Llewellyn:</span> You don't say ? Well only makes sense I take strength then. <br> The wolf launches forward, a blur of green, and with a flash of magic, it summons a whirlwind of thorns, spiraling toward the bear. The bear counters with a shockwave of orange magic, slamming into the earth with explosive force, sending the thorns scattering. The wolf dodges, rolling under the bear’s swipe, its green magic pulsing as it creates a barrier of swirling energy to deflect the bear’s fiery assault. <br><span class=\"characterName\">Tino:</span> That's crazy speed right? <br><span class=\"characterName\">Llewellyn:</span> Yup but the fight has just begun. The bear roars, sending out a wave of fiery orange force, surging toward the wolf. But the wolf darts to the side, just out of reach, and strikes back with a devastating blast of green magic, freezing the air in front of it. The wolf’s jaws snap shut, aimed at the bear’s throat. For a moment, it looks like the wolf will win, but the bear, with a brutal swing, swipes the wolf’s magic aside and lands a crushing blow. The wolf staggers, but its pack emerges, shifting the momentum. With a final, explosive burst of green energy, the wolf forces the bear to retreat, its magic overwhelming the bear’s defenses. <br><span class=\"characterName\">Tino:</span> Interesting turn of events. <br><span class=\"characterName\">Llewellyn:</span> You got lucky. The wolf’s agility saved it this time. <i> Llewellyn chuckles </i>, Guess I'll have to do it then.<br><span class=\"characterName\">Tino:</span> Fear not <i>Your royal highess </i>: You still remain the strongest in all the kingdoms. <br><span class=\"characterName\">Llewellyn:</span> Ah, your confidence in me is truly humbling, <i>Sensei.</i>",
             "option": "Wolf",
             "character1": "Images/Characters/Bear.webp",
             "character2": "Images/Characters/Wolf.webp",
@@ -908,7 +908,7 @@
           {
             "choiceId": "2",
             "option": "Mthi",
-            "outcome": "You have clicked Mthi for the visual choices",
+            "outcome": "Mthi sits cross-legged near the crackling fire, her head tilted in concentration as her hand glides over a parchment. On the paper, notes and staves appear with a life of their own, shimmering faintly like moonlight on water. As her pen moves, the symbols pulse softly and resonate with delicate sounds—a gentle melody that seems to spill directly from her thoughts. Each note follows her hand like fireflies trailing a lantern, filling the air with an ethereal tune that harmonizes with the night's stillness. The firelight dances on her face, highlighting her small, knowing smirk as she catches you watching. <br><span class=\"characterName\">Mthi:</span> You didn’t think I’d write in silence, did you? <br><span class=\"characterName\"> You:</span> Till this day, I can't understand how you do <i>that</i>. <br><span class=\"characterName\">Mthi:</span> A bit of magic ... and a lot of skill.",
             "character1": "none",
             "character2": "Images/eye.webp",
             "imgSrc": "Images/eye.webp",
@@ -953,7 +953,7 @@
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
         "event": "multipleChoices",
-        "goToBranches": [68, 71, 0, 0, 0, 0],
+        "goToBranches": [68, 71, 74, 0, 0, 0],
         "choices": []
       },
       {
@@ -1066,7 +1066,7 @@
           {
             "choiceId": "0",
             "option": "Eryndor",
-            "outcome": "<br><span class=\"characterName\">You:</span> Eryndor, your home, how is it like? I've never been. <br><span class=\"characterName\">Llewellyn:</span> Eryndor is not for the faint of heart. It’s a kingdom of stone and strength, forged on unyielding earth and sculpted by centuries of discipline. Towering spires of silver and grey pierce the skies, their surfaces etched with the intricate marks of our history. The buildings are strong, unshaken by the elements, a reflection of the people who call them home. We don’t just live in Eryndor — we endure it, shape it, and thrive within its unrelenting embrace. <br><span class=\"characterName\">You:</span> Sounds like school. <br><span class=\"characterName\">Llewellyn:</span> He, it's not easy but nor is it impossible. <br><span class=\"characterName\"> You:</span> Tell me more. <br><span class=\"characterName\">Llewellyn:</span> The lands stretch far beyond the stone citadels. Eryndor is a kingdom that hungers, its reach extending to new terrains. It is a place of conquest, of fierce ambition, where the rulers wield the finest armies in all the lands. The air smells of iron and ambition, and the banners of the generals fly high, their silver and green emblems striking fear into our enemies. <br><span class=\"characterName\">You:</span> Wait aren't <i>You</i> a general ? <br><span class=\"characterName\"> Llewellyn:</span> Mhm but I prefer skipping stones and spending time with those that matter than fighting political wars for some random royal, you know how the Known World is. <br> Llewellyn nudges you with a smile but it is visible to see a bit of worry on the current events, indicating a sense of worry  to the current state of the world.",
+            "outcome": "<span class=\"characterName\">You:</span> Eryndor, your home, how is it like? I've never been. <br><span class=\"characterName\">Llewellyn:</span> Eryndor is not for the faint of heart. It’s a kingdom of stone and strength, forged on unyielding earth and sculpted by centuries of discipline. Towering spires of silver and grey pierce the skies, their surfaces etched with the intricate marks of our history. The buildings are strong, unshaken by the elements, a reflection of the people who call them home. We don’t just live in Eryndor — we endure it, shape it, and thrive within its unrelenting embrace. <br><span class=\"characterName\">You:</span> Sounds like a pain. <br><span class=\"characterName\">Llewellyn:</span> He, it's not easy but nor is it impossible. <br><span class=\"characterName\"> You:</span> Tell me more. <br><span class=\"characterName\">Llewellyn:</span> The lands stretch far beyond the stone citadels. Eryndor is a kingdom that hungers, its reach extending to new terrains. It is a place of conquest, of fierce ambition, where the rulers wield the finest armies in all the lands. The air smells of iron and ambition, and the banners of the generals fly high, their silver and green emblems striking fear into our enemies. <br><span class=\"characterName\">You:</span> Wait aren't <i>You</i> a general ? <br><span class=\"characterName\"> Llewellyn:</span> Mhm but I prefer skipping stones and spending time with those that matter than fighting political wars for some random royal, you know how the Known World is. <br>Llewellyn nudges you with a faint smile, but beneath it lingers a trace of unease. His eyes, though warm, betray the weight of the political tensions among the five kingdoms, a quiet reflection of his concern for the world’s fragile state.",
             "character1": "none",
             "character2": "Images/titan.webp",
             "event": "none"
@@ -1074,29 +1074,45 @@
           {
             "choiceId": "1",
             "option": "Family",
-            "outcome": "<span class=\"characterName\">You:</span> Tell me more about Aurelia. <br><span class=\"characterName\">Jasmin:</span> Aurelia is a place of light and life, a kingdom that thrives in harmony with nature. It's where the land sings with beauty—lush forests, endless meadows, and lakes so clear you can see the sky reflected in them. The people here are as connected to the earth as the trees, their magic flowing as naturally as the rivers. It's a peaceful kingdom, full of growth and healing, where scholars and healers like myself can find purpose and peace. It truly is a haven, a place where the heart can rest.",
+            "outcome": "<span class=\"characterName\">You:</span> Now that I think about it, we don't know much about your family. <br><span class=\"characterName\">Llewellyn:</span> Well you know I wasn’t born into anything grand. <br> He begins, a casual tone masking the pride beneath his words. <br><span class=\"characterName\">Llewellyn:</span> Unlike somebody we both know... <br>  He trails off, a playful smirk hinting at the presence of royalty within the group, though he doesn’t name names. <br><span class=\"characterName\">Llewellyn:</span> My parents weren’t royals. Far from it. But they’ve always been highly respected warriors in Eryndor’s army. My father, especially—he leads a special unit now. The kind of team they send in when there’s no room for mistakes. <br> His voice carries admiration while his hand absently brushes the edge of his sleeve. <br><span class=\"characterName\">You:</span> And you, surely that must mean a lot of pressure, to fight in these wars ? <br> He chuckles suddenly, breaking the weight of his words. <br><span class=\"characterName\">Llewellyn:</span> Sometimes. Where we come from does not define where we are going. As for me, I started hearing <i> Your Royal Highness </i> tossed around because I climbed the militia ranks too fast for some people’s egos. It started as a joke, and I think they meant it to be an insult. But you know what? I leaned into it. Sounds regal, doesn’t it? <br><span class=\"characterName\">You:</span> Sounds like <i>something</i>.",
             "character1": "none",
             "character2": "Images/titan.webp",
             "event": "none"
           },
           {
             "choiceId": "2",
-            "option": "Military",
-            "outcome": "<span class=\"characterName\">You:</span> Tell me more about Aurelia. <br><span class=\"characterName\">Jasmin:</span> Aurelia is a place of light and life, a kingdom that thrives in harmony with nature. It's where the land sings with beauty—lush forests, endless meadows, and lakes so clear you can see the sky reflected in them. The people here are as connected to the earth as the trees, their magic flowing as naturally as the rivers. It's a peaceful kingdom, full of growth and healing, where scholars and healers like myself can find purpose and peace. It truly is a haven, a place where the heart can rest.",
-            "character1": "none",
+            "option": "Lateness",
+            "outcome": "<span class=\"characterName\">You:</span> Why are you always late, Llewellyn? It's becoming your trademark at this point. <br><span class=\"characterName\">Llewellyn:</span> Always late? That's a bit harsh—I prefer <i>fashionably delayed,</i>, thank you very much. <br> He flashes you a sly grin, brushing off the accusation like dust on his armor. <br><span class=\"characterName\">You:</span> You’re dodging the question. <br><span class=\"characterName\">Llewellyn:</span> Alright, fine. Punctuality is the thief of time, didn’t you know? If you ask me, life’s too short to rush through it. <br> He leans against a nearby tree, his tone a mix of amusement and half-hearted philosophy. <br><span class=\"characterName\">You:</span> That’s the worst excuse I’ve ever heard. <br><span class=\"characterName\">Tino:</span> Or the best one, depending on your perspective. And life? It's all about perspectives, right? <br> Tino appears out of nowhere and greets you with a smile. <br><span class=\"characterName\">You:</span> Where did you come from ? <br><span class=\"characterName\">Tino:</span> I heard you two getting philosophical... had to join. <br> You look at Llewellyn but only receive an utterly unbothered shrug.",
+            "character1": "Images/timekeeper.webp",
             "character2": "Images/titan.webp",
             "event": "none"
           },
           {
             "choiceId": "3",
             "option": "End Conversation",
-            "outcome": "<span class=\"characterName\">You:</span> Tell me more about Aurelia. <br><span class=\"characterName\">Jasmin:</span> Aurelia is a place of light and life, a kingdom that thrives in harmony with nature. It's where the land sings with beauty—lush forests, endless meadows, and lakes so clear you can see the sky reflected in them. The people here are as connected to the earth as the trees, their magic flowing as naturally as the rivers. It's a peaceful kingdom, full of growth and healing, where scholars and healers like myself can find purpose and peace. It truly is a haven, a place where the heart can rest.",
+            "outcome": "Llewellyn leans back slightly, his gaze drifting to the pond as the stones in his hand remain untouched. <br><span class=\"characterName\">Llewellyn:</span> Well, it’s not every day I get to share my stone-skipping secrets. Guess I should count myself lucky tonight. <br>You decide it’s time to let him be. <br><span class=\"characterName\">You:</span> I’ll leave you to it then. <br><span class=\"characterName\">Llewellyn:</span> Noted. Don’t worry about me: I’ve got this pond under control. <br>With a casual flick of his wrist, another stone skips effortlessly across the water, disappearing into the night. As you walk away, you catch his voice behind you, light but tinged with sincerity. <br><span class=\"characterName\">Llewellyn:</span> Thanks for the company.",
             "character1": "none",
             "character2": "Images/titan.webp",
             "event": "none"
           }
         ],
         "closingChoice": 3
+      },
+      {
+        "branchId": "branch73",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch74",
+        "text": "<span class=\"characterName\">You:</span> I can definitely see that. Must have taken so much time to learn. <br><span class=\"characterName\">Mthi:</span> And discipline but it's something even you can achieve. Just give yourself like - about twenty years. ",
+        "character1": "none",
+        "character2": "Images/eye.webp",
+        "event": "none",
+        "choices": []
       }
     ]
   }
