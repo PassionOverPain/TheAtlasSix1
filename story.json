@@ -815,7 +815,7 @@
       },
       {
         "branchId": "branch61",
-        "text": "<span class=\"characterName\">Passion:</span> Me Again, sorry to interrupt (not reallly). You've reached a safe point, indicated by that orb over there on the right. Home is where your heart is and for the Atlas Six, as much as everyone has a physical place to stay, they prefer to be together while navigating the Known World. This home along with other safe points acts as a place of respite, offering you the ability to talk to your friends along with other activities depending on the story point and decisions you have made thus far. Each orb throughout the world is different though, some such as this one require you to have defensive measures in place (Yes yes, you are inside the orb) others allow you to do other things. This does not limit you though from living in the physical world, such as the inn that you were in earlier, see what I did there? , by the way: what was the name of that said inn ? Get it right and I'll reward you, wrong and ... you restart the game 😉.",
+        "text": "<span class=\"characterName\">Passion:</span> Me Again, sorry to interrupt (not reallly). You've reached a safe point, indicated by that orb over there on the right. Home is where your heart is and for the Atlas Six, as much as everyone has a physical place to stay, they prefer to be together while navigating the Known World. This home along with other safe points acts as a place of respite, offering you the ability to talk to your friends along with other activities depending on the story point and decisions you have made thus far. Each orb throughout the world is different though, some such as this one require you to have defensive measures in place (Yes yes, you are inside the orb) others allow you to do other things. The orb is a marvel of magical design, seamlessly blending practicality with enchantment. Inside, you'll find ethereal furniture that shifts to fit the needs of its occupants—cushioned seating that molds to your shape and tables that levitate slightly above the ground. There are serene, softly glowing bedrooms with bedspreads woven from shimmering threads that adjust to the perfect temperature. The bathrooms are equally enchanted, with showers of warm, mist-like water that cleanse without a trace. It’s a mobile sanctuary, offering the comforts of home no matter where the journey leads.This does not limit you though from living in the physical world, such as the inn that you were in earlier, see what I did there? , by the way: what was the name of that said inn ? Get it right and I'll reward you, wrong and ... you restart the game 😉.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
         "event": "none",
@@ -918,7 +918,7 @@
           {
             "choiceId": "3",
             "option": "Tino",
-            "outcome": "",
+            "outcome": "Tino moves like a restless phantom, his steps swift and deliberate, his form barely a blur against the moonlight. The wind seems to follow his every motion, swirling around him in soft yet insistent gusts. Leaves stir and lift into the air, dancing in intricate patterns that seem to ripple outward as if forming a shield, a boundary between him and the rest of the world.You call out, your voice hesitant but clear, 'Tino?' For a moment, he pauses, his head tilting slightly as if he heard you—but instead of turning, he picks up speed, his movements sharper. Determined to close the distance, you take a step forward, only to feel a sharp tug beneath your foot. A thorny branch catches your shoe, halting your advance. You glance down, relieved to see no harm done. When you look back up, Tino is gone. The leaves that once encircled him flutter harmlessly to the ground, and the wind that had seemed so alive moments ago fades into stillness. The clearing is silent, save for the faint rustle of the trees, as though he was never there at all.",
             "character1": "none",
             "character2": "Images/timekeeper.webp",
             "imgSrc": "Images/timekeeper.webp",
@@ -928,7 +928,7 @@
           {
             "choiceId": "4",
             "option": "Zanele",
-            "outcome": "",
+            "outcome": "<span class=\"characterName\">You:</span> Looks like you’re deep in thought. Planning something special for dinner? <br><span class=\"characterName\">Zanele:</span> Hmm, perhaps. A good meal isn’t just about feeding the body—it’s about feeding the soul too. <br>Zanele’s eyes scan through the assortment laid out before her. Small glass jars of colorful spices glint faintly in the firelight. She lifts one, uncorking it and letting a puff of fragrant cinnamon waft into the cool night air. Next to the spices lie a bundle of freshly picked vegetables—crisp carrots, onions, and leafy greens—alongside a woven basket containing grains, dried meats, and foraged herbs. A pouch of nuts and berries rests nearby, their vibrant colors a contrast to the muted earth tones of the campsite. <br><span class=\"characterName\">You:</span> That’s quite the spread. Got something specific in mind? <br><span class=\"characterName\">Zanele:</span> Oh, I’ve got ideas. A hearty stew, maybe? Or something simpler—a few roasted vegetables with a pinch of this spice here. <br>She gestures at a jar of bright red powder. <br><span class=\"characterName\">Zanele:</span> This one’s paprika. Perfect for adding a little heat. Or, if we’re in the mood for something sweet, we could mix these berries with some crushed nuts for dessert. <br><span class=\"characterName\">You:</span> So... what’s the verdict? <br><span class=\"characterName\">Zanele:</span> That’s the problem. Too many options, not enough decisiveness. Care to help me choose? Or are you just here to taste test? <br><span class=\"characterName\">Zanele:</span> Actually, before we decide... how about we talk about something else for a moment? Got any thoughts on how the group’s been doing lately? Or anything you’ve been wondering about the journey ahead? <br>",
             "character1": "none",
             "character2": "Images/phoenix.webp",
             "imgSrc": "Images/phoenix.webp",
@@ -953,7 +953,7 @@
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
         "event": "multipleChoices",
-        "goToBranches": [68, 71, 74, 0, 0, 0],
+        "goToBranches": [68, 71, 74, 77, 78, 0],
         "choices": []
       },
       {
@@ -1175,6 +1175,64 @@
       },
       {
         "branchId": "branch76",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch77",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch78",
+        "text": "<span class=\"characterName\">Zanele:</span> Mhm, so you were saying ?",
+        "character1": "none",
+        "character2": "Images/phoenix.webp",
+        "event": "choiceLoop",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Fire Magic",
+            "outcome": "",
+            "character1": "none",
+            "character2": "Images/phoenix.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Family",
+            "outcome": "",
+            "character1": "none",
+            "character2": "Images/phoenix.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Kuruhona",
+            "outcome": "",
+            "character1": "none",
+            "character2": "Images/phoenix.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "End Conversation",
+            "outcome": "",
+            "character1": "none",
+            "character2": "Images/phoenix.webp",
+            "event": "none"
+          }
+        ],
+        "closingChoice": 3
+      },
+      {
+        "branchId": "branch78",
         "text": "",
         "character1": "none",
         "character2": "none",
