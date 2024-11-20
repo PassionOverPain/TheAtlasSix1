@@ -942,7 +942,7 @@
             "character1": "all",
             "character2": "none",
             "imgSrc": "Images/Choices/Sleep.webp",
-            "gradient": "linear-gradient(violet, pink)",
+            "gradient": "linear-gradient(black, white)",
             "event": "none"
           }
         ]
@@ -1130,6 +1130,56 @@
             "event": "none"
           }
         ]
+      },
+      {
+        "branchId": "branch75",
+        "text": "<span class=\"characterName\">Mthi:</span> Kewl, so now what ?",
+        "character1": "none",
+        "character2": "Images/eye.webp",
+        "event": "choiceLoop",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Ambitions",
+            "outcome": "<span class=\"characterName\">You:</span> So, Mthi, what’s the big dream? What’s the endgame for a musical prodigy like you? <br><span class=\"characterName\">Mthi:</span> Oh, the dream? Definitely to start a band! Like, a real band. <br><span class=\"characterName\">You:</span> A band, huh? Sounds like you’ve thought this through. Got any members in mind? <br><span class=\"characterName\">Mthi:</span> Hmm, well, I did think about recruiting you. But then I remembered... you have the rhythm of a clumsy goblin.<br><span class=\"characterName\">You:</span> Hey, I resent that! I could totally keep a beat.<br><span class=\"characterName\">Mthi:</span> <i>She grins at you</i> Sure, sure. But you’d have to promise not to trip over the drum kit.<br><span class=\"characterName\">You:</span> Fine, scratch me off the list. Who else? <br><span class=\"characterName\">Mthi:</span> Honestly? I think the our group would make an incredible band.... <i>once they learn ofcourse.</i> Just picture it: Llewellyn on bass — he’d have that broody, mysterious vibe all the fans would swoon over.<br><span class=\"characterName\">You:</span> A broody bassist, huh? What about Tino?<br><span class=\"characterName\">Mthi:</span> Oh, Tino? Drummer. Without a doubt. He’d be the chaotic one who plays upside down and smashes everything for fun.<br><span class=\"characterName\">You:</span> That checks out. And Zanele?<br><span class=\"characterName\">Mthi:</span> Lead vocals! She has that soothing, angelic presence that would balance out Tino’s absolute chaos.<br><span class=\"characterName\">You:</span> Practical and talented. What about Jasmin?<br><span class=\"characterName\">Mthi:</span> Hmm, Jasmin would be our manager. No nonsense. Making sure we show up on time, get paid, and don’t, you know, set anything on fire.<br><span class=\"characterName\">You:</span> And you?<br><span class=\"characterName\">Mthi:</span> Lead guitar, of course. I’d be the star... but, like, in a humble way.<br><span class=\"characterName\">You:</span> <i>You laugh</i> Humble, huh? So what’s the band’s name?<br><span class=\"characterName\">Mthi:</span> Oh, I’ve got it: Strings of Destiny. No, wait! The Atlas Mix! Ugh, no, that’s terrible. What do you think?<br><span class=\"characterName\">You:</span> How about The Misfit Chords?<br><span class=\"characterName\">Mthi:</span> <i>laughing</i> Okay, now you’re hired. You can’t play an instrument, but you’ve got the naming skills of a genius.<br><span class=\"characterName\">You:</span> See? I am useful!<br><span class=\"characterName\">Mthi:</span> <i>Mthi smiles at you</i> Alright, fine. Maybe there’s hope for you yet. But if you mess up our first gig, you’re demoted to roadie.<br><span class=\"characterName\">You:</span> Deal.<br><span class=\"characterName\">Mthi:</span> Now, if only I could convince the others... think Tino would trade his time magic for drumsticks? <br><span class=\"characterName\">You:</span> As long as he is not the singer.",
+            "character1": "none",
+            "character2": "Images/eye.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Family",
+            "outcome": "<span class=\"characterName\">You:</span> So, Mthi, what about your family? You must’ve picked up that personality from somewhere.<br><span class=\"characterName\">Mthi:</span> Oh, you mean this sparkling charm? Definitely from my mom. She’s the bubbliest person you’ll ever meet. Always laughing, always chatting—she could probably talk a tree into sprouting flowers.<br><span class=\"characterName\">You:</span> That sounds... lively. What does she do?<br><span class=\"characterName\">Mthi:</span> She’s the head of the Valdoran Guild of Artisans. Fancy title for someone who’s basically a whirlwind with a clipboard, organizing the most talented crafters in the kingdom.<br><span class=\"characterName\">You:</span> That’s impressive.<br><span class=\"characterName\">Mthi:</span> Oh, she’s a force of nature, for sure. My dad’s in the guild too, but he’s quieter. He’s the one making sure the magic-infused tools don’t blow up. Keeps everyone safe while Mom dazzles the crowd.<br><span class=\"characterName\">You:</span> And siblings?<br><span class=\"characterName\">Mthi:</span>  My brother’s training to be a Hunter. You know, tracking monsters, surviving in the wild, being annoyingly heroic. And then there’s my sister. She’s the brainiac—studying to be a scholar at the Academy.<br><span class=\"characterName\">You:</span> Scholar, huh? So she’s the responsible one?<br><span class=\"characterName\">Mthi:</span> Oh, completely. She can name every constellation, recite ancient texts, and still somehow judge me for eating dessert before dinner.<br><span class=\"characterName\">You:</span> Sounds like you’ve got quite the family.<br><span class=\"characterName\">Mthi:</span> <i>grinning</i> Yeah, they’re not bad.",
+            "character1": "none",
+            "character2": "Images/eye.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Valdora",
+            "outcome": "<span class=\"characterName\">Mthi:</span> Valdora is... different. It’s all about balance. The magic, the precision of archery, and the pursuit of knowledge. It’s a land of sorcery and infinite wisdom.<br><span class=\"characterName\">You:</span> Sounds like a dream.<br><span class=\"characterName\">Mthi:</span> Oh, wait till you hear about the library.<br><span class=\"characterName\">You:</span> Library?<br><span class=\"characterName\">Mthi:</span> Not just any library. It’s the largest one in the Known World. Picture this: towering shelves that disappear into the shadows above, scrolls and books crammed into every nook and cranny, the air heavy with the scent of ancient parchment and ink.<br><span class=\"characterName\">You:</span> Sounds incredible.<br><span class=\"characterName\">Mthi:</span> It’s also a maze. You could get lost in there for weeks, and that’s if the archivists let you in. It’s not open to just anyone.<br><span class=\"characterName\">You:</span> I’m guessing they don’t just hand out library cards?<br><span class=\"characterName\">Mthi:</span> Definitely not. I had to sneak in once.<br><span class=\"characterName\">You:</span> Had to?<br><span class=\"characterName\">Mthi:</span> <i>she meets your gaze with a sly smirk</i> Of course! I mean, who wouldn’t want to see ancient scrolls on forgotten spells or stories about bards charming entire armies?<br><span class=\"characterName\">You:</span> Did you get caught?<br><span class=\"characterName\">Mthi:</span> Let’s just say the archivist was very good at stern looks. Told me I was lucky they didn’t turn me into a duck.<br><span class=\"characterName\">You:</span> And?<br><span class=\"characterName\">Mthi:</span> I apologized profusely... and made a run for it. Totally worth it, though.<br><span class=\"characterName\">You:</span> I’m guessing you’re not done sneaking around?<br><span class=\"characterName\">Mthi:</span> Not even close.",
+            "character1": "none",
+            "character2": "Images/eye.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "3",
+            "option": "End Conversation",
+            "outcome": "<span class=\"characterName\">You:</span> It’s been fun, Mthi, but I should probably check in on the others before they think I’ve vanished.<br><span class=\"characterName\">Mthi:</span> <i>playfully</i> Oh, you’re leaving me for them? Just when I was about to compose your theme song.<br>You chuckle, shaking your head. Mthi’s cheerful energy is infectious, and for a moment, you’re tempted to linger. But the faint hum of the campfire and distant murmurs of the others tug at you, reminding you of the night ahead.<br><span class=\"characterName\">You:</span> Save it for my grand entrance next time.<br><span class=\"characterName\">Mthi:</span> Deal. But don’t keep me waiting too long.<br>As you rise, Mthi leans back, her guitar cradled against her like an old friend, and resumes jotting down notes on her sheet of paper. The soft scratch of her pencil blends with the gentle strum of her strings, filling the air with a melody that seems to follow you as you walk away.<br>The voices of your companions drift through the stillness, each carrying its own unique cadence, promising new stories and unexpected moments.<br>You glance back once, catching sight of Mthi, now fully absorbed in her music, her silhouette outlined against the pale light of the stars. A small smile tugs at your lips before you turn your focus forward, ready to see what—or who—awaits you next.",
+            "character1": "none",
+            "character2": "Images/eye.webp",
+            "event": "none"
+          }
+        ],
+        "closingChoice": 3
+      },
+      {
+        "branchId": "branch76",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
       }
     ]
   }
