@@ -937,11 +937,11 @@
           },
           {
             "choiceId": "5",
-            "option": "Sleep",
-            "outcome": "",
+            "option": "Continue the night",
+            "outcome": "The others start gathering around the campfire, the warmth of the flames mixing with the evening air. Zanele stirs the stew, Mthi hums a soft tune, and the sounds of nature fill the night.<br><span class=\"characterName\">Llewellyn:</span> Where did Tino disappear off to?<br><span class=\"characterName\">Mthi:</span> <i>Chuckling lightly</i> You know how he is: always popping in and out of thin air. It’s probably best not to ask. <br><span class=\"characterName\">Zanele:</span> Glancing around I’d bet he’s just lurking in the shadows, watching us. Tino’s never far, just... in his own world.<br> Just as you think about questioning further, a sudden breeze sweeps through the camp, and Tino materializes out of nowhere, standing beside the fire with a grin.<br><span class=\"characterName\">Tino:</span> Did I miss anything? Smells like dinner's almost ready!<br><span class=\"characterName\">Jasmin:</span> <i>Sighing in amusement</i> How do you even do that? <br><span class=\"characterName\">Tino:</span> Oh, you know... hither and thither. A bit of this, a bit of that... time's a tricky thing to manage. <br><span class=\"characterName\">Zanele:</span> Hither and thither?That's your excuse? <br><span class=\"characterName\">Tino:</span> Works for me, doesn’t it? I’ve got places to be, <i>people to not meet</i>.<br><span class=\"characterName\">Jasmin:</span> Right... Well, I won’t ask any further. Probably better I don’t.<br><span class=\"characterName\">Tino:</span> Smart move. Now, who’s ready for some food?<br> Zanele smacks Tino's hand away before he can snatch himself a bowl.<br><span class=\"characterName\">Zanele:</span> - And no magic tricks around the stew, okay?<br><span class=\"characterName\">Tino:</span> Wouldn’t dream of it.<br> The group settles around the campfire, sharing the meal and chatting comfortably, the sounds of laughter and warmth surrounding you all.",
             "character1": "all",
             "character2": "none",
-            "imgSrc": "Images/Choices/Sleep.webp",
+            "imgSrc": "Images/Choices/Continue the night.webp",
             "gradient": "linear-gradient(black, white)",
             "event": "none"
           }
@@ -953,7 +953,7 @@
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
         "event": "multipleChoices",
-        "goToBranches": [68, 71, 74, 77, 78, 0],
+        "goToBranches": [68, 71, 74, 77, 78, 80],
         "choices": []
       },
       {
@@ -1223,7 +1223,7 @@
           {
             "choiceId": "3",
             "option": "End Conversation",
-            "outcome": "",
+            "outcome": "<span class=\"characterName\">Zanele:</span> Enough about me, let’s get to cooking. We’ve got plenty of ingredients—what are we making tonight? <br><span class=\"characterName\">You:</span> How about something hearty? A stew sounds good. <br><span class=\"characterName\">Zanele:</span> Good choice! Let’s get to it. You chop the veggies, I’ll handle the meat and spices. <br> You begin chopping carrots, onions, and garlic while Zanele prepares the meat. The warmth of the fire and the scent of herbs fill the air.<br><span class=\"characterName\">Zanele:</span> Don’t let the garlic burn—keep it soft and fragrant. Stir it gently. <br><span class=\"characterName\">You:</span> This smells amazing already. <br> You continue stirring as the stew begins to simmer. <br><span class=\"characterName\">Zanele:</span> Alright, just a pinch more salt... There! Now we wait.",
             "character1": "none",
             "character2": "Images/phoenix.webp",
             "event": "none"
@@ -1232,7 +1232,132 @@
         "closingChoice": 3
       },
       {
-        "branchId": "branch78",
+        "branchId": "branch79",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch80",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "visualChoices",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Play Memory Game",
+            "outcome": "<span class=\"characterName\">Mthi:</span> Alright, I’ve had enough of listening to Tino's cryptic nonsense for one night. Who’s up for a game? <br><span class=\"characterName\">Zanele:</span> A game? I think we could all use something to pass the time. What do you have in mind? <br><span class=\"characterName\">Mthi:</span> How about a memory game? Cards, matching pairs... it’s simple, but fun. <br><span class=\"characterName\">Tino:</span> Didn't you play that earlier ? Hmmm anyway I'm in. But just so you know, I’ve got the best memory in the group. You’re all doomed from the start. <br><span class=\"characterName\">Llewellyn:</span> Sure, Tino. I’ll believe that when I see it. Let’s see if your memory is as good as you claim. <br><span class=\"characterName\">Jasmin:</span> Alright, alright. We’ll see who’s truly got the sharpest memory. Let’s get started.",
+            "character1": "all",
+            "character2": "none",
+            "imgSrc": "Images/Choices/hand.webp",
+            "gradient": "linear-gradient(brown, gold, brown,gold,brown)",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Sing Together",
+            "outcome": "Mthi leans back against a log, eyes gleaming with excitement. <br><span class=\"characterName\">Mthi:</span> So, I’ve got an idea! How about a little sing-along? A song for the road ahead! Everyone’s got a voice, right? <br><span class=\"characterName\">Zanele:</span> I’m in! What are we singing? You know I’ve got a thing for tunes. <br><span class=\"characterName\">Jasmin:</span> Sounds fun. I could use a little music to lift the spirits. <br><span class=\"characterName\">Llewellyn:</span> I suppose I can give it a try. It’ll be nice to add something to the night. <br>Tino, who has been quietly observing, raises an eyebrow and waves his hand dismissively. <br><span class=\"characterName\">Tino:</span> .... Nah, I'll pass. <br>  With a playful grin, Mthi quickly moves closer to Tino, a twinkle in her eye.<br><span class=\"characterName\">Mthi:</span> Oh, come on, Tino! You can’t just leave us to sing by ourselves! It’ll be fun—you might even surprise yourself! <br> Zanele, ever the supportive force, laughs and nudges Tino lightly. <br><span class=\"characterName\">Zanele:</span> Yeah, Tino! Don’t leave us hanging. You can just sit back and listen, if you must... but you’ll have to hear us. <br> Tino looks around, then crosses his arms with a smirk, clearly outnumbered but unwilling to give in easily.<br><span class=\"characterName\">Tino:</span> <i>Let it go</i>. I'm not singing but you guys have fun. <br><span class=\"characterName\">Mthi:</span> Alright, Tino, you don’t have to sing—but you’ll be the audience, and we’ll make sure to put on a good show. Just don’t be surprised if we get you humming along by the end of it!",
+            "character1": "all",
+            "character2": "none",
+            "imgSrc": "Images/Choices/Sing Along.webp",
+            "gradient": "linear-gradient(gold,red 100%)",
+            "event": "none"
+          },
+          {
+            "choiceId": "5",
+            "option": "Go to Sleep",
+            "outcome": "",
+            "character1": "all",
+            "character2": "none",
+            "imgSrc": "Images/Choices/Continue the night.webp",
+            "gradient": "linear-gradient(black, white)",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch81",
+        "text": ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Error - Broken ChoiceLoop<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoices",
+        "goToBranches": [82, 84, 0],
+        "choices": []
+      },
+      {
+        "branchId": "branch82",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "triggerGame",
+        "game": "MemoryGame",
+        "choices": []
+      },
+      {
+        "branchId": "branch83",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch84",
+        "text": "What would you like to sing?",
+        "character1": "all",
+        "character2": "none",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Classic",
+            "outcome": "Let's go classical",
+            "character1": "Images/eye.webp",
+            "character2": "none",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Rap",
+            "outcome": "Let's Rap",
+            "character1": "Images/eye.webp",
+            "character2": "none",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch85",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "checkChoices",
+        "choice": 10,
+        "values": [0],
+        "endBranch": 88,
+        "choices": []
+      },
+      {
+        "branchId": "branch86",
+        "text": "YES IT CHECKED WELL",
+        "character1": "none",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch87",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch87",
         "text": "",
         "character1": "none",
         "character2": "none",
