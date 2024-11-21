@@ -972,6 +972,7 @@ function storyEvents(branch) {
     multipleChoices(branch);
   } else if (branch.event == "multipleChoicesEnd") {
     multipleChoicesEnd();
+  }
   if (branch.event == "triggerBattle") {
     document.getElementById(`myMap`).style.display = "none";
     document.getElementById("myEncyclopedia").style.display = "none";
