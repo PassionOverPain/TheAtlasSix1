@@ -112,7 +112,7 @@
           {
             "choiceId": "4",
             "option": "Zanele to burn the battlefield, losing allies but ensuring the enemy is gone",
-            "outcome": "<br> <span class=\"characterName\">Zanele:</span> We need to get out of this, one way or the other. <br> <span class=\"characterName\">Jasmin:</span> And you are suggesting? <br> <span class=\"characterName\">Zanele:</span> Using Inferno around us, we can ensure that the enemy is gone but - <br> <span class=\"characterName\">Mthi:</span> That flame will also devour everything else outside of the protective circle. <br> <span class=\"characterName\">Zanele:</span> Yes. <br> <span class=\"characterName\">Jasmin:</span> At this point- <br> <span class=\"characterName\">Tino:</span> We need to ensure that they are stopped, no matter the cost. <br> <span class=\"characterName\">Zanele:</span> Okay... <i> Zanele lights the circle and everyone steps inside </i>.",
+            "outcome": "<span class=\"characterName\">Zanele:</span> We need to get out of this, one way or the other. <br> <span class=\"characterName\">Jasmin:</span> And you are suggesting? <br> <span class=\"characterName\">Zanele:</span> Using Inferno around us, we can ensure that the enemy is gone but - <br> <span class=\"characterName\">Mthi:</span> That flame will also devour everything else outside of the protective circle. <br> <span class=\"characterName\">Zanele:</span> Yes. <br> <span class=\"characterName\">Jasmin:</span> At this point- <br> <span class=\"characterName\">Tino:</span> We need to ensure that they are stopped, no matter the cost. <br> <span class=\"characterName\">Zanele:</span> Okay... <i> Zanele lights the circle and everyone steps inside </i>.",
             "character1": "all",
             "character2": "Images/Characters/cloakedFigureBack.webp",
             "event": "none"
@@ -175,13 +175,32 @@
         "character2": "none",
         "event": "checkChoices",
         "choice": 1,
+        "values": [3],
+        "endBranch": 6,
+        "choices": []
+      },
+      {
+        "branchId": "branch6",
+        "text": "<span class=\"characterName\">Unknown Queen:</span> Cowards ! In our worst moment you choose to run ? <br>The battlefield is chaos. Soldiers from the allied kingdoms clash desperately against the relentless enemy. Banners are tattered, and the air is thick with smoke and ash.<br><span class=\"characterName\">Unknown Ally:</span> Hold the line! For Eryndor! For all the kingdoms.A knight swings their halberd, cutting down an enemy as a  Aurelian mage summons water to douse encroaching flames. Before the mage can cast again, they fall to a hail of arrows.<br><span class=\"characterName\">Unknown Captain:</span> Protect the queen at all costs!The captain, clad in silver armor, carves a path through the chaos. Their greatsword cleaves through enemies, but even their strength seems insufficient against the tide.Through the fray, the cloaked figure strides with deadly precision.<br><span class=\"characterName\">Unknown Ally:</span> What is that thing? Nothing stops them! <br>The cloaked figure raises a hand, and a wave of fire erupts, consuming rows of archers. Shadowy tendrils lash out from their blade, pulling shield-bearers into the inferno.<br><span class=\"characterName\">Unknown Queen:</span> Stand your ground! Fight with honor! Unlike those cowards we shall not leave our home to perish. <br>The queen’s silver spear pierces an enemy foe, but her efforts are not enough to turn the tide. Another fiery orb detonates in the heart of the allied forces, scattering soldiers and leaving despair in its wake.<br><span class=\"characterName\">Unknown Captain:</span> We can’t hold them! Fall back!The captain charges the cloaked figure in a desperate bid for hope. Their blade meets the figure’s with a clash that reverberates through the battlefield. But the figure counters swiftly, shattering the captain’s sword and sending them to the ground.The cloaked figure advances, unstoppable, as the allied forces crumble around them. Victory slips further away with every step.",
+        "character1": "Images/Characters/Silver Order.webp",
+        "character2": "Images/Characters/cloakedFigureFront.webp",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch7",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "checkChoices",
+        "choice": 1,
         "values": [0, 1, 2],
-        "endBranch": 7,
+        "endBranch": 9,
         "choices": []
       },
 
       {
-        "branchId": "branch6",
+        "branchId": "branch8",
         "text": "",
         "character1": "all",
         "character2": "Images/Characters/cloakedFigureFront.webp",
@@ -192,7 +211,7 @@
         "choices": []
       },
       {
-        "branchId": "branch7",
+        "branchId": "branch9",
         "text": "As your vision clears, you feel the jagged chill of the hard, cold ground beneath you, echoing the icy dread settling in your bones. A rhythmic pounding fills your ears—your own heartbeat, hammering faster with each passing second. Shadows shift, and a dark figure steps closer, their silhouette seeming to blend into the very void around them. <br><span class=\"characterName\">Cloaked:</span> Look at you — fallen, broken. You've lost more than just this battle. Prepare to watch everything you hold dear slip away … one by one. <br> Their voice is a low, menacing whisper, each word twisting like a blade in your heart. You feel a suffocating weight as the realization dawns—this isn’t just defeat; it’s a reckoning, the merciless unraveling of everything you fought for. In the shadows, you see flashes of familiar faces—your friends, your allies—each one flickering like a candle about to be snuffed out. The Cloaked Figure’s presence presses down, clouding the air with a foreboding that chills you to your core. This isn’t just an end; it’s your end, at the hands of someone who you held close to you.",
         "character1": "all",
         "character2": "Images/Characters/The Sixth Atlas.webp",
@@ -200,7 +219,7 @@
         "choices": []
       },
       {
-        "branchId": "branch8",
+        "branchId": "branch10",
         "text": "......",
         "character1": "none",
         "character2": "none",
@@ -208,7 +227,7 @@
         "choices": []
       },
       {
-        "branchId": "branch9",
+        "branchId": "branch11",
         "text": "<span class=\"characterName\">Passion:</span> Hey there, developer Tino here... No not in game Tino, Tino from the past... or in your case the present... but also the future ? Anyway, Thanks for taking your precious time to give The Atlas Six a try. Currently the game is still in early development so there are prone to be bugs but fear not, they don't bite. Feel free to let me know if you encounter any bug that does bite though <a href=\"mailto:tinomhedziso21@gmail.com\">tinomhedziso21@gmail.com</a>.",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
@@ -216,15 +235,15 @@
         "choices": []
       },
       {
-        "branchId": "branch10",
-        "text": "<span class=\"characterName\">Passion:</span> The narrative of The Atlas Six is centered around 6 heroes... whom the 6th one may or may not betray you as you have just seen. The idea was constructed around a fictional storyline my friends <i>[who are the in game characters]</i> and I came up with. That being said each character is meant to represent a subset of that friend but the actions performed in the world by Atlas characters does not completely reflect actions my friends would actually do.",
+        "branchId": "branch12",
+        "text": "<span class=\"characterName\">Passion:</span> The narrative of The Atlas Six is centered around 6 heroes... whom the 6th one may or may not betray you as you have just seen. The idea was constructed around a fictional storyline my friends <i>[who are the in game characters]</i> and I came up with. That being said each character is meant to represent a subset of that friend but the actions performed in the world by Atlas characters do not completely reflect actions my friends would actually do.",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
         "event": "none",
         "choices": []
       },
       {
-        "branchId": "branch11",
+        "branchId": "branch13",
         "text": "<span class=\"characterName\">Passion:</span> The world you find yourself is a strange one - to say the least. It is one that is constantly changing based on Your choices such as this timeline where your 6th friend betrays you, whoever that is. Certain actions will have certain consequences that may or may not align with your desire, certain characters will have certain story narratives and certain.... blah blah blah you get the idea. Morally right choices may not be the best ones overall and vice versa so think carefully. Experience is the best teacher so I will let you play now 😄🦚 - <i>Enjoy</i>",
         "character1": "none",
         "character2": "Images/timekeeper.webp",
@@ -232,7 +251,7 @@
         "choices": []
       },
       {
-        "branchId": "branch12",
+        "branchId": "branch14",
         "text": "",
         "character1": "",
         "character2": "",
@@ -1338,7 +1357,7 @@
         "event": "checkChoices",
         "choice": 10,
         "values": [0],
-        "endBranch": 88,
+        "endBranch": 89,
         "choices": []
       },
       {

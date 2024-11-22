@@ -1046,6 +1046,7 @@ function storyEvents(branch) {
   }
 }
 function displayStory() {
+  console.log(arrChoices);
   document.getElementById(`myMap`).style.display = "inline-block";
   document.getElementById("myEncyclopedia").style.display = "inline-block";
   let storyCon = document.getElementById(`storyLine`);
@@ -1064,7 +1065,6 @@ function displayStory() {
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function checkChoices(choiceIndex, values, endBranch) {
-  console.log(arrChoices);
   let x = Number(arrChoices[choiceIndex]);
   if (!values.includes(x)) {
     currentBranch = endBranch;
