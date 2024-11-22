@@ -194,13 +194,33 @@
         "character2": "none",
         "event": "checkChoices",
         "choice": 1,
+        "values": [4],
+        "endBranch": 8,
+        "choices": []
+      },
+      {
+        "branchId": "branch8",
+        "text": "The allied forces scramble to organize, but the chaos only grows. The cries of the wounded echo, blending with the clash of weapons and the roar of the flames.<br><span class=\"characterName\">Unknown Ally:</span> Water! We need water! Douse the flames!Water mages spring into action, summoning torrents of water in a desperate attempt to quell the inferno. But the flames grow, twisting and expanding with a life of their own. Every spell cast is met with resistance, as the fire leaps higher and higher, fueled by an unrelenting heat.<br><span class=\"characterName\">Unknown Mage:</span> It’s too much! We can’t stop it!A massive wall of water is summoned, crashing down on the flames, but the fire surges forward, licking the air with an insatiable hunger. Soldiers flee from the blaze, their clothes singed, but the fire continues to spread across the battlefield.<br><span class=\"characterName\">Unknown Ally:</span> Retreat! Fall back to the eastern ridge!The once organized lines are shattered as the fire rages on, burning through the ranks of the allied forces. Soldiers shout for their comrades, but the flames separate them, isolating the injured and the dying.Through the storm of fire, the cloaked figure moves unscathed, walking calmly amidst the chaos.<br><span class=\"characterName\">Cloaked Figure:</span> Let them burn. <br> The cloaked figure raises a hand, and the flames grow brighter, more ferocious. The shadows around them seem to twist and coil, feeding the fire, making it impossibly vast. Despite all efforts, the fire continues to rage, and the allied forces are overwhelmed, unable to stop the inferno from consuming everything in its path.The landscape is becoming a wasteland, the once vibrant colors of the battlefield replaced by the deadly glow of flames. Those who remain on their feet are scattered, unsure of where to go, their faces smudged with soot and fear. But through it all, the cloaked figure walks unharmed, a shadow amidst the burning world they have left behind.",
+        "character1": "none",
+        "character2": "Images/Characters/cloakedFigureFront.webp",
+        "event": "none",
+        "choices": []
+      },
+
+      {
+        "branchId": "branch9",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "checkChoices",
+        "choice": 1,
         "values": [0, 1, 2],
         "endBranch": 9,
         "choices": []
       },
 
       {
-        "branchId": "branch8",
+        "branchId": "branch10",
         "text": "",
         "character1": "all",
         "character2": "Images/Characters/cloakedFigureFront.webp",
@@ -211,7 +231,7 @@
         "choices": []
       },
       {
-        "branchId": "branch9",
+        "branchId": "branch11",
         "text": "As your vision clears, you feel the jagged chill of the hard, cold ground beneath you, echoing the icy dread settling in your bones. A rhythmic pounding fills your ears—your own heartbeat, hammering faster with each passing second. Shadows shift, and a dark figure steps closer, their silhouette seeming to blend into the very void around them. <br><span class=\"characterName\">Cloaked:</span> Look at you — fallen, broken. You've lost more than just this battle. Prepare to watch everything you hold dear slip away … one by one. <br> Their voice is a low, menacing whisper, each word twisting like a blade in your heart. You feel a suffocating weight as the realization dawns—this isn’t just defeat; it’s a reckoning, the merciless unraveling of everything you fought for. In the shadows, you see flashes of familiar faces—your friends, your allies—each one flickering like a candle about to be snuffed out. The Cloaked Figure’s presence presses down, clouding the air with a foreboding that chills you to your core. This isn’t just an end; it’s your end, at the hands of someone who you held close to you.",
         "character1": "all",
         "character2": "Images/Characters/The Sixth Atlas.webp",
@@ -219,7 +239,7 @@
         "choices": []
       },
       {
-        "branchId": "branch10",
+        "branchId": "branch12++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
         "text": "......",
         "character1": "none",
         "character2": "none",
