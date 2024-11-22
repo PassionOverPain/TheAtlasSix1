@@ -1046,7 +1046,6 @@ function storyEvents(branch) {
   }
 }
 function displayStory() {
-  console.log(arrChoices);
   document.getElementById(`myMap`).style.display = "inline-block";
   document.getElementById("myEncyclopedia").style.display = "inline-block";
   let storyCon = document.getElementById(`storyLine`);
