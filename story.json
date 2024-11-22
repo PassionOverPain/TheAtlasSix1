@@ -1267,10 +1267,10 @@
             "event": "none"
           },
           {
-            "choiceId": "5",
+            "choiceId": "2",
             "option": "Go to Sleep",
-            "outcome": "",
-            "character1": "all",
+            "outcome": "<span class=\"characterName\">Passion:</span> And so, our journey comes to an end — for now. This game has been a labor of love, countles nights of coding (about above 100 and some spare change), designing, and rewriting. It’s not perfect, and I’ll admit, this is just the beta — the earliest version of what I hope will grow into something far greater.<br> If you’ve reached this point, it means you’ve joined me on this adventure, and for that, I’m truly grateful. Now, don’t get me wrong — your feedback might matter (I’m kidding, I promise). It does matter because your ideas, thoughts, and opinions could shape what this game will eventually become. Your voice is part of the ideation process now. A massive thank you to my real-life inspirations: Jasmin, Mthi, Llewellyn, and Zanele. Without your unwavering support, humor, and brilliant minds, this project would’ve remained just an idea. You’re the reason this world exists, and your influence is woven into every scene, every choice, and every moment of this story.<br> <i>Now onto the legalities:</i> I’d also like to acknowledge the incredible assets that helped bring this game to life. Most of the assets used in this project are free and available under the Creative Commons License (CC BY or similar), making it possible for creators like me to dream big.<br> Thank you for being a part of this story.<br> ~<i>PassionOverPain</i>",
+            "character1": "Images/timekeeper.webp",
             "character2": "none",
             "imgSrc": "Images/Choices/Continue the night.webp",
             "gradient": "linear-gradient(black, white)",
@@ -1284,7 +1284,7 @@
         "character1": "none",
         "character2": "none",
         "event": "multipleChoices",
-        "goToBranches": [82, 84, 0],
+        "goToBranches": [82, 84, 92],
         "choices": []
       },
       {
@@ -1302,14 +1302,6 @@
         "character1": "none",
         "character2": "none",
         "event": "multipleChoicesEnd",
-        "choices": []
-      },
-      {
-        "branchId": "branch85",
-        "text": "",
-        "character1": "none",
-        "character2": "none",
-        "event": "addChoices",
         "choices": []
       },
       {
@@ -1339,7 +1331,7 @@
       },
 
       {
-        "branchId": "branch85+",
+        "branchId": "branch85",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1412,6 +1404,54 @@
         "character1": "none",
         "character2": "none",
         "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch91",
+        "text": "....",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch92",
+        "text": "<span class=\"characterName\">Passion:</span> Oh you're still here ? Welp As I said the game is finished now, you can leave.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch93",
+        "text": "....",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch94",
+        "text": "<span class=\"characterName\">Passion:</span> The game is over, I promise, <i>Leave</i>.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch95",
+        "text": "....",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch96",
+        "text": "<span class=\"characterName\">Passion:</span> You my friend are a persistent one... Anyway bruv feel free to stay here. I've got things to do in life.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
         "choices": []
       }
     ]
