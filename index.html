@@ -2,740 +2,913 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Atlas Six</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div
-      id="preloader"
-      style="
-        text-align: center;
-        display: block;
-        justify-content: center;
-        font-size: 1.7rem;
-        color: white;
-      "
-    >
-      <video src="Images/stolen.mp4" autoplay muted loop></video>
-      <span>...Loading Life...</span>
-    </div>
-    <header>
-      <!-- Formula used: (position - 1) * (360deg / quantity of items)-->
-      <div class="banner">
-        <div class="slider" style="--quantity: 10">
-          <div class="item" style="--position: 1">
-            <img
-              src="Images/healer.webp"
-              alt="The healer carousel image"
-              class="allyCard"
-            />
-          </div>
-          <div class="item" style="--position: 2">
-            <img
-              src="Images/titan.webp"
-              alt="The titan carousel image"
-              class="allyCard"
-            />
-          </div>
-          <div class="item" style="--position: 3">
-            <img
-              src="Images/eye.webp"
-              alt="The eye carousel image"
-              class="allyCard"
-            />
-          </div>
-          <div class="item" style="--position: 4">
-            <img
-              src="Images/phoenix.webp"
-              alt="The phoenix carousel image"
-              class="allyCard"
-            />
-          </div>
-          <div class="item" style="--position: 5">
-            <img
-              src="Images/timekeeper.webp"
-              alt="The timekeeper carousel image"
-              class="allyCard"
-            />
-          </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>The Atlas Six</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div
+			id="preloader"
+			style="
+				text-align: center;
+				display: block;
+				justify-content: center;
+				font-size: 1.7rem;
+				color: white;
+			">
+			<video
+				src="Images/stolen.mp4"
+				autoplay
+				muted
+				loop></video>
+			<span>...Loading Life...</span>
+		</div>
+		<header>
+			<!-- Formula used: (position - 1) * (360deg / quantity of items)-->
+			<div class="banner">
+				<div
+					class="slider"
+					style="--quantity: 10">
+					<div
+						class="item"
+						style="--position: 1">
+						<img
+							src="Images/healer.webp"
+							alt="The healer carousel image"
+							class="allyCard" />
+					</div>
+					<div
+						class="item"
+						style="--position: 2">
+						<img
+							src="Images/titan.webp"
+							alt="The titan carousel image"
+							class="allyCard" />
+					</div>
+					<div
+						class="item"
+						style="--position: 3">
+						<img
+							src="Images/eye.webp"
+							alt="The eye carousel image"
+							class="allyCard" />
+					</div>
+					<div
+						class="item"
+						style="--position: 4">
+						<img
+							src="Images/phoenix.webp"
+							alt="The phoenix carousel image"
+							class="allyCard" />
+					</div>
+					<div
+						class="item"
+						style="--position: 5">
+						<img
+							src="Images/timekeeper.webp"
+							alt="The timekeeper carousel image"
+							class="allyCard" />
+					</div>
 
-          <div class="item" style="--position: 6">
-            <img
-              src="Images/Characters/Golden Order.webp"
-              class="neutralCard"
-              alt="A monster image for the carousel"
-            />
-          </div>
-          <div class="item" style="--position: 7">
-            <img
-              src="Images/Characters/Silver Order.webp"
-              class="neutralCard"
-              alt="A monster image for the carousel"
-            />
-          </div>
-          <div class="item" style="--position: 8">
-            <img
-              src="Images/Characters/Ezraya Nightshade.webp"
-              class="enemyCard"
-              alt="A monster image for the carousel"
-            />
-          </div>
-          <div class="item" style="--position: 9">
-            <img
-              src="Images/Characters/Forgotten Knight.webp"
-              class="enemyCard"
-              alt="A monster image for the carousel"
-            />
-          </div>
-          <div class="item" style="--position: 10">
-            <img
-              src="Images/Characters/The Sixth Atlas.webp"
-              class="enemyCard"
-              alt="A monster image for the carousel"
-            />
-          </div>
-        </div>
-        <div class="content">
-          <h1 id="Title">The Atlas Six</h1>
-        </div>
-        <div id="myMap" onclick="displayMap()">
-          <img src="Images/closedmap.png" alt="The Atlax Six Map" />
-        </div>
-        <div id="thisMap">
-          <img src="Images/map.webp" alt="" id="Mapimg" />
-          <div class="hr mapCard" style="top: 40%; left: 50%">
-            <a href="#healer" onclick="displayMap()">
-              <img
-                src="Images/healer.webp"
-                alt="The map image for the character: the healer"
-              />
-            </a>
-          </div>
-          <div class="tk mapCard" style="top: 75%; left: 50%">
-            <a href="#timekeeper" onclick="displayMap()">
-              <img
-                src="Images/timekeeper.webp"
-                alt="The map image for the character: the timekeeper"
-              />
-            </a>
-          </div>
-          <div class="ee mapCard" style="top: 60%; left: 5%">
-            <a href="#eye" onclick="displayMap()">
-              <img
-                src="Images/eye.webp"
-                alt="The map image for the character: the eye"
-              />
-            </a>
-          </div>
-          <div class="px mapCard" style="top: 20%; left: 70%">
-            <a href="#phoenix" onclick="displayMap()">
-              <img
-                src="Images/phoenix.webp"
-                alt="The map image for the character: the phoenix"
-              />
-            </a>
-          </div>
-          <div class="tn mapCard" style="top: 15%; left: 25%">
-            <a href="#titan" onclick="displayMap()">
-              <img
-                src="Images/titan.webp"
-                alt="The map image for the character: the titan"
-              />
-            </a>
-          </div>
-          <div class="mapCard" style="top: 85%; left: 65%">
-            <img
-              src="Images/Characters/Golden Order.webp"
-              alt="A monster map image"
-            />
-          </div>
-          <div class="mapCard" style="top: 85%; left: 5%">
-            <img
-              src="Images/Characters/Silver Order.webp"
-              alt="A monster map image"
-            />
-          </div>
-          <div class="mapCard" style="top: 5%; left: 70%">
-            <img
-              src="Images/Characters/Forgotten Knight.webp"
-              alt="A monster map image"
-            />
-          </div>
-          <div class="mapCard" style="top: 45%; left: 70%">
-            <img
-              src="Images/Characters/Ezraya Nightshade.webp"
-              alt="A monster map image"
-            />
-          </div>
-          <div class="mapCard" style="top: 30%; left: 7%">
-            <a href="#playground" alt="Begin the Story" onclick="displayMap()">
-              <img src="Images/hand.webp" alt="The playground map image" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div id="myEncyclopedia" onclick="openEncyclopedia(0)">
-        <img src="Images/Encyclopedia.webp" alt="The Atlax Six Encyclopedia" />
-      </div>
-    </header>
-    <main>
-      <section id="About">
-        <div class="quest">
-          <div style="background: url(Images/paperbg.webp)">
-            <h1 style="text-align: center">
-              The Legend tells a tale of Six heroes
-            </h1>
-            <p>
-              In a world teetering on the brink of apocalypse, darkness
-              shattered the light and unleashed unknown horrors upon humanity.
-              Amidst the chaos, hope lay dormant in the form of six
-              extraordinary individuals the Atlas Six scattered across a
-              fractured world. Each possessed unique abilities and destinies
-              entwined with the fate of humanity. As they navigated through the
-              ruins of civilization, their paths converged, forging an uneasy
-              alliance against both the monstrous creatures prowling the land
-              and their own inner demons. Bound by a shared mission and the
-              flickering ember of hope, the Atlas Six faced a journey that would
-              test their resilience, challenge their alliances, and unravel
-              mysteries buried deep within time itself. Their quest held the key
-              to either defying the apocalypse or succumbing to its relentless
-              advance.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="healer">
-        <div class="hero hrC" onclick="displayInfo(`open`,`healer`)">
-          <img src="Images/healer.webp" alt="The healer story image" />
-        </div>
-        <div class="herodesc" id="healerDesc">
-          <div class="heDesc">
-            <p class="inactive" id="healerStats">
-              Jasim Adenka<br />
-              HP: 100 <br />
-              ATK: 70 <br />STAMINA: 90 <br />
-              MANA: 120 <br />INTELLIGENCE: 150 <br />STRENGTH: 50 <br />
-              DEXTERITY: 120 <br />CLASS: WIZARD
-            </p>
-            <p
-              class="inactive Info"
-              id="healerInfo"
-              style="font-family: IM Fell English, serif"
-            >
-              Born amidst the serene beauty of Aurelia—a kingdom of lush forests
-              and glistening lakes—Jasmin has always been deeply connected to
-              nature. From her earliest years, she showed a rare affinity for
-              animals, able to sense their emotions and calm even the most wary
-              with just a touch. Her family, belonging to a lineage of Druids
-              gifted in taming and bonding with creatures, saw her potential and
-              nurtured her talents. Alongside her training in Druidic arts and
-              water magic, Jasmin mastered the healing arts, becoming an adept
-              healer. Today, as the healer of the Atlas Six, her closest
-              friends, she brings a gentle strength to their ranks, often guided
-              by her loyal cats, her closest companions and protectors.
-            </p>
-            <div class="btns">
-              <button onclick="openTab(`Info`,`healer`)">Info</button>
-              <button onclick="openTab(`Stats`,`healer`)">Stats</button>
-              <button onclick="displayInfo(`close`,`healer`)">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="titan">
-        <div class="hero tnC" onclick="displayInfo(`open`,`titan`)">
-          <img src="Images/titan.webp" alt="The titan story image" />
-        </div>
-        <div class="herodesc" id="titanDesc">
-          <div class="heDesc">
-            <p class="inactive" id="titanStats">
-              Llewellyn Artemis<br />
-              HP: 210 <br />
-              ATK: 140 <br />STAMINA: 100 <br />
-              MANA: 50 <br />INTELLIGENCE: 90 <br />STRENGTH: 190 <br />
-              DEXTERITY: 90 <br />CLASS: SOLDIER
-            </p>
-            <p
-              class="inactive Info"
-              id="titanInfo"
-              style="font-family: IM Fell English, serif"
-            >
-              Llewellyn stands as one of the towering generals of Eryndor, the
-              stone-wrought kingdom famed for its fierce warriors and steadfast
-              titans. Hailing from humble roots, Llewellyn rose through the
-              ranks of Eryndor’s formidable military on sheer tenacity, quickly
-              gaining renown for his skill in combat and his unbreakable will.
-              He weilds a massive sword and shield forged from the indomitable
-              stones of his homeland. Llewellyn is the embodiment of a
-              mountain—grounded, calm, and unwaveringly loyal. His demeanor is
-              steady and measured, offering a quiet strength that becomes a
-              beacon of hope for those around him. His reputation as the tank of
-              the Atlas Six is well-earned: when battle calls, he takes on the
-              fiercest of foes, using his shield to deflect, his blade to
-              conquer, and his very presence to intimidate.
-            </p>
-            <div class="btns">
-              <button onclick="openTab(`Info`,`titan`)">Info</button>
-              <button onclick="openTab(`Stats`,`titan`)">Stats</button>
-              <button onclick="displayInfo(`close`,`titan`)">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="eye">
-        <div class="hero eeC" class="hero" onclick="displayInfo(`open`,`eye`)">
-          <img src="Images/eye.webp" alt="The eye story image" />
-        </div>
-        <div class="herodesc" id="eyeDesc">
-          <div class="heDesc">
-            <p class="inactive" id="eyeStats">
-              Mthi Armorenia<br />
-              HP: 110 <br />
-              ATK: 60 <br />STAMINA: 100 <br />
-              MANA: 140 <br />INTELLIGENCE: 120 <br />STRENGTH: 60 <br />
-              DEXTERITY: 100 <br />CLASS: SORCERER
-            </p>
-            <p
-              class="inactive Info"
-              id="eyeInfo"
-              style="font-family: IM Fell English, serif"
-            >
-              Mthi hails from Valdora, the land of sorcery, archery, and
-              boundless knowledge, where her upbringing was steeped in both
-              discipline and curiosity. Known as "The Eye" for her unmatched
-              precision in archery, she earned her title not just for her aim
-              but for her uncanny ability to notice what others miss. Raised in
-              a family deeply respected in Valdora, Mthi’s love for books and
-              learning began at an early age, often exploring Valdora’s
-              labyrinthine library of ancient tomes and scrolls. Her
-              inquisitiveness has made her surprisingly knowledgeable, with
-              insights into topics ranging from enchantments to crafting
-              techniques. Beyond her studies and sharp aim, Mthi has a deep
-              passion for music. Whether strumming a melody on her guitar or
-              composing intricate harmonies, she finds joy in the connection
-              music brings. Her dream of one day forming a band reflects her
-              playful spirit, though her skills as a bard already make her
-              invaluable to her companions. With a personality as vibrant as the
-              melodies she plays, Mthi’s balance of intellect, artistry, and
-              precision makes her a vital and captivating presence in any group.
-            </p>
-            <div class="btns">
-              <button onclick="openTab(`Info`,`eye`)">Info</button>
-              <button onclick="openTab(`Stats`,`eye`)">Stats</button>
-              <button onclick="displayInfo(`close`,`eye`)">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="phoenix">
-        <div class="hero pxC" onclick="displayInfo(`open`,`phoenix`)">
-          <img src="Images/phoenix.webp" alt="The phoenix story image" />
-        </div>
-        <div class="herodesc" id="phoenixDesc">
-          <div class="heDesc">
-            <p class="inactive" id="phoenixStats">
-              Zanele Miyazaki<br />
-              HP: 110 <br />
-              ATK: 160 <br />STAMINA: 90 <br />
-              MANA: 120 <br />INTELLIGENCE: 110 <br />STRENGTH: 70 <br />
-              DEXTERITY: 100 <br />CLASS: PYROMANCER
-            </p>
-            <p
-              class="inactive Info"
-              id="phoenixInfo"
-              style="font-family: IM Fell English, serif"
-            >
-              Zanele, the fiery spirit of the Atlas Six, was born and raised in
-              Kurohana, a harsh but beautiful land where volcanoes spew molten
-              fury and the earth itself is forged in flame. From an early age,
-              she was trained in the destructive arts of fire magic, learning to
-              harness its volatile power. Yet, it was under the guidance of her
-              grandmother that she discovered the healing side of flame,
-              learning to use her fire not only to burn but to restore and mend.
-              With a heart as fierce as her magic, Zanele became the motherly
-              figure of the group, ever protective and nurturing. Her presence
-              is a constant, her warmth extending beyond the battlefield,
-              offering solace to those who need it most. Whether fighting with
-              unrelenting force or offering care with a gentle touch, Zanele’s
-              devotion to the Atlas Six knows no bounds.
-            </p>
-            <div class="btns">
-              <button onclick="openTab(`Info`,`phoenix`)">Info</button>
-              <button onclick="openTab(`Stats`,`phoenix`)">Stats</button>
-              <button onclick="displayInfo(`close`,`phoenix`)">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="timekeeper">
-        <div class="hero tkC" onclick="displayInfo(`open`,`timekeeper`)">
-          <img src="Images/timekeeper.webp" alt="The timekeeper story image" />
-        </div>
-        <div class="herodesc" id="timekeeperDesc">
-          <div class="heDesc">
-            <p class="inactive" id="timekeeperStats">
-              Tino Hildaeld<br />
-              HP: 130 <br />
-              ATK: 100 <br />STAMINA: 120 <br />
-              MANA: 70 <br />INTELLIGENCE: 120 <br />STRENGTH: 60 <br />
-              DEXTERITY: 180 <br />CLASS: KNIGHT
-            </p>
-            <p
-              class="inactive Info"
-              id="timekeeperInfo"
-              style="font-family: IM Fell English, serif"
-            >
-              Time is the gift that robs you of the present. Tino is a
-              mysterious figure with the ability to control time, shrouded in
-              riddles and paradoxes. His words often carry double meanings,
-              blending philosophy with playful ambiguity. His eyes, always
-              looking beyond the present, suggest he's aware of things you’re
-              not. Tino speaks in a way that invites you to question the nature
-              of time—whether it's a circle to be broken, or an illusion waiting
-              to be shaped. He asks existential questions, like if the past is
-              truly gone or just waiting to be revisited, and whether the future
-              is fixed or malleable. His charm lies in making you ponder deep
-              concepts while keeping a playful grin, as though time itself is
-              just another game for him.
-            </p>
-            <div class="btns">
-              <button onclick="openTab(`Info`,`timekeeper`)">Info</button>
-              <button onclick="openTab(`Stats`,`timekeeper`)">Stats</button>
-              <button onclick="displayInfo(`close`,`timekeeper`)">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="playground">
-        <div class="pgCardCon" id="heroesCon">
-          <div class="pgCard pgHero" id="pgHealer">
-            <img
-              src="Images/healer.webp"
-              alt="The healer playground card"
-              id="pgHealerimg"
-              class="Ally allyCard"
-              data-heronum="0"
-            />
-            <!---I removed hero class... may be needed later -->
-          </div>
-          <div class="pgCard pgHero" id="pgTitan">
-            <img
-              src="Images/titan.webp"
-              alt="The titan playground card"
-              class="Ally allyCard"
-              data-heronum="1"
-              id="pgTitanimg"
-            />
-          </div>
-          <div class="pgCard pgHero" id="pgEye">
-            <img
-              src="Images/eye.webp"
-              alt="The eye playground card"
-              class="Ally allyCard"
-              data-heronum="2"
-              id="pgEyeimg"
-            />
-          </div>
-          <div class="pgCard pgHero" id="pgPhoenix">
-            <img
-              src="Images/phoenix.webp"
-              alt="The phoenix playground card"
-              class="Ally allyCard"
-              data-heronum="3"
-              id="pgPhoeniximg"
-            />
-          </div>
+					<div
+						class="item"
+						style="--position: 6">
+						<img
+							src="Images/Characters/Golden Order.webp"
+							class="neutralCard"
+							alt="A monster image for the carousel" />
+					</div>
+					<div
+						class="item"
+						style="--position: 7">
+						<img
+							src="Images/Characters/Silver Order.webp"
+							class="neutralCard"
+							alt="A monster image for the carousel" />
+					</div>
+					<div
+						class="item"
+						style="--position: 8">
+						<img
+							src="Images/Characters/Ezraya Nightshade.webp"
+							class="enemyCard"
+							alt="A monster image for the carousel" />
+					</div>
+					<div
+						class="item"
+						style="--position: 9">
+						<img
+							src="Images/Characters/Forgotten Knight.webp"
+							class="enemyCard"
+							alt="A monster image for the carousel" />
+					</div>
+					<div
+						class="item"
+						style="--position: 10">
+						<img
+							src="Images/Characters/The Sixth Atlas.webp"
+							class="enemyCard"
+							alt="A monster image for the carousel" />
+					</div>
+				</div>
+				<div class="content">
+					<h1 id="Title">The Atlas Six</h1>
+				</div>
+				<div
+					id="myMap"
+					onclick="displayMap()">
+					<img
+						src="Images/closedmap.png"
+						alt="The Atlax Six Map" />
+				</div>
+				<div id="thisMap">
+					<img
+						src="Images/map.webp"
+						alt=""
+						id="Mapimg" />
+					<div
+						class="hr mapCard"
+						style="top: 40%; left: 50%">
+						<a
+							href="#healer"
+							onclick="displayMap()">
+							<img
+								src="Images/healer.webp"
+								alt="The map image for the character: the healer" />
+						</a>
+					</div>
+					<div
+						class="tk mapCard"
+						style="top: 75%; left: 50%">
+						<a
+							href="#timekeeper"
+							onclick="displayMap()">
+							<img
+								src="Images/timekeeper.webp"
+								alt="The map image for the character: the timekeeper" />
+						</a>
+					</div>
+					<div
+						class="ee mapCard"
+						style="top: 60%; left: 5%">
+						<a
+							href="#eye"
+							onclick="displayMap()">
+							<img
+								src="Images/eye.webp"
+								alt="The map image for the character: the eye" />
+						</a>
+					</div>
+					<div
+						class="px mapCard"
+						style="top: 20%; left: 70%">
+						<a
+							href="#phoenix"
+							onclick="displayMap()">
+							<img
+								src="Images/phoenix.webp"
+								alt="The map image for the character: the phoenix" />
+						</a>
+					</div>
+					<div
+						class="tn mapCard"
+						style="top: 15%; left: 25%">
+						<a
+							href="#titan"
+							onclick="displayMap()">
+							<img
+								src="Images/titan.webp"
+								alt="The map image for the character: the titan" />
+						</a>
+					</div>
+					<div
+						class="mapCard"
+						style="top: 85%; left: 65%">
+						<img
+							src="Images/Characters/Golden Order.webp"
+							alt="A monster map image" />
+					</div>
+					<div
+						class="mapCard"
+						style="top: 85%; left: 5%">
+						<img
+							src="Images/Characters/Silver Order.webp"
+							alt="A monster map image" />
+					</div>
+					<div
+						class="mapCard"
+						style="top: 5%; left: 70%">
+						<img
+							src="Images/Characters/Forgotten Knight.webp"
+							alt="A monster map image" />
+					</div>
+					<div
+						class="mapCard"
+						style="top: 45%; left: 70%">
+						<img
+							src="Images/Characters/Ezraya Nightshade.webp"
+							alt="A monster map image" />
+					</div>
+					<div
+						class="mapCard"
+						style="top: 30%; left: 7%">
+						<a
+							href="#playground"
+							alt="Begin the Story"
+							onclick="displayMap()">
+							<img
+								src="Images/hand.webp"
+								alt="The playground map image" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div
+				id="myEncyclopedia"
+				onclick="openEncyclopedia(0)">
+				<img
+					src="Images/Encyclopedia.webp"
+					alt="The Atlax Six Encyclopedia" />
+			</div>
+		</header>
+		<main>
+			<section id="About">
+				<div class="quest">
+					<div style="background: url(Images/paperbg.webp)">
+						<h1 style="text-align: center">
+							The Legend tells a tale of Six heroes
+						</h1>
+						<p>
+							In a world teetering on the brink of apocalypse, darkness
+							shattered the light and unleashed unknown horrors upon humanity.
+							Amidst the chaos, hope lay dormant in the form of six
+							extraordinary individuals the Atlas Six scattered across a
+							fractured world. Each possessed unique abilities and destinies
+							entwined with the fate of humanity. As they navigated through the
+							ruins of civilization, their paths converged, forging an uneasy
+							alliance against both the monstrous creatures prowling the land
+							and their own inner demons. Bound by a shared mission and the
+							flickering ember of hope, the Atlas Six faced a journey that would
+							test their resilience, challenge their alliances, and unravel
+							mysteries buried deep within time itself. Their quest held the key
+							to either defying the apocalypse or succumbing to its relentless
+							advance.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="healer">
+				<div
+					class="hero hrC"
+					onclick="displayInfo(`open`,`healer`)">
+					<img
+						src="Images/healer.webp"
+						alt="The healer story image" />
+				</div>
+				<div
+					class="herodesc"
+					id="healerDesc">
+					<div class="heDesc">
+						<p
+							class="inactive"
+							id="healerStats">
+							Jasim Adenka<br />
+							HP: 100 <br />
+							ATK: 70 <br />STAMINA: 90 <br />
+							MANA: 120 <br />INTELLIGENCE: 150 <br />STRENGTH: 50 <br />
+							DEXTERITY: 120 <br />CLASS: WIZARD
+						</p>
+						<p
+							class="inactive Info"
+							id="healerInfo"
+							style="font-family: IM Fell English, serif">
+							Born amidst the serene beauty of Aurelia—a kingdom of lush forests
+							and glistening lakes—Jasmin has always been deeply connected to
+							nature. From her earliest years, she showed a rare affinity for
+							animals, able to sense their emotions and calm even the most wary
+							with just a touch. Her family, belonging to a lineage of Druids
+							gifted in taming and bonding with creatures, saw her potential and
+							nurtured her talents. Alongside her training in Druidic arts and
+							water magic, Jasmin mastered the healing arts, becoming an adept
+							healer. Today, as the healer of the Atlas Six, her closest
+							friends, she brings a gentle strength to their ranks, often guided
+							by her loyal cats, her closest companions and protectors.
+						</p>
+						<div class="btns">
+							<button onclick="openTab(`Info`,`healer`)">Info</button>
+							<button onclick="openTab(`Stats`,`healer`)">Stats</button>
+							<button onclick="displayInfo(`close`,`healer`)">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="titan">
+				<div
+					class="hero tnC"
+					onclick="displayInfo(`open`,`titan`)">
+					<img
+						src="Images/titan.webp"
+						alt="The titan story image" />
+				</div>
+				<div
+					class="herodesc"
+					id="titanDesc">
+					<div class="heDesc">
+						<p
+							class="inactive"
+							id="titanStats">
+							Llewellyn Artemis<br />
+							HP: 210 <br />
+							ATK: 140 <br />STAMINA: 100 <br />
+							MANA: 50 <br />INTELLIGENCE: 90 <br />STRENGTH: 190 <br />
+							DEXTERITY: 90 <br />CLASS: SOLDIER
+						</p>
+						<p
+							class="inactive Info"
+							id="titanInfo"
+							style="font-family: IM Fell English, serif">
+							Llewellyn stands as one of the towering generals of Eryndor, the
+							stone-wrought kingdom famed for its fierce warriors and steadfast
+							titans. Hailing from humble roots, Llewellyn rose through the
+							ranks of Eryndor’s formidable military on sheer tenacity, quickly
+							gaining renown for his skill in combat and his unbreakable will.
+							He weilds a massive sword and shield forged from the indomitable
+							stones of his homeland. Llewellyn is the embodiment of a
+							mountain—grounded, calm, and unwaveringly loyal. His demeanor is
+							steady and measured, offering a quiet strength that becomes a
+							beacon of hope for those around him. His reputation as the tank of
+							the Atlas Six is well-earned: when battle calls, he takes on the
+							fiercest of foes, using his shield to deflect, his blade to
+							conquer, and his very presence to intimidate.
+						</p>
+						<div class="btns">
+							<button onclick="openTab(`Info`,`titan`)">Info</button>
+							<button onclick="openTab(`Stats`,`titan`)">Stats</button>
+							<button onclick="displayInfo(`close`,`titan`)">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="eye">
+				<div
+					class="hero eeC"
+					class="hero"
+					onclick="displayInfo(`open`,`eye`)">
+					<img
+						src="Images/eye.webp"
+						alt="The eye story image" />
+				</div>
+				<div
+					class="herodesc"
+					id="eyeDesc">
+					<div class="heDesc">
+						<p
+							class="inactive"
+							id="eyeStats">
+							Mthi Armorenia<br />
+							HP: 110 <br />
+							ATK: 60 <br />STAMINA: 100 <br />
+							MANA: 140 <br />INTELLIGENCE: 120 <br />STRENGTH: 60 <br />
+							DEXTERITY: 100 <br />CLASS: SORCERER
+						</p>
+						<p
+							class="inactive Info"
+							id="eyeInfo"
+							style="font-family: IM Fell English, serif">
+							Mthi hails from Valdora, the land of sorcery, archery, and
+							boundless knowledge, where her upbringing was steeped in both
+							discipline and curiosity. Known as "The Eye" for her unmatched
+							precision in archery, she earned her title not just for her aim
+							but for her uncanny ability to notice what others miss. Raised in
+							a family deeply respected in Valdora, Mthi’s love for books and
+							learning began at an early age, often exploring Valdora’s
+							labyrinthine library of ancient tomes and scrolls. Her
+							inquisitiveness has made her surprisingly knowledgeable, with
+							insights into topics ranging from enchantments to crafting
+							techniques. Beyond her studies and sharp aim, Mthi has a deep
+							passion for music. Whether strumming a melody on her guitar or
+							composing intricate harmonies, she finds joy in the connection
+							music brings. Her dream of one day forming a band reflects her
+							playful spirit, though her skills as a bard already make her
+							invaluable to her companions. With a personality as vibrant as the
+							melodies she plays, Mthi’s balance of intellect, artistry, and
+							precision makes her a vital and captivating presence in any group.
+						</p>
+						<div class="btns">
+							<button onclick="openTab(`Info`,`eye`)">Info</button>
+							<button onclick="openTab(`Stats`,`eye`)">Stats</button>
+							<button onclick="displayInfo(`close`,`eye`)">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="phoenix">
+				<div
+					class="hero pxC"
+					onclick="displayInfo(`open`,`phoenix`)">
+					<img
+						src="Images/phoenix.webp"
+						alt="The phoenix story image" />
+				</div>
+				<div
+					class="herodesc"
+					id="phoenixDesc">
+					<div class="heDesc">
+						<p
+							class="inactive"
+							id="phoenixStats">
+							Zanele Miyazaki<br />
+							HP: 110 <br />
+							ATK: 160 <br />STAMINA: 90 <br />
+							MANA: 120 <br />INTELLIGENCE: 110 <br />STRENGTH: 70 <br />
+							DEXTERITY: 100 <br />CLASS: PYROMANCER
+						</p>
+						<p
+							class="inactive Info"
+							id="phoenixInfo"
+							style="font-family: IM Fell English, serif">
+							Zanele, the fiery spirit of the Atlas Six, was born and raised in
+							Kurohana, a harsh but beautiful land where volcanoes spew molten
+							fury and the earth itself is forged in flame. From an early age,
+							she was trained in the destructive arts of fire magic, learning to
+							harness its volatile power. Yet, it was under the guidance of her
+							grandmother that she discovered the healing side of flame,
+							learning to use her fire not only to burn but to restore and mend.
+							With a heart as fierce as her magic, Zanele became the motherly
+							figure of the group, ever protective and nurturing. Her presence
+							is a constant, her warmth extending beyond the battlefield,
+							offering solace to those who need it most. Whether fighting with
+							unrelenting force or offering care with a gentle touch, Zanele’s
+							devotion to the Atlas Six knows no bounds.
+						</p>
+						<div class="btns">
+							<button onclick="openTab(`Info`,`phoenix`)">Info</button>
+							<button onclick="openTab(`Stats`,`phoenix`)">Stats</button>
+							<button onclick="displayInfo(`close`,`phoenix`)">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="timekeeper">
+				<div
+					class="hero tkC"
+					onclick="displayInfo(`open`,`timekeeper`)">
+					<img
+						src="Images/timekeeper.webp"
+						alt="The timekeeper story image" />
+				</div>
+				<div
+					class="herodesc"
+					id="timekeeperDesc">
+					<div class="heDesc">
+						<p
+							class="inactive"
+							id="timekeeperStats">
+							Tino Hildaeld<br />
+							HP: 130 <br />
+							ATK: 100 <br />STAMINA: 120 <br />
+							MANA: 70 <br />INTELLIGENCE: 120 <br />STRENGTH: 60 <br />
+							DEXTERITY: 180 <br />CLASS: KNIGHT
+						</p>
+						<p
+							class="inactive Info"
+							id="timekeeperInfo"
+							style="font-family: IM Fell English, serif">
+							Time is the gift that robs you of the present. Tino is a
+							mysterious figure with the ability to control time, shrouded in
+							riddles and paradoxes. His words often carry double meanings,
+							blending philosophy with playful ambiguity. His eyes, always
+							looking beyond the present, suggest he's aware of things you’re
+							not. Tino speaks in a way that invites you to question the nature
+							of time—whether it's a circle to be broken, or an illusion waiting
+							to be shaped. He asks existential questions, like if the past is
+							truly gone or just waiting to be revisited, and whether the future
+							is fixed or malleable. His charm lies in making you ponder deep
+							concepts while keeping a playful grin, as though time itself is
+							just another game for him.
+						</p>
+						<div class="btns">
+							<button onclick="openTab(`Info`,`timekeeper`)">Info</button>
+							<button onclick="openTab(`Stats`,`timekeeper`)">Stats</button>
+							<button onclick="displayInfo(`close`,`timekeeper`)">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="playground">
+				<div
+					class="pgCardCon"
+					id="heroesCon">
+					<div
+						class="pgCard pgHero"
+						id="pgHealer">
+						<img
+							src="Images/healer.webp"
+							alt="The healer playground card"
+							id="pgHealerimg"
+							class="Ally allyCard"
+							data-heronum="0" />
+						<!---I removed hero class... may be needed later -->
+					</div>
+					<div
+						class="pgCard pgHero"
+						id="pgTitan">
+						<img
+							src="Images/titan.webp"
+							alt="The titan playground card"
+							class="Ally allyCard"
+							data-heronum="1"
+							id="pgTitanimg" />
+					</div>
+					<div
+						class="pgCard pgHero"
+						id="pgEye">
+						<img
+							src="Images/eye.webp"
+							alt="The eye playground card"
+							class="Ally allyCard"
+							data-heronum="2"
+							id="pgEyeimg" />
+					</div>
+					<div
+						class="pgCard pgHero"
+						id="pgPhoenix">
+						<img
+							src="Images/phoenix.webp"
+							alt="The phoenix playground card"
+							class="Ally allyCard"
+							data-heronum="3"
+							id="pgPhoeniximg" />
+					</div>
 
-          <div class="pgCard pgHero" id="pgTimekeeper">
-            <img
-              src="Images/timekeeper.webp"
-              alt="The timekeeper playground card"
-              class="Ally allyCard"
-              data-heronum="4"
-              id="pgTimekeeperimg"
-            />
-          </div>
-        </div>
-        <div class="quest story" id="storyTeller">
-          <div id="story">
-            <h1 style="text-align: center" id="currentTitle">
-              The Legend tells a tale of Six heroes
-              <!--Should I change this to five? food for thought-->
-            </h1>
-            <!-- //Still need to add AI voiceover -->
-            <span id="heDesc">
-              In a world teetering on the brink of apocalypse, darkness
-              shattered the light and unleashed unknown horrors upon humanity.
-              Amidst the chaos, hope lay dormant in the form of six
-              extraordinary individuals the Atlas Six scattered across a
-              fractured world. Each possessed unique abilities and destinies
-              entwined with the fate of humanity. As they navigated through the
-              ruins of civilization, their paths converged, forging an uneasy
-              alliance against both the monstrous creatures prowling the land
-              and their own inner demons.
-            </span>
-            <div
-              id="heStats"
-              style="display: none; font-size: 1.5rem; text-align: center"
-            >
-              <p id="Hp">Hp:</p>
-              <p id="Atk">Atk:</p>
-              <p id="Stamina">Stamina:</p>
-              <p id="Mana">Mana:</p>
-              <p id="Intelligence">Intelligence:</p>
-              <p id="Strength">Hp:</p>
-              <p id="Dexterity">Dexterity:</p>
-              <p id="Class">Class:</p>
-            </div>
-            <div
-              id="heAttacks"
-              style="display: none; font-size: 1.3rem; text-align: center"
-            >
-              <p id="Atk1" class="Attack" data-power="">This is Atk 1</p>
-              <p id="Desc1">This is Desc 1</p>
-              <p id="Atk2" class="Attack" data-power="">This is Atk 2</p>
-              <p id="Desc2">This is Desc 2</p>
-              <p id="Atk3" class="Attack" data-power="">This is Atk 3</p>
-              <p id="Desc3">This is Desc 3</p>
-              <p id="Atk4" class="Attack" data-power="">This is Atk 4</p>
-              <p id="Desc4">This is Desc 4</p>
-            </div>
-            <div
-              id="msDescTab"
-              style="font-size: 1.3rem; text-align: center; display: none"
-            >
-              <p id="msDesc" style="font-family: IM Fell English, serif"></p>
-              <br />
-              <p id="msHp"></p>
-              <p id="msType"></p>
-              <br />
-              <h2>Attacks:</h2>
-              <p id="msAtk1"></p>
-              <p id="msAtk2"></p>
-              <p id="msAtk3"></p>
-              <p id="msAtk4"></p>
-              <p id="msAtk5"></p>
-              <img
-                src="Images/Assets/arrowDown.webp"
-                alt="An arrow facing down"
-                class="arrow"
-                style="position: absolute; top: 50%; left: 10%"
-                onclick="upEncyclopedia()"
-              />
-              <img
-                src="Images/Assets/arrowUp.webp"
-                alt="An arrow facing down"
-                class="arrow"
-                style="position: absolute; top: 50%; left: 80%"
-                onclick="downEncyclopedia()"
-              />
-            </div>
-            <div id="pgBtns" class="btns">
-              <button onclick="openScroll2()">Stats</button>
-              <button onclick="openAttacks()">Actions</button>
-              <button onclick="closeScroll()">Close</button>
-            </div>
-          </div>
-        </div>
-        <div
-          style="
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            top: -35%;
-            border: 10px solid;
-            border-image-source: url(Images/frame1.png);
-            border-image-slice: 70;
-            border-image-repeat: round;
-            display: none;
-          "
-          id="centerCon"
-        >
-          <div id="pgCenter" onclick="creationMonster()" style="display: none">
-            <p id="battleTitle">Welcome to The Atlas Six beta 1.2.</p>
-          </div>
-        </div>
-        <div id="storyLine">
-          <h1 id="pgChapter">Chapter 1: The Awakening</h1>
-          <div id="storyCon">
-            <div id="pgCharacter1" class="characterCon">
-              <!-- Character 1 -->
-              <!-- <img
+					<div
+						class="pgCard pgHero"
+						id="pgTimekeeper">
+						<img
+							src="Images/timekeeper.webp"
+							alt="The timekeeper playground card"
+							class="Ally allyCard"
+							data-heronum="4"
+							id="pgTimekeeperimg" />
+					</div>
+				</div>
+				<div
+					class="quest story"
+					id="storyTeller">
+					<div id="story">
+						<h1
+							style="text-align: center"
+							id="currentTitle">
+							The Legend tells a tale of Six heroes
+							<!--Should I change this to five? food for thought-->
+						</h1>
+						<!-- //Still need to add AI voiceover -->
+						<span id="heDesc">
+							In a world teetering on the brink of apocalypse, darkness
+							shattered the light and unleashed unknown horrors upon humanity.
+							Amidst the chaos, hope lay dormant in the form of six
+							extraordinary individuals the Atlas Six scattered across a
+							fractured world. Each possessed unique abilities and destinies
+							entwined with the fate of humanity. As they navigated through the
+							ruins of civilization, their paths converged, forging an uneasy
+							alliance against both the monstrous creatures prowling the land
+							and their own inner demons.
+						</span>
+						<div
+							id="heStats"
+							style="display: none; font-size: 1.5rem; text-align: center">
+							<p id="Hp">Hp:</p>
+							<p id="Atk">Atk:</p>
+							<p id="Stamina">Stamina:</p>
+							<p id="Mana">Mana:</p>
+							<p id="Intelligence">Intelligence:</p>
+							<p id="Strength">Hp:</p>
+							<p id="Dexterity">Dexterity:</p>
+							<p id="Class">Class:</p>
+						</div>
+						<div
+							id="heAttacks"
+							style="display: none; font-size: 1.3rem; text-align: center">
+							<p
+								id="Atk1"
+								class="Attack"
+								data-power="">
+								This is Atk 1
+							</p>
+							<p id="Desc1">This is Desc 1</p>
+							<p
+								id="Atk2"
+								class="Attack"
+								data-power="">
+								This is Atk 2
+							</p>
+							<p id="Desc2">This is Desc 2</p>
+							<p
+								id="Atk3"
+								class="Attack"
+								data-power="">
+								This is Atk 3
+							</p>
+							<p id="Desc3">This is Desc 3</p>
+							<p
+								id="Atk4"
+								class="Attack"
+								data-power="">
+								This is Atk 4
+							</p>
+							<p id="Desc4">This is Desc 4</p>
+						</div>
+						<div
+							id="msDescTab"
+							style="font-size: 1.3rem; text-align: center; display: none">
+							<p
+								id="msDesc"
+								style="font-family: IM Fell English, serif"></p>
+							<br />
+							<p id="msHp"></p>
+							<p id="msType"></p>
+							<br />
+							<h2>Attacks:</h2>
+							<p id="msAtk1"></p>
+							<p id="msAtk2"></p>
+							<p id="msAtk3"></p>
+							<p id="msAtk4"></p>
+							<p id="msAtk5"></p>
+							<img
+								src="Images/Assets/arrowDown.webp"
+								alt="An arrow facing down"
+								class="arrow"
+								style="position: absolute; top: 50%; left: 10%"
+								onclick="upEncyclopedia()" />
+							<img
+								src="Images/Assets/arrowUp.webp"
+								alt="An arrow facing down"
+								class="arrow"
+								style="position: absolute; top: 50%; left: 80%"
+								onclick="downEncyclopedia()" />
+						</div>
+						<div
+							id="pgBtns"
+							class="btns">
+							<button onclick="openScroll2()">Stats</button>
+							<button onclick="openAttacks()">Actions</button>
+							<button onclick="closeScroll()">Close</button>
+						</div>
+					</div>
+				</div>
+				<div
+					style="
+						position: relative;
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+						top: -35%;
+						border: 10px solid;
+						border-image-source: url(Images/frame1.png);
+						border-image-slice: 70;
+						border-image-repeat: round;
+						display: none;
+					"
+					id="centerCon">
+					<div
+						id="pgCenter"
+						onclick="creationMonster()"
+						style="display: none">
+						<p id="battleTitle">Welcome to The Atlas Six beta 1.2.</p>
+					</div>
+				</div>
+				<div id="storyLine">
+					<h1 id="pgChapter">Chapter 1: The Awakening</h1>
+					<div id="storyCon">
+						<div
+							id="pgCharacter1"
+							class="characterCon">
+							<!-- Character 1 -->
+							<!-- <img
 								src="Images/timekeeper.webp"
 								alt=""
 								class="storyImage" /> -->
-            </div>
-            <div>
-              <div id="pgStory" onclick="cook()">
-                <p><span class="characterName">Mthi:</span> Play Here</p>
-              </div>
-              <div id="pgChoices" style="text-align: center"></div>
-            </div>
+						</div>
+						<div>
+							<div
+								id="pgStory"
+								onclick="cook()">
+								<p><span class="characterName">Mthi:</span> Play Here</p>
+							</div>
+							<div
+								id="pgChoices"
+								style="text-align: center"></div>
+						</div>
 
-            <div id="pgCharacter2" class="characterCon"></div>
-          </div>
-        </div>
-        <div id="actions">
-          <h4
-            style="left: 5%; display: inline-block"
-            class="bgmove"
-            onclick="skipPlayRound()"
-          >
-            Skip Turn
-          </h4>
-          <img
-            id=""
-            src="Images/Assets/arrowUp.webp"
-            alt="An arrow facing down"
-            class="arrow"
-            onclick="upAttacks()"
-            style="left: 25%"
-          />
-          <div
-            id="Action1"
-            class="action"
-            data-atknum="0"
-            style="top: 0; left: 35%"
-          >
-            <img
-              src="Images/hand.webp"
-              alt="This is a skill card."
-              id="Action1Img"
-            />
-            <p class="actionPower" id="Action1Power">0</p>
-            <p class="actionCost" id="Action1Cost">0</p>
-            <span class="actionDesc">
-              <h2 id="Action1Title"></h2>
-              <p id="Action1Desc">
-                Select an Atlas Six character to view action cards.
-              </p>
-            </span>
-          </div>
-          <div
-            id="Action2"
-            class="action"
-            data-atknum="1"
-            style="top: 0px; left: 42.5%"
-          >
-            <img
-              src="Images/hand.webp"
-              alt="This is a skill card."
-              id="Action2Img"
-            />
-            <p class="actionPower" id="Action2Power">0</p>
-            <p class="actionCost" id="Action2Cost">0</p>
-            <span class="actionDesc">
-              <h2 id="Action2Title"></h2>
-              <p id="Action2Desc">
-                Select an Atlas Six character to view action cards.
-              </p>
-            </span>
-          </div>
-          <div
-            id="Action3"
-            class="action"
-            data-atknum="2"
-            style="top: 0px; left: 50%"
-          >
-            <img
-              src="Images/hand.webp"
-              alt="This is a skill card."
-              id="Action3Img"
-            />
-            <p class="actionPower" id="Action3Power">0</p>
-            <p class="actionCost" id="Action3Cost">0</p>
-            <span class="actionDesc">
-              <h2 id="Action3Title"></h2>
-              <p id="Action3Desc">
-                Select an Atlas Six character to view action cards.
-              </p>
-            </span>
-          </div>
-          <div
-            id="Action4"
-            class="action"
-            data-atknum="3"
-            style="top: 0px; left: 57.5%"
-          >
-            <img
-              src="Images/hand.webp"
-              alt="This is a skill card."
-              id="Action4Img"
-            />
-            <p class="actionPower" id="Action4Power">0</p>
-            <p class="actionCost" id="Action4Cost">0</p>
-            <span class="actionDesc">
-              <h2 id="Action4Title"></h2>
-              <p id="Action4Desc">
-                Select an Atlas Six character to view action cards.
-              </p>
-            </span>
-          </div>
-          <img
-            src="Images/Assets/arrowDown.webp"
-            alt="An arrow facing down"
-            class="arrow"
-            style="left: 70%"
-            onclick="downAttacks()"
-          />
-        </div>
+						<div
+							id="pgCharacter2"
+							class="characterCon"></div>
+					</div>
+				</div>
+				<div id="actions">
+					<h4
+						style="left: 5%; display: inline-block"
+						class="bgmove"
+						onclick="skipPlayRound()">
+						Skip Turn
+					</h4>
+					<img
+						id=""
+						src="Images/Assets/arrowUp.webp"
+						alt="An arrow facing down"
+						class="arrow"
+						onclick="upAttacks()"
+						style="left: 25%" />
+					<div
+						id="Action1"
+						class="action"
+						data-atknum="0"
+						style="top: 0; left: 35%">
+						<img
+							src="Images/hand.webp"
+							alt="This is a skill card."
+							id="Action1Img" />
+						<p
+							class="actionPower"
+							id="Action1Power">
+							0
+						</p>
+						<p
+							class="actionCost"
+							id="Action1Cost">
+							0
+						</p>
+						<span class="actionDesc">
+							<h2 id="Action1Title"></h2>
+							<p id="Action1Desc">
+								Select an Atlas Six character to view action cards.
+							</p>
+						</span>
+					</div>
+					<div
+						id="Action2"
+						class="action"
+						data-atknum="1"
+						style="top: 0px; left: 42.5%">
+						<img
+							src="Images/hand.webp"
+							alt="This is a skill card."
+							id="Action2Img" />
+						<p
+							class="actionPower"
+							id="Action2Power">
+							0
+						</p>
+						<p
+							class="actionCost"
+							id="Action2Cost">
+							0
+						</p>
+						<span class="actionDesc">
+							<h2 id="Action2Title"></h2>
+							<p id="Action2Desc">
+								Select an Atlas Six character to view action cards.
+							</p>
+						</span>
+					</div>
+					<div
+						id="Action3"
+						class="action"
+						data-atknum="2"
+						style="top: 0px; left: 50%">
+						<img
+							src="Images/hand.webp"
+							alt="This is a skill card."
+							id="Action3Img" />
+						<p
+							class="actionPower"
+							id="Action3Power">
+							0
+						</p>
+						<p
+							class="actionCost"
+							id="Action3Cost">
+							0
+						</p>
+						<span class="actionDesc">
+							<h2 id="Action3Title"></h2>
+							<p id="Action3Desc">
+								Select an Atlas Six character to view action cards.
+							</p>
+						</span>
+					</div>
+					<div
+						id="Action4"
+						class="action"
+						data-atknum="3"
+						style="top: 0px; left: 57.5%">
+						<img
+							src="Images/hand.webp"
+							alt="This is a skill card."
+							id="Action4Img" />
+						<p
+							class="actionPower"
+							id="Action4Power">
+							0
+						</p>
+						<p
+							class="actionCost"
+							id="Action4Cost">
+							0
+						</p>
+						<span class="actionDesc">
+							<h2 id="Action4Title"></h2>
+							<p id="Action4Desc">
+								Select an Atlas Six character to view action cards.
+							</p>
+						</span>
+					</div>
+					<img
+						src="Images/Assets/arrowDown.webp"
+						alt="An arrow facing down"
+						class="arrow"
+						style="left: 70%"
+						onclick="downAttacks()" />
+				</div>
 
-        <div id="monstersCon" class="pgCardCon">
-          <div>
-            <!-- A placeholder div so that monster container still exists even if there are no monsters -->
-          </div>
-        </div>
-        <div
-          style="display: none; justify-content: center; text-align: center"
-          id="memGame"
-        >
-          <div style="display: none" class="memoryCon">
-            <div class="memGameCon"></div>
-            <p class="memGameAttempts">
-              Attempts: <span class="Attempts"></span>
-            </p>
-            <button onclick="restartMemGame()">Restart Game</button>
-          </div>
-        </div>
-        <div id="goblinSlayerCon">
-          <canvas id="gameCanvas"></canvas>
-          <div id="controls">
-            <button id="startBtn" class="gameBtn">Start Game</button>
-            <button id="resetBtn" style="display: none" class="gameBtn">
-              Restart Game
-            </button>
-          </div>
-          <div id="score">Score: 0</div>
-          <div id="timer">Time: 60</div>
-        </div>
-        <div id="customModal" class="modal hidden">
-          <div class="modal-content">
-            <p id="modalText"></p>
-            <button onclick="closeModal()">Close</button>
-          </div>
-        </div>
-        <div id="visChoiceCon" class="visChoiceCon"></div>
-      </section>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="function.js"></script>
-    <script src="world.js"></script>
-  </body>
+				<div
+					id="monstersCon"
+					class="pgCardCon">
+					<div>
+						<!-- A placeholder div so that monster container still exists even if there are no monsters -->
+					</div>
+				</div>
+				<div
+					style="display: none; justify-content: center; text-align: center"
+					id="memGame">
+					<div
+						style="display: none"
+						class="memoryCon">
+						<div class="memGameCon"></div>
+						<p class="memGameAttempts">
+							Attempts: <span class="Attempts"></span>
+						</p>
+						<button onclick="restartMemGame()">Restart Game</button>
+					</div>
+				</div>
+				<div id="goblinSlayerCon">
+					<canvas id="gameCanvas"></canvas>
+					<div id="controls">
+						<button
+							id="startBtn"
+							class="gameBtn">
+							Start Game
+						</button>
+						<button
+							id="resetBtn"
+							style="display: none"
+							class="gameBtn">
+							Restart Game
+						</button>
+					</div>
+					<div id="score">Score: 0</div>
+					<div id="timer">Time: 60</div>
+				</div>
+				<div
+					id="customModal"
+					class="modal hidden">
+					<div class="modal-content">
+						<p id="modalText"></p>
+						<button onclick="closeModal()">Close</button>
+					</div>
+				</div>
+				<div
+					id="visChoiceCon"
+					class="visChoiceCon"></div>
+			</section>
+			<audio
+				id="backgroundMusic"
+				src="path-to-your-music-file.mp3"
+				loop></audio>
+		</main>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="function.js"></script>
+		<script src="world.js"></script>
+	</body>
 </html>
