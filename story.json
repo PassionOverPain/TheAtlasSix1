@@ -1305,6 +1305,14 @@
         "choices": []
       },
       {
+        "branchId": "branch85",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "addChoices",
+        "choices": []
+      },
+      {
         "branchId": "branch84",
         "text": "What would you like to sing?",
         "character1": "all",
@@ -1315,7 +1323,7 @@
             "choiceId": "0",
             "option": "Classic",
             "outcome": "Let's go classical",
-            "character1": "Images/eye.webp",
+            "character1": "all",
             "character2": "none",
             "event": "none"
           },
@@ -1323,14 +1331,15 @@
             "choiceId": "1",
             "option": "Rap",
             "outcome": "Let's Rap",
-            "character1": "Images/eye.webp",
+            "character1": "all",
             "character2": "none",
             "event": "none"
           }
         ]
       },
+
       {
-        "branchId": "branch85",
+        "branchId": "branch85+",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1342,22 +1351,63 @@
       },
       {
         "branchId": "branch86",
-        "text": "YES IT CHECKED WELL",
-        "character1": "none",
-        "character2": "none",
+        "text": "The group bursts into song, their voices harmonizing under the stars. <br><br>\"Through the firelight, we’ll sing tonight, <br>Our voices echo under the moon so bright.The road may twist, <br>the skies may roar, <br>But together we’ll rise, forevermore.\" <br> <i>Sing About</i>:",
+        "character1": "all",
+        "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+        "event": "none",
+        "choices": [
+          {
+            "choiceId": "0",
+            "option": "Adventure",
+            "outcome": "\"The winds may howl, the path unknown, <br> But courage finds us where we roam. <br> With every step, the world unfolds, <br> A tapestry of tales untold. <br><br> Through mountains high, and valleys wide, <br>We face the storm, we never hide. <br>The stars will guide us, shining true, <br>With every dawn, a world anew.\"",
+            "character1": "all",
+            "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "1",
+            "option": "Friendship",
+            "outcome": "\"When shadows fall and nights grow long,<br>We stand as one, our bond is strong.<br>Through laughter, tears, and battles fought,<br>We find the strength we always sought.<br><br>Together we’ll weave our story bright,<br>With trust as fierce as the fiercest fight.<br>In every voice, a thread of gold,<br>A friendship timeless, brave, and bold.\"",
+            "character1": "all",
+            "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+            "event": "none"
+          },
+          {
+            "choiceId": "2",
+            "option": "Home",
+            "outcome": "\"The fire burns, a gentle glow,<br>Reminding us of all we know.<br>The laughter shared, the warmth of peace,<br>A moment’s rest, our hearts release.<br><br>Though roads may pull us far away,<br>Our memories hold the light of day.<br>No matter where the journey bends,<br>Home lives within, it never ends.\"",
+            "character1": "all",
+            "character2": "Images/Scenes/Orb - Forest Campsite.webp",
+            "event": "none"
+          }
+        ]
+      },
+      {
+        "branchId": "branch87",
+        "text": "\"Through the firelight, we’ll sing tonight, <br>Our voices echo under the moon so bright.The road may twist, <br>the skies may roar, <br>But together we’ll rise, forevermore.\"",
+        "character1": "all",
+        "character2": "Images/Scenes/Orb - Forest Campsite.webp",
         "event": "none",
         "choices": []
       },
       {
-        "branchId": "branch87",
+        "branchId": "branch88",
         "text": "",
         "character1": "none",
         "character2": "none",
+        "event": "multipleChoicesEnd",
+        "choices": []
+      },
+      {
+        "branchId": "branch89",
+        "text": "Listen bruv, the bars are coming soon... For now my brain is just dead, Not as dead as ChatGPTs flow 😭.",
+        "character1": "none",
+        "character2": "none",
         "event": "none",
         "choices": []
       },
       {
-        "branchId": "branch87",
+        "branchId": "branch90",
         "text": "",
         "character1": "none",
         "character2": "none",

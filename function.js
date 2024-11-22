@@ -8,7 +8,7 @@ let arrChoices = []; //Encompasses all the choices made in the Known World throu
 let Encyclopedia = []; // Encompasses all enemies encountered in the known world through an array of integer indexes
 let currentRound = 0; // The current battle round
 let currentChapter = 0; //The current story chapter
-let currentBranch = 0; //The current story branch -- 78
+let currentBranch = 78; //The current story branch -- 78
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
 let startBranch = -1;
@@ -968,6 +968,12 @@ function storyEvents(branch) {
     return;
   } else if (branch.event == "checkChoices") {
     checkChoices(branch.choice, branch.values, branch.endBranch);
+  } else if (branch.event == "addChoices") {
+    //To be removed later
+    arrChoices.push(0, 1, 2, 3, 1, 2, 0, 3, 2);
+    console.log(arrChoices);
+    ++currentBranch;
+    displayStory();
   } else if (branch.event == "multipleChoices") {
     multipleChoices(branch);
   } else if (branch.event == "multipleChoicesEnd") {
@@ -1064,6 +1070,7 @@ function displayStory() {
   displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function checkChoices(choiceIndex, values, endBranch) {
+  console.log(arrChoices);
   let x = Number(arrChoices[choiceIndex]);
   if (!values.includes(x)) {
     currentBranch = endBranch;
