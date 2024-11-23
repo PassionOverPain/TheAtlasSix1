@@ -1049,7 +1049,7 @@ function storyEvents(branch) {
 	}
 	function playMusic(musicPath) {
 		bgMusic.src = `Audio/Music/${musicPath}.mp3`;
-		bgMusic.volume = 0.5; // Set volume (0.0 to 1.0)
+		bgMusic.volume = 0.5; // Set volume (0.0 to 1.0) Maximum and Minimum
 		bgMusic.play();
 		alert("Now Playing");
 		++currentBranch;
