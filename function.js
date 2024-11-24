@@ -1057,6 +1057,7 @@ function storyEvents(branch) {
 	}
 }
 function displayStory() {
+	// Ensures that other DOM elements are hidden
 	document.getElementById(`myMap`).style.display = "inline-block";
 	document.getElementById("myEncyclopedia").style.display = "inline-block";
 	let storyCon = document.getElementById(`storyLine`);
@@ -1075,6 +1076,7 @@ function displayStory() {
 	displayChapter(myChapters[currentChapter].branches[currentBranch]);
 }
 function checkChoices(choiceIndex, values, endBranch) {
+	// Checks if a specific choice index matches a certain range of values
 	let x = Number(arrChoices[choiceIndex]);
 	if (!values.includes(x)) {
 		currentBranch = endBranch;
@@ -1084,12 +1086,14 @@ function checkChoices(choiceIndex, values, endBranch) {
 		displayStory();
 	}
 }
+// The Loop for a choices intersection
 function multipleChoices(branch) {
 	startBranch = currentBranch - 1;
 	currentBranch = branch.goToBranches[arrChoices[arrChoices.length - 1]] - 2;
 	multiChoicesEndNum = arrChoices.length - 1;
 	displayStory();
 }
+// The ending for a choices intersection
 function multipleChoicesEnd() {
 	arrChoices.splice(multiChoicesEndNum);
 	currentBranch = startBranch;
