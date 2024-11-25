@@ -503,6 +503,23 @@
         "choices": []
       },
       {
+        "branchId": "branch28+++++++++++++++++++++++++++++++++++++++++",
+        "text": ".",
+        "character1": "none",
+        "character2": "none",
+        "event": "stopMusic",
+        "choices": []
+      },
+      {
+        "branchId": "branch1",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "playMusic",
+        "music": "BloomhavenFightMusic",
+        "choices": []
+      },
+      {
         "branchId": "branch28",
         "text": "",
         "character1": "none",
@@ -537,6 +554,14 @@
             "event": "none"
           }
         ]
+      },
+      {
+        "branchId": "branch28+++++++++++++++++++++++++++++++++++++++++",
+        "text": ".",
+        "character1": "none",
+        "character2": "none",
+        "event": "stopMusic",
+        "choices": []
       },
       {
         "branchId": "branch30",

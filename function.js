@@ -15,6 +15,7 @@ let startBranch = -1;
 let multiChoicesEndNum; // The starting branch for a multi choice scene between different characters.
 // Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
 // Feature to Add 2.  For choice loop, add a start branch so we can jump through character side quests
+const continueSound = new Audio("Audio/Effects/Click.mp3");
 let bgMusic = document.getElementById("backgroundMusic");
 function openTab(tab, hero) {
   if (tab == "Info") {
@@ -798,6 +799,8 @@ function displayChapter(branch) {
     Continue.addEventListener(
       "click",
       () => {
+        continueSound.currentTime = 0;
+        continueSound.play();
         ++currentBranch;
         displayChapter(myChapters[currentChapter].branches[currentBranch]);
       },
@@ -835,6 +838,8 @@ function storyChoices(branch, choice, loop) {
         () => {
           // Only exit the loop if it's the closing choice
           if (choiceNum == branch.closingChoice) {
+            continueSound.currentTime = 0;
+            continueSound.play();
             ++currentBranch;
             // Move to the next branch once we exit the loop
             displayChapter(myChapters[currentChapter].branches[currentBranch]);
@@ -859,6 +864,8 @@ function storyChoices(branch, choice, loop) {
       Continue.addEventListener(
         "click",
         () => {
+          continueSound.currentTime = 0;
+          continueSound.play();
           ++currentBranch;
           displayChapter(myChapters[currentChapter].branches[currentBranch]);
         },
@@ -961,6 +968,8 @@ function storyEvents(branch) {
     Continue.addEventListener(
       "click",
       () => {
+        continueSound.currentTime = 0;
+        continueSound.play();
         ++currentBranch;
         displayChapter(myChapters[currentChapter].branches[currentBranch]);
       },
@@ -1025,6 +1034,8 @@ function storyEvents(branch) {
     Continue.addEventListener(
       "click",
       () => {
+        continueSound.currentTime = 0;
+        continueSound.play();
         ++currentBranch;
         document.getElementById("storyLine").style.display = "block";
         displayStory();
@@ -1159,6 +1170,8 @@ function renderChoices(branch) {
         Continue.addEventListener(
           "click",
           () => {
+            continueSound.currentTime = 0;
+            continueSound.play();
             playground.style.justifyContent = "space-between";
             ++currentBranch;
             displayChapter(myChapters[currentChapter].branches[currentBranch]);

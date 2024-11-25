@@ -145,6 +145,9 @@ function disableCards() {
 }
 
 function unflipCards() {
+  const wrongSound = new Audio("Audio/Effects/Wrong.mp3");
+  wrongSound.currentTime = 0;
+  wrongSound.play();
   setTimeout(() => {
     firstCard.classList.remove("flipped");
     secondCard.classList.remove("flipped");
@@ -180,6 +183,9 @@ function restartMemGame() {
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.Model Stuff <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,
 
 function displayModal(text) {
+  const modalSound = new Audio("Audio/Effects/Modal.mp3");
+  modalSound.currentTime = 0;
+  modalSound.play();
   const modal = document.getElementById("customModal");
   const modalText = document.getElementById("modalText");
   modalText.textContent = text;
@@ -404,6 +410,8 @@ function updateTimer() {
     } else {
       displayModal(`Battle Lost: You succumb to the horde.`);
       resetGoblinGame();
+      currentBranch = currentBranch - 2; // Need a proper FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!S
+      displayStory();
     }
     endGoblinGame();
   }
@@ -419,6 +427,8 @@ canvas.addEventListener("mouseup", () => {
 });
 
 canvas.addEventListener("mousemove", (event) => {
+  const slaySound = new Audio("Audio/Effects/GoblinKill.mp3"); // This might be problematic 😂
+  const bombSound = new Audio("Audio/Effects/GreenBomb.mp3"); // This too😂
   if (mouseDown && !isGameOver) {
     const { offsetX, offsetY } = event;
     trail.push({ x: offsetX, y: offsetY, life: 10 });
@@ -428,6 +438,8 @@ canvas.addEventListener("mousemove", (event) => {
       if (dist < goblin.size / 2 && !goblin.isSliced) {
         goblin.isSliced = true;
         score++;
+        slaySound.currentTime = 0;
+        slaySound.play();
         scoreElement.innerText = `Score: ${score}`;
         goblins.splice(index, 1);
 
@@ -443,6 +455,8 @@ canvas.addEventListener("mousemove", (event) => {
       if (dist < bomb.size / 2 && !bomb.isSliced) {
         bomb.isSliced = true;
         score -= 3;
+        bombSound.currentTime = 0;
+        bombSound.play();
         scoreElement.innerText = `Score: ${score}`;
         bombs.splice(index, 1);
 
