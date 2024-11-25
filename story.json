@@ -249,6 +249,14 @@
         "choices": []
       },
       {
+        "branchId": "branch12",
+        "text": ".",
+        "character1": "none",
+        "character2": "none",
+        "event": "stopMusic",
+        "choices": []
+      },
+      {
         "branchId": "branch12++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
         "text": "......",
         "character1": "none",
@@ -278,6 +286,15 @@
         "character1": "none",
         "character2": "Images/timekeeper.webp",
         "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch1",
+        "text": "",
+        "character1": "none",
+        "character2": "none",
+        "event": "playMusic",
+        "music": "BloomhavenMusic",
         "choices": []
       },
       {
