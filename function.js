@@ -8,7 +8,7 @@ let arrChoices = []; //Encompasses all the choices made in the Known World throu
 let Encyclopedia = []; // Encompasses all enemies encountered in the known world through an array of integer indexes
 let currentRound = 0; // The current battle round
 let currentChapter = 0; //The current story chapter
-let currentBranch = 43; //The current story branch -- 78
+let currentBranch = 0; //The current story branch -- 78
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
 let startBranch = -1;
@@ -741,6 +741,8 @@ function restartBattle() {
   textBubble.textContent = "Battle Restarted.";
 }
 function cook() {
+  document.getElementById("pgStory").style.display = "block";
+  document.getElementById("starter").style.display = "none";
   let myBranch = myChapters[currentChapter].branches[currentBranch];
   displayChapter(myBranch);
 }

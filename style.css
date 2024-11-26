@@ -902,6 +902,9 @@ canvas {
   opacity: 0;
   animation: fadeIn 0.5s forwards; /* Applies fade-in effect */
 }
+#starter{
+  border-radius: 50px;
+}
 
 @keyframes fadeIn {
   to {
