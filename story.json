@@ -781,7 +781,7 @@
         ]
       },
       {
-        "branchId": "branch59",
+        "branchId": "branch61",
         "text": "The forest hums with a quiet vigor, its massive trees stretching skyward, their silhouettes stretching long and dark under the pale moonlight. Tendrils of mist drift close to the ground, curling around knotted roots and thick ferns, obscuring the forest’s hidden mysteries. The silence is punctuated by soft rustling as nocturnal creatures move, their eyes catching light like tiny, scattered stars amid the foliage. Overhead, the leaves murmur in response to the light breeze, while the air hangs heavy with the rich, damp scent of moss and earth.",
         "character1": "none",
         "character2": "none",
@@ -789,7 +789,7 @@
         "choices": []
       },
       {
-        "branchId": "branch60",
+        "branchId": "branch62",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -798,7 +798,7 @@
         "choices": []
       },
       {
-        "branchId": "branch61",
+        "branchId": "branch64",
         "text": "<span class=\"characterName\">Tino:</span> So then she says, <i> \"Only someone truly daring could handle this\"...</i> staring straight at me with those fiery eyes. <br><span class=\"characterName\">Llewellyn:</span> Sooo, did you handle it? <br><span class=\"characterName\">Tino:</span> It was such a mess, I got soaked.<br><span class=\"characterName\">Llewellyn:</span> Yea but Did you Handle it though ?<br><span class=\"characterName\">Tino:</span> The Hydra? Nah, I left, not because I wasn’t up for it — but because... <i> He grabs a solid, rugged branch, its bark still fresh and damp from the night’s dew, perfect for stoking a strong fire.</i> <br><span class=\"characterName\">Llewellyn:</span> Because...? <br><span class=\"characterName\">Tino:</span> Because I was halfway across the kingdom on a very important errand, and the royal guard had already arrived. No point in stepping into a mess like that. It's diffucult fighting a water type without a fire type. <br><span class=\"characterName\">Llewellyn:</span> Right <i>and</i> also it resembling a snake. <br>Llewellyn finishes chopping the branches and starts securing them to his back.<br><span class=\"characterName\">Tino:</span> That as well. <br> They both laugh then continue to gather materials throughout the forest's domain.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -806,7 +806,7 @@
         "choices": []
       },
       {
-        "branchId": "branch62",
+        "branchId": "branch65",
         "text": "Under the cold moonlight, the clearing buzzed with tension. A black bear, its fur dark as night and eyes glowing a deep brown, stood its ground, claws scraping the earth. Its orange magic flickered around it, crackling with raw power. Across from it, a black wolf—sleek, agile, and with eyes gleaming green—shifted low to the ground, its fur shimmering with an ethereal green glow. The air hummed with their magic, the forest holding its breath. <br><span class=\"characterName\">Tino:</span> What do we have here? <br><span class=\"characterName\">Llewellyn:</span> Seems like we've got a show, you can have first pick: Whoever loses has do to <i>the thing</i>. <br> Llewellyn looks at Tino awaiting his response to the bet. <br><span class=\"characterName\">Tino:</span> You still remember that ? Well we both know what the obvious choice is here but just to be different I'll go with...",
         "character1": "Images/Characters/Bear.webp",
         "character2": "Images/Characters/Wolf.webp",
@@ -814,7 +814,7 @@
         "choices": []
       },
       {
-        "branchId": "branch63",
+        "branchId": "branch66",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -843,7 +843,7 @@
         ]
       },
       {
-        "branchId": "branch64",
+        "branchId": "branch67",
         "text": "Llewellyn and Tino make their way back through the forest, the tension from the earlier spectacle lingering faintly in the air. The distant crackle of twigs keeps them alert, their hands instinctively brushing their weapons.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -851,7 +851,7 @@
         "choices": []
       },
       {
-        "branchId": "branch65",
+        "branchId": "branch68",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -860,7 +860,7 @@
         "choices": []
       },
       {
-        "branchId": "branch66",
+        "branchId": "branch69",
         "text": "Suddenly, a rustling ahead stops them in their tracks. Two figures dart between the trees, their movements quick and chaotic. <br><span class=\"characterName\">Tino:</span> Hasn't enough happended today already ? <br>Tino sighs with a hint of annoyance <br><span class=\"characterName\">Llewellyn:</span> I guess not. Whatever they are... they are <i>definitely small</i>. <br><span class=\"characterName\">Tino:</span> Please not more goblins, they are so difficult to hit. <br><span class=\"characterName\">Llewellyn:</span> Hopefully not. We're a lot slower right now since we are carrying these, if we don't react quickly it could end badly. <br> You decide to:",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -868,7 +868,7 @@
         "choices": []
       },
       {
-        "branchId": "branch67",
+        "branchId": "branch70",
         "text": "",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -897,7 +897,7 @@
         ]
       },
       {
-        "branchId": "branch68",
+        "branchId": "branch71",
         "text": "<span class=\"characterName\">Llewellyn:</span> Were you two running from something? <br><span class=\"characterName\">Mthi:</span> Only from the wrath of that squirrel, <i> Mthi replies, gesturing toward the treetops with mock seriousness. </i> <br><span class=\"characterName\">Mthi:</span> It wasn’t happy we borrowed its stash. <br> Jasmin joins in on their inside joke <br><span class=\"characterName\">Jasmin:</span> She means she stole its entire hoard and taunted it. <br><span class=\"characterName\">Tino:</span> You had us thinking it was something serious. Like, I don’t know, another magical fight to bet on. <br> Conversations continue to fill the night air as the group starts walking back to Zanele.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
@@ -905,7 +905,7 @@
         "choices": []
       },
       {
-        "branchId": "branch69",
+        "branchId": "branch72",
         "text": "",
         "character1": "",
         "character2": "",
@@ -914,7 +914,7 @@
         "choices": []
       },
       {
-        "branchId": "branch70",
+        "branchId": "branch73",
         "text": "You arrive back at the forest campsite. Zanele has set up a potent fire spell that will incinerate anyone who doesn’t bear the name inscribed on the inner palm of her hand. The fire barrier crackles with an intense, fiery glow, casting an amber hue over the campsite. The heat radiates from the flames, yet the sight is mesmerizing. The intricate patterns of Kurohana fire magic weave through the air, a symphony of colour and energy. Everything about it speaks of power and grace—just like the people from the mountain kingdom. The towering, ornate structures of Kurohana, with their flame-etched roofs and red-hued stone, seem almost like an extension of the very fire that powers them. Zanele stands tall at the heart of it all, her aura as commanding as the flames she controls.",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -922,7 +922,7 @@
         "choices": []
       },
       {
-        "branchId": "branch71",
+        "branchId": "branch74",
         "text": "<span class=\"characterName\">Passion:</span> Me Again, sorry to interrupt (not reallly). You've reached a safe point, indicated by that orb over there on the right. Home is where your heart is and for the Atlas Six, as much as everyone has a physical place to stay, they prefer to be together while navigating the Known World. This home along with other safe points acts as a place of respite, offering you the ability to talk to your friends along with other activities depending on the story point and decisions you have made thus far. Each orb throughout the world is different though, some such as this one require you to have defensive measures in place (Yes yes, you are inside the orb) others allow you to do other things. The orb is a marvel of magical design, seamlessly blending practicality with enchantment. Inside, you'll find ethereal furniture that shifts to fit the needs of its occupants—cushioned seating that molds to your shape and tables that levitate slightly above the ground. There are serene, softly glowing bedrooms with bedspreads woven from shimmering threads that adjust to the perfect temperature. The bathrooms are equally enchanted, with showers of warm, mist-like water that cleanse without a trace. It’s a mobile sanctuary, offering the comforts of home no matter where the journey leads.This does not limit you though from living in the physical world, such as the inn that you were in earlier, see what I did there? , by the way: what was the name of that said inn ? Get it right and I'll reward you, wrong and ... you restart the game 😉.",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -963,7 +963,7 @@
         ]
       },
       {
-        "branchId": "branch72",
+        "branchId": "branch75",
         "text": "<span class=\"characterName\">Zanele:</span> Finally, you guys are back. <br> Zanele takes your hand and pulls you into the orb. <br><span class=\"characterName\">Mthi:</span> I can sense you put a lot of enegry into this Zanele. <br><span class=\"characterName\">Zanele:</span> Of course I did. I don’t do things halfway. Besides, with the lot of you roaming about, I need to make sure we’re not ambushed again. <br> The orb’s fiery barrier pulses around you, its light casting warm shadows on the group. The air inside feels charged, almost alive with Zanele's fire magic.<br><span class=\"characterName\">Jasmin:</span> It’s beautiful, though. Trust Zanele to make protection look like an art piece.<br><span class=\"characterName\">Zanele:</span> <i> Ofcourse my dear</i>. <br><span class=\"characterName\">Llewellyn:</span> Appreciation’s nice and all, but how do we leave without torching ourselves? <br><span class=\"characterName\">Zanele:</span> Relax, Llewellyn. The barrier knows our names - we're free to enter and exit safely. I can also block the enterance thus nothing enters or exits completey.",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -971,7 +971,7 @@
         "choices": []
       },
       {
-        "branchId": "branch73",
+        "branchId": "branch76",
         "text": "<span class=\"characterName\">Tino:</span> Tino is such a <i> great name </i> though, needless to say that so many bear it. What if another Tino tries to enter? <br><span class=\"characterName\">Zanele:</span> Since it's on my hand, the barrier responds to my memories therefore only <i> our </i> Tino can enter. <br><span class=\"characterName\">Tino:</span> You honour me, <i>princess</i>. <br><span class=\"characterName\">Zanele:</span>  Just sit down before I erase your name from my palm. <br> Zanele fixes an unwavering gaze as she delivers the threat, her words firm and laced with undeniable truth.",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -979,7 +979,7 @@
         "choices": []
       },
       {
-        "branchId": "branch74",
+        "branchId": "branch77",
         "text": "The forest at night hums with life, a symphony of distant calls and rustling leaves blending into the backdrop. The magical orb encasing the campsite glows faintly, its fiery aura a stark contrast to the cool, dark expanse beyond. Outside, unseen animals chirp and chatter, their sounds weaving into the serenity of the evening.At the center, the campfire blazes with a steady, warm glow, its flickering flames casting dancing shadows on the group's faces. The light bathes them in an amber hue, softening their features and creating a sense of familiratiy.Zanele rests her head gently on Llewellyn's shoulder, her usual guarded demeanor softened by the moment. Across from them, Mthi and Jasmin sit back-to-back, their postures relaxed. Mthi absently twirls an arrow between her fingers, while Jasmin hums a quiet tune, her fingers brushing against the edges of her druidic charm. <br> The campsite now offers you the ability to interact with the group.",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -987,7 +987,7 @@
         "choices": []
       },
       {
-        "branchId": "branch75",
+        "branchId": "branch78",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1056,16 +1056,16 @@
         ]
       },
       {
-        "branchId": "branch76",
+        "branchId": "branch79",
         "text": ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Error - Broken ChoiceLoop<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<",
         "character1": "Images/timekeeper.webp",
         "character2": "Images/titan.webp",
         "event": "multipleChoices",
-        "goToBranches": [78, 81, 84, 87, 88, 90],
+        "goToBranches": [81, 84, 87, 88, 90, 92],
         "choices": []
       },
       {
-        "branchId": "branch77",
+        "branchId": "branch80",
         "text": "You sit by her side and watch her work her magic. <br> <span class=\"characterName\"> You:</span> You have a way with animals Jas. <br><span class=\"characterName\">Jasmin:</span> They’ve always been drawn to me. I think it’s because I understand them better than people sometimes. <br><span class=\"characterName\">You:</span> More than us? <br><span class=\"characterName\">Jasmin:</span> You sound offended <i> she smirks at you, hinting a yes to that answer </i> No, definitely not more than you guys ofcourse. <br><span class=\"characterName\">You:</span> So how does it work, you know: Water magic. <br><span class=\"characterName\">Jasmin:</span> Water carries life. It flows, mends, and nurtures. Let me show you.",
         "character1": "none",
         "character2": "Images/healer.webp",
@@ -1090,7 +1090,7 @@
         ]
       },
       {
-        "branchId": "branch78",
+        "branchId": "branch81",
         "text": "<span class=\"characterName\">Jasmin:</span> What's on your mind ?",
         "character1": "none",
         "character2": "Images/healer.webp",
@@ -1132,7 +1132,7 @@
         "closingChoice": 3
       },
       {
-        "branchId": "branch79",
+        "branchId": "branch82",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1140,7 +1140,7 @@
         "choices": []
       },
       {
-        "branchId": "branch80",
+        "branchId": "branch83",
         "text": "<span class=\"characterName\">You:</span> Having Fun? <br><span class=\"characterName\">Llewellyn:</span> Not as much without a competitor. <br> He rubs his hands together, a playful glint in his eye, signaling that he's ready for a challenge. <br><span class=\"characterName\">You:</span> Aren't you an <i> earth type </i> stone skipping is literally childsplay to you. <br><span class=\"characterName\">Llewellyn:</span> I promise I'll go easy, for now atleast. <br> You decide to: ",
         "character1": "none",
         "character2": "Images/titan.webp",
@@ -1165,7 +1165,7 @@
         ]
       },
       {
-        "branchId": "branch81",
+        "branchId": "branch84",
         "text": "<span class=\"characterName\">Llewellyn:</span> Anything to talk about ?",
         "character1": "none",
         "character2": "Images/titan.webp",
@@ -1207,7 +1207,7 @@
         "closingChoice": 3
       },
       {
-        "branchId": "branch82",
+        "branchId": "branch85",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1215,7 +1215,7 @@
         "choices": []
       },
       {
-        "branchId": "branch83",
+        "branchId": "branch86",
         "text": "<span class=\"characterName\">You:</span> I can definitely see that. Must have taken so much time to learn. <br><span class=\"characterName\">Mthi:</span> And discipline but it's something even you can achieve. Just give yourself like - about twenty years.  <span class=\"characterName\">You:</span> Twenty years, huh? Guess I'll have to settle for a more immediate solution. <br> <span class=\"characterName\">Mthi:</span> <i> She laughs </i> You’d be surprised. It’s more about patience than anything else. Sure, magic flows in the air, but the real trick is learning how to make it your own. <br> <span class=\"characterName\">You:</span> So, it’s not just about the notes and the melody? <br> <span class=\"characterName\">Mthi:</span> Oh, no. Music is more than just that. It's about feeling it.<br> Zanele who is across the campfire looks at Mthi while she's explaining this to you. <br><span class=\"characterName\">Zanele:</span> You don't say?... <br> Mthi waves off her remark and continues explaining to you. <br><span class=\"characterName\">Mthi:</span> Every note carries emotion, every pause holds meaning. It’s like telling a story without words. You’ve got to listen closely to what’s unsaid, and that’s the magic. <br> <span class=\"characterName\">You:</span> Sounds a lot like how you play with the notes. There’s something... otherworldly about it. <br> <span class=\"characterName\">Mthi:</span> <i> She smiles as she applauds your awareness </i> That’s because it is. Magic isn’t just spells or tricks; it’s in the little things we do. The rhythm of life, the melody of a conversation, the harmony between us all. You’ve got it, just... hidden somewhere in you, waiting to be played. <br> <span class=\"characterName\">You:</span>  I think I might be <i> a little </i> ways  from finding it, but maybe one day. <br> With her usual sense of humour she adds:<br> <span class=\"characterName\">Mthi:</span> I’ll be here, twenty years later, ready to play the duet. For now though would you like to hear something?",
         "character1": "none",
         "character2": "Images/eye.webp",
@@ -1240,7 +1240,7 @@
         ]
       },
       {
-        "branchId": "branch84",
+        "branchId": "branch87",
         "text": "<span class=\"characterName\">Mthi:</span> Kewl, so now what ?",
         "character1": "none",
         "character2": "Images/eye.webp",
@@ -1282,7 +1282,7 @@
         "closingChoice": 3
       },
       {
-        "branchId": "branch85",
+        "branchId": "branch88",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1290,7 +1290,7 @@
         "choices": []
       },
       {
-        "branchId": "branch86",
+        "branchId": "branch89",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1298,7 +1298,7 @@
         "choices": []
       },
       {
-        "branchId": "branch87",
+        "branchId": "branch90",
         "text": "<span class=\"characterName\">Zanele:</span> Mhm, so you were saying ?",
         "character1": "none",
         "character2": "Images/phoenix.webp",
@@ -1340,7 +1340,7 @@
         "closingChoice": 3
       },
       {
-        "branchId": "branch88",
+        "branchId": "branch91",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1348,7 +1348,7 @@
         "choices": []
       },
       {
-        "branchId": "branch89",
+        "branchId": "branch92",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1387,16 +1387,16 @@
         ]
       },
       {
-        "branchId": "branch90",
+        "branchId": "branch93",
         "text": ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Error - Broken ChoiceLoop<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<",
         "character1": "none",
         "character2": "none",
         "event": "multipleChoices",
-        "goToBranches": [91, 93, 101],
+        "goToBranches": [93, 95, 103],
         "choices": []
       },
       {
-        "branchId": "branch91",
+        "branchId": "branch94",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1405,7 +1405,7 @@
         "choices": []
       },
       {
-        "branchId": "branch92",
+        "branchId": "branch95",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1413,7 +1413,7 @@
         "choices": []
       },
       {
-        "branchId": "branch93",
+        "branchId": "branch96",
         "text": "What would you like to sing?",
         "character1": "all",
         "character2": "none",
@@ -1439,7 +1439,7 @@
       },
 
       {
-        "branchId": "branch94",
+        "branchId": "branch97",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1450,7 +1450,7 @@
         "choices": []
       },
       {
-        "branchId": "branch95",
+        "branchId": "branch98",
         "text": "The group bursts into song, their voices harmonizing under the stars. <br><br>\"Through the firelight, we’ll sing tonight, <br>Our voices echo under the moon so bright.The road may twist, <br>the skies may roar, <br>But together we’ll rise, forevermore.\" <br> <i>Sing About</i>:",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -1483,7 +1483,7 @@
         ]
       },
       {
-        "branchId": "branch96",
+        "branchId": "branch99",
         "text": "\"Through the firelight, we’ll sing tonight, <br>Our voices echo under the moon so bright.The road may twist, <br>the skies may roar, <br>But together we’ll rise, forevermore.\"",
         "character1": "all",
         "character2": "Images/Scenes/Orb - Forest Campsite.webp",
@@ -1491,7 +1491,7 @@
         "choices": []
       },
       {
-        "branchId": "branch97",
+        "branchId": "branch100",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1499,7 +1499,7 @@
         "choices": []
       },
       {
-        "branchId": "branch98",
+        "branchId": "branch101",
         "text": "Listen bruv, the bars are coming soon... For now my brain is just dead, Not as dead as ChatGPTs flow 😭.",
         "character1": "none",
         "character2": "none",
@@ -1507,7 +1507,7 @@
         "choices": []
       },
       {
-        "branchId": "branch99",
+        "branchId": "branch102",
         "text": "",
         "character1": "none",
         "character2": "none",
@@ -1515,32 +1515,8 @@
         "choices": []
       },
       {
-        "branchId": "branch100",
-        "text": "....",
-        "character1": "Images/timekeeper.webp",
-        "character2": "none",
-        "event": "none",
-        "choices": []
-      },
-      {
-        "branchId": "branch101",
-        "text": "<span class=\"characterName\">Passion:</span> Oh you're still here ? Welp As I said the game is finished now, you can leave.",
-        "character1": "Images/timekeeper.webp",
-        "character2": "none",
-        "event": "none",
-        "choices": []
-      },
-      {
-        "branchId": "branch102",
-        "text": "....",
-        "character1": "Images/timekeeper.webp",
-        "character2": "none",
-        "event": "none",
-        "choices": []
-      },
-      {
         "branchId": "branch103",
-        "text": "<span class=\"characterName\">Passion:</span> The game is over, I promise, <i>Leave</i>.",
+        "text": "....",
         "character1": "Images/timekeeper.webp",
         "character2": "none",
         "event": "none",
@@ -1548,7 +1524,7 @@
       },
       {
         "branchId": "branch104",
-        "text": "....",
+        "text": "<span class=\"characterName\">Passion:</span> Oh you're still here ? Welp As I said the game is finished now, you can leave.",
         "character1": "Images/timekeeper.webp",
         "character2": "none",
         "event": "none",
@@ -1556,6 +1532,30 @@
       },
       {
         "branchId": "branch105",
+        "text": "....",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch106",
+        "text": "<span class=\"characterName\">Passion:</span> The game is over, I promise, <i>Leave</i>.",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch107",
+        "text": "....",
+        "character1": "Images/timekeeper.webp",
+        "character2": "none",
+        "event": "none",
+        "choices": []
+      },
+      {
+        "branchId": "branch108",
         "text": "<span class=\"characterName\">Passion:</span> You my friend are a persistent one... Anyway bruv feel free to stay here. I've got things to do in life.",
         "character1": "Images/timekeeper.webp",
         "character2": "none",
