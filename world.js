@@ -58,7 +58,6 @@ document.querySelector(".Attempts").textContent = attemptsLeft;
 function startMemoryGame() {
   document.querySelector("#memGame").style.display = "block";
   document.querySelector(".memoryCon").style.display = "block";
-  let playground = document.getElementById("playground");
   playground.style.justifyContent = "center";
   if (!cheat) {
     attemptsLeft = 20;
