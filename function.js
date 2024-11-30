@@ -763,7 +763,7 @@ function saveGame() {
   };
 
   localStorage.setItem("gameSave", JSON.stringify(saveData));
-  displayModal("Game saved successfully!");
+  displayModal("Game saved successfully.");
 }
 
 function loadGame() {
@@ -785,9 +785,9 @@ function loadGame() {
     // Re-render the story to reflect the loaded progress
     displayStory();
 
-    displayModal("Game loaded successfully!");
+    displayModal("Game loaded successfully.");
   } else {
-    displayModal("No saved game found!");
+    displayModal("No saved game found.");
   }
 }
 

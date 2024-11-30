@@ -148,12 +148,32 @@ header {
   cursor: url(Images/hand-s.png), auto;
   z-index: 1000;
 }
-#myEncyclopedia img {
-  height: 100%;
-  width: 100%;
-}
-#myEncyclopedia:hover {
+
+.playgroundBtn:hover {
   transform: scale(1.2);
+}
+.playgroundBtn::after {
+  content: attr(
+    data-tooltip
+  ); /* Use the tooltip text from the "data-tooltip" attribute */
+  position: absolute;
+  top: -40px; /* Position the tooltip above the button */
+  left: 50%; /* Center it horizontally relative to the button */
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0; /* Initially invisible */
+  pointer-events: none; /* Ignore mouse events for the tooltip itself */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.playgroundBtn:hover::after {
+  opacity: 1; /* Make it visible on hover */
 }
 
 #myMap {
@@ -165,13 +185,6 @@ header {
   transition: all 0.5s;
   cursor: url(Images/hand-s.png), auto;
   z-index: 1000;
-}
-#myMap img {
-  height: 100%;
-  width: 100%;
-}
-#myMap:hover {
-  transform: scale(1.2);
 }
 #thisMap {
   top: 5%;
@@ -913,7 +926,7 @@ canvas {
   cursor: url(Images/hand-s.png), auto;
   z-index: 1000;
 }
-.GameIconCon img {
+.playgroundBtn {
   width: 100%;
   height: 100%;
 }
