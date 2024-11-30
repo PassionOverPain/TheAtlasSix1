@@ -1,3 +1,4 @@
+let arrEnemies = [];
 function createMonster(options) {
   const template = document.createElement("template");
 
@@ -21,7 +22,7 @@ function newMonster(Index) {
   }
   monsterCon.appendChild(myMonster);
 }
-let arrEnemies = [];
+
 function creationMonster(Index) {
   if (arrEnemies.length < 10) {
     let myMonster = new Monster(Index);

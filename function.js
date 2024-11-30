@@ -8,7 +8,7 @@ let arrChoices = []; //Encompasses all the choices made in the Known World throu
 let Encyclopedia = []; // Encompasses all enemies encountered in the known world through an array of integer indexes
 let currentRound = 0; // The current battle round
 let currentChapter = 0; //The current story chapter
-let currentBranch = 0; //The current story branch -- 78
+let currentBranch = 43; //The current story branch -- 78
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
 let startBranch = -1;
@@ -45,12 +45,14 @@ function displayInfo(choice, hero) {
 
 //Either open the map or close the map
 function displayMap() {
+	
 	if (currentBranch <= 14) {
 		displayModal(`You have not acquired the world map yet.`);
 		return;
 	}
 	openMap = !openMap;
 	document.getElementById("thisMap").style.display = openMap ? "block" : "none";
+	saveGame();
 }
 let loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
@@ -352,6 +354,8 @@ function openEncyclopedia(num) {
 		displayModal(`You have not acquired the world encylopedia yet.`);
 		return;
 	}
+	loadGame();
+	
 	if (!gotHeroes) {
 		getHeroes();
 	}
@@ -743,12 +747,51 @@ function restartBattle() {
 	displayChapter(myChapters[currentChapter].branches[currentBranch]);
 	textBubble.textContent = "Battle Restarted.";
 }
-function cook() {
+function startGame() {
 	document.getElementById("pgStory").style.display = "block";
 	document.getElementById("starter").style.display = "none";
 	let myBranch = myChapters[currentChapter].branches[currentBranch];
 	displayChapter(myBranch);
 }
+function saveGame() {
+    const saveData = {
+        currentBranch,
+        arrChoices,
+		Encyclopedia,
+		background : document.getElementById("playground").style.background
+        // Add other variables to save here
+    };
+
+    localStorage.setItem("gameSave", JSON.stringify(saveData));
+    displayModal("Game saved successfully!");
+}
+
+function loadGame() {
+	
+    const savedData = localStorage.getItem("gameSave");
+
+    if (savedData) {
+        const saveData = JSON.parse(savedData);
+
+        // Restore variables
+        currentBranch = saveData.currentBranch;
+        arrChoices = saveData.arrChoices;
+        Encyclopedia = saveData.Encyclopedia;
+
+        // Restore background
+        document.getElementById("playground").style.background = saveData.background;
+
+        // Re-render the story to reflect the loaded progress
+        displayStory();
+
+        displayModal("Game loaded successfully!");
+    } else {
+        displayModal("No saved game found!");
+    }
+}
+
+
+
 // function revealText(text) {
 // 	let container = document.getElementById("pgStory");
 // 	container.innerHTML = ""; // Clear existing text
