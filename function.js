@@ -9,7 +9,7 @@ let arrChoices = []; //Encompasses all the choices made in the Known World throu
 let Encyclopedia = []; // Encompasses all enemies encountered in the known world through an array of integer indexes
 let currentRound = 0; // The current battle round
 let currentChapter = 0; //The current story chapter
-let currentBranch = 52; //The current story branch -- 78
+let currentBranch = 0; //The current story branch -- 78
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
 let startBranch = -1;
@@ -52,7 +52,6 @@ function displayMap() {
   }
   openMap = !openMap;
   document.getElementById("thisMap").style.display = openMap ? "block" : "none";
-  saveGame();
 }
 let loader = document.getElementById("preloader");
 window.addEventListener("load", function (load) {
@@ -354,7 +353,6 @@ function openEncyclopedia(num) {
     displayModal(`You have not acquired the world encylopedia yet.`);
     return;
   }
-  loadGame();
 
   if (!gotHeroes) {
     getHeroes();
@@ -748,6 +746,7 @@ function restartBattle() {
   textBubble.textContent = "Battle Restarted.";
 }
 function startGame() {
+  document.getElementById("GameIconsCon").style.display = "block";
   playground.style.backgroundImage = "url(Images/Scenes/battleground1.webp)";
   document.getElementById("pgStory").style.display = "block";
   document.getElementById("starter").style.display = "none";
@@ -781,6 +780,7 @@ function loadGame() {
     // Restore background
     playground.style.background = saveData.background;
     playground.style.backgroundPosition = "center";
+    playground.style.backgroundSize = "cover";
 
     // Re-render the story to reflect the loaded progress
     displayStory();
@@ -1031,8 +1031,7 @@ function storyEvents(branch) {
     multipleChoicesEnd();
   }
   if (branch.event == "triggerBattle") {
-    document.getElementById(`myMap`).style.display = "none";
-    document.getElementById("myEncyclopedia").style.display = "none";
+    document.getElementById("GameIconsCon").style.display = "none";
 
     let storyCon = document.getElementById(`storyLine`);
     let heroesCon = document.getElementById(`heroesCon`);
@@ -1051,8 +1050,7 @@ function storyEvents(branch) {
       creationMonster(Enemy);
     });
   } else if (branch.event == "triggerGame") {
-    document.getElementById(`myMap`).style.display = "none";
-    document.getElementById("myEncyclopedia").style.display = "none";
+    document.getElementById("GameIconsCon").style.display = "none";
     let storyCon = document.getElementById(`storyLine`);
     storyCon.style.display = "none";
     if (branch.game == "MemoryGame") {
@@ -1067,8 +1065,7 @@ function storyEvents(branch) {
     }
     ++currentBranch;
   } else if (branch.event == "changeScene") {
-    document.getElementById(`myMap`).style.display = "none";
-    document.getElementById("myEncyclopedia").style.display = "none";
+    document.getElementById("GameIconsCon").style.display = "none";
     playground.style.backgroundImage = `url(Images/Scenes/${encodeURI(
       branch.background
     )}.webp)`;
@@ -1120,8 +1117,7 @@ function stopMusic() {
 }
 function displayStory() {
   // Ensures that other DOM elements are hidden
-  document.getElementById(`myMap`).style.display = "inline-block";
-  document.getElementById("myEncyclopedia").style.display = "inline-block";
+  document.getElementById("GameIconsCon").style.display = "block";
   let storyCon = document.getElementById(`storyLine`);
   let heroesCon = document.getElementById(`heroesCon`);
   let pgCenter = document.getElementById(`pgCenter`);
@@ -1162,6 +1158,7 @@ function multipleChoicesEnd() {
 }
 // Display the visual choices
 function renderChoices(branch) {
+  //   document.getElementById("GameIconsCon").style.display = "none"; To be decided later
   playground.style.justifyContent = "center";
   document.getElementById(`storyLine`).style.display = `none`;
   document.getElementById(`visChoiceCon`).style.display = `flex`;
