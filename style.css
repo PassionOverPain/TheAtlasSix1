@@ -443,7 +443,7 @@ button:hover {
 #playground {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-image: url(Images/background.webp);
+  background-image: url(Images/coverbg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,6 +505,7 @@ button:hover {
   background-image: url(Images/paperbg.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  letter-spacing: 2px;
 }
 #pgChapter {
   text-align: center;
@@ -589,6 +590,8 @@ button:hover {
   position: relative;
   cursor: url(Images/hand-s.png), auto;
   transition: all 0.5s;
+  color: white;
+  letter-spacing: 3px;
 }
 .bgmove:hover {
   transform: scale(1.1);
@@ -734,6 +737,7 @@ button:hover {
   font-size: 2rem;
   font-weight: bold;
   font-family: "IM Fell English", serif;
+  color: white;
 }
 .card {
   height: calc(100px / 2 * 3);
@@ -861,6 +865,7 @@ canvas {
 #score,
 #timer {
   font-size: 1.7rem;
+  color: white;
 }
 
 .visChoiceCon {
@@ -917,6 +922,10 @@ canvas {
 }
 #starter {
   border-radius: 50px;
+  cursor: url(Images/hand-s.png), auto;
+}
+#starter:hover {
+  transform: scale(1.2);
 }
 .GameIconCon {
   position: fixed;
@@ -937,6 +946,10 @@ canvas {
 #loadGame {
   top: 5%;
   left: 25%;
+}
+#music {
+  top: 5%;
+  left: 35%;
 }
 
 @keyframes fadeIn {

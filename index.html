@@ -187,6 +187,7 @@
             src="Images/closedmap.png"
             alt="The Atlax Six Map"
             class="playgroundBtn"
+            title="Open your map"
           />
         </div>
         <div
@@ -198,21 +199,32 @@
             src="Images/Encyclopedia.webp"
             alt="The Atlax Six Encyclopedia"
             class="playgroundBtn"
+            title="Open your Encyclopedia"
           />
         </div>
         <div id="saveGame" onclick="saveGame()" class="GameIconCon">
           <img
-            src="Images/saveGame.webp"
+            src="Images/saveGame.png"
             alt="The Save Icon"
             class="playgroundBtn"
+            title="Save your game"
           />
         </div>
         <div id="loadGame" onclick="loadGame()" class="GameIconCon">
           <img
-            src="Images/loadGame.webp"
+            src="Images/loadGame.png"
             alt="The Load Icon"
             class="playgroundBtn"
-            data-tooltip="Load your saved game"
+            title="Load your saved game"
+          />
+        </div>
+        <!-- To add music functionality later on -->
+        <div id="music" onclick="" class="GameIconCon">
+          <img
+            src="Images/music.png"
+            alt="The Music Icon"
+            class="playgroundBtn"
+            title="Change Music settings"
           />
         </div>
       </div>
@@ -603,7 +615,6 @@
           height="100px"
           onclick="startGame()"
           id="starter"
-          style="cursor: url(Images/hand-s.png), auto"
         />
         <div id="storyLine" style="display: none">
           <h1 id="pgChapter">Chapter 1: The Awakening</h1>
@@ -742,7 +753,7 @@
           <div style="display: none" class="memoryCon">
             <div class="memGameCon"></div>
             <p class="memGameAttempts">
-              Attempts: <span class="Attempts"></span>
+              Attempts Left: <span class="Attempts"></span>
             </p>
             <button onclick="restartMemGame()">Restart Game</button>
           </div>

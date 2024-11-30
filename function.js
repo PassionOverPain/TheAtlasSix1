@@ -746,6 +746,7 @@ function restartBattle() {
   textBubble.textContent = "Battle Restarted.";
 }
 function startGame() {
+  enableFullscreen();
   document.getElementById("GameIconsCon").style.display = "block";
   playground.style.backgroundImage = "url(Images/Scenes/battleground1.webp)";
   document.getElementById("pgStory").style.display = "block";
@@ -767,6 +768,7 @@ function saveGame() {
 }
 
 function loadGame() {
+  bgMusic.pause();
   const savedData = localStorage.getItem("gameSave");
 
   if (savedData) {
@@ -1158,7 +1160,7 @@ function multipleChoicesEnd() {
 }
 // Display the visual choices
 function renderChoices(branch) {
-  //   document.getElementById("GameIconsCon").style.display = "none"; To be decided later
+  document.getElementById("GameIconsCon").style.display = "none";
   playground.style.justifyContent = "center";
   document.getElementById(`storyLine`).style.display = `none`;
   document.getElementById(`visChoiceCon`).style.display = `flex`;
@@ -1191,10 +1193,11 @@ function renderChoices(branch) {
     let chapterText = document.getElementById("pgStory");
     let choicesContainer = document.getElementById("pgChoices");
 
-    // Add click event for selection
+    // Add click event for selection of choices
     choiceDiv.addEventListener(
       "click",
       () => {
+        document.getElementById("GameIconsCon").style.display = "block";
         clickSound.currentTime = 0;
         clickSound.play();
         arrChoices.push(index);
@@ -1228,4 +1231,32 @@ function renderChoices(branch) {
       hoverSound.play();
     });
   });
+}
+function enableFullscreen() {
+  const gameContainer = document.documentElement;
+  if (gameContainer.requestFullscreen) {
+    gameContainer.requestFullscreen();
+  } else if (gameContainer.webkitRequestFullscreen) {
+    // Safari
+    gameContainer.webkitRequestFullscreen();
+  } else if (gameContainer.msRequestFullscreen) {
+    // IE/Edge
+    gameContainer.msRequestFullscreen();
+  }
+}
+function disableFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    // For Safari
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    // For IE/Edge
+    document.msExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    // For older Firefox versions
+    document.mozCancelFullScreen();
+  } else {
+    displayModal("Fullscreen mode is not supported on this browser.");
+  }
 }
