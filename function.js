@@ -18,8 +18,7 @@ let multiChoicesEndNum; // The starting branch for a multi choice scene between 
 // Feature to Add 2.  For choice loop, add a start branch so we can jump through character side quests
 // Change Zee's description
 // Too sick to be doing anything
-// Still Sick
-// Feeling a little better
+// More better but still sick
 const continueSound = new Audio("Audio/Effects/Click.mp3");
 let bgMusic = document.getElementById("backgroundMusic");
 function openTab(tab, hero) {
