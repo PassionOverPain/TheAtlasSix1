@@ -19,6 +19,7 @@ let multiChoicesEndNum; // The starting branch for a multi choice scene between 
 // Change Zee's description
 // Too sick to be doing anything
 // More better but still sick
+// Feature to Add 3. More story content
 const continueSound = new Audio("Audio/Effects/Click.mp3");
 let bgMusic = document.getElementById("backgroundMusic");
 function openTab(tab, hero) {
