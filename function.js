@@ -9,7 +9,7 @@ let arrChoices = []; //Encompasses all the choices made in the Known World throu
 let Encyclopedia = []; // Encompasses all enemies encountered in the known world through an array of integer indexes
 let currentRound = 0; // The current battle round
 let currentChapter = 0; //The current story chapter
-let currentBranch = 0; //The current story branch -- 78
+let currentBranch = 76; //The current story branch -- 78
 let choiceNum = null; // integer for checking the respective choice just made
 let encNum = 0;
 let startBranch = -1;
@@ -90,7 +90,7 @@ function createButton(options) {
 }
 function newButton() {
 	const myButton = createButton({
-		label: "Slayyy", //Need To Remove Whatever This Is -- Used for creating new buttons .. maybe needed?
+		label: "Slayyy", //Need To Remove Whatever This Is -- Used for creating new buttons .. maybe needed?-
 	});
 	document.getElementById("pgBtns").appendChild(myButton);
 }

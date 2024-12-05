@@ -1061,7 +1061,7 @@
 				"character1": "Images/timekeeper.webp",
 				"character2": "Images/titan.webp",
 				"event": "multipleChoices",
-				"goToBranches": [81, 84, 87, 88, 90, 92],
+				"goToBranches": [80, 83, 86, 88, 90, 92],
 				"choices": []
 			},
 			{
@@ -1392,7 +1392,7 @@
 				"character1": "none",
 				"character2": "none",
 				"event": "multipleChoices",
-				"goToBranches": [93, 95, 103],
+				"goToBranches": [94, 96, 103],
 				"choices": []
 			},
 			{
@@ -1446,7 +1446,7 @@
 				"event": "checkChoices",
 				"choice": 10,
 				"values": [0],
-				"endBranch": 98,
+				"endBranch": 99,
 				"choices": []
 			},
 			{
