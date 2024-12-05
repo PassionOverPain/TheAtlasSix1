@@ -90,7 +90,7 @@ function createButton(options) {
 }
 function newButton() {
 	const myButton = createButton({
-		label: "Slayyy", //Need To Remove Whatever This Is
+		label: "Slayyy", //Need To Remove Whatever This Is -- Used for creating new buttons .. maybe needed?
 	});
 	document.getElementById("pgBtns").appendChild(myButton);
 }
