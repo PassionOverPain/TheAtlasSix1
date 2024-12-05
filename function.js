@@ -17,8 +17,6 @@ let multiChoicesEndNum; // The starting branch for a multi choice scene between 
 // Issues to fix: 1. When recording Enemies to enc, if arrEnemies.length = 1 display "Added new enemy" else display added new enemies -- FIXED but Not in the most efficient way
 // Feature to Add 2.  For choice loop, add a start branch so we can jump through character side quests
 // Change Zee's description
-// Too sick to be doing anything
-// More better but still sick
 // Feature to Add 3. More story content
 const continueSound = new Audio("Audio/Effects/Click.mp3");
 let bgMusic = document.getElementById("backgroundMusic");
